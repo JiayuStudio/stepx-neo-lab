@@ -49,11 +49,11 @@
     },
     {
       "title": "StepX Neo Studio",
-      "repository": "https://github.com/JiayuStudio/neo-studio",
+      "repository": "https://github.com/JiayuStudio/stepx-neo-studio",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-studio/README.md",
-      "release": "https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.9",
+      "release": "https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.1.10",
       "category": "移动开发与多模型协作",
-      "version": "1.1.9",
+      "version": "1.1.10",
       "tested_device": "STEPX Neo / StepX PZ261A",
       "tested_android": "16",
       "verified": [
@@ -75,7 +75,8 @@
         "1.1.8: on-phone React/TSX and Tailwind compilation, offline local resources, real counter and tower-defense controls, 11 local runner checks",
         "1.1.9: matrix touch editing, validation and offline APK; native physical display, temporary always-on and restoration; screen-off animation confirmed with per-app Neo freezer exception",
         "1.1.9: generated independent APK native square/X animation confirmed by user; stop clears frame and restores auto mode; installed release UI checked",
-        "1.1.9: external camera verified independent APK foreground, 104-second Home background and over-2-minute screen-off square/X animation; per-app freezer exception required; cleanup verified"
+        "1.1.9: external camera verified independent APK foreground, 104-second Home background and over-2-minute screen-off square/X animation; per-app freezer exception required; cleanup verified",
+        "1.1.10: new repository update endpoint; signed release installed on Neo and APK SHA256 matched; 12 matrix contract checks passed"
       ],
       "not_verified": [
         "Arbitrary offline Java/Kotlin/Gradle/npm compilation",
@@ -86,7 +87,7 @@
         "Atomic or continuous background cloud source synchronization",
         "Neo matrix API compatibility after firmware updates, freezer exception persistence across reboot, all-day battery performance"
       ],
-      "skill": "https://github.com/JiayuStudio/neo-studio/tree/main/skills/stepx-neo-matrix"
+      "skill": "https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix"
     }
   ]
 }

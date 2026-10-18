@@ -1,8 +1,8 @@
 # StepX Neo Studio
 
-独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.9**，2026-10-18。
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.10**，2026-10-18。
 
-[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.9) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+[公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.1.10) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
 
 ## 可以做什么
 
@@ -17,7 +17,7 @@
 
 新增17×23点阵工坊、多帧动画、AI项目修改、Studio上传和本机独立APK。Neo原生通道已验证无需云端密钥即可显示；播放期间临时常亮，停止恢复。熄屏持续动画已通过用户观察，需要为播放App单独配置Neo冻结例外，普通后台权限不足。
 
-[下载与使用 stepx-neo-matrix 技能](https://github.com/JiayuStudio/neo-studio/tree/main/skills/stepx-neo-matrix)：包括原生调用、项目JSON、运行壳接口、校验器和可撤销的ADB后台调试工具。可交给Studio或其他AI读取；实际执行需要手机/ADB或App桥。固件升级兼容、重启保留和全天功耗未验。
+[下载与使用 stepx-neo-matrix 技能](https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix)：包括原生调用、项目JSON、运行壳接口、校验器和可撤销的ADB后台调试工具。可交给Studio或其他AI读取；实际执行需要手机/ADB或App桥。固件升级兼容、重启保留和全天功耗未验。
 
 ## 在 Neo 本地运行
 
@@ -79,7 +79,7 @@ Studio项目报告与DeepSeek等第三方API、阶跃直连API完全分开；今
 
 ## 实测与限制
 
-设备为STEPX Neo PZ261A，Android 16/API36。本轮23项更新器校验测试通过，覆盖版本比较、异常资产、非HTTPS/非法主机以及损坏、异签名、异包名、调试和降级APK拒绝；联动DOM8场景与Token分账回归通过。真实更新链路已通过：手机无令牌读取公开GitHub、下载正式APK、校验后进入Android安装器并成功升级到1.1.3；已安装包哈希与发布包一致。首次测试使用带新更新器的112引导包，原版1.1.2本身仍需手动首次升级。1.1.4在Neo上完成16项状态迁移自测和20项实机流程检查：长按/左滑、删除取消、重启后恢复、彻底删除及缓存清理通过；原有项目、配置、独立对话和Token记录完整JSON哈希不变。1.1.5增加21项原生文件校验与11项实机写入流程，实际DeepSeek修改原项目、Neo本机生成签名APK、安装后加一/归零触摸通过；测试App和模拟数据已清理，真实662 Token调用保留。原配置/对话/最近删除及既有用量不变。完整版本验收以[验收记录](https://github.com/JiayuStudio/neo-studio/blob/main/验收记录.md)为准。
+设备为STEPX Neo PZ261A，Android 16/API36。本轮23项更新器校验测试通过，覆盖版本比较、异常资产、非HTTPS/非法主机以及损坏、异签名、异包名、调试和降级APK拒绝；联动DOM8场景与Token分账回归通过。真实更新链路已通过：手机无令牌读取公开GitHub、下载正式APK、校验后进入Android安装器并成功升级到1.1.3；已安装包哈希与发布包一致。首次测试使用带新更新器的112引导包，原版1.1.2本身仍需手动首次升级。1.1.4在Neo上完成16项状态迁移自测和20项实机流程检查：长按/左滑、删除取消、重启后恢复、彻底删除及缓存清理通过；原有项目、配置、独立对话和Token记录完整JSON哈希不变。1.1.5增加21项原生文件校验与11项实机写入流程，实际DeepSeek修改原项目、Neo本机生成签名APK、安装后加一/归零触摸通过；测试App和模拟数据已清理，真实662 Token调用保留。原配置/对话/最近删除及既有用量不变。完整版本验收以[验收记录](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/验收记录.md)为准。
 
 本机离线构建适用于支持的Web项目，不是任意Java/Kotlin/Gradle/npm工程编译器。自动联动需保持前台，最多1–3轮，与本版手动源码上传/下载是独立入口。官方云端模型不能由本地DeepSeek配置替换。没有后台自动控制Amoo，也没有读取其他App的Token账单。新设备首次配置全部功能未重新独立验收。
 

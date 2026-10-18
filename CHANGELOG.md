@@ -58,3 +58,7 @@ python3 tools/build_amoo_notion_guide.py
 ## 2026-10-18 · StepX Neo Studio 1.1.4
 
 新增长按项目菜单、左滑删除、最近删除恢复及彻底删除说明；保留本地与云端删除范围、用量账本不变等边界。
+
+## 2026-10-18 · StepX Neo Studio 1.1.10
+
+更新项目、下载与技能入口至 JiayuStudio/stepx-neo-studio；正式APK已安装并核验哈希，应用内更新源同步调整。

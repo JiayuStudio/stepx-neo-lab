@@ -13,8 +13,8 @@ JIAYU STUDIO 整理的 STEPX Neo 使用教程与工具合集。
 ### StepX Neo Studio
 
 - [功能、安装与应用内更新](guides/neo-studio/README.md)
-- [公开源码](https://github.com/JiayuStudio/neo-studio)
-- [正式APK 1.1.9](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.9)
+- [公开源码](https://github.com/JiayuStudio/stepx-neo-studio)
+- [正式APK 1.1.10](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.1.10)
 
 ### Amoo / Notion
 
