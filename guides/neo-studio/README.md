@@ -1,8 +1,8 @@
 # StepX Neo Studio
 
-独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.2**，2026-10-19。
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.2.1**，2026-10-19。
 
-[公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.0) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+[公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.1) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
 
 ## 可以做什么
 
@@ -13,6 +13,14 @@
 - 生成App可经确认调用工作台AI接口、回传调试报告；Amoo任务通过可见分享入口交接，发送与结果回填仍需人工核对。
 - 在App中检查GitHub正式Release，查看说明、下载并验证APK，再通过Android确认更新。
 
+## 1.2.1 本机打包与直接安装
+
+- 修复云端同步的前端源码被禁用本机 APK 构建的问题，手动操作和 AI 的 `build_apk` 工具共用离线编译器。
+- 支持 HTML / React / TSX、嵌套目录、图片和二进制文件、`public/` 静态资源及内置依赖。
+- 在“本地项目 → 编辑器 → 构建 APK”选择“构建 APK”，完成后可导出；选择“构建并安装到 Neo”则会打开系统安装确认。编辑器底部工具栏可横向滑动。
+- 实机游戏的开始、移动、暂停、继续和碰撞结算通过；资源 App 的 7 项检查通过。APK 导出文件与安装文件一致，缺失依赖会明确报错并停止构建。
+- 这条路径不执行任意 Gradle 工程、Node 服务端、Vite 插件，也不自动注入官方 Studio 原生 SDK。
+
 ## 1.2 端侧开发与连接器
 
 - 对 AI 说“新建项目”可创建独立本地项目并直接写入代码，后续对话继续修改该项目。意外中断会给出恢复提示，避免把未确认的 Token 当成已知消耗。
@@ -21,7 +29,7 @@
 
 - Gemma 4 E4B 已在 Neo GPU 实际生成中文回复及计数器代码，32K上下文配置、MTP、温度1/Top-K64/Top-P0.95。实测本轮生成约18.6 Token/s，速度随提示长度与温度状态变化；未执行完整32K长输入压力测试。
 - 支持 Hugging Face 文件列表、断点下载、SHA-256校验和自定义 `.litertlm` 文件导入。当前测试手机直连HF超时，模型经本地传入并核验哈希后运行；手机直连完整下载尚未验收。
-- AI可列出、读取、搜索和暂存项目文件，调用本机编译检查、运行预览、构建根目录Web APK及读取调试日志。实时新增/修改代码预览，项目绿色闪烁状态提示。
+- AI可列出、读取、搜索和暂存项目文件，调用本机编译检查、运行预览、构建支持的 HTML / React / TSX 项目 APK 及读取调试日志。实时新增/修改代码预览，项目绿色闪烁状态提示。
 - 官方目录包含39个连接器、358项能力说明，可同步、搜索及纳入项目上下文。Gemma实际调用搜索和详情工具通过；这不代表39个连接器均已授权或执行验收。详见[连接器目录](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/连接器目录.md)。
 - 对话历史侧边栏支持搜索、多选删除；向下三角按钮一键回到底部；所有项目自动汇总Token，本地推理、第三方API、阶跃API、Studio日志分开。
 - App内背屏点阵工坊已移除，已有文件保留。独立[点阵AI技能](https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix)及1.1.9历史验证资料保留。
@@ -31,7 +39,7 @@
 
 编辑器点“本地运行 ▷”，云端同步的 React/TSX 项目也会在手机编译和执行。编译器、Tailwind 3 和常用依赖已内置，不借助 Mac 或云端构建。默认离线；需要 HTTPS 接口时手动开启“联网”，仍受 CORS 限制。修改源码后关闭预览再运行；“重载”只重跑当前快照。
 
-已实测计数器真实触摸、塔防启动/开始波次/暂停/回到主菜单，以及嵌套资源、TSX、Tailwind、缺依赖/版本错误等11项检查。未内置的npm包会明确报错；Vite/Node/原生桥接不执行。复杂源码独立APK仍由Studio构建，原根目录Web项目离线打包保留。界面以StepX Neo为品牌，不添加模型厂商联名宣传。
+已实测计数器真实触摸、塔防启动/开始波次/暂停/回到主菜单，以及嵌套资源、TSX、Tailwind、缺依赖/版本错误等11项检查。未内置的npm包会明确报错；Vite/Node/原生桥接不执行。1.2.1 已支持将编译器覆盖的前端源码打包为独立 APK；原生 Gradle 工程及未支持的依赖仍需 Studio 或外部构建环境。界面以StepX Neo为品牌，不添加模型厂商联名宣传。
 
 ## AI 助手开关与云端源码
 
@@ -76,7 +84,7 @@ Studio项目报告与DeepSeek等第三方API、阶跃直连API完全分开；今
 
 ## 安装和更新
 
-首次在发布页下载 `StepXNeoStudio-1.1.10-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
+首次在发布页下载 `StepXNeoStudio-1.2.1-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
 
 1. 打开右上角“⋯”，在菜单底部选“检查更新”；使用说明页也有入口。
 2. 点击检查，出现新版本后查看说明并下载。

@@ -1,7 +1,7 @@
 {
   "title": "StepX Neo 研究所",
   "maintainer": "JiayuStudio",
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "projects": [
     {
       "title": "免 ROOT 使用 Google Play：GBox 手机教程",
@@ -51,9 +51,9 @@
       "title": "StepX Neo Studio",
       "repository": "https://github.com/JiayuStudio/stepx-neo-studio",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-studio/README.md",
-      "release": "https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.0",
+      "release": "https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.1",
       "category": "移动开发与多模型协作",
-      "version": "1.2",
+      "version": "1.2.1",
       "tested_device": "STEPX Neo / StepX PZ261A",
       "tested_android": "16",
       "verified": [
@@ -82,7 +82,8 @@
         "1.1.10: history drawer multi-select delete and triangle bottom jump passed; API/local/Studio project token totals separated",
         "1.1.10: natural-language project creation and subsequent targeted edits; interrupted generation recovers without duplicate usage",
         "1.1.10: single and batch cloud upload on Neo, per-project conflict refusal; independent generated note APK save/reload and debug report return",
-        "1.1.10: installed final release hash matches APK; original local projects, deleted items and provider profiles preserved after demo cleanup"
+        "1.1.10: installed final release hash matches APK; original local projects, deleted items and provider profiles preserved after demo cleanup",
+        "1.2.1: cloud-synced React/TSX frontend compiled into APK on Neo; direct system install and byte-identical APK export; actual game controls and seven packaged-resource checks passed"
       ],
       "not_verified": [
         "Arbitrary offline Java/Kotlin/Gradle/npm compilation",
