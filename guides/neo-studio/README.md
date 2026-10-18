@@ -1,0 +1,35 @@
+# StepX Neo Studio
+
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.3**，2026-10-18。
+
+[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.3) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+
+## 可以做什么
+
+- Neo屏幕和键盘适配，紧凑布局，灰橙配色与轻拟物图标。
+- 官方Studio登录与云端构建；本地HTML/CSS/JS项目编辑、预览、导入导出，并通过预编译运行壳离线生成APK。
+- 自定义HTTPS AI API、检测与选择模型、多配置；DeepSeek和Studio可围绕同一项目进行前台有界的规划、开发、审查往返。
+- Step／Studio和第三方API用量分开记录。Studio未公开可读Token数，显示“未提供”，不伪造为零。
+- 生成App可经确认调用工作台AI接口、回传调试报告；Amoo任务通过可见分享入口交接，发送与结果回填仍需人工核对。
+- 在App中检查GitHub正式Release，查看说明、下载并验证APK，再通过Android确认更新。
+
+## 安装和更新
+
+首次在发布页下载 `StepXNeoStudio-1.1.3-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
+
+1. 打开右上角“⋯”，在菜单底部选“检查更新”；使用说明页也有入口。
+2. 点击检查，出现新版本后查看说明并下载。
+3. 校验通过后点安装；首次按Android提示允许来源，再返回点击安装，系统会再次确认。
+4. 可选择启动时每天检查一次；默认关闭，不会自动下载或静默安装。
+
+更新源为公开GitHub仓库，不需要GitHub令牌。源码有新提交不代表有可安装的新版本；只有正式Release及匹配APK会显示更新。网络需能连接GitHub。
+
+## 实测与限制
+
+设备为STEPX Neo PZ261A，Android 16/API36。本轮23项更新器校验测试通过，覆盖版本比较、异常资产、非HTTPS/非法主机以及损坏、异签名、异包名、调试和降级APK拒绝；联动DOM8场景与Token分账回归通过。真实更新链路已通过：手机无令牌读取公开GitHub、下载正式APK、校验后进入Android安装器并成功升级到1.1.3；已安装包哈希与发布包一致。首次测试使用带新更新器的112引导包，原版1.1.2本身仍需手动首次升级。完整版本验收以[验收记录](https://github.com/JiayuStudio/neo-studio/blob/main/验收记录.md)为准。
+
+本机离线构建适用于支持的Web项目，不是任意Java/Kotlin/Gradle/npm工程编译器。自动联动需保持前台，最多1–3轮，不等于双向源码同步。官方云端模型不能由本地DeepSeek配置替换。没有后台自动控制Amoo，也没有读取其他App的Token账单。新设备首次配置全部功能未重新独立验收。
+
+## 来源
+
+参考 [ra1nzzz/stepstudio-apk](https://github.com/ra1nzzz/stepstudio-apk) 的WebView客户端思路和原APK实机对照；未复制其源码、图标或二进制。实际复用apksig-android 4.4.0（Apache 2.0）用于APK签名与验证；其他参考和边界见源码仓库ATTRIBUTION.md。图标为本项目生成资源，未使用官方商标。

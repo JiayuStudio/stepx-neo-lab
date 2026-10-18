@@ -26,3 +26,7 @@ python3 tools/build_amoo_notion_guide.py
 ```
 
 生成的离线手册和下载包位于 `release-assets/`。
+
+## 2026-10-18 · StepX Neo Studio 1.1.3
+
+收录公开源码、正式APK、应用内更新教程、Neo开发与多模型协作能力及实测边界；上游参考和实际依赖均链接至来源声明。
