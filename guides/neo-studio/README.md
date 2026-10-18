@@ -1,8 +1,8 @@
 # StepX Neo Studio
 
-独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.3**，2026-10-18。
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.4**，2026-10-18。
 
-[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.3) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.4) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
 
 ## 可以做什么
 
@@ -13,9 +13,17 @@
 - 生成App可经确认调用工作台AI接口、回传调试报告；Amoo任务通过可见分享入口交接，发送与结果回填仍需人工核对。
 - 在App中检查GitHub正式Release，查看说明、下载并验证APK，再通过Android确认更新。
 
+## 本地项目删除
+
+- **长按项目**：弹出“打开项目 / 删除项目”菜单；右侧“⋯”也能打开。
+- **向左滑动**：露出删除按钮，点击后再次确认；轻点项目名称仍进入编辑器。
+- **最近删除**：列表底部进入，可恢复完整项目，也可再次确认彻底删除。不会自动过期，保留时仍占本机空间。
+- 删除只作用于本地项目。云端项目、已导出文件、已安装App、独立AI对话和Token账本保留；彻底删除会同时清理工作台内该项目的构建APK。
+- AI、联动、构建或交接任务进行中，请先结束任务再删除项目。
+
 ## 安装和更新
 
-首次在发布页下载 `StepXNeoStudio-1.1.3-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
+首次在发布页下载 `StepXNeoStudio-1.1.4-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
 
 1. 打开右上角“⋯”，在菜单底部选“检查更新”；使用说明页也有入口。
 2. 点击检查，出现新版本后查看说明并下载。
@@ -26,7 +34,7 @@
 
 ## 实测与限制
 
-设备为STEPX Neo PZ261A，Android 16/API36。本轮23项更新器校验测试通过，覆盖版本比较、异常资产、非HTTPS/非法主机以及损坏、异签名、异包名、调试和降级APK拒绝；联动DOM8场景与Token分账回归通过。真实更新链路已通过：手机无令牌读取公开GitHub、下载正式APK、校验后进入Android安装器并成功升级到1.1.3；已安装包哈希与发布包一致。首次测试使用带新更新器的112引导包，原版1.1.2本身仍需手动首次升级。完整版本验收以[验收记录](https://github.com/JiayuStudio/neo-studio/blob/main/验收记录.md)为准。
+设备为STEPX Neo PZ261A，Android 16/API36。本轮23项更新器校验测试通过，覆盖版本比较、异常资产、非HTTPS/非法主机以及损坏、异签名、异包名、调试和降级APK拒绝；联动DOM8场景与Token分账回归通过。真实更新链路已通过：手机无令牌读取公开GitHub、下载正式APK、校验后进入Android安装器并成功升级到1.1.3；已安装包哈希与发布包一致。首次测试使用带新更新器的112引导包，原版1.1.2本身仍需手动首次升级。1.1.4在Neo上完成16项状态迁移自测和20项实机流程检查：长按/左滑、删除取消、重启后恢复、彻底删除及缓存清理通过；原有项目、配置、独立对话和Token记录完整JSON哈希不变。完整版本验收以[验收记录](https://github.com/JiayuStudio/neo-studio/blob/main/验收记录.md)为准。
 
 本机离线构建适用于支持的Web项目，不是任意Java/Kotlin/Gradle/npm工程编译器。自动联动需保持前台，最多1–3轮，不等于双向源码同步。官方云端模型不能由本地DeepSeek配置替换。没有后台自动控制Amoo，也没有读取其他App的Token账单。新设备首次配置全部功能未重新独立验收。
 
