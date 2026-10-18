@@ -1,0 +1,13 @@
+.DS_Store
+Icon?
+*.apk
+*.apks
+*.zip
+*.log
+*.p12
+*.jks
+*.key
+*.pem
+.env*
+.private/
+publication-audit/

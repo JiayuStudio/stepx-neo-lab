@@ -1,0 +1,19 @@
+{
+  "title": "StepX Neo 研究所",
+  "maintainer": "JiayuStudio",
+  "updated": "2026-10-18",
+  "projects": [
+    {
+      "title": "免 ROOT 使用 Google Play：GBox 手机教程",
+      "repository": "https://github.com/JiayuStudio/stepx-neo-gbox-guide",
+      "category": "应用兼容与 Google 服务",
+      "method": "GBox container",
+      "tested_device": "STEPX Neo / StepX PZ261A",
+      "tested_android": "16",
+      "tested_stepaos": "1.0.0.2",
+      "tested_gbox": "1.8.4.02",
+      "verified": ["Google account login inside container", "App installation inside container"],
+      "not_verified": ["Fresh factory-state phone-only end-to-end setup", "Full native system GMS", "All application features"]
+    }
+  ]
+}
