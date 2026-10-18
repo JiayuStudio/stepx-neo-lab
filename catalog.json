@@ -27,7 +27,7 @@
       "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/amoo-notion/README.md",
       "category": "Amoo 与知识管理",
-      "guide_version": "1.0.0",
+      "guide_version": "1.0.1",
       "tool_version": "1.0.1",
       "method": "Amoo execution tool -> Node CLI -> Notion API",
       "illustrations": 6,

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1009" role="img" aria-labelledby="title desc">
-<title id="title">每天只做四件事</title><desc id="desc">把简短启动提示存到自己的快捷短语。。新会话先发启动提示：明确指定页面与现有读取工具；核对后继续任务：只应用相关偏好，当前要求优先；需要更新时生成草稿：只读 CLI 不直接修改 Notion；你保存修改，再独立复测：递增版本、更换校验词、重新读取。操作示意，非实机截图。</desc>
+<title id="title">每天只做四件事</title><desc id="desc">把简短启动提示存到自己的快捷短语。。新会话先发启动提示：明确指定页面与现有读取工具；核对后继续任务：结合相关偏好与资料处理任务；需要更新时生成草稿：只读 CLI 不直接修改 Notion；你保存修改，再独立复测：递增版本、更换校验词、重新读取。操作示意，非实机截图。</desc>
 <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f3f8f7"/><stop offset="1" stop-color="#eaf1ef"/></linearGradient></defs>
 <rect width="720" height="1009" rx="28" fill="url(#bg)"/>
 <g font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
@@ -17,7 +17,7 @@
 <circle cx="79" cy="416" r="22" fill="#147b70"/>
 <text x="71" y="425" font-size="27" font-weight="700" fill="#ffffff">2</text>
 <text x="119" y="424" font-size="31" font-weight="650" fill="#173831">核对后继续任务</text>
-<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">只应用相关偏好，当前要求优先</text>
+<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">结合相关偏好与资料处理任务</text>
 <path d="M360 519v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
 <rect x="40" y="542" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="582" r="22" fill="#147b70"/>
@@ -30,6 +30,6 @@
 <text x="71" y="757" font-size="27" font-weight="700" fill="#ffffff">4</text>
 <text x="119" y="756" font-size="31" font-weight="650" fill="#173831">你保存修改，再独立复测</text>
 <text x="119" y="796" font-size="26" font-weight="400" fill="#344850">递增版本、更换校验词、重新读取</text>
-<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">手动触发可复现；自动规则单独验收。</text>
-<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">原创操作示意 · 非实机截图 · 不含私人数据</text>
+<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">每次更新后，重新读取确认结果。</text>
+<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">操作示意 · Amoo 接入 Notion</text>
 </g></svg>

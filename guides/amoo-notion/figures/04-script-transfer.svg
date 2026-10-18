@@ -1,35 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1009" role="img" aria-labelledby="title desc">
-<title id="title">把脚本交给 Amoo 执行</title><desc id="desc">手机下载目录与 Amoo 工作区不是一回事。。下载可信源码附件：.js 与 .js.txt 字节完全相同；Amoo 附件入口选择文件：传入 .js.txt，不用截图识别代码；在执行工作区原样保存：保存为 .js，不覆盖旧工具和配置；比较 SHA-256，再检查版本：Node ≥ 22；CLI 输出 1.0.1。操作示意，非实机截图。</desc>
+<title id="title">把脚本交给 Amoo 执行</title><desc id="desc">通过附件把下载文件传入执行工作区。。下载脚本附件：.js 与 .js.txt 字节完全相同；Amoo 附件入口选择文件：文件选择器中选取 .js.txt；在执行工作区原样保存：保存为 amoo-notion-1.0.1.js；比较 SHA-256，再检查版本：Node ≥ 22；CLI 输出 1.0.1。操作示意，非实机截图。</desc>
 <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f3f8f7"/><stop offset="1" stop-color="#eaf1ef"/></linearGradient></defs>
 <rect width="720" height="1009" rx="28" fill="url(#bg)"/>
 <g font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
 <rect x="40" y="36" width="8" height="34" rx="4" fill="#147b70"/>
 <text x="62" y="61" font-size="21" font-weight="650" fill="#147b70">STEPX NEO 研究所  /  图 04</text>
 <text x="40" y="121" font-size="38" font-weight="700" fill="#173831">把脚本交给 Amoo 执行</text>
-<text x="40" y="169" font-size="25" font-weight="400" fill="#344850">手机下载目录与 Amoo 工作区不是一回事。</text>
+<text x="40" y="169" font-size="25" font-weight="400" fill="#344850">通过附件把下载文件传入执行工作区。</text>
 <rect x="40" y="210" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="250" r="22" fill="#147b70"/>
 <text x="71" y="259" font-size="27" font-weight="700" fill="#ffffff">1</text>
-<text x="119" y="258" font-size="31" font-weight="650" fill="#173831">下载可信源码附件</text>
+<text x="119" y="258" font-size="31" font-weight="650" fill="#173831">下载脚本附件</text>
 <text x="119" y="298" font-size="26" font-weight="400" fill="#344850">.js 与 .js.txt 字节完全相同</text>
 <path d="M360 353v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
 <rect x="40" y="376" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="416" r="22" fill="#147b70"/>
 <text x="71" y="425" font-size="27" font-weight="700" fill="#ffffff">2</text>
 <text x="119" y="424" font-size="31" font-weight="650" fill="#173831">Amoo 附件入口选择文件</text>
-<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">传入 .js.txt，不用截图识别代码</text>
+<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">文件选择器中选取 .js.txt</text>
 <path d="M360 519v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
 <rect x="40" y="542" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="582" r="22" fill="#147b70"/>
 <text x="71" y="591" font-size="27" font-weight="700" fill="#ffffff">3</text>
 <text x="119" y="590" font-size="31" font-weight="650" fill="#173831">在执行工作区原样保存</text>
-<text x="119" y="630" font-size="26" font-weight="400" fill="#344850">保存为 .js，不覆盖旧工具和配置</text>
+<text x="119" y="630" font-size="26" font-weight="400" fill="#344850">保存为 amoo-notion-1.0.1.js</text>
 <path d="M360 685v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
 <rect x="40" y="708" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="748" r="22" fill="#147b70"/>
 <text x="71" y="757" font-size="27" font-weight="700" fill="#ffffff">4</text>
 <text x="119" y="756" font-size="31" font-weight="650" fill="#173831">比较 SHA-256，再检查版本</text>
 <text x="119" y="796" font-size="26" font-weight="400" fill="#344850">Node ≥ 22；CLI 输出 1.0.1</text>
-<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">附件收到 ≠ 已经能够执行。</text>
-<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">原创操作示意 · 非实机截图 · 不含私人数据</text>
+<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">版本输出 1.0.1 后继续配置连接。</text>
+<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">操作示意 · Amoo 接入 Notion</text>
 </g></svg>

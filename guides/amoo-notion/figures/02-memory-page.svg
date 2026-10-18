@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1009" role="img" aria-labelledby="title desc">
-<title id="title">一页记忆，四个清楚区域</title><desc id="desc">这是结构示例，请在自己的页面填写。。校验区：版本、更新时间、随机校验词，答案留在页面，不写进读取提示；长期偏好：语言、回答风格、工作方式；当前项目：简短目标、已确认事实、复核日期；临时测试：单独记录，避免变成真实用户事实。操作示意，非实机截图。</desc>
+<title id="title">一页记忆，四个清楚区域</title><desc id="desc">这是结构示例，请在自己的页面填写。。校验区：版本、更新时间、校验词，读取后与页面内容比对；长期偏好：语言、回答风格、工作方式；当前项目：简短目标、已确认事实、复核日期；临时测试：记录测试内容、结果与后续处理。操作示意，非实机截图。</desc>
 <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f3f8f7"/><stop offset="1" stop-color="#eaf1ef"/></linearGradient></defs>
 <rect width="720" height="1009" rx="28" fill="url(#bg)"/>
 <g font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
@@ -11,8 +11,8 @@
 <circle cx="79" cy="250" r="22" fill="#147b70"/>
 <text x="71" y="259" font-size="27" font-weight="700" fill="#ffffff">1</text>
 <text x="119" y="258" font-size="31" font-weight="650" fill="#173831">校验区</text>
-<text x="119" y="298" font-size="26" font-weight="400" fill="#344850">版本、更新时间、随机校验词</text>
-<text x="119" y="330" font-size="26" font-weight="400" fill="#344850">答案留在页面，不写进读取提示</text>
+<text x="119" y="298" font-size="26" font-weight="400" fill="#344850">版本、更新时间、校验词</text>
+<text x="119" y="330" font-size="26" font-weight="400" fill="#344850">读取后与页面内容比对</text>
 <path d="M360 353v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
 <rect x="40" y="376" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="416" r="22" fill="#147b70"/>
@@ -30,7 +30,7 @@
 <circle cx="79" cy="748" r="22" fill="#147b70"/>
 <text x="71" y="757" font-size="27" font-weight="700" fill="#ffffff">4</text>
 <text x="119" y="756" font-size="31" font-weight="650" fill="#173831">临时测试</text>
-<text x="119" y="796" font-size="26" font-weight="400" fill="#344850">单独记录，避免变成真实用户事实</text>
-<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">保持简短；不放密钥或客户原始资料。</text>
-<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">原创操作示意 · 非实机截图 · 不含私人数据</text>
+<text x="119" y="796" font-size="26" font-weight="400" fill="#344850">记录测试内容、结果与后续处理</text>
+<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">定期更新当前项目与页面版本。</text>
+<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">操作示意 · Amoo 接入 Notion</text>
 </g></svg>

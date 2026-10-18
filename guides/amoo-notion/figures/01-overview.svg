@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1009" role="img" aria-labelledby="title desc">
-<title id="title">从提问到真实读取</title><desc id="desc">页面仍是私密的，工具按授权范围读取。。Amoo 收到明确任务：先读指定页面，再处理当前任务；执行工作区里的 Node CLI：复用已有配置，不在聊天展示密钥；Notion API 验证权限：内部连接 + 具体页面访问范围；返回正文与读取回执：版本 / 校验词 / 完整性。操作示意，非实机截图。</desc>
+<title id="title">Amoo 读取 Notion 的流程</title><desc id="desc">指定页面，读取正文，继续处理任务。。Amoo 收到明确任务：先读指定页面，再处理当前任务；执行工作区里的 Node CLI：使用已保存的连接配置；Notion API 验证权限：内部连接 + 具体页面访问范围；返回正文与读取回执：版本 / 校验词 / 完整性。操作示意，非实机截图。</desc>
 <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f3f8f7"/><stop offset="1" stop-color="#eaf1ef"/></linearGradient></defs>
 <rect width="720" height="1009" rx="28" fill="url(#bg)"/>
 <g font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
 <rect x="40" y="36" width="8" height="34" rx="4" fill="#147b70"/>
 <text x="62" y="61" font-size="21" font-weight="650" fill="#147b70">STEPX NEO 研究所  /  图 01</text>
-<text x="40" y="121" font-size="38" font-weight="700" fill="#173831">从提问到真实读取</text>
-<text x="40" y="169" font-size="25" font-weight="400" fill="#344850">页面仍是私密的，工具按授权范围读取。</text>
+<text x="40" y="121" font-size="38" font-weight="700" fill="#173831">Amoo 读取 Notion 的流程</text>
+<text x="40" y="169" font-size="25" font-weight="400" fill="#344850">指定页面，读取正文，继续处理任务。</text>
 <rect x="40" y="210" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="250" r="22" fill="#147b70"/>
 <text x="71" y="259" font-size="27" font-weight="700" fill="#ffffff">1</text>
@@ -17,7 +17,7 @@
 <circle cx="79" cy="416" r="22" fill="#147b70"/>
 <text x="71" y="425" font-size="27" font-weight="700" fill="#ffffff">2</text>
 <text x="119" y="424" font-size="31" font-weight="650" fill="#173831">执行工作区里的 Node CLI</text>
-<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">复用已有配置，不在聊天展示密钥</text>
+<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">使用已保存的连接配置</text>
 <path d="M360 519v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
 <rect x="40" y="542" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
 <circle cx="79" cy="582" r="22" fill="#147b70"/>
@@ -30,6 +30,6 @@
 <text x="71" y="757" font-size="27" font-weight="700" fill="#ffffff">4</text>
 <text x="119" y="756" font-size="31" font-weight="650" fill="#173831">返回正文与读取回执</text>
 <text x="119" y="796" font-size="26" font-weight="400" fill="#344850">版本 / 校验词 / 完整性</text>
-<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">已验证显式读取；自动触发仍未通过。</text>
-<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">原创操作示意 · 非实机截图 · 不含私人数据</text>
+<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">日常使用：每个新聊天发送启动提示。</text>
+<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">操作示意 · Amoo 接入 Notion</text>
 </g></svg>
