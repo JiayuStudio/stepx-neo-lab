@@ -51,9 +51,9 @@
       "title": "StepX Neo Studio",
       "repository": "https://github.com/JiayuStudio/neo-studio",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-studio/README.md",
-      "release": "https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.4",
+      "release": "https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.5",
       "category": "移动开发与多模型协作",
-      "version": "1.1.4",
+      "version": "1.1.5",
       "tested_device": "STEPX Neo / StepX PZ261A",
       "tested_android": "16",
       "verified": [
@@ -64,7 +64,10 @@
         "Installed release APK SHA256 matches published artifact",
         "1.1.4: 16 Android project-trash state checks",
         "1.1.4: 20 real-device gesture/delete/restore/purge checks",
-        "Original projects/profiles/chats/usage hashes unchanged after disposable-project tests"
+        "Original projects/profiles/chats/usage hashes unchanged after disposable-project tests",
+        "1.1.5: 21 native file-transition checks and 11 on-device write-flow checks",
+        "DeepSeek edits selected local project, offline APK builds on Neo, installed button interaction passes",
+        "Studio history inspected: main usage missing, all observed subagent token fields zero; total remains unknown"
       ],
       "not_verified": [
         "Arbitrary offline Java/Kotlin/Gradle/npm compilation",
