@@ -73,7 +73,9 @@
         "1.1.7: cloud source download, new-project upload, nested text and binary read-back hashes, independent merge, conflict refusal and ZIP export on Neo",
         "1.1.7: 20 native cloud file checks and 10 transport tests; original user data preserved and temporary projects removed",
         "1.1.8: on-phone React/TSX and Tailwind compilation, offline local resources, real counter and tower-defense controls, 11 local runner checks",
-        "1.1.9: matrix touch editing, validation and offline APK; native physical display, temporary always-on and restoration; screen-off animation confirmed with per-app Neo freezer exception"
+        "1.1.9: matrix touch editing, validation and offline APK; native physical display, temporary always-on and restoration; screen-off animation confirmed with per-app Neo freezer exception",
+        "1.1.9: generated independent APK native square/X animation confirmed by user; stop clears frame and restores auto mode; installed release UI checked",
+        "1.1.9: external camera verified independent APK foreground, 104-second Home background and over-2-minute screen-off square/X animation; per-app freezer exception required; cleanup verified"
       ],
       "not_verified": [
         "Arbitrary offline Java/Kotlin/Gradle/npm compilation",
@@ -82,8 +84,7 @@
         "Fresh-device full first-time setup",
         "Complete realtime account usage, remaining plan tokens, and log availability across all projects",
         "Atomic or continuous background cloud source synchronization",
-        "Neo matrix API compatibility after firmware updates, freezer exception persistence across reboot, all-day battery performance",
-        "Independent generated APK screen-off physical animation"
+        "Neo matrix API compatibility after firmware updates, freezer exception persistence across reboot, all-day battery performance"
       ],
       "skill": "https://github.com/JiayuStudio/neo-studio/tree/main/skills/stepx-neo-matrix"
     }
