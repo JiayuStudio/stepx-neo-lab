@@ -9,6 +9,17 @@
 | 项目 | 内容 | 当前验证状态 |
 | --- | --- | --- |
 | [免 ROOT 使用 Google Play：GBox 手机教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide) | 手机下载与安装、Google 登录、应用安装、故障排查、失败组件清理 | 一台 Neo 已完成容器内登录与安装；全新系统纯手机从零流程待独立复测 |
+| [Amoo 接入 Notion：图文教程与提示词](guides/amoo-notion/README.md) | 6 张流程图、页面授权、手机导入只读 CLI、9 组提示词、私人记忆模板与新鲜度验收 | 指定工具后跨新聊天读取通过；自动读取与全新设备纯手机首次配置未完整通过 |
+
+### Amoo / Notion 工作记忆
+
+- [图文教程](guides/amoo-notion/README.md)：从私人页面、连接授权到显式读取。
+- [9 组可复制提示词](guides/amoo-notion/prompts.md)：环境核查、首次配置、日常启动、故障恢复与自动读取审计。
+- [CLI 1.0.1 源码与手机附件](downloads/amoo-notion/README.md)：与实测版字节相同，不含凭据或个人配置。
+- [下载离线图文手册与提示词包](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/amoo-notion-v1.0.0)。
+- [实测记录和复现边界](guides/amoo-notion/verification.md)。
+
+页面保持私密；本教程采用 Amoo 执行工具 → Node CLI → Notion API。每次新聊天手动触发是已验证入口，自动记忆触发需要单独验收。
 
 ### Google Play / GBox
 

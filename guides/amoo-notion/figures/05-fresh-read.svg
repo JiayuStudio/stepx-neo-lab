@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1009" role="img" aria-labelledby="title desc">
+<title id="title">用新值证明这一次读过</title><desc id="desc">校验词是测试标记，不是密码。。你在 Notion 修改内容：换版本、随机词和一条非敏感偏好；新开 Amoo 聊天：只发页面链接和读取要求，不给版本号、随机词的正确答案；查看真实调用与回执：工具、时间、版本、校验词、完整性；与你的页面逐项比对：新值一致才有本轮读取证据。操作示意，非实机截图。</desc>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f3f8f7"/><stop offset="1" stop-color="#eaf1ef"/></linearGradient></defs>
+<rect width="720" height="1009" rx="28" fill="url(#bg)"/>
+<g font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
+<rect x="40" y="36" width="8" height="34" rx="4" fill="#147b70"/>
+<text x="62" y="61" font-size="21" font-weight="650" fill="#147b70">STEPX NEO 研究所  /  图 05</text>
+<text x="40" y="121" font-size="38" font-weight="700" fill="#173831">用新值证明这一次读过</text>
+<text x="40" y="169" font-size="25" font-weight="400" fill="#344850">校验词是测试标记，不是密码。</text>
+<rect x="40" y="210" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="250" r="22" fill="#147b70"/>
+<text x="71" y="259" font-size="27" font-weight="700" fill="#ffffff">1</text>
+<text x="119" y="258" font-size="31" font-weight="650" fill="#173831">你在 Notion 修改内容</text>
+<text x="119" y="298" font-size="26" font-weight="400" fill="#344850">换版本、随机词和一条非敏感偏好</text>
+<path d="M360 353v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
+<rect x="40" y="376" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="416" r="22" fill="#147b70"/>
+<text x="71" y="425" font-size="27" font-weight="700" fill="#ffffff">2</text>
+<text x="119" y="424" font-size="31" font-weight="650" fill="#173831">新开 Amoo 聊天</text>
+<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">只发页面链接和读取要求</text>
+<text x="119" y="496" font-size="26" font-weight="400" fill="#344850">不给版本号、随机词的正确答案</text>
+<path d="M360 519v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
+<rect x="40" y="542" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="582" r="22" fill="#147b70"/>
+<text x="71" y="591" font-size="27" font-weight="700" fill="#ffffff">3</text>
+<text x="119" y="590" font-size="31" font-weight="650" fill="#173831">查看真实调用与回执</text>
+<text x="119" y="630" font-size="26" font-weight="400" fill="#344850">工具、时间、版本、校验词、完整性</text>
+<path d="M360 685v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
+<rect x="40" y="708" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="748" r="22" fill="#147b70"/>
+<text x="71" y="757" font-size="27" font-weight="700" fill="#ffffff">4</text>
+<text x="119" y="756" font-size="31" font-weight="650" fill="#173831">与你的页面逐项比对</text>
+<text x="119" y="796" font-size="26" font-weight="400" fill="#344850">新值一致才有本轮读取证据</text>
+<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">旧聊天里记得，不等于本轮重新读取。</text>
+<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">原创操作示意 · 非实机截图 · 不含私人数据</text>
+</g></svg>

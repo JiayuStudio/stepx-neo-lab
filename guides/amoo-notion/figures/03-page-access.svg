@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1009" role="img" aria-labelledby="title desc">
+<title id="title">授权一页，不是公开一页</title><desc id="desc">在 Notion 选择你自己的内部连接。。确认连接和工作区：仅启用所需的内容读取能力；打开 Content access：Edit access → 选择记忆页面；检查授权覆盖范围：父页授权可能覆盖它的子页面；保存后重新打开核对：页面仍在授权列表才算完成。操作示意，非实机截图。</desc>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f3f8f7"/><stop offset="1" stop-color="#eaf1ef"/></linearGradient></defs>
+<rect width="720" height="1009" rx="28" fill="url(#bg)"/>
+<g font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
+<rect x="40" y="36" width="8" height="34" rx="4" fill="#147b70"/>
+<text x="62" y="61" font-size="21" font-weight="650" fill="#147b70">STEPX NEO 研究所  /  图 03</text>
+<text x="40" y="121" font-size="38" font-weight="700" fill="#173831">授权一页，不是公开一页</text>
+<text x="40" y="169" font-size="25" font-weight="400" fill="#344850">在 Notion 选择你自己的内部连接。</text>
+<rect x="40" y="210" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="250" r="22" fill="#147b70"/>
+<text x="71" y="259" font-size="27" font-weight="700" fill="#ffffff">1</text>
+<text x="119" y="258" font-size="31" font-weight="650" fill="#173831">确认连接和工作区</text>
+<text x="119" y="298" font-size="26" font-weight="400" fill="#344850">仅启用所需的内容读取能力</text>
+<path d="M360 353v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
+<rect x="40" y="376" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="416" r="22" fill="#147b70"/>
+<text x="71" y="425" font-size="27" font-weight="700" fill="#ffffff">2</text>
+<text x="119" y="424" font-size="31" font-weight="650" fill="#173831">打开 Content access</text>
+<text x="119" y="464" font-size="26" font-weight="400" fill="#344850">Edit access → 选择记忆页面</text>
+<path d="M360 519v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
+<rect x="40" y="542" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="582" r="22" fill="#147b70"/>
+<text x="71" y="591" font-size="27" font-weight="700" fill="#ffffff">3</text>
+<text x="119" y="590" font-size="31" font-weight="650" fill="#173831">检查授权覆盖范围</text>
+<text x="119" y="630" font-size="26" font-weight="400" fill="#344850">父页授权可能覆盖它的子页面</text>
+<path d="M360 685v15m-6-6 6 6 6-6" fill="none" stroke="#147b70" stroke-width="3"/>
+<rect x="40" y="708" width="640" height="138" rx="20" fill="#fff" stroke="#cbded8"/>
+<circle cx="79" cy="748" r="22" fill="#147b70"/>
+<text x="71" y="757" font-size="27" font-weight="700" fill="#ffffff">4</text>
+<text x="119" y="756" font-size="31" font-weight="650" fill="#173831">保存后重新打开核对</text>
+<text x="119" y="796" font-size="26" font-weight="400" fill="#344850">页面仍在授权列表才算完成</text>
+<text x="40" y="884" font-size="25" font-weight="600" fill="#147b70">页面入口：••• → 连接 → 添加连接。</text>
+<text x="40" y="927" font-size="21" font-weight="400" fill="#61756f">原创操作示意 · 非实机截图 · 不含私人数据</text>
+</g></svg>

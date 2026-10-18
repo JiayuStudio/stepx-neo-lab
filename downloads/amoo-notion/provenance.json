@@ -1,0 +1,13 @@
+{
+  "name": "Amoo Notion CLI",
+  "version": "1.0.1",
+  "published_with_permission": "2026-10-18",
+  "source": "Single-file build of the maintainer-owned CLI previously verified through Amoo tool execution on a STEPX Neo.",
+  "bytes": 18823,
+  "sha256": "bc1fa570e86bd2b23b72d6f3d2f979f8b6934d0a3fba873d3e9e9ec1003717b3",
+  "runtime": "Node.js >=22",
+  "third_party_runtime_dependencies": [],
+  "private_configuration_included": false,
+  "changed_from_verified_build": false,
+  "note": "The .js.txt attachment is byte-identical to .js. No npm or skill-market publication."
+}

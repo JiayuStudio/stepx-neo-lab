@@ -12,8 +12,40 @@
       "tested_android": "16",
       "tested_stepaos": "1.0.0.2",
       "tested_gbox": "1.8.4.02",
-      "verified": ["Google account login inside container", "App installation inside container"],
-      "not_verified": ["Fresh factory-state phone-only end-to-end setup", "Full native system GMS", "All application features"]
+      "verified": [
+        "Google account login inside container",
+        "App installation inside container"
+      ],
+      "not_verified": [
+        "Fresh factory-state phone-only end-to-end setup",
+        "Full native system GMS",
+        "All application features"
+      ]
+    },
+    {
+      "title": "Amoo 接入 Notion：图文教程与提示词",
+      "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
+      "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/amoo-notion/README.md",
+      "category": "Amoo 与知识管理",
+      "guide_version": "1.0.0",
+      "tool_version": "1.0.1",
+      "method": "Amoo execution tool -> Node CLI -> Notion API",
+      "illustrations": 6,
+      "prompt_templates": 9,
+      "tested_device": "STEPX Neo / StepX PZ261A",
+      "tested_android": "16",
+      "tested_stepaos": "1.0.0.2",
+      "verified": [
+        "Explicit private-page reading with unprompted verification values",
+        "New-chat reading when reusing existing tool and configuration",
+        "CLI 1.0.1 version/config/self/read tool receipts on phone"
+      ],
+      "not_verified": [
+        "Automatic read at every new chat",
+        "Full first-time phone-only setup on a fresh device",
+        "Each rewritten prompt independently retested on device",
+        "Notion page writes or installed Notion MCP/Skill"
+      ]
     }
   ]
 }

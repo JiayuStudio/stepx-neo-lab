@@ -11,3 +11,4 @@ Icon?
 .env*
 .private/
 publication-audit/
+release-assets/
