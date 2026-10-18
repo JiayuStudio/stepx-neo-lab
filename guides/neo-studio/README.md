@@ -1,8 +1,8 @@
 # StepX Neo Studio
 
-独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.10**，2026-10-18。
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.2**，2026-10-19。
 
-[公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.1.10) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+[公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.0) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
 
 ## 可以做什么
 
@@ -13,11 +13,19 @@
 - 生成App可经确认调用工作台AI接口、回传调试报告；Amoo任务通过可见分享入口交接，发送与结果回填仍需人工核对。
 - 在App中检查GitHub正式Release，查看说明、下载并验证APK，再通过Android确认更新。
 
-## 背屏点阵与 AI 技能
+## 1.2 端侧开发与连接器
 
-新增17×23点阵工坊、多帧动画、AI项目修改、Studio上传和本机独立APK。Neo原生通道已验证无需云端密钥即可显示；播放期间临时常亮，停止恢复。熄屏持续动画已通过用户观察，需要为播放App单独配置Neo冻结例外，普通后台权限不足。
+- 对 AI 说“新建项目”可创建独立本地项目并直接写入代码，后续对话继续修改该项目。意外中断会给出恢复提示，避免把未确认的 Token 当成已知消耗。
+- 本地项目列表支持单个上传与全部上传同步，逐项显示结果；取消停止后续排队，冲突项目不会覆盖云端内容。未知创建结果需先核对，避免重复建项。
+- 49 项原生检查与 9 个 Node 测试文件通过；实机验证创建、修改、上传队列、冲突拒绝、独立便签 App 保存重载和调试报告回传。
 
-[下载与使用 stepx-neo-matrix 技能](https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix)：包括原生调用、项目JSON、运行壳接口、校验器和可撤销的ADB后台调试工具。可交给Studio或其他AI读取；实际执行需要手机/ADB或App桥。固件升级兼容、重启保留和全天功耗未验。
+- Gemma 4 E4B 已在 Neo GPU 实际生成中文回复及计数器代码，32K上下文配置、MTP、温度1/Top-K64/Top-P0.95。实测本轮生成约18.6 Token/s，速度随提示长度与温度状态变化；未执行完整32K长输入压力测试。
+- 支持 Hugging Face 文件列表、断点下载、SHA-256校验和自定义 `.litertlm` 文件导入。当前测试手机直连HF超时，模型经本地传入并核验哈希后运行；手机直连完整下载尚未验收。
+- AI可列出、读取、搜索和暂存项目文件，调用本机编译检查、运行预览、构建根目录Web APK及读取调试日志。实时新增/修改代码预览，项目绿色闪烁状态提示。
+- 官方目录包含39个连接器、358项能力说明，可同步、搜索及纳入项目上下文。Gemma实际调用搜索和详情工具通过；这不代表39个连接器均已授权或执行验收。详见[连接器目录](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/连接器目录.md)。
+- 对话历史侧边栏支持搜索、多选删除；向下三角按钮一键回到底部；所有项目自动汇总Token，本地推理、第三方API、阶跃API、Studio日志分开。
+- App内背屏点阵工坊已移除，已有文件保留。独立[点阵AI技能](https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix)及1.1.9历史验证资料保留。
+
 
 ## 在 Neo 本地运行
 
@@ -52,7 +60,7 @@
 
 1. 在 Studio 登录并打开要读取的具体项目，等正在生成的任务完成。
 2. 到 Token 页点击「读取 Studio 当前项目」，确认后自动发送只读诊断并等待结果。需要保持前台，诊断本身会消耗 Studio 额度。
-3. 查看非缓存输入、输出、缓存读取/写入、去重请求数，以及**日志截止时间和读取时间**。重复读取替换旧快照，最近30个项目可切换，报告可导出JSON。
+3. 查看非缓存输入、输出、缓存读取/写入、去重请求数，以及**日志截止时间和读取时间**。重复读取替换旧快照，全部已读取项目可切换，报告可导出JSON。
 
 1.1.6已在Neo实机验证：固定扫描脚本 → Bash真实工具输出 → 校验 → App保存与显示，重复读取不累加。已有草稿或任务会保留，未确认送达不自动重发。失败保留旧报告；应用重启也不会重复发起诊断。界面显示的范围只来自当前项目已落盘日志，可能滞后、轮换或缺失，通常不含本次诊断；不是账号截至现在的完整消耗、套餐总额度或余额。官方历史接口仍未提供主会话Token，因此旧“检查历史接口”仍保留为诊断入口。
 
@@ -68,7 +76,7 @@ Studio项目报告与DeepSeek等第三方API、阶跃直连API完全分开；今
 
 ## 安装和更新
 
-首次在发布页下载 `StepXNeoStudio-1.1.8-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
+首次在发布页下载 `StepXNeoStudio-1.1.10-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
 
 1. 打开右上角“⋯”，在菜单底部选“检查更新”；使用说明页也有入口。
 2. 点击检查，出现新版本后查看说明并下载。

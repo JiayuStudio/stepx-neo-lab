@@ -8,13 +8,13 @@ JIAYU STUDIO 整理的 STEPX Neo 使用教程与工具合集。
 | --- | --- | --- |
 | [Google Play / GBox 手机教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide) | 免 ROOT 安装、Google 登录、应用管理与故障处理 | 容器内登录和安装通过 |
 | [Amoo 接入 Notion](guides/amoo-notion/README.md) | 6 张流程图、只读 CLI、9 组提示词与记忆页模板 | 明确调用后读取成功，支持跨新聊天复用 |
-| [StepX Neo Studio](guides/neo-studio/README.md) | Neo客户端、本地Web开发、多API协作、点阵工坊与可复用AI技能、Token分账和应用内更新 | AI改文件→本机APK→安装操作已验证；Studio项目SDK日志Token已实机读出，账户余额仍未知 |
+| [StepX Neo Studio](guides/neo-studio/README.md) | Neo客户端、端侧Gemma、本地开发工具、官方连接器目录、多模型协作和Token分账 | 端侧模型已生成代码；本机工具编译/打包与连接器查询已验证，账户余额仍未知 |
 
 ### StepX Neo Studio
 
 - [功能、安装与应用内更新](guides/neo-studio/README.md)
 - [公开源码](https://github.com/JiayuStudio/stepx-neo-studio)
-- [正式APK 1.1.10](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.1.10)
+- [正式APK 1.2](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.0)
 
 ### Amoo / Notion
 
