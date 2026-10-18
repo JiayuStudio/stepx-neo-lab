@@ -1,15 +1,15 @@
 # StepX Neo Studio
 
-独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.5**，2026-10-18。
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.6**，2026-10-18。
 
-[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.5) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.6) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
 
 ## 可以做什么
 
 - Neo屏幕和键盘适配，紧凑布局，灰橙配色与轻拟物图标。
 - 官方Studio登录与云端构建；本地HTML/CSS/JS项目编辑、预览、导入导出，并通过预编译运行壳离线生成APK。
 - 自定义HTTPS AI API、检测与选择模型、多配置；DeepSeek和Studio可围绕同一项目进行前台有界的规划、开发、审查往返。
-- Step／Studio和第三方API用量分开记录。新增“检查 Studio 用量”：读取当前项目的官方历史数字字段，显示检查时间和范围；主会话用量缺失、子任务字段全为0时显示未知，不伪造总数。
+- Step／Studio和第三方API用量分开记录。支持读取当前Studio项目已落盘SDK日志的真实Token，显示输入/输出/缓存和统计范围；账户余额仍未知，不伪造总数。
 - 生成App可经确认调用工作台AI接口、回传调试报告；Amoo任务通过可见分享入口交接，发送与结果回填仍需人工核对。
 - 在App中检查GitHub正式Release，查看说明、下载并验证APK，再通过Android确认更新。
 
@@ -20,9 +20,15 @@
 3. 点“修改此项目”，结果通过校验后写回原项目，保留最近5次快照；切换项目不会让结果写错地方。文件已被其他编辑修改、输出截断、取消或格式不合法时不覆盖。
 4. 展开“项目操作与写入说明”，可以查看文件、预览、恢复文件，或进入本机/云端构建。协作页“实现任务”使用同一写入通道。
 
-## Studio Token 检查
+## Studio 项目 Token
 
-先在 Studio 打开具体项目，再到 Token 页点击“检查 Studio 用量”。2026-10-18实机检查5个项目：主会话没有返回输入/输出Token，子任务totalTokens均为0；因此真实Studio总量仍未知。若以后返回非零子任务值，只显示已报告部分，不冒充总账。此处使用观察到的站内只读接口，非公开稳定SDK，登录或接口变化会给出失败原因。与DeepSeek等第三方API完全分账。
+1. 在 Studio 登录并打开要读取的具体项目，等正在生成的任务完成。
+2. 到 Token 页点击「读取 Studio 当前项目」，确认后自动发送只读诊断并等待结果。需要保持前台，诊断本身会消耗 Studio 额度。
+3. 查看非缓存输入、输出、缓存读取/写入、去重请求数，以及**日志截止时间和读取时间**。重复读取替换旧快照，最近30个项目可切换，报告可导出JSON。
+
+1.1.6已在Neo实机验证：固定扫描脚本 → Bash真实工具输出 → 校验 → App保存与显示，重复读取不累加。已有草稿或任务会保留，未确认送达不自动重发。失败保留旧报告；应用重启也不会重复发起诊断。界面显示的范围只来自当前项目已落盘日志，可能滞后、轮换或缺失，通常不含本次诊断；不是账号截至现在的完整消耗、套餐总额度或余额。官方历史接口仍未提供主会话Token，因此旧“检查历史接口”仍保留为诊断入口。
+
+Studio项目报告与DeepSeek等第三方API、阶跃直连API完全分开；今日/累计与“导出API CSV”只筛选API账本，项目报告另行导出。依赖当日观察到的站内接口和SDK日志，不是官方公开稳定SDK。其他项目的日志可读性仍需逐项验证。
 
 ## 本地项目删除
 
@@ -34,7 +40,7 @@
 
 ## 安装和更新
 
-首次在发布页下载 `StepXNeoStudio-1.1.5-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
+首次在发布页下载 `StepXNeoStudio-1.1.6-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
 
 1. 打开右上角“⋯”，在菜单底部选“检查更新”；使用说明页也有入口。
 2. 点击检查，出现新版本后查看说明并下载。

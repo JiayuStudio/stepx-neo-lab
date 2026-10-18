@@ -51,9 +51,9 @@
       "title": "StepX Neo Studio",
       "repository": "https://github.com/JiayuStudio/neo-studio",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-studio/README.md",
-      "release": "https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.5",
+      "release": "https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.6",
       "category": "移动开发与多模型协作",
-      "version": "1.1.5",
+      "version": "1.1.6",
       "tested_device": "STEPX Neo / StepX PZ261A",
       "tested_android": "16",
       "verified": [
@@ -67,13 +67,15 @@
         "Original projects/profiles/chats/usage hashes unchanged after disposable-project tests",
         "1.1.5: 21 native file-transition checks and 11 on-device write-flow checks",
         "DeepSeek edits selected local project, offline APK builds on Neo, installed button interaction passes",
-        "Studio history inspected: main usage missing, all observed subagent token fields zero; total remains unknown"
+        "Studio history inspected: main usage missing, all observed subagent token fields zero; total remains unknown",
+        "1.1.6: cold-start Studio project SDK usage read, streaming de-duplication, repeat snapshot without accumulation, JSON export and installed release persistence"
       ],
       "not_verified": [
         "Arbitrary offline Java/Kotlin/Gradle/npm compilation",
         "Background autonomous Amoo control",
         "Official Studio token billing access",
-        "Fresh-device full first-time setup"
+        "Fresh-device full first-time setup",
+        "Complete realtime account usage, remaining plan tokens, and log availability across all projects"
       ]
     }
   ]
