@@ -51,9 +51,9 @@
       "title": "StepX Neo Studio",
       "repository": "https://github.com/JiayuStudio/stepx-neo-studio",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-studio/README.md",
-      "release": "https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.1",
+      "release": "https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3",
       "category": "移动开发与多模型协作",
-      "version": "1.2.1",
+      "version": "1.2.3",
       "tested_device": "STEPX Neo / StepX PZ261A",
       "tested_android": "16",
       "verified": [
@@ -83,7 +83,10 @@
         "1.1.10: natural-language project creation and subsequent targeted edits; interrupted generation recovers without duplicate usage",
         "1.1.10: single and batch cloud upload on Neo, per-project conflict refusal; independent generated note APK save/reload and debug report return",
         "1.1.10: installed final release hash matches APK; original local projects, deleted items and provider profiles preserved after demo cleanup",
-        "1.2.1: cloud-synced React/TSX frontend compiled into APK on Neo; direct system install and byte-identical APK export; actual game controls and seven packaged-resource checks passed"
+        "1.2.1: cloud-synced React/TSX frontend compiled into APK on Neo; direct system install and byte-identical APK export; actual game controls and seven packaged-resource checks passed",
+        "1.2.3: on-phone OmniaKey gpt-image-2 generation, local image save and automatic reference, offline preview, native APK build and installed image display",
+        "1.2.3: 11 native image checks; controlled API tests cover AI tools, synchronous and asynchronous images, and resume without duplicate submission",
+        "1.2.3: cloud relay transport fixtures and native association/snapshot verification checks"
       ],
       "not_verified": [
         "Arbitrary offline Java/Kotlin/Gradle/npm compilation",
@@ -95,7 +98,9 @@
         "Neo matrix API compatibility after firmware updates, freezer exception persistence across reboot, all-day battery performance",
         "Full 32K input stress test and all custom model formats",
         "Full model download through the phone Hugging Face connection; observed timeout",
-        "Execution and authorization of every catalog connector"
+        "Execution and authorization of every catalog connector",
+        "Live-account end-to-end one-click cloud development relay",
+        "All image API providers and models; reference-image editing and video generation"
       ],
       "skill": "https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix"
     }

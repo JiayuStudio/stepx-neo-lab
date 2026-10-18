@@ -1,8 +1,8 @@
 # StepX Neo Studio
 
-独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.2.1**，2026-10-19。
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.2.3**，2026-10-19。
 
-[公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.1) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+[公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
 
 ## 可以做什么
 
@@ -12,6 +12,23 @@
 - Step／Studio和第三方API用量分开记录。支持读取当前Studio项目已落盘SDK日志的真实Token，显示输入/输出/缓存和统计范围；账户余额仍未知，不伪造总数。
 - 生成App可经确认调用工作台AI接口、回传调试报告；Amoo任务通过可见分享入口交接，发送与结果回填仍需人工核对。
 - 在App中检查GitHub正式Release，查看说明、下载并验证APK，再通过Android确认更新。
+
+## 1.2.3 绘图资源与云端接力
+
+### 生成图片并打包进 App
+
+1. 打开本地项目，在“美术资源 → 绘图 API”保存服务地址、密钥和模型。支持 OmniaKey、Images 兼容接口和自定义 JSON 绘图 API；可检测候选模型或手动输入模型 ID。
+2. 在“美术资源”选择配置，输入描述并生成。图片直接保存到当前项目，可自动插入 HTML；TSX、CSS 等可通过唯一占位符引用本地图片路径。
+3. 开启“允许 AI 助手调用绘图 API”，助手即可在项目开发时查询、生成和引用图片。图片参与本地预览、项目导出、云端同步和 APK 打包。
+4. 异步任务可停止等待并恢复原任务。停止等待不会取消服务商任务或费用；恢复时不另建重复任务。
+
+Neo 实机已验证 OmniaKey / `gpt-image-2` 的1024×1024图片生成、自动引用、离线预览、手机构建与独立 APK 图片显示。AI 工具循环及自定义异步接口使用可控服务验证，未逐一测试所有候选模型。输出为最长边1024px、单文件不超过1MB的PNG；暂不支持参考图编辑或视频生成。服务明确返回的Token计入第三方API账本，缺失时标记未知。
+
+### 一键云端接力开发
+
+在本地项目列表点“云端接力”，或在编辑器、长按菜单选择“云端接力开发”。上传当前源码和图片，全部回读核验后打开同一个 Studio 项目，填入接力草稿；补充具体需求后发送。首次自动创建并关联项目；已有草稿会先询问是否替换。
+
+需要登录官方 Studio。出现冲突、文件变化、部分上传失败或未确认的上次创建结果时停止接力。已通过上传模拟服务和原生状态校验，真实账号完整接力仍待验证。
 
 ## 1.2.1 本机打包与直接安装
 
@@ -84,7 +101,7 @@ Studio项目报告与DeepSeek等第三方API、阶跃直连API完全分开；今
 
 ## 安装和更新
 
-首次在发布页下载 `StepXNeoStudio-1.2.1-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
+首次在发布页下载 `StepXNeoStudio-1.2.3-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
 
 1. 打开右上角“⋯”，在菜单底部选“检查更新”；使用说明页也有入口。
 2. 点击检查，出现新版本后查看说明并下载。
