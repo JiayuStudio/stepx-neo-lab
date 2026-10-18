@@ -51,9 +51,9 @@
       "title": "StepX Neo Studio",
       "repository": "https://github.com/JiayuStudio/neo-studio",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-studio/README.md",
-      "release": "https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.6",
+      "release": "https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.7",
       "category": "移动开发与多模型协作",
-      "version": "1.1.6",
+      "version": "1.1.7",
       "tested_device": "STEPX Neo / StepX PZ261A",
       "tested_android": "16",
       "verified": [
@@ -68,14 +68,18 @@
         "1.1.5: 21 native file-transition checks and 11 on-device write-flow checks",
         "DeepSeek edits selected local project, offline APK builds on Neo, installed button interaction passes",
         "Studio history inspected: main usage missing, all observed subagent token fields zero; total remains unknown",
-        "1.1.6: cold-start Studio project SDK usage read, streaming de-duplication, repeat snapshot without accumulation, JSON export and installed release persistence"
+        "1.1.6: cold-start Studio project SDK usage read, streaming de-duplication, repeat snapshot without accumulation, JSON export and installed release persistence",
+        "1.1.7: persistent AI assistant toggle hides navigation and collaboration entry",
+        "1.1.7: cloud source download, new-project upload, nested text and binary read-back hashes, independent merge, conflict refusal and ZIP export on Neo",
+        "1.1.7: 20 native cloud file checks and 10 transport tests; original user data preserved and temporary projects removed"
       ],
       "not_verified": [
         "Arbitrary offline Java/Kotlin/Gradle/npm compilation",
         "Background autonomous Amoo control",
         "Official Studio token billing access",
         "Fresh-device full first-time setup",
-        "Complete realtime account usage, remaining plan tokens, and log availability across all projects"
+        "Complete realtime account usage, remaining plan tokens, and log availability across all projects",
+        "Atomic or continuous background cloud source synchronization"
       ]
     }
   ]
