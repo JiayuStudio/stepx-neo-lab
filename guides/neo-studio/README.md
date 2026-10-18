@@ -1,8 +1,8 @@
 # StepX Neo Studio
 
-独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.7**，2026-10-18。
+独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.1.8**，2026-10-18。
 
-[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.7) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
+[公开源码与完整文档](https://github.com/JiayuStudio/neo-studio) · [下载正式APK](https://github.com/JiayuStudio/neo-studio/releases/tag/v1.1.8) · [来源与许可](https://github.com/JiayuStudio/neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)
 
 ## 可以做什么
 
@@ -12,6 +12,12 @@
 - Step／Studio和第三方API用量分开记录。支持读取当前Studio项目已落盘SDK日志的真实Token，显示输入/输出/缓存和统计范围；账户余额仍未知，不伪造总数。
 - 生成App可经确认调用工作台AI接口、回传调试报告；Amoo任务通过可见分享入口交接，发送与结果回填仍需人工核对。
 - 在App中检查GitHub正式Release，查看说明、下载并验证APK，再通过Android确认更新。
+
+## 在 Neo 本地运行
+
+编辑器点“本地运行 ▷”，云端同步的 React/TSX 项目也会在手机编译和执行。编译器、Tailwind 3 和常用依赖已内置，不借助 Mac 或云端构建。默认离线；需要 HTTPS 接口时手动开启“联网”，仍受 CORS 限制。修改源码后关闭预览再运行；“重载”只重跑当前快照。
+
+已实测计数器真实触摸、塔防启动/开始波次/暂停/回到主菜单，以及嵌套资源、TSX、Tailwind、缺依赖/版本错误等11项检查。未内置的npm包会明确报错；Vite/Node/原生桥接不执行。复杂源码独立APK仍由Studio构建，原根目录Web项目离线打包保留。界面以StepX Neo为品牌，不添加模型厂商联名宣传。
 
 ## AI 助手开关与云端源码
 
@@ -34,7 +40,7 @@
 
 2026-10-18 在 Neo 实机「设置 → STEPX 账号 → 订阅和权益」核对，官方规则为**每月 100 亿 Token，激活后连续发放 12 个月**，覆盖 Neo 的 AI 服务和 Step Studio 创作能力。该页面展示权益说明，没有显示本账号当前周期、已发放额度或剩余额度。
 
-**1.1.7 仍不能读取套餐总额和剩余额度。** 下方项目日志功能只统计局部消耗，不能用于推算套餐余额。尚未定位到可用的官方账号余额接口；StepFun Step Plan、开放平台余额也不能代替 Neo 套餐账本。
+**1.1.8 仍不能读取套餐总额和剩余额度。** 下方项目日志功能只统计局部消耗，不能用于推算套餐余额。尚未定位到可用的官方账号余额接口；StepFun Step Plan、开放平台余额也不能代替 Neo 套餐账本。
 
 ## Studio 项目 Token
 
@@ -56,7 +62,7 @@ Studio项目报告与DeepSeek等第三方API、阶跃直连API完全分开；今
 
 ## 安装和更新
 
-首次在发布页下载 `StepXNeoStudio-1.1.7-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
+首次在发布页下载 `StepXNeoStudio-1.1.8-release.apk` 并安装。已有版本直接覆盖安装，不要卸载；包名和签名一致时保留原项目、API配置及Token记录。别人安装这个APK不会得到开发者的个人配置或密钥。
 
 1. 打开右上角“⋯”，在菜单底部选“检查更新”；使用说明页也有入口。
 2. 点击检查，出现新版本后查看说明并下载。
