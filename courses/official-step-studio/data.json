@@ -888,5 +888,133 @@
     "device_tested": false,
     "apk_installed": false,
     "app_published": false
-  }
+  },
+  "knowledge_source": {
+    "path": "../../official/step-studio-knowledge/data.json",
+    "basis": "provided PDF, official group origin confirmed by provider",
+    "recorded_at": "2026-10-20",
+    "independently_verified_group_message": false
+  },
+  "learning_routes": [
+    {
+      "id": "application",
+      "lessons": [
+        "00-start.md",
+        "01-create.md",
+        "02-connectors.md",
+        "03-iterate.md",
+        "04-test.md",
+        "connector-index.md",
+        "06-capstone.md",
+        "07-release.md"
+      ]
+    },
+    {
+      "id": "app-data",
+      "lessons": [
+        "08-app-data.md",
+        "07-release.md"
+      ]
+    },
+    {
+      "id": "agent",
+      "lessons": [
+        "00-start.md",
+        "09-agent.md",
+        "07-release.md"
+      ]
+    },
+    {
+      "id": "skill",
+      "lessons": [
+        "00-start.md",
+        "10-skill.md",
+        "07-release.md"
+      ]
+    }
+  ],
+  "knowledge_integration": [
+    {
+      "path": "00-start.md",
+      "source_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "01-create.md",
+      "source_pages": [
+        10,
+        11
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "03-iterate.md",
+      "source_pages": [
+        12,
+        13,
+        14
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "04-test.md",
+      "source_pages": [
+        9,
+        15
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "07-release.md",
+      "source_pages": [
+        15,
+        16,
+        19,
+        20,
+        22,
+        23
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "08-app-data.md",
+      "source_pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "09-agent.md",
+      "source_pages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "10-skill.md",
+      "source_pages": [
+        21,
+        22,
+        23
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    }
+  ]
 }

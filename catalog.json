@@ -186,7 +186,14 @@
         "百度网盘",
         "支付宝"
       ],
-      "verification_status": "Official pages reviewed; classroom case recorded separately; connector lessons not individually device-tested"
+      "verification_status": "Official pages reviewed; classroom case recorded separately; connector lessons not individually device-tested",
+      "learning_routes": [
+        "application",
+        "agent",
+        "skill"
+      ],
+      "knowledge_integration": "Official group PDF adapted into lessons 00, 01, 03, 04, 07 and new lessons 08–10",
+      "new_exercises_verified": false
     },
     {
       "title": "DeepSeek API Key 申请与配置",

@@ -44,3 +44,5 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 ## DeepSeek API 选修
 
 - [申请与配置教程](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/deepseek-api/README.md)：2026-10-20 核对官方文档、创建弹窗与自研 Studio 1.2.3 设置源码；未新建 Key、充值或付费调用。独立选修，不改变其他连接器课程的暂缓范围。
+
+课程现已融入官方知识库：00/01/03/04/07 吸收基础与流程，08 为无支付课程目录与后台，09 为会议纪要智能体，10 为社媒文案技能。data.json 的 learning_routes 与 knowledge_integration 提供路线和来源页码。新增练习仅按资料改编，未创建或执行；不要将课程案例中的既有计算器验证外推到三门新课。
