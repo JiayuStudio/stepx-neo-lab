@@ -123,3 +123,7 @@ Studio项目报告与DeepSeek等第三方API、阶跃直连API完全分开；今
 ## 来源
 
 参考 [ra1nzzz/stepstudio-apk](https://github.com/ra1nzzz/stepstudio-apk) 的WebView客户端思路和原APK实机对照；未复制其源码、图标或二进制。实际复用apksig-android 4.4.0（Apache 2.0）用于APK签名与验证；其他参考和边界见源码仓库ATTRIBUTION.md。图标为本项目生成资源，未使用官方商标。
+
+## 第一次配置 DeepSeek
+
+从[API Key 申请与配置教程](../deepseek-api/README.md)开始，按模型与 API 页面完成保存、检测与短请求测试。

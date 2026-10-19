@@ -187,6 +187,24 @@
         "支付宝"
       ],
       "verification_status": "Official pages reviewed; classroom case recorded separately; connector lessons not individually device-tested"
+    },
+    {
+      "title": "DeepSeek API Key 申请与配置",
+      "path": "guides/deepseek-api/README.md",
+      "section": "guides",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "guide",
+      "updated": "2026-10-20",
+      "verified": [
+        "Official API documentation reviewed",
+        "Key creation dialog reviewed without creating a key",
+        "StepX Neo Studio 1.2.3 configuration source reviewed"
+      ],
+      "not_verified": [
+        "New account registration",
+        "Key creation and paid API call",
+        "Fresh-device end-to-end setup"
+      ]
     }
   ],
   "sections": [

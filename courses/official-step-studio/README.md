@@ -49,3 +49,7 @@
 ## 官方知识库补充阅读
 
 [官方群发布的四章知识库文字版](../../official/step-studio-knowledge/README.md)涵盖应用、智能体与技能三条路线。来源由文件提供者确认，原群发布时间未提供；与研究所编写的本课程分别标注。
+
+## 选修：独立配置 DeepSeek API
+
+需要在兼容客户端或自研 StepX Neo Studio 使用自己的 DeepSeek Key，可读[申请与配置教程](../../guides/deepseek-api/README.md)。这不是官方网页更换后端模型的步骤；其他凭证课程仍暂缓。

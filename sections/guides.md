@@ -34,3 +34,7 @@
 ## 官方平台新手课
 
 [官方 Step Studio 新手课程](../courses/official-step-studio/README.md)：真实网页截图、需求拆解、提示词、31 个连接器分阶段练习和课堂案例。课程由研究所编写，和自研 Studio 教程分别阅读。
+
+## AI 接口入门
+
+[DeepSeek API Key 申请与配置](../guides/deepseek-api/README.md)：官方平台申请、通用配置、自研 Studio 操作与错误排查。

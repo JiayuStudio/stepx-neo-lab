@@ -40,3 +40,7 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [来源与页码索引](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/official/step-studio-knowledge/data.json)
 
 来源为维护者提供并确认来自官方群的 PDF；原群消息未独立核验、原发布时间未知。收录日期 2026-10-20 不等于发布时间。正文是原资料口径，不是新实测；支付与自行申请凭证课程仍暂缓。
+
+## DeepSeek API 选修
+
+- [申请与配置教程](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/deepseek-api/README.md)：2026-10-20 核对官方文档、创建弹窗与自研 Studio 1.2.3 设置源码；未新建 Key、充值或付费调用。独立选修，不改变其他连接器课程的暂缓范围。
