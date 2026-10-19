@@ -6,6 +6,7 @@ JIAYU STUDIO 整理的 STEPX Neo 使用教程与工具合集。
 
 | 项目 | 内容 | 实测结果 |
 | --- | --- | --- |
+| [Amoo 能力研究](guides/amoo-capabilities/README.md) | 通俗版与专业版：能力边界、调用链、接口与复现步骤 | 原稿记录打开应用可用，手机 GUI 未触发；本次发布未复测 |
 | [Google Play / GBox 手机教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide) | 免 ROOT 安装、Google 登录、应用管理与故障处理 | 容器内登录和安装通过 |
 | [Amoo 接入 Notion](guides/amoo-notion/README.md) | 6 张流程图、只读 CLI、9 组提示词与记忆页模板 | 明确调用后读取成功，支持跨新聊天复用 |
 | [StepX Neo Studio](guides/neo-studio/README.md) | Neo客户端、端侧AI、本地开发、绘图API、云端接力和Token分账 | 绘图生成、自动引用、离线预览和独立APK图片显示已实测；云端接力完整流程待验 |

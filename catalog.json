@@ -123,6 +123,17 @@
         "Automatic boot recovery",
         "All firmware versions and freezer-exception persistence"
       ]
+    },
+    {
+      "title": "Amoo 能力研究",
+      "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/amoo-capabilities/README.md",
+      "category": "Amoo 能力研究",
+      "date": "2026-10-19",
+      "editions": [
+        "通俗版",
+        "专业版"
+      ],
+      "evidence": "原稿记录；本次发布未复测；原始日志和截图未附"
     }
   ]
 }
