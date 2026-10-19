@@ -211,8 +211,51 @@
       "title": "官方群信息",
       "path": "sections/official-updates.md",
       "group": "official"
+    },
+    {
+      "id": "library",
+      "title": "资料库",
+      "path": "sections/library.md",
+      "group": "reference"
     }
   ],
   "community_apks": [],
-  "official_updates": []
+  "official_updates": [],
+  "collections": [
+    {
+      "id": "amoo-reference",
+      "title": "Amoo 使用资料库",
+      "section": "library",
+      "path": "library/amoo/README.md",
+      "content_origin": "provided_documents",
+      "artifact_type": "reference_collection",
+      "source_author": "未明确标注",
+      "official": false,
+      "source_updated": "2026-10-20",
+      "publication_updated": "2026-10-20",
+      "verification": "Converted and checked against provided PDFs; no new device test or raw-log verification",
+      "data": "library/amoo/data.json",
+      "documents": [
+        {
+          "title": "一句话清单",
+          "path": "library/amoo/quick-start.md",
+          "source_pages": 4
+        },
+        {
+          "title": "原子能力提示词手册",
+          "path": "library/amoo/manual/README.md",
+          "source_pages": 17,
+          "prompt_entries": 133
+        },
+        {
+          "title": "实测结果",
+          "path": "library/amoo/test-results.md",
+          "source_pages": 6,
+          "cases": 65,
+          "additional_not_run_categories": 12
+        }
+      ]
+    }
+  ],
+  "text_index": "llms.txt"
 }

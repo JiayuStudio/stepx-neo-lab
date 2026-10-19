@@ -17,6 +17,8 @@
 
 ## Amoo 与知识管理
 
+想查日常说法或新收录的 PDF 文字版，请到独立的 [Amoo 使用资料库](../library/amoo/README.md)。该组按提供资料标注来源，与本区原创内容分开。
+
 - [Amoo 能力研究](../guides/amoo-capabilities/README.md)：通俗版与专业版，说明能力边界、调用链和复现方法；沿用原稿记录，本次整理未复测。
 - [Amoo 接入 Notion](../guides/amoo-notion/README.md)：图文接入、只读 CLI、提示词和记忆页模板。
 - [Notion 实测记录](../guides/amoo-notion/verification.md)：明确调用读取及新聊天复用已通过，自动读取与全新设备首次配置仍有待验项。
