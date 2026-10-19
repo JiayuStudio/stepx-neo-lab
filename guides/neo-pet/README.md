@@ -8,6 +8,10 @@
 
 [观看／下载60秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)（动画演示，非真机实拍；Suno配乐）
 
+## 自己开发
+
+[背屏点阵开发实战](development.md) · [可复制的 Step Studio 提示词](studio-prompts.md) · [游戏分区](../../sections/games.md)
+
 ## 玩法
 
 - 喂食、陪玩、洗澡、休息、拥抱、探索，照顾五项需求。

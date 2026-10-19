@@ -1,53 +1,36 @@
 # StepX Neo 研究所
 
-JIAYU STUDIO 整理的 STEPX Neo 使用教程与工具合集。
+JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。先按用途进入分区，再查看项目的安装方法和验证记录。
 
-## 研究目录
+## 分区导航
 
-| 项目 | 内容 | 实测结果 |
+| 分区 | 去这里做什么 | 已收录 |
 | --- | --- | --- |
-| [Amoo 能力研究](guides/amoo-capabilities/README.md) | 通俗版与专业版：能力边界、调用链、接口与复现步骤 | 原稿记录打开应用可用，手机 GUI 未触发；本次发布未复测 |
-| [Google Play / GBox 手机教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide) | 免 ROOT 安装、Google 登录、应用管理与故障处理 | 容器内登录和安装通过 |
-| [Amoo 接入 Notion](guides/amoo-notion/README.md) | 6 张流程图、只读 CLI、9 组提示词与记忆页模板 | 明确调用后读取成功，支持跨新聊天复用 |
-| [StepX Neo Studio](guides/neo-studio/README.md) | Neo客户端、端侧AI、本地开发、绘图API、云端接力和Token分账 | 绘图生成、自动引用、离线预览和独立APK图片显示已实测；云端接力完整流程待验 |
-| [拓麻歌子 · Neo 背屏电子宠物](guides/neo-pet/README.md) | Mori 养成、小游戏、换装与正反面同步的点阵宠物 | 0.3.4 双角色、孵化与耳机；用户确认真机背屏及锁屏动画成功；长期耗电待测 |
+| 🎮 [游戏](sections/games.md) | 下载游戏、了解玩法与背屏效果 | 拓麻歌子 · Neo 背屏电子宠物 |
+| 📱 [APP](sections/apps.md) | 安装应用、查看功能和更新方式 | StepX Neo Studio |
+| 🛠️ [开发工具与模板](sections/tools.md) | 找源码、接口参考与可复制提示词 | 背屏开发、Studio 提示词、Notion CLI |
+| 📚 [教程与研究](sections/guides.md) | 按步骤学习、了解能力与限制 | 背屏宠物实战、Amoo、Notion、GBox |
 
-### 拓麻歌子 · Neo 背屏电子宠物
+## 新增：从点阵到背屏宠物
 
-- [玩法、安装与后台设置](guides/neo-pet/README.md)
-- [公开源码](https://github.com/JiayuStudio/stepx-neo-pet)
-- [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)
-- [下载 APK 0.3.4](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4)
+**想知道要给 Studio 上传什么，才能做一个背屏游戏？** 从[开发实战](guides/neo-pet/development.md)开始，再逐段使用[Studio 提示词](guides/neo-pet/studio-prompts.md)。覆盖点阵调用、蛋的孵化、双角色动画、养成状态与锁屏持续播放。
 
-### StepX Neo Studio
+## 常用下载
 
-- [功能、安装与应用内更新](guides/neo-studio/README.md)
-- [公开源码](https://github.com/JiayuStudio/stepx-neo-studio)
-- [正式APK 1.2.3](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3)
+| 项目 | 版本 | 说明与下载 |
+| --- | --- | --- |
+| 拓麻歌子 | 0.3.4 | [玩法和安装](guides/neo-pet/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4) |
+| StepX Neo Studio | 1.2.3 | [功能和安装](guides/neo-studio/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3) |
+| Amoo / Notion | 1.0.1 | [CLI 与手机附件](downloads/amoo-notion/README.md) · [离线手册和提示词包](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/amoo-notion-v1.0.1) |
 
-### Amoo / Notion
+StepX Neo Studio 是本研究所收录的第三方 Android 客户端；[Step Studio 网页](https://studio.stepx.com/)是另一开发入口，两者不要混淆。宣传片为动画演示，非真机实拍。
 
-- [图文教程](guides/amoo-notion/README.md)
-- [可复制提示词](guides/amoo-notion/prompts.md)
-- [记忆页面模板](guides/amoo-notion/templates/memory-page.md)
-- [CLI 1.0.1 源码与手机附件](downloads/amoo-notion/README.md)
-- [下载离线手册与提示词包](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/amoo-notion-v1.0.1)
-- [实测记录](guides/amoo-notion/verification.md)
+## 如何阅读验证结果
 
-通过 Amoo 的 Node CLI 读取 Notion 页面，每个新聊天发送一次启动提示。全新设备的首次配置流程和自动读取仍待补充验证。
+源码检查、成功打包、安装到手机、物理背屏显示和锁屏持续动画是不同结果。各项目详情页分别记录已验证内容和待验证事项；旧记录不代表所有固件均适用。
 
-### Google Play / GBox
+[更新记录](CHANGELOG.md) · [完整机器可读目录](catalog.json) · [内容归类说明](CONTRIBUTING.md)
 
-- [手机安装教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide/blob/main/docs/手机安装教程.md)
-- [下载离线教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide/releases/latest)
-- [常见问题](https://github.com/JiayuStudio/stepx-neo-gbox-guide/blob/main/docs/常见问题.md)
-- [实测记录](https://github.com/JiayuStudio/stepx-neo-gbox-guide/blob/main/docs/实测记录.md)
-- [GBox 官方下载](https://www.gboxlab.com/)
+反馈请在对应项目提供应用版本、复现步骤与错误文字。研究所结构建议可在本仓库提出。
 
-Google 账号和应用运行在 GBox 容器内。实测登录与安装已通过，全新系统的纯手机从零流程待独立复测。
-
-## 反馈
-
-在对应项目提供机型、系统版本、应用版本、操作步骤与错误文字，便于复现。合集结构建议可在本仓库提出，项目索引见 [catalog.json](catalog.json)。
-
-维护：JIAYU STUDIO · 2026-10-19。原创资料保留版权，欢迎分享仓库链接；第三方软件遵循各自许可。
+维护：JIAYU STUDIO · 2026-10-20。原创资料保留版权，欢迎分享仓库链接；第三方软件遵循各自许可。

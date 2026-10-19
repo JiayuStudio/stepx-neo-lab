@@ -1,7 +1,7 @@
 {
   "title": "StepX Neo 研究所",
   "maintainer": "JiayuStudio",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "projects": [
     {
       "title": "免 ROOT 使用 Google Play：GBox 手机教程",
@@ -20,7 +20,8 @@
         "Fresh factory-state phone-only end-to-end setup",
         "Full native system GMS",
         "All application features"
-      ]
+      ],
+      "section": "guides"
     },
     {
       "title": "Amoo 接入 Notion：图文教程与提示词",
@@ -45,7 +46,8 @@
         "Full first-time phone-only setup on a fresh device",
         "Each rewritten prompt independently retested on device",
         "Notion page writes or installed Notion MCP/Skill"
-      ]
+      ],
+      "section": "guides"
     },
     {
       "title": "StepX Neo Studio",
@@ -102,7 +104,8 @@
         "Live-account end-to-end one-click cloud development relay",
         "All image API providers and models; reference-image editing and video generation"
       ],
-      "skill": "https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix"
+      "skill": "https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix",
+      "section": "apps"
     },
     {
       "title": "拓麻歌子 · Neo 背屏电子宠物",
@@ -123,7 +126,10 @@
         "Automatic boot recovery",
         "All firmware versions and freezer-exception persistence"
       ],
-      "video": "https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4"
+      "video": "https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4",
+      "section": "games",
+      "development": "guides/neo-pet/development.md",
+      "prompts": "guides/neo-pet/studio-prompts.md"
     },
     {
       "title": "Amoo 能力研究",
@@ -134,7 +140,30 @@
         "通俗版",
         "专业版"
       ],
-      "evidence": "原稿记录；本次发布未复测；原始日志和截图未附"
+      "evidence": "原稿记录；本次发布未复测；原始日志和截图未附",
+      "section": "guides"
+    }
+  ],
+  "sections": [
+    {
+      "id": "games",
+      "title": "游戏",
+      "path": "sections/games.md"
+    },
+    {
+      "id": "apps",
+      "title": "APP",
+      "path": "sections/apps.md"
+    },
+    {
+      "id": "tools",
+      "title": "开发工具与模板",
+      "path": "sections/tools.md"
+    },
+    {
+      "id": "guides",
+      "title": "教程与研究",
+      "path": "sections/guides.md"
     }
   ]
 }
