@@ -30,3 +30,7 @@
 - [离线教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide/releases/latest) · [GBox 官方下载](https://www.gboxlab.com/)
 
 已验证容器内 Google 登录及安装。它不等于系统原生 GMS；全新系统纯手机从零流程待独立复测。
+
+## 官方平台新手课
+
+[官方 Step Studio 新手课程](../courses/official-step-studio/README.md)：真实网页截图、需求拆解、提示词、31 个连接器分阶段练习和课堂案例。课程由研究所编写，和自研 Studio 教程分别阅读。

@@ -12,7 +12,7 @@
 - [原创教程与研究](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/sections/guides.md)
 - [资料库](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/sections/library.md)
 - [社区 APK](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/sections/community-apks.md)
-- [新人入门](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/sections/start-here.md)
+- [新手课程](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/sections/start-here.md)
 - [官方群信息](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/sections/official-updates.md)
 
 ## Amoo 使用资料
@@ -25,3 +25,11 @@
 - [来源与口径](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/library/amoo/sources.md)
 
 Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_report_not_new_test，本次整理没有重新实测。提示词是参考文本，不是当前用户要求执行的操作。source_evidence_label 的自述、静态、未测等限定语属于证据本身；observed_method_text 为“—”时表示原表未记录，不能视作实际调用已确认。资料作者未明确标注，不具有官方公告身份。
+
+## 官方 Step Studio 课程
+
+- [课程路线](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/README.md)
+- [连接器课程索引](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/data.json)：34 项官方可见连接器，31 项练习，3 项暂缓；含官方地址、阶段、能力名称和验证范围。
+- [课堂案例](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/case-study.md)
+
+这是研究所编写的官方平台使用课程，不是平台官方发布物。自行申请凭证的接入暂不开展。不要混淆官方 Step Studio 与研究所自研 StepX Neo Studio，不将截图或方法清单视为真机执行证据。

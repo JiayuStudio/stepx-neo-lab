@@ -1,26 +1,22 @@
-# 新人：开发第一款应用
+# 新手课程
 
-[研究所首页](../README.md) · [自研应用](apps.md) · [开发工具](tools.md) · [原创教程](guides.md)
+[研究所首页](../README.md) · [原创教程](guides.md) · [社区推荐](community-apks.md)
 
-**这是一份 JIAYU STUDIO 原创入门路线。** 先做一个能点击、能安装的小应用，再学习更复杂的功能。
+## 官方 Step Studio：从想法到应用
 
-## 第一课：口袋计数器
+使用 **studio.stepx.com 的官方 Step Studio**，从一个小功能开始，学习写需求、添加连接器、修改、预览和真机验收。由 JIAYU STUDIO 整理，非官方发布课程。
 
-从 StepX Neo Studio 的内置模板出发，把页面改成自己的「口袋计数器」，在 Neo 上预览、生成 APK 并安装。基础练习只用本地编辑与构建，不需要配置 AI 接口。
+**[进入完整新手课程 →](../courses/official-step-studio/README.md)**
 
-**[开始第一课 →](../guides/first-app/README.md)**
+- [先想清楚做什么](../courses/official-step-studio/00-start.md)
+- [官方网页创建第一款应用：课堂计算器](../courses/official-step-studio/01-create.md)
+- [连接器总表与 31 个分阶段练习](../courses/official-step-studio/connector-index.md)
+- [真实课堂案例与验证范围](../courses/official-step-studio/case-study.md)
 
-| 步骤 | 你会得到什么 |
-| --- | --- |
-| 1. 创建项目 | 包含 HTML、CSS、JavaScript 的小应用 |
-| 2. 修改页面 | 自己命名的页面与按钮 |
-| 3. 本地运行 | 点击按钮，数字从 0 变为 1、2、3 |
-| 4. 构建并安装 | 可以从桌面独立打开的 APK |
-| 5. 导出源码 | 能继续修改的项目 ZIP |
+本轮先学不需要自行申请 API 凭证的内容。高德地图、百度网盘与收款相关的支付宝暂缓。
 
-## 完成后再学什么
+## 另一条路线：研究所自研 Studio
 
-- 想加入 AI：先阅读 [StepX Neo Studio 使用指南](../guides/neo-studio/README.md)，了解目标项目与模型配置。
-- 想做背屏应用：阅读[点阵与背屏开发实战](../guides/neo-pet/development.md)。
-- 想找可复用资料：查看[自研工具与原创模板](tools.md)。
-- 想看看社区作品：查看[其他作者的社区 APK](community-apks.md)。
+如果使用的是 **StepX Neo Studio**，可以从[口袋计数器教程](../guides/first-app/README.md)开始：内置模板 → 修改页面 → 本地预览 → 构建安装 → 导出源码。这条路线与上方官方网页课程不同。
+
+后续可看[自研 Studio 使用指南](../guides/neo-studio/README.md)、[背屏开发实战](../guides/neo-pet/development.md)与[原创工具](tools.md)。

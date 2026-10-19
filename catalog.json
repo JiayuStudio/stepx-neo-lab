@@ -167,6 +167,26 @@
       "tool_version": "1.2.3",
       "method": "Built-in local Web template -> preview -> APK build -> Android install",
       "verification_status": "Documentation checked against 1.2.3 source and existing guide; this lesson has not been independently rerun on a fresh device"
+    },
+    {
+      "title": "官方 Step Studio 新手课程",
+      "section": "start-here",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "course",
+      "path": "courses/official-step-studio/README.md",
+      "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/README.md",
+      "data": "courses/official-step-studio/data.json",
+      "official_course": false,
+      "teaching_platform": "https://studio.stepx.com/",
+      "date": "2026-10-20",
+      "visible_connectors": 34,
+      "connector_lessons": 31,
+      "deferred_connectors": [
+        "高德地图",
+        "百度网盘",
+        "支付宝"
+      ],
+      "verification_status": "Official pages reviewed; classroom case recorded separately; connector lessons not individually device-tested"
     }
   ],
   "sections": [
@@ -202,7 +222,7 @@
     },
     {
       "id": "start-here",
-      "title": "新人：开发第一款应用",
+      "title": "新手课程",
       "path": "sections/start-here.md",
       "group": "getting_started"
     },
