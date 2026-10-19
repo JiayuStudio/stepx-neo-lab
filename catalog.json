@@ -21,7 +21,9 @@
         "Full native system GMS",
         "All application features"
       ],
-      "section": "guides"
+      "section": "guides",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "guide"
     },
     {
       "title": "Amoo 接入 Notion：图文教程与提示词",
@@ -47,7 +49,9 @@
         "Each rewritten prompt independently retested on device",
         "Notion page writes or installed Notion MCP/Skill"
       ],
-      "section": "guides"
+      "section": "guides",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "guide_and_tool"
     },
     {
       "title": "StepX Neo Studio",
@@ -108,7 +112,9 @@
       "section": "apps",
       "video": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4",
       "video_version": "1.2",
-      "video_duration_seconds": 115.267
+      "video_duration_seconds": 115.267,
+      "content_origin": "jiayu_studio",
+      "artifact_type": "app"
     },
     {
       "title": "拓麻歌子 · Neo 背屏电子宠物",
@@ -132,7 +138,9 @@
       "video": "https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4",
       "section": "games",
       "development": "guides/neo-pet/development.md",
-      "prompts": "guides/neo-pet/studio-prompts.md"
+      "prompts": "guides/neo-pet/studio-prompts.md",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "game"
     },
     {
       "title": "Amoo 能力研究",
@@ -144,29 +152,67 @@
         "专业版"
       ],
       "evidence": "原稿记录；本次发布未复测；原始日志和截图未附",
-      "section": "guides"
+      "section": "guides",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "research"
+    },
+    {
+      "title": "第一款应用：口袋计数器",
+      "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/first-app/README.md",
+      "category": "新人入门",
+      "section": "start-here",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "guide",
+      "date": "2026-10-20",
+      "tool_version": "1.2.3",
+      "method": "Built-in local Web template -> preview -> APK build -> Android install",
+      "verification_status": "Documentation checked against 1.2.3 source and existing guide; this lesson has not been independently rerun on a fresh device"
     }
   ],
   "sections": [
     {
       "id": "games",
-      "title": "游戏",
-      "path": "sections/games.md"
+      "title": "JIAYU STUDIO 自研游戏",
+      "path": "sections/games.md",
+      "group": "jiayu_original"
     },
     {
       "id": "apps",
-      "title": "APP",
-      "path": "sections/apps.md"
+      "title": "JIAYU STUDIO 自研应用",
+      "path": "sections/apps.md",
+      "group": "jiayu_original"
     },
     {
       "id": "tools",
-      "title": "开发工具与模板",
-      "path": "sections/tools.md"
+      "title": "JIAYU STUDIO 自研工具与原创模板",
+      "path": "sections/tools.md",
+      "group": "jiayu_original"
     },
     {
       "id": "guides",
-      "title": "教程与研究",
-      "path": "sections/guides.md"
+      "title": "JIAYU STUDIO 原创教程与研究",
+      "path": "sections/guides.md",
+      "group": "jiayu_original"
+    },
+    {
+      "id": "community-apks",
+      "title": "值得推荐的社区 APK",
+      "path": "sections/community-apks.md",
+      "group": "community"
+    },
+    {
+      "id": "start-here",
+      "title": "新人：开发第一款应用",
+      "path": "sections/start-here.md",
+      "group": "getting_started"
+    },
+    {
+      "id": "official-updates",
+      "title": "官方群信息",
+      "path": "sections/official-updates.md",
+      "group": "official"
     }
-  ]
+  ],
+  "community_apks": [],
+  "official_updates": []
 }

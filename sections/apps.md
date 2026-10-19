@@ -1,6 +1,8 @@
-# APP
+# JIAYU STUDIO 自研应用
 
 [研究所首页](../README.md) · [游戏](games.md) · [开发工具](tools.md) · [教程与研究](guides.md)
+
+本区只整理 **JIAYU STUDIO 自己开发的应用**。其他作者的仓库与 APK 单独收录在[社区推荐](community-apks.md)。
 
 ## StepX Neo Studio
 

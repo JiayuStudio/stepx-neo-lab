@@ -1,6 +1,13 @@
-# 教程与研究
+# JIAYU STUDIO 原创教程与研究
 
 [研究所首页](../README.md) · [游戏](games.md) · [APP](apps.md) · [开发工具](tools.md)
+
+本区收录 **JIAYU STUDIO 整理、撰写的教程和实测研究**。教程中使用 GBox、Notion 等第三方产品，不表示这些产品由研究所开发。官方发布的信息请看独立的[官方群信息](official-updates.md)分区。
+
+## 新人入门
+
+- [开发第一款应用：口袋计数器](../guides/first-app/README.md)：用内置模板完成创建、改字、运行、打包与安装，基础练习无需配置 AI。
+- [新手路线与后续练习](start-here.md)：先完成一个独立小应用，再逐步加入保存、AI 或背屏能力。
 
 ## 背屏开发
 

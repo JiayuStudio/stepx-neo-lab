@@ -1,6 +1,8 @@
-# 游戏
+# JIAYU STUDIO 自研游戏
 
 [研究所首页](../README.md) · [APP](apps.md) · [开发工具](tools.md) · [教程与研究](guides.md)
+
+本区只整理 **JIAYU STUDIO 自己开发的游戏**。其他作者的应用与游戏推荐请看[社区 APK](community-apks.md)。
 
 ## 拓麻歌子 · Neo 背屏电子宠物
 
