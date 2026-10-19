@@ -219,7 +219,31 @@
       "group": "reference"
     }
   ],
-  "community_apks": [],
+  "community_apks": [
+    {
+      "id": "backscreenfun",
+      "title": "背屏达人",
+      "version": "3.0",
+      "section": "community-apks",
+      "category": "背屏与个性化",
+      "path": "community/backscreenfun/README.md",
+      "content_origin": "third_party",
+      "artifact_type": "apk",
+      "source": "社区群",
+      "author_display": "尚未获得对方同意公开作者信息，暂不显示",
+      "repository": null,
+      "public_download_url": null,
+      "distribution": "原社区群获取；研究所未托管 APK",
+      "license": "未提供",
+      "date": "2026-10-20",
+      "verification_status": "static_package_inspection_only",
+      "device_tested": false,
+      "description_basis": "安装包静态界面文字；功能未实测",
+      "package_name": "com.amoo.backscreenfun",
+      "version_code": 3,
+      "sha256": "070b81589af6edbf23aa436ae1fd4eef8b1dc804fa59dfbd87f9be9ccdbcc0fd"
+    }
+  ],
   "official_updates": [],
   "collections": [
     {
