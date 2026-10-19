@@ -196,7 +196,7 @@
     },
     {
       "id": "community-apks",
-      "title": "值得推荐的社区 APK",
+      "title": "值得推荐的社区 APK 与网页游戏",
       "path": "sections/community-apks.md",
       "group": "community"
     },
@@ -281,5 +281,43 @@
       ]
     }
   ],
-  "text_index": "llms.txt"
+  "text_index": "llms.txt",
+  "community_web_games": [
+    {
+      "id": "community-arcade",
+      "title": "游戏厅",
+      "section": "community-apks",
+      "path": "community/arcade/README.md",
+      "content_origin": "third_party",
+      "artifact_type": "web_game_collection",
+      "source": "社区群",
+      "author_display": "作者信息暂不显示，待获得对方同意后补充",
+      "play_url": "https://ide-asset.stepaos.com/games/p_c8a2314113205be5/v1.0.0/index.html",
+      "version_in_url": "1.0.0",
+      "repository": null,
+      "apk_url": null,
+      "license": "未提供",
+      "date": "2026-10-20",
+      "games": [
+        "贪吃蛇",
+        "俄罗斯方块",
+        "见缝插针",
+        "2048",
+        "扫雷",
+        "华容道",
+        "五子棋",
+        "空当接龙",
+        "纸牌接龙"
+      ],
+      "verified": [
+        "Browser homepage lists nine games",
+        "2048 starts, arrow keys move and merge tiles, score changes, return to lobby works"
+      ],
+      "not_verified": [
+        "Neo device compatibility",
+        "Other eight games gameplay",
+        "Offline play"
+      ]
+    }
+  ]
 }
