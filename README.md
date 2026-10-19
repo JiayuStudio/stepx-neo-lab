@@ -10,13 +10,14 @@ JIAYU STUDIO 整理的 STEPX Neo 使用教程与工具合集。
 | [Google Play / GBox 手机教程](https://github.com/JiayuStudio/stepx-neo-gbox-guide) | 免 ROOT 安装、Google 登录、应用管理与故障处理 | 容器内登录和安装通过 |
 | [Amoo 接入 Notion](guides/amoo-notion/README.md) | 6 张流程图、只读 CLI、9 组提示词与记忆页模板 | 明确调用后读取成功，支持跨新聊天复用 |
 | [StepX Neo Studio](guides/neo-studio/README.md) | Neo客户端、端侧AI、本地开发、绘图API、云端接力和Token分账 | 绘图生成、自动引用、离线预览和独立APK图片显示已实测；云端接力完整流程待验 |
-| [点点 · Neo 背屏电子宠物](guides/neo-pet/README.md) | Mori 养成、小游戏、换装与正反面同步的点阵宠物 | 0.3.2 形象与锁屏持续动画通过实物观察；长期耗电待测 |
+| [拓麻歌子 · Neo 背屏电子宠物](guides/neo-pet/README.md) | Mori 养成、小游戏、换装与正反面同步的点阵宠物 | 0.3.4 双角色、孵化与耳机；用户确认真机背屏及锁屏动画成功；长期耗电待测 |
 
-### 点点 · Neo 背屏电子宠物
+### 拓麻歌子 · Neo 背屏电子宠物
 
 - [玩法、安装与后台设置](guides/neo-pet/README.md)
 - [公开源码](https://github.com/JiayuStudio/stepx-neo-pet)
-- [下载 APK 0.3.2](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.2)
+- [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)
+- [下载 APK 0.3.4](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4)
 
 ### StepX Neo Studio
 

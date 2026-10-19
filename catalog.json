@@ -105,24 +105,25 @@
       "skill": "https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix"
     },
     {
-      "title": "点点 · Neo 背屏电子宠物",
+      "title": "拓麻歌子 · Neo 背屏电子宠物",
       "repository": "https://github.com/JiayuStudio/stepx-neo-pet",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-pet/README.md",
-      "release": "https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.2",
+      "release": "https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4",
       "category": "背屏与电子宠物",
-      "version": "0.3.2",
+      "version": "0.3.4",
       "verified": [
-        "Mori care, stories, incidents, minigames, rewards, equipment and save-file workflows in 0.3.0",
-        "0.3.2: 1015 packaged-art checks, 18 native appearance fixtures and 252 resource keys",
-        "0.3.2: installed APK hash matches artifact; upgrade retains growth, personality and equipment",
-        "0.3.2: over two minutes of uninterrupted screen-off animation with USB connected; physical appearance and continuing movement confirmed"
+        "0.3.4: 5600 packaged-art checks passed; 1014 appearance and hatch animations plus fallback",
+        "0.3.4: same-signature upgrade installed and Android package version verified",
+        "0.3.4: user confirmed physical rear-screen animation and continued screen-off operation; duration not independently timed",
+        "0.3.4: browser safe-area, navigation and responsive layout checked"
       ],
       "not_verified": [
         "All-day battery performance",
         "Unplugged deep standby",
         "Automatic boot recovery",
         "All firmware versions and freezer-exception persistence"
-      ]
+      ],
+      "video": "https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4"
     },
     {
       "title": "Amoo 能力研究",
