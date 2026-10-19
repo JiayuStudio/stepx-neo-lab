@@ -1,5 +1,9 @@
 # StepX Neo Studio
 
+[观看／下载宣传与功能演示（1 分 55 秒）](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4)
+
+视频展示 1.2 版界面，包含项目创建、代码编辑、离线预览、APK 构建、协作、连接器目录与 Token 账本；部分配置及用量画面为功能示意。当前版本能力与实测范围以本文说明为准。
+
 独立第三方 Android 客户端，为 Neo 提供官方 Studio、本地 Web 项目开发和多模型协作入口。当前版本 **1.2.3**，2026-10-19。
 
 [公开源码与完整文档](https://github.com/JiayuStudio/stepx-neo-studio) · [下载正式APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-studio/blob/main/ATTRIBUTION.md) · [返回研究所](../../README.md)

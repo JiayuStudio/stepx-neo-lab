@@ -105,7 +105,10 @@
         "All image API providers and models; reference-image editing and video generation"
       ],
       "skill": "https://github.com/JiayuStudio/stepx-neo-studio/tree/main/skills/stepx-neo-matrix",
-      "section": "apps"
+      "section": "apps",
+      "video": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4",
+      "video_version": "1.2",
+      "video_duration_seconds": 115.267
     },
     {
       "title": "拓麻歌子 · Neo 背屏电子宠物",

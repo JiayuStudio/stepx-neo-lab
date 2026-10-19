@@ -25,6 +25,11 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。先�
 
 StepX Neo Studio 是本研究所收录的第三方 Android 客户端；[Step Studio 网页](https://studio.stepx.com/)是另一开发入口，两者不要混淆。宣传片为动画演示，非真机实拍。
 
+## 宣传与功能视频
+
+- [拓麻歌子 · 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)：角色动画演示，Suno 配乐。
+- [StepX Neo Studio · 1 分 55 秒功能演示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4)：1.2 版界面，涵盖项目编辑、预览、APK 构建、协作与用量管理；部分配置及用量页面为功能示意。
+
 ## 如何阅读验证结果
 
 源码检查、成功打包、安装到手机、物理背屏显示和锁屏持续动画是不同结果。各项目详情页分别记录已验证内容和待验证事项；旧记录不代表所有固件均适用。

@@ -8,6 +8,7 @@
 
 - [功能、安装与更新指南](../guides/neo-studio/README.md)
 - [下载 1.2.3 APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3)
+- [观看／下载功能演示（约 1 分 55 秒）](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4)：1.2 版界面，部分配置与用量画面为功能示意。
 - [公开源码](https://github.com/JiayuStudio/stepx-neo-studio)
 
 **验证情况：** 绘图生成、自动引用、离线预览及独立 APK 图片显示已实测；完整实时云端接力流程仍待验证。具体能力与各版本记录见指南。
