@@ -25,7 +25,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。先�
 | StepX Neo Studio | 1.2.3 | [功能和安装](guides/neo-studio/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3) |
 | Amoo / Notion | 1.0.1 | [CLI 与手机附件](downloads/amoo-notion/README.md) · [离线手册和提示词包](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/amoo-notion-v1.0.1) |
 
-StepX Neo Studio 是本研究所收录的第三方 Android 客户端；[Step Studio 网页](https://studio.stepx.com/)是另一开发入口，两者不要混淆。宣传片为动画演示，非真机实拍。
+**StepX Neo Studio** 是由 **Jiayu Studio** 基于官方 [Step Studio 网页](https://studio.stepx.com/)打造的增强型 Android 开发工具，在官方 Studio 开发体验之上，加入本地项目编辑、多模型 AI 协作、美术资源生成和 APK 打包等能力，让 Neo 手机上的应用开发更方便。
 
 ## 宣传与功能视频
 
