@@ -33,3 +33,10 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [课堂案例](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/case-study.md)
 
 这是研究所编写的官方平台使用课程，不是平台官方发布物。自行申请凭证的接入暂不开展。不要混淆官方 Step Studio 与研究所自研 StepX Neo Studio，不将截图或方法清单视为真机执行证据。
+
+## 官方群知识库
+
+- [四章文字版](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/official/step-studio-knowledge/README.md)
+- [来源与页码索引](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/official/step-studio-knowledge/data.json)
+
+来源为维护者提供并确认来自官方群的 PDF；原群消息未独立核验、原发布时间未知。收录日期 2026-10-20 不等于发布时间。正文是原资料口径，不是新实测；支付与自行申请凭证课程仍暂缓。

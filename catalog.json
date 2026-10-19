@@ -264,7 +264,68 @@
       "sha256": "070b81589af6edbf23aa436ae1fd4eef8b1dc804fa59dfbd87f9be9ccdbcc0fd"
     }
   ],
-  "official_updates": [],
+  "official_updates": [
+    {
+      "id": "step-studio-official-knowledge",
+      "title": "Step Studio 官方知识库",
+      "path": "official/step-studio-knowledge/README.md",
+      "source_type": "official_group",
+      "source_basis": "PDF supplied by maintainer, who identifies it as posted in the official group",
+      "original_published_at": null,
+      "recorded_at": "2026-10-20",
+      "source_pages": 23,
+      "source_message_independently_verified": false,
+      "claim_scope": "source_document_not_new_test",
+      "original_pdf_rehosted": false,
+      "chapters": [
+        {
+          "title": "新手入门与前言",
+          "path": "01-getting-started.md",
+          "source_pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "title": "应用构建器",
+          "path": "02-app-builder.md",
+          "source_pages": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "title": "智能体构建器",
+          "path": "03-agent-builder.md",
+          "source_pages": [
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "title": "技能构建器",
+          "path": "04-skill-builder.md",
+          "source_pages": [
+            21,
+            22,
+            23
+          ]
+        }
+      ]
+    }
+  ],
   "collections": [
     {
       "id": "amoo-reference",

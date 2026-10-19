@@ -24,7 +24,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 | 📖 [资料库](sections/library.md) | **提供资料，研究所整理** | Amoo 一句话清单、提示词手册与实测结果；保留来源日期和验证范围 |
 | 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 背屏达人 3.0、九款经典小游戏「游戏厅」；来源社区群 |
 | 🚀 [新手课程](sections/start-here.md) | 研究所编写的入门课程 | 官方 Step Studio 图文课与 31 个连接器练习；另保留自研 Studio 路线 |
-| 📣 [官方群信息](sections/official-updates.md) | **官方发布，研究所整理** | 按时间查阅经核实的群公告、功能变更与使用说明；目前待归档 |
+| 📣 [官方群信息](sections/official-updates.md) | **官方发布，研究所整理** | 已收录 [Step Studio 官方知识库](official/step-studio-knowledge/README.md)：四章文字版，注明群来源与日期 |
 
 <details>
 <summary>AI 与开发者阅读入口</summary>

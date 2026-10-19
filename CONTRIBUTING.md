@@ -21,6 +21,6 @@
 
 新增项目时同步更新所属分区和 catalog.json；首页只保留导航、重点内容和常用下载。描述验证结果时区分代码、构建、安装及实际运行，不把演示画面写成硬件实测。
 
-`catalog.json` 中，维护者作品与原创资料使用 `projects`，第三方 APK 使用 `community_apks`，第三方网页游戏使用 `community_web_games`，官方公告使用 `official_updates`；社区 APK 已收录条目，官方公告列表尚为空。分区的 `group` 标明自研原创、社区、入门或官方信息，项目的 `content_origin` 与 `artifact_type` 标明内容归属和类型。
+`catalog.json` 中，维护者作品与原创资料使用 `projects`，第三方 APK 使用 `community_apks`，第三方网页游戏使用 `community_web_games`，官方公告使用 `official_updates`；社区 APK 已收录条目，官方信息已收录 Step Studio 官方知识库，来源依据与原发布时间另行标注。分区的 `group` 标明自研原创、社区、入门或官方信息，项目的 `content_origin` 与 `artifact_type` 标明内容归属和类型。
 
 资料集合使用独立的 `collections`，分区 `group` 为 `reference`；集合列出主入口、来源及结构化条目。`llms.txt` 只保留主要阅读链接，详细条目在各资料集合内维护，首页不重复展开。原稿实测、静态发现、文档声明和本次复测分别表述。
