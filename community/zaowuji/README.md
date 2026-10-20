@@ -14,7 +14,9 @@
 
 **Neo 基础实机验证完成；安全状态：🛡️ 未完全通过。** 安装、启动、登录后的作品浏览、网页分类、作品详情、外部网页打开、浏览器下载确认及发布表单展示已检查。
 
-**APK 待上架。** 包内平台能力调用凭据的公开分发属性尚待核实，目前没有研究所下载链接。尚未确认系统破坏或信息泄漏漏洞，不标记为 ❗️；基础运行验证不等于完整安全通过。
+**[下载造物集 4.0.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-zaowuji-v4.0.0/zaowuji-4.0.0.apk)** · [版本说明](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/community-zaowuji-v4.0.0) · [使用教程](usage.md)
+
+原始安装包，未修改或重新签名。包内平台能力凭据的绑定策略仍待核实；基础运行验证不等于完整安全通过。
 
 [基础实机与安全检查报告](security-4.0.0.md)
 

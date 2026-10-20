@@ -22,7 +22,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 | 分区 | 内容归属 | 去这里做什么 |
 | --- | --- | --- |
 | 📖 [资料库](sections/library.md) | **提供资料，研究所整理** | Amoo 一句话清单、提示词手册与实测结果；保留来源日期和验证范围 |
-| 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐的背屏达人 3.0（Neo 已认证；🛡️ 未完全通过，可下载）、造物集 4.0.0（基础实机验证完成；APK 待上架）、九款经典小游戏「游戏厅」 |
+| 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐的背屏达人 3.0（Neo 已认证；🛡️ 未完全通过，可下载）、造物集 4.0.0（基础实机验证完成；可下载）、九款经典小游戏「游戏厅」 |
 | 🚀 [新手课程](sections/start-here.md) | 研究所编写的入门课程 | 应用、智能体与技能三条路线，31 个连接器练习；另有 [DeepSeek API 选修](guides/deepseek-api/README.md) |
 | 📣 [官方群信息](sections/official-updates.md) | **官方发布，研究所整理** | 已收录 [Step Studio 官方知识库](official/step-studio-knowledge/README.md)：四章文字版，注明群来源与日期 |
 

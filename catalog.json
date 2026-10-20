@@ -325,8 +325,8 @@
       "source": "社区群",
       "author_display": "木偶",
       "repository": null,
-      "public_download_url": null,
-      "distribution": "待上架，客户端凭据分发属性待核实",
+      "public_download_url": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-zaowuji-v4.0.0/zaowuji-4.0.0.apk",
+      "distribution": "GitHub Releases 原始 APK",
       "license": "源码许可未声明",
       "date": "2026-10-20",
       "verification_status": "basic_device_checks_completed",
@@ -342,8 +342,10 @@
         "original_source_available": false,
         "android_dynamic_tested": true,
         "confirmed_system_or_information_threat": null,
-        "publication_hold": "client_credential_distribution_unverified"
-      }
+        "download_restricted": false
+      },
+      "release_url": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/community-zaowuji-v4.0.0",
+      "usage_guide": "community/zaowuji/usage.md"
     }
   ],
   "official_updates": [
