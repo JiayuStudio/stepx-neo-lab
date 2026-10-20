@@ -1,0 +1,1023 @@
+{
+  "title": "官方 Step Studio 新手课程",
+  "maintainer": "JIAYU STUDIO",
+  "official_course": false,
+  "source": "https://studio.stepx.com/connectors",
+  "checked": "2026-10-20",
+  "visible_connectors": 34,
+  "active_lessons": 31,
+  "deferred": 3,
+  "entries": [
+    {
+      "id": "alipay_vibepay",
+      "name": "支付宝",
+      "official_url": "https://studio.stepx.com/connectors/alipay_vibepay",
+      "status": "deferred",
+      "phase": 8,
+      "official_methods": [],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "reason": "涉及商户收款配置，暂留后续"
+    },
+    {
+      "id": "ic_amap_jsapi",
+      "name": "高德地图",
+      "official_url": "https://studio.stepx.com/connectors/ic_amap_jsapi",
+      "status": "deferred",
+      "phase": 4,
+      "official_methods": [
+        "maps_geo",
+        "maps_regeocode",
+        "maps_ip_location",
+        "maps_weather",
+        "maps_bicycling",
+        "maps_walking",
+        "maps_direction_driving",
+        "maps_direction_transit_integrated",
+        "maps_distance",
+        "maps_text_search",
+        "maps_around_search",
+        "maps_search_detail"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "reason": "需要自行申请高德 API 凭证"
+    },
+    {
+      "id": "ic_atomic_464",
+      "name": "设置",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_464",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "settings_open_settings_homepage_activity",
+        "settings_open_settings_locale_picker_activity",
+        "settings_open_settings_device_info_settings_activity",
+        "settings_open_manage_applications",
+        "settings_open_settings_storage_dashboard_activity",
+        "settings_open_settings_sound_settings_activity",
+        "settings_battery_percentage_switch",
+        "settings_wifi_switch",
+        "settings_bluetooth_switch",
+        "settings_hotspot_switch",
+        "settings_airplane_mode_switch",
+        "settings_data_switch",
+        "settings_vibration_switch",
+        "settings_dark_mode_switch",
+        "settings_disturb_mode_switch",
+        "settings_adjust_sound",
+        "settings_adjust_brightness",
+        "settings_dialing_keypad_sound_switch",
+        "settings_screen_lock_sound_switch",
+        "settings_charging_notif_sound_switch",
+        "settings_touch_sound_switch",
+        "settings_auto_brightness_switch",
+        "settings_auto_rotation_switch",
+        "settings_one_handed_mode_switch",
+        "settings_battery_saver_switch",
+        "settings_choose_wifi",
+        "settings_forget_wifi",
+        "settings_set_screen_off_time",
+        "settings_set_media_sound",
+        "settings_get_battery_percentage_state",
+        "settings_get_wifi_state",
+        "settings_get_bluetooth_state",
+        "settings_get_hotspot_state",
+        "settings_get_airplane_mode_state",
+        "settings_get_data_state",
+        "settings_get_vibration_state",
+        "settings_get_dark_mode_state",
+        "settings_get_dialing_keypad_sound_state",
+        "settings_get_screen_lock_sound_state",
+        "settings_get_charging_notif_sound_state",
+        "settings_get_touch_sound_state",
+        "settings_get_auto_brightness_state",
+        "settings_get_auto_rotation_state",
+        "settings_get_one_handed_mode_state",
+        "settings_get_battery_saver_state",
+        "settings_get_app_lock_state",
+        "settings_adjust_font_size",
+        "settings_eye_protection_mode_switch",
+        "settings_get_current_battery_level"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_464.md",
+      "exercise": "设备状态小卡",
+      "lesson_focus_methods": [
+        "settings_get_current_battery_level",
+        "settings_get_dark_mode_state"
+      ]
+    },
+    {
+      "id": "ic_atomic_473",
+      "name": "定位",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_473",
+      "status": "lesson_available",
+      "phase": 4,
+      "official_methods": [
+        "get_current_location"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_473.md",
+      "exercise": "位置卡片",
+      "lesson_focus_methods": [
+        "get_current_location"
+      ]
+    },
+    {
+      "id": "ic_atomic_486",
+      "name": "应用商店",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_486",
+      "status": "lesson_available",
+      "phase": 1,
+      "official_methods": [
+        "appstore_search_app"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_486.md",
+      "exercise": "应用搜索助手",
+      "lesson_focus_methods": [
+        "appstore_search_app"
+      ]
+    },
+    {
+      "id": "ic_atomic_468",
+      "name": "文件管理",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_468",
+      "status": "lesson_available",
+      "phase": 6,
+      "official_methods": [
+        "filemanager_get_file_path",
+        "filemanager_get_file_size",
+        "filemanager_get_file_create_time",
+        "filemanager_get_file_update_time",
+        "filemanager_get_file_detail",
+        "filemanager_create_folder",
+        "filemanager_create_file",
+        "filemanager_search_file",
+        "filemanager_get_apk_file_list",
+        "filemanager_get_compress_file_list",
+        "filemanager_get_document_file_list",
+        "filemanager_get_voice_file_list",
+        "filemanager_get_video_file_list",
+        "filemanager_get_download_file_list",
+        "filemanager_get_weixin_file_list",
+        "filemanager_get_browser_file_list",
+        "filemanager_get_bluetooth_file_list",
+        "filemanager_get_ringtone_file_list",
+        "filemanager_get_screenshot_file_list",
+        "filemanager_get_screen_recording_file_list",
+        "filemanager_move_file",
+        "filemanager_get_garbage_file_list",
+        "filemanager_edit_folder_name",
+        "filemanager_edit_file_name"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_468.md",
+      "exercise": "课堂文件整理器",
+      "lesson_focus_methods": [
+        "filemanager_search_file",
+        "filemanager_get_file_size"
+      ]
+    },
+    {
+      "id": "ic_atomic_495",
+      "name": "网络设置",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_495",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "connectivitysettings_open_settings_wifi_settings_activity",
+        "connectivitysettings_open_settings_advanced_wifi_settings_activity",
+        "connectivitysettings_open_settings_wifi_info_settings_activity",
+        "connectivitysettings_open_settings_wifi_p_2_p_settings_activity",
+        "connectivitysettings_open_settings_saved_access_points_wifi_settings",
+        "connectivitysettings_open_settings_wifi_display_settings_activity",
+        "connectivitysettings_open_settings_tether_settings_activity",
+        "connectivitysettings_open_settings_bluetooth_settings_activity",
+        "connectivitysettings_open_settings_vpn_settings_activity",
+        "connectivitysettings_open_settings_mobile_network_settings_activity"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_495.md",
+      "exercise": "网络设置导航",
+      "lesson_focus_methods": [
+        "connectivitysettings_open_settings_wifi_settings_activity",
+        "connectivitysettings_open_settings_bluetooth_settings_activity",
+        "connectivitysettings_open_settings_vpn_settings_activity"
+      ]
+    },
+    {
+      "id": "ic_atomic_472",
+      "name": "通用原子能力",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_472",
+      "status": "lesson_available",
+      "phase": 2,
+      "official_methods": [
+        "open_app_by_package",
+        "open_app_by_name",
+        "show_widget_by_package_class",
+        "show_notify_by_info",
+        "batch_file_upload",
+        "batch_file_upload_return_all",
+        "batch_file_upload_all_progress",
+        "common_ability_clipboard_text",
+        "common_ability_get_screen_size",
+        "check_app_installed_by_name",
+        "open_url_with_browser",
+        "common_ability_get_app_list",
+        "common_ability_get_app_count",
+        "speak_text",
+        "start_vibration",
+        "stop_vibration",
+        "stop_speak_text"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_472.md",
+      "exercise": "应用启动助手",
+      "lesson_focus_methods": [
+        "check_app_installed_by_name",
+        "open_app_by_name"
+      ]
+    },
+    {
+      "id": "ic_atomic_990016",
+      "name": "TTS",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990016",
+      "status": "lesson_available",
+      "phase": 2,
+      "official_methods": [
+        "speak_text",
+        "stop_speak_text"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990016.md",
+      "exercise": "朗读练习器",
+      "lesson_focus_methods": [
+        "speak_text",
+        "stop_speak_text"
+      ]
+    },
+    {
+      "id": "ic_atomic_990000",
+      "name": "主屏显示控制",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990000",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "settings_adjust_brightness",
+        "settings_auto_brightness_switch",
+        "settings_auto_rotation_switch",
+        "settings_set_screen_off_time",
+        "settings_get_auto_brightness_state",
+        "settings_get_auto_rotation_state",
+        "screen_capture_record",
+        "screen_capture_stop_record",
+        "screen_capture_screenshot",
+        "screen_capture_take_long_screenshot",
+        "common_ability_get_screen_size"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990000.md",
+      "exercise": "屏幕信息助手",
+      "lesson_focus_methods": [
+        "common_ability_get_screen_size"
+      ]
+    },
+    {
+      "id": "ic_atomic_990007",
+      "name": "定位与GNSS",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990007",
+      "status": "lesson_available",
+      "phase": 4,
+      "official_methods": [
+        "get_current_location"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990007.md",
+      "exercise": "坐标对照卡",
+      "lesson_focus_methods": [
+        "get_current_location"
+      ]
+    },
+    {
+      "id": "ic_atomic_990002",
+      "name": "摄像头硬件能力",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990002",
+      "status": "lesson_available",
+      "phase": 6,
+      "official_methods": [
+        "camera_open_beauty_mode",
+        "camera_open_selfie_mode"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990002.md",
+      "exercise": "相机模式选择器",
+      "lesson_focus_methods": [
+        "camera_open_selfie_mode",
+        "camera_open_beauty_mode"
+      ]
+    },
+    {
+      "id": "ic_atomic_990001",
+      "name": "背面点阵屏",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990001",
+      "status": "lesson_available",
+      "phase": 7,
+      "official_methods": [
+        "get_back_screen_auto_brightness",
+        "set_back_screen_auto_brightness",
+        "get_back_screen_brightness",
+        "set_back_screen_brightness",
+        "get_back_screen_camera_link",
+        "set_back_screen_camera_link",
+        "get_back_screen_auto_rotate",
+        "set_back_screen_auto_rotate",
+        "cancel_back_screen_countdown",
+        "get_back_screen_display_mode",
+        "set_back_screen_display_mode",
+        "get_back_screen_basic_type",
+        "set_back_screen_basic_type",
+        "set_back_screen_frame",
+        "clear_back_screen_frame",
+        "wake_up_back_screen",
+        "sleep_back_screen",
+        "get_back_screen_display_info"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990001.md",
+      "exercise": "背屏状态面板",
+      "lesson_focus_methods": [
+        "get_back_screen_display_info",
+        "get_back_screen_brightness",
+        "set_back_screen_frame",
+        "clear_back_screen_frame"
+      ]
+    },
+    {
+      "id": "ic_atomic_990015",
+      "name": "蓝牙链接",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990015",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "settings_bluetooth_switch",
+        "settings_get_bluetooth_state",
+        "connectivitysettings_open_settings_bluetooth_settings_activity"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990015.md",
+      "exercise": "蓝牙状态卡",
+      "lesson_focus_methods": [
+        "settings_get_bluetooth_state",
+        "connectivitysettings_open_settings_bluetooth_settings_activity"
+      ]
+    },
+    {
+      "id": "ic_atomic_990008",
+      "name": "蜂窝与双开",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990008",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "dialer_call_to",
+        "dialer_call_contact",
+        "dialer_accept_call",
+        "dialer_hangup_call",
+        "dialer_settings_enable_power_button_ends_call",
+        "dialer_settings_sos_auto_call",
+        "settings_hotspot_switch",
+        "settings_airplane_mode_switch",
+        "settings_data_switch",
+        "settings_get_hotspot_state",
+        "settings_get_airplane_mode_state",
+        "settings_get_data_state"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990008.md",
+      "exercise": "移动网络助手",
+      "lesson_focus_methods": [
+        "settings_get_data_state",
+        "settings_get_airplane_mode_state",
+        "settings_get_hotspot_state"
+      ]
+    },
+    {
+      "id": "ic_atomic_990012",
+      "name": "触觉反馈",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990012",
+      "status": "lesson_available",
+      "phase": 2,
+      "official_methods": [
+        "start_vibration",
+        "stop_vibration"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990012.md",
+      "exercise": "触觉按钮",
+      "lesson_focus_methods": [
+        "start_vibration",
+        "stop_vibration"
+      ]
+    },
+    {
+      "id": "ic_atomic_990004",
+      "name": "音频输出与路由",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990004",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "dialer_settings_enable_incoming_flip_silent",
+        "settings_screen_lock_sound_switch",
+        "settings_set_media_sound",
+        "settings_get_screen_lock_sound_state",
+        "speak_text",
+        "stop_speak_text"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990004.md",
+      "exercise": "语音提示面板",
+      "lesson_focus_methods": [
+        "speak_text",
+        "stop_speak_text",
+        "settings_set_media_sound"
+      ]
+    },
+    {
+      "id": "ic_atomic_990003",
+      "name": "麦克风与录音",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_990003",
+      "status": "lesson_available",
+      "phase": 6,
+      "official_methods": [
+        "lite_recorder_open_recording",
+        "lite_recorder_stop_recording",
+        "lite_recorder_pause_recording",
+        "lite_recorder_resume_recording"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_990003.md",
+      "exercise": "录音状态机",
+      "lesson_focus_methods": [
+        "lite_recorder_open_recording",
+        "lite_recorder_pause_recording",
+        "lite_recorder_resume_recording",
+        "lite_recorder_stop_recording"
+      ]
+    },
+    {
+      "id": "ic_atomic_503",
+      "name": "云端天气服务",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_503",
+      "status": "lesson_available",
+      "phase": 1,
+      "official_methods": [
+        "get_weather"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_503.md",
+      "exercise": "城市天气卡",
+      "lesson_focus_methods": [
+        "get_weather"
+      ]
+    },
+    {
+      "id": "ic_atomic_450",
+      "name": "信息",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_450",
+      "status": "lesson_available",
+      "phase": 5,
+      "official_methods": [
+        "sms_send",
+        "sms_send_direct",
+        "sms_delete",
+        "sms_read_status",
+        "sms_forward",
+        "sms_statistics",
+        "sms_search",
+        "sms_draft_save",
+        "sms_draft_get",
+        "sms_draft_delete",
+        "sms_schedule_send",
+        "sms_thread_delete",
+        "sms_settings_intelligent_msg",
+        "sms_settings_notif_detail",
+        "sms_settings_auto_retrieval",
+        "sms_settings_risk_url",
+        "sms_settings_expired_veri",
+        "sms_settings_expired_pickup",
+        "sms_settings_delivery_reports",
+        "sms_settings_quick_reply",
+        "sms_settings_center_num",
+        "sms_settings_sim_messages",
+        "sms_account_balance_inquiry",
+        "sms_data_balance_inquiry",
+        "sms_open_personal_list",
+        "sms_open_notice_list",
+        "sms_open_collected_list",
+        "sms_open_settings_page"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_450.md",
+      "exercise": "短信草稿器",
+      "lesson_focus_methods": [
+        "sms_draft_save",
+        "sms_draft_get"
+      ]
+    },
+    {
+      "id": "ic_atomic_446",
+      "name": "图库",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_446",
+      "status": "lesson_available",
+      "phase": 6,
+      "official_methods": [
+        "gallery_get_latest_media",
+        "gallery_get_media_by_time_range",
+        "gallery_open_picture_editor",
+        "gallery_ai_extend_image",
+        "gallery_add_picture_text",
+        "gallery_add_picture_watermark",
+        "gallery_add_picture_mosaic",
+        "gallery_edit_picture_paint",
+        "gallery_add_picture_filter",
+        "gallery_reduce_picture_resolution",
+        "gallery_edit_picture_sharpen",
+        "gallery_edit_picture_temperature",
+        "gallery_edit_picture_saturation",
+        "gallery_edit_picture_brightness",
+        "gallery_edit_picture_aspect_ratio",
+        "gallery_edit_picture_degree",
+        "gallery_edit_picture_flip",
+        "gallery_open_video_editor",
+        "gallery_open_video_player",
+        "gallery_intelligent_search",
+        "gallery_local_search",
+        "gallery_create_album",
+        "gallery_rename_album",
+        "gallery_copy_files_to_album",
+        "gallery_move_media_to_album",
+        "gallery_hide_album",
+        "gallery_set_album_cover",
+        "gallery_open_trash_bin",
+        "gallery_open_hidden_album",
+        "gallery_select_media_file_card",
+        "gallery_get_sticker_columns",
+        "gallery_get_stickers",
+        "gallery_get_local_stickers",
+        "gallery_get_style_templates",
+        "gallery_get_photo_info",
+        "gallery_get_video_info",
+        "gallery_copy_media",
+        "gallery_move_to_folder",
+        "gallery_restore_media_from_trash",
+        "gallery_get_trash_media_list",
+        "gallery_hide_media",
+        "gallery_unhide_media",
+        "gallery_share_media",
+        "gallery_favorite_media",
+        "gallery_rename_media",
+        "gallery_compress_media",
+        "gallery_ai_erase_image",
+        "gallery_ai_style_image"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_446.md",
+      "exercise": "课堂图片浏览器",
+      "lesson_focus_methods": [
+        "gallery_select_media_file_card",
+        "gallery_open_picture_editor"
+      ]
+    },
+    {
+      "id": "ic_atomic_491",
+      "name": "天气",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_491",
+      "status": "lesson_available",
+      "phase": 4,
+      "official_methods": [
+        "weather_get_current_location_weather"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_491.md",
+      "exercise": "当前位置天气",
+      "lesson_focus_methods": [
+        "weather_get_current_location_weather"
+      ]
+    },
+    {
+      "id": "ic_atomic_467",
+      "name": "帮助和反馈",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_467",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "feedback_submit_question"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_467.md",
+      "exercise": "反馈草稿助手",
+      "lesson_focus_methods": [
+        "feedback_submit_question"
+      ]
+    },
+    {
+      "id": "ic_atomic_439",
+      "name": "快记",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_439",
+      "status": "lesson_available",
+      "phase": 6,
+      "official_methods": [
+        "lite_recorder_open_recording",
+        "lite_recorder_open_home",
+        "lite_recorder_stop_recording",
+        "lite_recorder_pause_recording",
+        "lite_recorder_resume_recording"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_439.md",
+      "exercise": "课堂录音控制卡",
+      "lesson_focus_methods": [
+        "lite_recorder_open_home",
+        "lite_recorder_open_recording",
+        "lite_recorder_pause_recording",
+        "lite_recorder_resume_recording",
+        "lite_recorder_stop_recording"
+      ]
+    },
+    {
+      "id": "ic_atomic_471",
+      "name": "手机管家",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_471",
+      "status": "lesson_available",
+      "phase": 3,
+      "official_methods": [
+        "security_center_open_main",
+        "security_center_into_practicaltools_page",
+        "security_manager_open_harassment_interception",
+        "security_manager_into_virus_page",
+        "security_center_acceleration_shortcut_enable",
+        "security_center_safe_scan_shortcut_enable",
+        "security_center_lock_screen_shortcut_enable",
+        "security_center_acceleration_execute"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_471.md",
+      "exercise": "维护入口卡",
+      "lesson_focus_methods": [
+        "security_center_open_main"
+      ]
+    },
+    {
+      "id": "ic_atomic_459",
+      "name": "手电筒",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_459",
+      "status": "lesson_available",
+      "phase": 2,
+      "official_methods": [
+        "open_flash_light"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_459.md",
+      "exercise": "照明入口",
+      "lesson_focus_methods": [
+        "open_flash_light"
+      ]
+    },
+    {
+      "id": "ic_atomic_487",
+      "name": "搜索",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_487",
+      "status": "lesson_available",
+      "phase": 1,
+      "official_methods": [
+        "search_open",
+        "search_setting"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_487.md",
+      "exercise": "搜索快捷入口",
+      "lesson_focus_methods": [
+        "search_open",
+        "search_setting"
+      ]
+    },
+    {
+      "id": "ic_atomic_463",
+      "name": "日历",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_463",
+      "status": "lesson_available",
+      "phase": 5,
+      "official_methods": [
+        "calendar_open_new_edit_event_activity",
+        "calendar_open_almanac_detail_activity",
+        "calendar_open_general_settings",
+        "calendar_add_event",
+        "calendar_query_event",
+        "calendar_delete_event",
+        "calendar_edit_event",
+        "calendar_add_special_event",
+        "calendar_query_special_event",
+        "calendar_delete_special_event",
+        "calendar_edit_special_event"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_463.md",
+      "exercise": "课堂日程卡",
+      "lesson_focus_methods": [
+        "calendar_query_event",
+        "calendar_add_event",
+        "calendar_delete_event"
+      ]
+    },
+    {
+      "id": "ic_atomic_452",
+      "name": "时钟",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_452",
+      "status": "lesson_available",
+      "phase": 5,
+      "official_methods": [
+        "alarm_clock_add",
+        "alarm_clock_delete",
+        "alarm_clock_delete_all",
+        "alarm_clock_disable",
+        "alarm_clock_snooze",
+        "alarm_clock_get_enable",
+        "alarm_clock_get_current_time_zone",
+        "alarm_clock_get_current_time_by_city",
+        "alarm_clock_timer_add",
+        "alarm_clock_disable_one"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_452.md",
+      "exercise": "提醒小助手",
+      "lesson_focus_methods": [
+        "alarm_clock_get_current_time_by_city",
+        "alarm_clock_add",
+        "alarm_clock_disable_one"
+      ]
+    },
+    {
+      "id": "ic_atomic_449",
+      "name": "电话",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_449",
+      "status": "lesson_available",
+      "phase": 5,
+      "official_methods": [
+        "dialer_call_to",
+        "dialer_call_contact",
+        "dialer_show_incall_screen",
+        "dialer_accept_call",
+        "dialer_hangup_call",
+        "dialer_call_back",
+        "dialer_contacts_add",
+        "dialer_contacts_update",
+        "dialer_contacts_query",
+        "dialer_open_contacts_editor",
+        "dialer_contacts_set_starred",
+        "dialer_contacts_copy_number",
+        "dialer_open_my_business_card",
+        "dialer_check_last_caller",
+        "dialer_query_calllog",
+        "dialer_delete_calllog",
+        "dialer_query_calllog_of_contact",
+        "dialer_query_calllog_by_type",
+        "dialer_query_calllog_by_number",
+        "dialer_query_call_duration_ranking",
+        "dialer_show_dialpad",
+        "dialer_open_call_settings",
+        "dialer_open_sim_card_settings",
+        "dialer_open_medical_emergency_information",
+        "dialer_settings_enable_power_button_ends_call",
+        "dialer_settings_enable_incoming_flip_silent",
+        "dialer_settings_vibrate_when_mocall_connected",
+        "dialer_settings_open_auto_record_screen",
+        "dialer_settings_allow_viewing_medical_information",
+        "dialer_settings_sos_auto_call",
+        "dialer_add_group",
+        "dialer_add_number_to_blocked_list",
+        "dialer_query_blocked_number",
+        "dialer_delete_number_from_blocked_list"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_449.md",
+      "exercise": "拨号确认卡",
+      "lesson_focus_methods": [
+        "dialer_call_to"
+      ]
+    },
+    {
+      "id": "ic_atomic_494",
+      "name": "相机",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_494",
+      "status": "lesson_available",
+      "phase": 6,
+      "official_methods": [
+        "camera_open_beauty_mode",
+        "camera_open_selfie_mode"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_494.md",
+      "exercise": "相机入口",
+      "lesson_focus_methods": [
+        "camera_open_selfie_mode",
+        "camera_open_beauty_mode"
+      ]
+    },
+    {
+      "id": "ic_atomic_470",
+      "name": "系统界面助手",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_470",
+      "status": "lesson_available",
+      "phase": 6,
+      "official_methods": [
+        "screen_capture_record",
+        "screen_capture_stop_record",
+        "screen_capture_screenshot",
+        "screen_capture_take_long_screenshot"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_470.md",
+      "exercise": "截图录屏面板",
+      "lesson_focus_methods": [
+        "screen_capture_screenshot",
+        "screen_capture_record",
+        "screen_capture_stop_record"
+      ]
+    },
+    {
+      "id": "ic_atomic_474",
+      "name": "计算器",
+      "official_url": "https://studio.stepx.com/connectors/ic_atomic_474",
+      "status": "lesson_available",
+      "phase": 1,
+      "official_methods": [
+        "evaluate_expression"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "path": "connectors/ic_atomic_474.md",
+      "exercise": "口袋计算器",
+      "lesson_focus_methods": [
+        "evaluate_expression"
+      ]
+    },
+    {
+      "id": "ic_baidu_netdisk",
+      "name": "百度网盘",
+      "official_url": "https://studio.stepx.com/connectors/ic_baidu_netdisk",
+      "status": "deferred",
+      "phase": 8,
+      "official_methods": [
+        "netdisk_upload_file",
+        "netdisk_get_upload_status"
+      ],
+      "verification": "official_page_reviewed; connector_execution_not_independently_tested",
+      "reason": "开发者需要自行申请百度应用并配置凭证"
+    }
+  ],
+  "classroom_case": {
+    "path": "case-study.md",
+    "title": "课堂练习·口袋计算器",
+    "platform": "official Step Studio",
+    "project_created": true,
+    "integration_visible": "计算器",
+    "browser_checks": [
+      "page loaded",
+      "unsupported environment message",
+      "clear input",
+      "empty input error"
+    ],
+    "device_tested": false,
+    "apk_installed": false,
+    "app_published": false
+  },
+  "knowledge_source": {
+    "path": "../../../official/step-studio-knowledge/data.json",
+    "basis": "provided PDF, official group origin confirmed by provider",
+    "recorded_at": "2026-10-20",
+    "independently_verified_group_message": false
+  },
+  "learning_routes": [
+    {
+      "id": "application",
+      "lessons": [
+        "00-start.md",
+        "01-create.md",
+        "02-connectors.md",
+        "03-iterate.md",
+        "04-test.md",
+        "connector-index.md",
+        "06-capstone.md",
+        "07-release.md"
+      ]
+    },
+    {
+      "id": "app-data",
+      "lessons": [
+        "08-app-data.md",
+        "07-release.md"
+      ]
+    },
+    {
+      "id": "agent",
+      "lessons": [
+        "00-start.md",
+        "09-agent.md",
+        "07-release.md"
+      ]
+    },
+    {
+      "id": "skill",
+      "lessons": [
+        "00-start.md",
+        "10-skill.md",
+        "07-release.md"
+      ]
+    }
+  ],
+  "knowledge_integration": [
+    {
+      "path": "00-start.md",
+      "source_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "01-create.md",
+      "source_pages": [
+        10,
+        11
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "03-iterate.md",
+      "source_pages": [
+        12,
+        13,
+        14
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "04-test.md",
+      "source_pages": [
+        9,
+        15
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "07-release.md",
+      "source_pages": [
+        15,
+        16,
+        19,
+        20,
+        22,
+        23
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "08-app-data.md",
+      "source_pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "09-agent.md",
+      "source_pages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    },
+    {
+      "path": "10-skill.md",
+      "source_pages": [
+        21,
+        22,
+        23
+      ],
+      "verification": "document_based_course_adaptation_not_new_execution"
+    }
+  ],
+  "status": "archived",
+  "edition": "2026-10-20-early",
+  "superseded_by": "../../official-step-studio/README.md"
+}

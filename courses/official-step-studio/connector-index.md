@@ -1,89 +1,47 @@
-# 官方连接器课程总表
+# 连接器分阶段练习
 
-[课程首页](README.md) · [官方连接器目录](https://studio.stepx.com/connectors)
+[新版课程](README.md) · [添加方法](02-connectors.md) · [官方目录](https://studio.stepx.com/connectors)
 
-2026-10-20 当前账号可见 **34 个连接器**。本轮提供 **31 个练习页**；需要自行申请凭证的高德、百度网盘，以及收款配置相关的支付宝暂缓。此表是当天可见范围，不保证未来目录不变。
+当前目录为 34 项，31 项提供练习，3 项暂缓。目录数量与本版组件库更新无关；每项练习仍需实际执行。
 
-## 阶段 1：先学输入与查询
-
-| 连接器 | 小作品 | 页面核对 / 执行状态 |
+| 阶段 | 连接器 | 小任务 |
 | --- | --- | --- |
-| [计算器](connectors/ic_atomic_474.md) | 口袋计算器 | 官方说明已核对；实机练习待做 |
-| [云端天气服务](connectors/ic_atomic_503.md) | 城市天气卡 | 官方说明已核对；实机练习待做 |
-| [应用商店](connectors/ic_atomic_486.md) | 应用搜索助手 | 官方说明已核对；实机练习待做 |
-| [搜索](connectors/ic_atomic_487.md) | 搜索快捷入口 | 官方说明已核对；实机练习待做 |
+| 3 | [设置](connectors/ic_atomic_464.md) | 设备状态小卡 |
+| 4 | [定位](connectors/ic_atomic_473.md) | 位置卡片 |
+| 1 | [应用商店](connectors/ic_atomic_486.md) | 应用搜索助手 |
+| 6 | [文件管理](connectors/ic_atomic_468.md) | 课堂文件整理器 |
+| 3 | [网络设置](connectors/ic_atomic_495.md) | 网络设置导航 |
+| 2 | [通用原子能力](connectors/ic_atomic_472.md) | 应用启动助手 |
+| 2 | [TTS](connectors/ic_atomic_990016.md) | 朗读练习器 |
+| 3 | [主屏显示控制](connectors/ic_atomic_990000.md) | 屏幕信息助手 |
+| 4 | [定位与GNSS](connectors/ic_atomic_990007.md) | 坐标对照卡 |
+| 6 | [摄像头硬件能力](connectors/ic_atomic_990002.md) | 相机模式选择器 |
+| 7 | [背面点阵屏](connectors/ic_atomic_990001.md) | 背屏状态面板 |
+| 3 | [蓝牙链接](connectors/ic_atomic_990015.md) | 蓝牙状态卡 |
+| 3 | [蜂窝与双开](connectors/ic_atomic_990008.md) | 移动网络助手 |
+| 2 | [触觉反馈](connectors/ic_atomic_990012.md) | 触觉按钮 |
+| 3 | [音频输出与路由](connectors/ic_atomic_990004.md) | 语音提示面板 |
+| 6 | [麦克风与录音](connectors/ic_atomic_990003.md) | 录音状态机 |
+| 1 | [云端天气服务](connectors/ic_atomic_503.md) | 城市天气卡 |
+| 5 | [信息](connectors/ic_atomic_450.md) | 短信草稿器 |
+| 6 | [图库](connectors/ic_atomic_446.md) | 课堂图片浏览器 |
+| 4 | [天气](connectors/ic_atomic_491.md) | 当前位置天气 |
+| 3 | [帮助和反馈](connectors/ic_atomic_467.md) | 反馈草稿助手 |
+| 6 | [快记](connectors/ic_atomic_439.md) | 课堂录音控制卡 |
+| 3 | [手机管家](connectors/ic_atomic_471.md) | 维护入口卡 |
+| 2 | [手电筒](connectors/ic_atomic_459.md) | 照明入口 |
+| 1 | [搜索](connectors/ic_atomic_487.md) | 搜索快捷入口 |
+| 5 | [日历](connectors/ic_atomic_463.md) | 课堂日程卡 |
+| 5 | [时钟](connectors/ic_atomic_452.md) | 提醒小助手 |
+| 5 | [电话](connectors/ic_atomic_449.md) | 拨号确认卡 |
+| 6 | [相机](connectors/ic_atomic_494.md) | 相机入口 |
+| 6 | [系统界面助手](connectors/ic_atomic_470.md) | 截图录屏面板 |
+| 1 | [计算器](connectors/ic_atomic_474.md) | 口袋计算器 |
 
-## 阶段 2：按钮与即时反馈
+## 暂缓
 
-| 连接器 | 小作品 | 页面核对 / 执行状态 |
-| --- | --- | --- |
-| [TTS](connectors/ic_atomic_990016.md) | 朗读练习器 | 官方说明已核对；实机练习待做 |
-| [触觉反馈](connectors/ic_atomic_990012.md) | 触觉按钮 | 官方说明已核对；实机练习待做 |
-| [手电筒](connectors/ic_atomic_459.md) | 照明入口 | 官方说明已核对；实机练习待做 |
-| [通用原子能力](connectors/ic_atomic_472.md) | 应用启动助手 | 官方说明已核对；实机练习待做 |
+高德地图、百度网盘需要自行申请凭据，支付宝涉及收款配置，均不进入本轮主线。
 
-## 阶段 3：系统状态与设置入口
+## 当前特别注意
 
-| 连接器 | 小作品 | 页面核对 / 执行状态 |
-| --- | --- | --- |
-| [设置](connectors/ic_atomic_464.md) | 设备状态小卡 | 官方说明已核对；实机练习待做 |
-| [主屏显示控制](connectors/ic_atomic_990000.md) | 屏幕信息助手 | 官方说明已核对；实机练习待做 |
-| [网络设置](connectors/ic_atomic_495.md) | 网络设置导航 | 官方说明已核对；实机练习待做 |
-| [蓝牙链接](connectors/ic_atomic_990015.md) | 蓝牙状态卡 | 官方说明已核对；实机练习待做 |
-| [蜂窝与双开](connectors/ic_atomic_990008.md) | 移动网络助手 | 官方说明已核对；实机练习待做 |
-| [音频输出与路由](connectors/ic_atomic_990004.md) | 语音提示面板 | 官方说明已核对；实机练习待做 |
-| [手机管家](connectors/ic_atomic_471.md) | 维护入口卡 | 官方说明已核对；实机练习待做 |
-| [帮助和反馈](connectors/ic_atomic_467.md) | 反馈草稿助手 | 官方说明已核对；实机练习待做 |
-
-## 阶段 4：位置与天气
-
-| 连接器 | 小作品 | 页面核对 / 执行状态 |
-| --- | --- | --- |
-| [定位](connectors/ic_atomic_473.md) | 位置卡片 | 官方说明已核对；实机练习待做 |
-| [定位与GNSS](connectors/ic_atomic_990007.md) | 坐标对照卡 | 官方说明已核对；实机练习待做 |
-| [天气](connectors/ic_atomic_491.md) | 当前位置天气 | 官方说明已核对；实机练习待做 |
-
-## 阶段 5：日程与通信
-
-| 连接器 | 小作品 | 页面核对 / 执行状态 |
-| --- | --- | --- |
-| [日历](connectors/ic_atomic_463.md) | 课堂日程卡 | 官方说明已核对；实机练习待做 |
-| [时钟](connectors/ic_atomic_452.md) | 提醒小助手 | 官方说明已核对；实机练习待做 |
-| [信息](connectors/ic_atomic_450.md) | 短信草稿器 | 官方说明已核对；实机练习待做 |
-| [电话](connectors/ic_atomic_449.md) | 拨号确认卡 | 官方说明已核对；实机练习待做 |
-
-## 阶段 6：文件、照片与录音
-
-| 连接器 | 小作品 | 页面核对 / 执行状态 |
-| --- | --- | --- |
-| [文件管理](connectors/ic_atomic_468.md) | 课堂文件整理器 | 官方说明已核对；实机练习待做 |
-| [图库](connectors/ic_atomic_446.md) | 课堂图片浏览器 | 官方说明已核对；实机练习待做 |
-| [相机](connectors/ic_atomic_494.md) | 相机入口 | 官方说明已核对；实机练习待做 |
-| [摄像头硬件能力](connectors/ic_atomic_990002.md) | 相机模式选择器 | 官方说明已核对；实机练习待做 |
-| [快记](connectors/ic_atomic_439.md) | 课堂录音控制卡 | 官方说明已核对；实机练习待做 |
-| [麦克风与录音](connectors/ic_atomic_990003.md) | 录音状态机 | 官方说明已核对；实机练习待做 |
-| [系统界面助手](connectors/ic_atomic_470.md) | 截图录屏面板 | 官方说明已核对；实机练习待做 |
-
-## 阶段 7：背屏与组合应用
-
-| 连接器 | 小作品 | 页面核对 / 执行状态 |
-| --- | --- | --- |
-| [背面点阵屏](connectors/ic_atomic_990001.md) | 背屏状态面板 | 官方说明已核对；实机练习待做 |
-
-## 暂缓，不进入本轮练习
-
-| 连接器 | 原因 |
-| --- | --- |
-| [支付宝](https://studio.stepx.com/connectors/alipay_vibepay) | 涉及商户收款配置，暂留后续 |
-| [高德地图](https://studio.stepx.com/connectors/ic_amap_jsapi) | 需要自行申请高德 API 凭证 |
-| [百度网盘](https://studio.stepx.com/connectors/ic_baidu_netdisk) | 开发者需要自行申请百度应用并配置凭证 |
-
-## 重叠能力如何选
-
-- 定位与定位与GNSS共用定位能力；先选一个完成练习。
-- 相机与摄像头硬件能力主要提供相机模式入口。
-- TTS、音频输出与路由、通用原子能力中有相同的播报方法。
-- 快记与麦克风与录音的控制有重叠。
-- 设置、网络设置、蓝牙链接的用途有交集；状态查询、切换开关、打开设置页应分别理解。
-
-选择能满足当前功能的最少连接器，不把分类数量当成独立能力数量。
+背屏取消倒计时不再列在当前目录；text 参数存在概览与能力表冲突，详见背屏单课。设置的四项亮屏接口为索引补录，并非本次新上线。能力有重叠时只添加完成任务需要的最少连接器。

@@ -1,5 +1,5 @@
 {
-  "title": "官方 Step Studio 新手课程",
+  "title": "Step Studio 新手课程 · 2026-10-20 组件库更新版",
   "maintainer": "JIAYU STUDIO",
   "official_course": false,
   "source": "https://studio.stepx.com/connectors",
@@ -72,6 +72,8 @@
         "settings_auto_brightness_switch",
         "settings_auto_rotation_switch",
         "settings_one_handed_mode_switch",
+        "settings_tapToCheck_phone_switch",
+        "settings_liftToCheck_phone_switch",
         "settings_battery_saver_switch",
         "settings_choose_wifi",
         "settings_forget_wifi",
@@ -92,6 +94,8 @@
         "settings_get_auto_brightness_state",
         "settings_get_auto_rotation_state",
         "settings_get_one_handed_mode_state",
+        "settings_get_tapToCheck_phone_state",
+        "settings_get_liftToCheck_phone_state",
         "settings_get_battery_saver_state",
         "settings_get_app_lock_state",
         "settings_adjust_font_size",
@@ -331,7 +335,6 @@
         "set_back_screen_camera_link",
         "get_back_screen_auto_rotate",
         "set_back_screen_auto_rotate",
-        "cancel_back_screen_countdown",
         "get_back_screen_display_mode",
         "set_back_screen_display_mode",
         "get_back_screen_basic_type",
@@ -875,19 +878,7 @@
   ],
   "classroom_case": {
     "path": "case-study.md",
-    "title": "课堂练习·口袋计算器",
-    "platform": "official Step Studio",
-    "project_created": true,
-    "integration_visible": "计算器",
-    "browser_checks": [
-      "page loaded",
-      "unsupported environment message",
-      "clear input",
-      "empty input error"
-    ],
-    "device_tested": false,
-    "apk_installed": false,
-    "app_published": false
+    "status": "historical_case_only; new_exercises_not_executed"
   },
   "knowledge_source": {
     "path": "../../official/step-studio-knowledge/data.json",
@@ -897,124 +888,112 @@
   },
   "learning_routes": [
     {
-      "id": "application",
-      "lessons": [
+      "id": "app",
+      "steps": [
         "00-start.md",
         "01-create.md",
-        "02-connectors.md",
+        "components.md",
         "03-iterate.md",
         "04-test.md",
-        "connector-index.md",
+        "02-connectors.md",
         "06-capstone.md",
         "07-release.md"
       ]
     },
     {
-      "id": "app-data",
-      "lessons": [
+      "id": "data",
+      "steps": [
         "08-app-data.md",
         "07-release.md"
       ]
     },
     {
       "id": "agent",
-      "lessons": [
-        "00-start.md",
+      "steps": [
         "09-agent.md",
         "07-release.md"
       ]
     },
     {
       "id": "skill",
-      "lessons": [
-        "00-start.md",
+      "steps": [
         "10-skill.md",
         "07-release.md"
       ]
     }
   ],
-  "knowledge_integration": [
+  "knowledge_integration": {
+    "source": "../../official/step-studio-knowledge/README.md",
+    "mapping": "sources.md"
+  },
+  "edition": "2026-10-20-components",
+  "status": "current",
+  "archive": "../archive/official-step-studio-2026-10-20-early/README.md",
+  "components": [
     {
-      "path": "00-start.md",
-      "source_pages": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "bottom-tab-bars",
+      "name": "底部导航栏",
+      "version": "v1.0.10",
+      "official_url": "https://studio.stepx.com/design/components/bottom-tab-bars",
+      "path": "components/bottom-tab-bars.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     },
     {
-      "path": "01-create.md",
-      "source_pages": [
-        10,
-        11
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "charts",
+      "name": "图表卡片",
+      "version": "v1.1.7",
+      "official_url": "https://studio.stepx.com/design/components/charts",
+      "path": "components/charts.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     },
     {
-      "path": "03-iterate.md",
-      "source_pages": [
-        12,
-        13,
-        14
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "custom-style-graph",
+      "name": "风格化图表卡片",
+      "version": "v1.1.10",
+      "official_url": "https://studio.stepx.com/design/components/custom-style-graph",
+      "path": "components/custom-style-graph.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     },
     {
-      "path": "04-test.md",
-      "source_pages": [
-        9,
-        15
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "mobile-cards",
+      "name": "移动端卡片",
+      "version": "v1.0.6",
+      "official_url": "https://studio.stepx.com/design/components/mobile-cards",
+      "path": "components/mobile-cards.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     },
     {
-      "path": "07-release.md",
-      "source_pages": [
-        15,
-        16,
-        19,
-        20,
-        22,
-        23
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "mobile-toolbar-buttons",
+      "name": "移动端工具栏按钮",
+      "version": "v1.0.7",
+      "official_url": "https://studio.stepx.com/design/components/mobile-toolbar-buttons",
+      "path": "components/mobile-toolbar-buttons.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     },
     {
-      "path": "08-app-data.md",
-      "source_pages": [
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "pill-tags",
+      "name": "胶囊标签",
+      "version": "v1.0.7",
+      "official_url": "https://studio.stepx.com/design/components/pill-tags",
+      "path": "components/pill-tags.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     },
     {
-      "path": "09-agent.md",
-      "source_pages": [
-        17,
-        18,
-        19,
-        20
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "stepx-icons",
+      "name": "Step Studio 图标库",
+      "version": "v1.0.6",
+      "official_url": "https://studio.stepx.com/design/components/stepx-icons",
+      "path": "components/stepx-icons.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     },
     {
-      "path": "10-skill.md",
-      "source_pages": [
-        21,
-        22,
-        23
-      ],
-      "verification": "document_based_course_adaptation_not_new_execution"
+      "id": "transit-card",
+      "name": "出行卡片",
+      "version": "v1.0.10",
+      "official_url": "https://studio.stepx.com/design/components/transit-card",
+      "path": "components/transit-card.md",
+      "verification": "official_detail_and_screenshot_reviewed; exercise_not_executed"
     }
-  ]
+  ],
+  "component_count": 8
 }
