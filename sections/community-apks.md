@@ -8,9 +8,9 @@
 
 | 应用 | 分类与用途 | 来源 | Neo 验证 |
 | --- | --- | --- | --- |
-| [背屏达人 3.0](../community/backscreenfun/README.md) | 背屏与个性化：点阵手绘、动画等玩法，功能待验证 | 社区群；作者信息暂不显示 | 未实机测试 |
+| [背屏达人 3.0](../community/backscreenfun/README.md) | 背屏与个性化：点阵手绘、文字与动画等玩法 | 鸿渐 · 社区群 | 已认证 |
 
-背屏达人尚未获得对方同意公开作者信息，暂不显示。获取方式及安装包核对信息见详情。
+[下载背屏达人 3.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v3.0/backscreenfun-3.0.apk)。Neo 认证状态由维护者确认，安装包信息与本次检查范围见详情。
 
 ## 网页游戏推荐
 
