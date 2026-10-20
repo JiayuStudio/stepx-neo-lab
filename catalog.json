@@ -311,6 +311,39 @@
         "potential_information_exposure": true,
         "decision_note": "保留代码发现；实际跨应用影响待复核，修改建议及可能风险见报告末尾"
       }
+    },
+    {
+      "id": "zaowuji",
+      "title": "造物集",
+      "version": "4.0.0",
+      "version_code": 40000,
+      "section": "community-apks",
+      "category": "作品分享社区",
+      "path": "community/zaowuji/README.md",
+      "content_origin": "third_party",
+      "artifact_type": "apk",
+      "source": "社区群",
+      "author_display": "木偶",
+      "repository": null,
+      "public_download_url": null,
+      "distribution": "待上架，客户端凭据分发属性待核实",
+      "license": "源码许可未声明",
+      "date": "2026-10-20",
+      "verification_status": "basic_device_checks_completed",
+      "device_tested": true,
+      "device_tested_note": "安装启动、用户登录后列表与分类、详情、外部网页、下载确认及发布表单；未提交公开内容",
+      "description_basis": "维护者提供简介，基础交互实测范围见报告",
+      "package_name": "com.stepx.aiapp.pa534fba04f57",
+      "sha256": "e94242070cf2bf40d3c3cff5430154860a584f91c279fc862d754289a33641b5",
+      "security": {
+        "status": "partially_verified",
+        "badge": "🛡️",
+        "report": "community/zaowuji/security-4.0.0.md",
+        "original_source_available": false,
+        "android_dynamic_tested": true,
+        "confirmed_system_or_information_threat": null,
+        "publication_hold": "client_credential_distribution_unverified"
+      }
     }
   ],
   "official_updates": [

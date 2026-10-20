@@ -10,6 +10,7 @@
 
 | 应用 | 分类与用途 | 来源 | Neo 验证 |
 | --- | --- | --- | --- |
+| [造物集 4.0.0](../community/zaowuji/README.md) | 作品分享社区：发现网页、游戏与 App，发布和交流作品 | 木偶 · 社区群 | 基础实机验证完成；🛡️；APK 待上架 |
 | [背屏达人 3.0](../community/backscreenfun/README.md) | 背屏与个性化：点阵手绘、文字与动画等玩法 | 鸿渐 · 社区群 | 已认证 |
 
 [下载背屏达人 3.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v3.0/backscreenfun-3.0.apk)。Neo 认证状态由维护者确认，安装包信息与本次检查范围见详情。
