@@ -293,8 +293,8 @@
       "certification_basis": "maintainer_confirmation",
       "device_tested_note": "本次收录未重新执行设备测试",
       "security": {
-        "status": "not_passed",
-        "badge": null,
+        "status": "partially_verified",
+        "badge": "🛡️",
         "report": "community/backscreenfun/security-3.0.md",
         "date": "2026-10-20",
         "basis": "APK decompilation, targeted static review and isolated handler tests",
@@ -305,7 +305,11 @@
           "BSF-02",
           "BSF-03"
         ],
-        "sha256": "070b81589af6edbf23aa436ae1fd4eef8b1dc804fa59dfbd87f9be9ccdbcc0fd"
+        "sha256": "070b81589af6edbf23aa436ae1fd4eef8b1dc804fa59dfbd87f9be9ccdbcc0fd",
+        "download_restricted": false,
+        "confirmed_system_or_information_threat": false,
+        "potential_information_exposure": true,
+        "decision_note": "保留代码发现；实际跨应用影响待复核，修改建议及可能风险见报告末尾"
       }
     }
   ],
