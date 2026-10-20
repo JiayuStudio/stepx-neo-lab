@@ -212,6 +212,29 @@
         "Key creation and paid API call",
         "Fresh-device end-to-end setup"
       ]
+    },
+    {
+      "title": "用 Step Studio 开发象棋泡泡堂：从需求到真实试玩",
+      "guide": "guides/chess-bomber/README.md",
+      "category": "游戏开发实战",
+      "section": "guides",
+      "content_origin": "jiayu_studio",
+      "artifact_type": "tutorial",
+      "status": "published",
+      "case_version": "0.15.2",
+      "updated": "2026-10-21",
+      "verified": [
+        "Independent browser layout, multitouch simulation, rules and audio checks",
+        "Selected physical-phone sequential controls and countdown display",
+        "Actual AI gameplay recording and final video playback",
+        "Actual MP4 replay export: H.264 720x960; no audio track"
+      ],
+      "not_verified": [
+        "Simultaneous physical-phone multitouch",
+        "Complete multiplayer physical-device regression",
+        "Native APK installation",
+        "Full security and concurrency audit"
+      ]
     }
   ],
   "sections": [

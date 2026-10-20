@@ -38,3 +38,7 @@
 ## AI 接口入门
 
 [DeepSeek API Key 申请与配置](../guides/deepseek-api/README.md)：官方平台申请、通用配置、自研 Studio 操作与错误排查。
+
+## 游戏开发实战
+
+- [用 Step Studio 开发象棋泡泡堂](../guides/chess-bomber/README.md)：从需求、规则与UI修复，到账号、回放、音乐和真实宣传片；网页与真机验证边界分别记录。

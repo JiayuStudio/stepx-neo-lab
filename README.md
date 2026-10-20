@@ -37,6 +37,10 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 **想知道要给 Studio 上传什么，才能做一个背屏游戏？** 从[开发实战](guides/neo-pet/development.md)开始，再逐段使用[Studio 提示词](guides/neo-pet/studio-prompts.md)。覆盖点阵调用、蛋的孵化、双角色动画、养成状态与锁屏持续播放。
 
+## 象棋泡泡堂开发实战
+
+[从需求到真实试玩](guides/chess-bomber/README.md)：官方 Step Studio 迭代、掌机布局、多点触控、账号与回放、Suno配乐和宣传片制作。更新至 0.15.2：危险格提示、公开观战与战绩、回放导出。
+
 ## 常用下载
 
 | 项目 | 版本 | 说明与下载 |
