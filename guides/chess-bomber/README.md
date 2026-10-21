@@ -1,7 +1,7 @@
 # 用 Step Studio 开发象棋泡泡堂：从需求到真实试玩
 
 **开发教程 · 更新至 0.15.2**  
-整理：JIAYU STUDIO · 更新 2026-10-21  
+整理：JIAYU STUDIO · 更新 2026-10-22
 案例版本：应用 0.15.2；地图与回放规则版本 3。
 
 这是一篇真实迭代案例：用官方 Step Studio 开发一个把象棋走法变成炸弹范围的对战游戏，再由独立操作者检查网页、连接手机测试、制作 Suno 配乐和宣传片。重点是如何提出可验收的要求、发现问题并修正，而不是一次提示词生成完整产品。
@@ -9,6 +9,15 @@
 本文由研究所原创整理。**Step Studio 是第三方开发平台，Suno 是第三方音乐服务**；游戏由 JIAYU STUDIO 组织设计与迭代。本案例使用官方网页 Studio，不要与研究所自研的 StepX Neo Studio Android 工具混淆。本游戏是正面屏幕上的网页游戏，没有在本案例中实现 Neo 背屏游戏功能。
 
 > 已有成果包括可玩的 Studio 预览、账户与大厅、回放、音乐，以及 真实 AI 对战宣传片。公开发布与 APK 的交付状态以研究所下载条目为准；Studio 预览不等于安装包。手机真正同时双指输入、完整多人真机对战和长期网络稳定性仍有待验项。此文不提供他人的私有编辑入口或登录凭据。
+
+## 下载与试玩
+
+- [▶ 90 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/chess-bomber-v0.15.2/chess-bomber-90s.mp4) · 真实游戏与 AI 对战，配乐《棋院午后》。
+- [↓ Android 测试版 APK · 0.15.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/chess-bomber-v0.15.2/chess-bomber-0.15.2.apk) · Android 8 及以上。
+- [进入网页体验](https://studio-api.stepx.com/t/3f6R7rkvnIw) · Studio 体验服务。
+- [版本说明与文件校验](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/chess-bomber-v0.15.2)。
+
+APK 封装当前网页资源与音乐，账号和联机依赖云端。已验证签名、模拟器安装、启动与本地练习至结算；注册网络请求、多人联机、视频导出和真机多点触控仍待验。网络失败时可选择本地练习。Studio 正式发布当前因获取代码失败而未完成，网页链接为体验服务，可能随平台状态变化。
 
 ## 学完可以做什么
 

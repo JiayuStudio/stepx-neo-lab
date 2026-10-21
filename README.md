@@ -41,6 +41,8 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 ## 象棋泡泡堂开发实战
 
+[网页体验](https://studio-api.stepx.com/t/3f6R7rkvnIw) · [Android 测试版 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/chess-bomber-v0.15.2/chess-bomber-0.15.2.apk) · [90 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/chess-bomber-v0.15.2/chess-bomber-90s.mp4) · [验收范围](guides/chess-bomber/README.md#下载与试玩)
+
 [从需求到真实试玩](guides/chess-bomber/README.md)：官方 Step Studio 迭代、掌机布局、多点触控、账号与回放、Suno配乐和宣传片制作。更新至 0.15.2：危险格提示、公开观战与战绩、回放导出。
 
 ## 常用下载

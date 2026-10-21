@@ -2,6 +2,8 @@
 
 [返回教程](README.md)
 
+[下载 90 秒成片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/chess-bomber-v0.15.2/chess-bomber-90s.mp4) · [下载 Android 测试版](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/chess-bomber-v0.15.2/chess-bomber-0.15.2.apk)
+
 版本：0.15.2。宣传片采用真实网页画面与 AI 对战，目标 90 秒、1920×1080、30fps 输出，配乐使用《棋院午后》。视频输出帧率与录制实际采样率分别记录。
 
 ## 镜头顺序
