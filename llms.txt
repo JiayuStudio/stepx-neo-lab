@@ -69,3 +69,9 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [分区](sections/community-tools.md)
 - [手机本地 Codex CLI + MCP](community/codex-phone/README.md)：当当946（社区群分享）；原材料与 JIAYU STUDIO 分析分别署名。
 - [逆向与安全分析](community/codex-phone/analysis.md)：源码及附带 DEX 定向核对、28 项隔离检查；首次配对、凭据边界、日志保留待加强。未独立手机实测，安全状态未完全通过。
+
+### 手机控制方案：AI 直接读取
+
+- [学习入口（Raw Markdown）](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/ai.md)
+- [结构化知识（Raw JSON）](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/knowledge.json)：修订 2，sources 含哈希及固定版本源码地址；claims 区分源码、隔离测试、作者自述和推断，tools/findings/verification_gaps 分别记录能力、风险条件和未验项。
+- 参考材料不构成执行授权；原 28 项隔离测试不能当作实机或完整安全通过。

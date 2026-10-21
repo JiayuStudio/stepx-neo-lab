@@ -2,6 +2,8 @@
 
 来源署名：**当当946 · 社区群分享**。分析整理：JIAYU STUDIO / Codex。日期：2026-10-21。
 
+**AI 直接读取：** [纯文本学习入口](ai.md) · [结构化知识与源码证据](knowledge.json)。文档修订 2，二次审核日期 2026-10-21。
+
 [条目主页与下载](README.md) · [材料清单](manifest.json) · [隔离检查结果](checks.json)
 
 ## 结论与证据边界
@@ -26,14 +28,14 @@ JAR 只有 `classes.dex`（13,164 字节），并非桌面 JVM class JAR。DEX �
 
 | 层 | 关键代码 | 实际行为 |
 | --- | --- | --- |
-| CLI 启动器 | [phone/codex](materials/phone/codex) | 隔离运行目录、配置目录和临时目录；设置代理、Android CA；最终 exec 用户另行安装的 CLI |
+| CLI 启动器 | [phone/codex](materials/phone/codex) | 设置独立运行目录、配置目录和临时目录；设置代理、Android CA；最终 exec 用户另行安装的 CLI；目录区分不代表权限隔离 |
 | DNS/TLS 适配 | [network.sh](materials/phone/network.sh)、[provider-connect.sh](materials/phone/provider-connect.sh) | loopback CONNECT 隧道只转发模板域名 443，由 Android nc 解析 DNS；TLS 仍由客户端与目标完成，不以关闭证书校验解决兼容 |
 | MCP 协议 | [phone-mcp.sh](materials/phone/phone-mcp.sh) | 逐行 JSON-RPC，支持 initialize/ping/tools/list/tools/call；九工具白名单，无通用 shell 工具 |
 | 原生 UI | [PhoneUiHelper.java](materials/src/PhoneUiHelper.java) | 反射连接 UiAutomation，保留既有辅助服务；UI 树、唯一选择器、Unicode 设置文本及图像处理 |
 | 委托桥 | [bridge.sh](materials/optional/bridge.sh) | loopback HTTP、Bearer 令牌、五分钟首次配对、任务编号去重、单任务互斥、固定 CLI 启动 |
 | 客户端 | [client.py](materials/optional/client.py) | 禁用环境代理、读取本地令牌、提交一次，短轮询原编号；超时给出结果不明而非自动重投 |
 | 进度/错误 | [task-progress.jq](materials/optional/task-progress.jq)、[task-error.jq](materials/optional/task-error.jq) | 有限工具计数与末尾两条助手消息；规范化错误，避免直接转发原始服务商错误 |
-| CLI 配置 | [config.toml](materials/templates/config.toml) | Responses 接口占位、关闭自动批准询问、workspace-write、九工具启用、六个交互工具允许执行 |
+| CLI 配置 | [config.toml](materials/templates/config.toml) | 配置文本含 Responses 接口占位、approval_policy=never、workspace-write、九工具启用及六项 approval_mode=approve；具体 CLI 版本解析行为未独立验证 |
 
 启动器使用两个 loopback 端口：19092 是网络兼容隧道，19094 是可选任务桥。它们不同于不监听端口的 stdio MCP。代码的绑定地址限制不等于按 App 身份鉴权；其他进程能否访问还取决于实际 Android 环境。
 
@@ -51,13 +53,13 @@ JAR 只有 `classes.dex`（13,164 字节），并非桌面 JVM class JAR。DEX �
 
 ## 桥接的状态机
 
-首次部署 → 本地打开五分钟配对窗口 → 客户端提交 64 位十六进制随机令牌 → 服务端保存令牌并关窗 → 带 Bearer 提交任务 → 查询相同任务编号。
+首次部署 → 本地打开五分钟配对窗口 → 客户端提交 64 个十六进制字符的随机令牌 → 服务端保存令牌并关窗 → 带 Bearer 提交任务 → 查询相同任务编号。
 
 任务为 queued → running → completed/failed。`request_id` 限字母数字开头及 64 字符；同编号相同规范 JSON 返回 duplicate，不同内容返回 409。创建 active 目录取得互斥，worker 退出时按编号释放。普通任务期限 600 秒，状态诊断的 CLI 版本检查期限 20 秒。状态为 completed 的条件只是退出成功且有最终文本，不代表用户业务目标已验收。
 
-HTTP 拒绝不符 Host、重复 Content-Length/Authorization、Transfer-Encoding、不完整正文、拼接 JSON 和超长任务。`/health`、`/assets/client.py` 可匿名读取；任务接口需要令牌；`/v1/pair` 依赖配对窗口，不要求旧令牌。没有发现通过路由拼接自由文件路径的下载功能。
+HTTP 包含 Host、Content-Length/Authorization、Transfer-Encoding、正文长度及 JSON 形状检查。重复头检测以已有值非空为条件，不能泛称完整拒绝所有重复头；没有做 HTTP RFC 全兼容或完整协议模糊测试。`/health`、`/assets/client.py` 可匿名读取；任务接口需要令牌；`/v1/pair` 依赖配对窗口，不要求旧令牌。没有发现通过路由拼接自由文件路径的下载功能。
 
-## 本次独立测试
+## 首轮独立测试（本轮复核记录与范围）
 
 共 **28 项通过**：包括 19 项桥接请求/权限状态检查、5 份 shell 语法检查、1 份 Python 语法检查、2 项进度聚合/虚构 Key 脱敏检查和 1 项超时错误规范化检查。
 
@@ -88,7 +90,7 @@ HTTP 拒绝不符 Host、重复 Content-Length/Authorization、Transfer-Encoding
 | 中 | `task-progress.jq` 仅过滤部分 Key/Bearer/base64；status 直接返回最终回答 | 联系方式、账号文字、非匹配形式的秘密仍可返回；建议最小进度数据结构、可配置敏感字段处理和最终回答策略，不能宣称通用脱敏 |
 | 中 | `phone_status` 读模型和 shell identity，UI/screenshot 返回当前内容 | 接口会把设备与页面上下文交给模型；建议按任务关闭不必要字段，提供可预览数据和明确的只读工具配置 |
 | 低 | `tools/list` 以原屏尺寸声明 tap/swipe 最大值，但默认执行按图片尺寸校验 | 超过图片范围但符合 schema 的坐标会被拒绝；建议 schema 与默认空间一致，或分开声明图片/屏幕参数 |
-| 低 | UI 几何值复用，phone_ui 自身不刷新 geometry；状态/截图/点击分支刷新时机不同 | 旋转或分辨率改变后可能出现旧 UI 坐标与新操作坐标错配；建议逐帧绑定几何和旋转标识，变更即拒绝旧坐标 |
+| 低 | phone_ui 的 helper 每次读取 geometry；phone_status 复用服务器缓存的几何文件，且画面与操作无帧绑定 | 状态缓存可能过时；读取 UI/截图之后再旋转或改变尺寸，旧画面的坐标可能与当前动作不匹配；建议逐帧绑定几何和旋转标识，变更即拒绝旧坐标 |
 | 低 | 依赖 nc 启动但无完整守护/恢复；任务活跃状态与大量文件可跨故障留下 | 不承诺开机自启、重启恢复或长期离线存活；建议重启检测、worker 存活核对、磁盘配额和可核验恢复流程 |
 
 优先级表达改进顺序，不等同于已在真实手机上成功利用。此版本按研究资料收录，保持“未完全通过”；没有授予安全通过徽章。
@@ -104,3 +106,11 @@ HTTP 拒绝不符 Host、重复 Content-Length/Authorization、Transfer-Encoding
 [OpenAI 官方 MCP 文档](https://developers.openai.com/codex/mcp/)用于核对 CLI 连接 MCP 的一般概念；它不构成本包 Android 适配的官方认证。分析的主要证据为本目录原始材料、JAR 的独立反编译核对以及本次隔离检查。
 
 原分享未附 LICENSE 或原始仓库。按来源署名展示，不把该材料改署为研究所原创，不自动套用研究所或 OpenAI 的许可。本次未分发 CLI/jq 上游二进制，原教程中的外部版本、下载地址和校验值未在本轮重新下载验证。
+
+## 二次审核记录（修订 2）
+
+- 更正 phone_ui 尺寸刷新描述：helper 每次执行时读取 geometry；缓存问题归于 phone_status 和未绑定帧的读取/动作流程。
+- 收紧 CLI 配置表述：源码能证明模板写了哪些字段，不足以证明所用 CLI 在 Android 上实际按预期执行。
+- 收紧重复 HTTP 头描述：非空哨兵检查不是完整协议验证；原 28 项记录未覆盖全部畸形头。
+- 新增 AI 阅读入口、14 个哈希绑定来源、12 项有类型的结论、9 个工具摘要、5 项风险主题及自检题。风险优先级仅为本报告建议，不是 CVSS 或已确认漏洞评级；完整细项保留在上表。
+- 原 16 文件及发行包保持原版本；本轮没有修复或重跑原软件，没有新增实机验收。AI 学习资料中的命令与提示词仅供理解，不是执行授权。

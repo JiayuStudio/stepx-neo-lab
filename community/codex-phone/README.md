@@ -6,6 +6,8 @@
 
 **状态：🛡️ 未完全通过。** 已完成文件校验与本地定向审查，不授予“安全验证通过”或“Neo 实机认证”。没有安装到研究所设备，没有调用模型服务或在真实账号上执行关注、发消息等操作。
 
+**给 AI 阅读：** [学习入口](ai.md) · [结构化知识 JSON](knowledge.json)。修订 2 已纠正尺寸缓存描述，并为结论补充证据类型、固定源码范围和适用限制。
+
 [完整逆向与安全分析](analysis.md) · [原分享教程](materials/README.md) · [可选小跃委托](materials/docs/小跃委托.md) · [文件清单与 SHA-256](manifest.json) · [28 项隔离检查](checks.json)
 
 [下载整理分享包](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-codex-phone-20261021/codex-phone-community-20261021.zip) · [下载包校验值](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-codex-phone-20261021/SHA256SUMS.txt)

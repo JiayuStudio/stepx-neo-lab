@@ -9,3 +9,5 @@
 | [手机本地 Codex CLI + MCP](../community/codex-phone/README.md) | 当当946 · 社区群分享 | 九种手机工具、Unicode 输入、可选小跃任务桥；原教程、分享包与逆向分析 | 源码 + DEX 定向核对、28 项隔离检查；🛡️ 未完全通过；未独立实机复现 |
 
 未提供开放源码许可证的材料不自动视为可自由商用。运行模型和手机工具前，应理解界面数据发送对象、凭据访问边界及任务副作用。
+
+AI 可从 [Raw 学习入口](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/ai.md) 与 [结构化知识](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/knowledge.json) 读取手机控制方案；引用时保留来源标签及未验证限制。

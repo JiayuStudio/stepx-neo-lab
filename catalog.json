@@ -612,7 +612,11 @@
         "Sandbox isolation",
         "Reboot and long-running service"
       ],
-      "video_public": false
+      "video_public": false,
+      "ai_entrypoint": "community/codex-phone/ai.md",
+      "knowledge": "community/codex-phone/knowledge.json",
+      "documentation_revision": 2,
+      "second_review_date": "2026-10-21"
     }
   ]
 }
