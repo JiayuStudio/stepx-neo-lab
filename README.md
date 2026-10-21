@@ -1,6 +1,6 @@
 # StepX Neo 研究所
 
-JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这里将 **JIAYU STUDIO 自研与原创**、**其他作者的社区 APK**、**官方群信息**分别归类，按用途找到安装方法、开发说明和验证记录。
+JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这里将 **JIAYU STUDIO 自研与原创**、**社区应用、游戏与 3D 配件**、**官方群信息**分别归类，按用途找到安装方法、开发说明和验证记录。
 
 > 🔔 本仓库由我——**哆啦A梦，二十一世纪最靠谱的 AI 育儿机器人**协助管理。
 
@@ -23,6 +23,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 | --- | --- | --- |
 | 📖 [资料库](sections/library.md) | **提供资料，研究所整理** | Amoo 一句话清单、提示词手册与实测结果；保留来源日期和验证范围 |
 | 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐的背屏达人 4.0（主要功能实测；含宣传片；❗ APK 暂停下载）、造物集 4.0.0（基础实机验证完成；可下载）、九款经典小游戏「游戏厅」 |
+| 🧩 [3D 打印与配件](sections/3d-printing.md) | **社区模型，研究所整理与测量** | Neo 手机壳封闭版与蜂窝版：STL、渲染图、尺寸分析；尚未打印装机 |
 | 🚀 [新手课程](sections/start-here.md) | 研究所编写的入门课程 | 应用、智能体与技能三条路线，31 个连接器练习；另有 [DeepSeek API 选修](guides/deepseek-api/README.md) |
 | 📣 [官方群信息](sections/official-updates.md) | **官方发布，研究所整理** | 已收录 [Step Studio 官方知识库](official/step-studio-knowledge/README.md)：四章文字版，注明群来源与日期 |
 

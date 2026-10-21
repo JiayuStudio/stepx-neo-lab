@@ -1,0 +1,62 @@
+{
+  "recorded_at": "2026-10-21",
+  "source": "社区提供的 STL",
+  "unit": "STL contains no unit declaration; values interpreted as mm for this analysis",
+  "orientation": "XY rotated +12 degrees to restore case width and length; Z preserved; translated to minimum corner",
+  "method": "Trimesh 5.1.1; XY minimum-area rectangle; horizontal sections; ray intersections",
+  "physical_print_tested": false,
+  "physical_fit_tested": false,
+  "official_phone_lwh_confirmed": false,
+  "models": [
+    {
+      "id": "closed",
+      "title": "背部封闭版",
+      "file": "models/stepx-neo-case-closed.stl",
+      "bytes": 232884,
+      "sha256": "705e97999d8232ea8575311ad695b86f4b8938d58e3dd54cf1e00eb4bda82172",
+      "triangles": 4656,
+      "original_header_zero": true,
+      "outer_lwh_model_units": [
+        154.6000213623047,
+        73.50000762939453,
+        10.420000076293945
+      ],
+      "inner_xy_at_z_2_01": [
+        152.60001587768485,
+        71.50001502037048
+      ],
+      "volume_model_units_cubed": 12162.12210316866,
+      "surface_model_units_squared": 23987.798106168153,
+      "watertight": true,
+      "consistent_winding": true,
+      "connected_components": 1,
+      "euler_number": -2,
+      "back_thickness_sample": 1.1
+    },
+    {
+      "id": "honeycomb",
+      "title": "背部蜂窝版",
+      "file": "models/stepx-neo-case-honeycomb.stl",
+      "bytes": 380684,
+      "sha256": "637c5533c3da425cb08d27cd39767d73e35a7fc9a89a377eba354d349f6dc341",
+      "triangles": 7612,
+      "original_header_zero": true,
+      "outer_lwh_model_units": [
+        154.6000213623047,
+        73.50000762939453,
+        10.420000076293945
+      ],
+      "inner_xy_at_z_2_01": [
+        152.60001692588554,
+        71.50001479983337
+      ],
+      "volume_model_units_cubed": 5417.859171890935,
+      "surface_model_units_squared": 14714.481231831163,
+      "watertight": true,
+      "consistent_winding": true,
+      "connected_components": 1,
+      "euler_number": -152,
+      "back_thickness_sample": 1.0
+    }
+  ]
+}

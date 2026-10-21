@@ -1,0 +1,2 @@
+705e97999d8232ea8575311ad695b86f4b8938d58e3dd54cf1e00eb4bda82172  models/stepx-neo-case-closed.stl
+637c5533c3da425cb08d27cd39767d73e35a7fc9a89a377eba354d349f6dc341  models/stepx-neo-case-honeycomb.stl

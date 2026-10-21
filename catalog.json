@@ -285,6 +285,12 @@
       "title": "资料库",
       "path": "sections/library.md",
       "group": "reference"
+    },
+    {
+      "id": "3d-printing",
+      "title": "3D 打印与配件",
+      "path": "sections/3d-printing.md",
+      "group": "community"
     }
   ],
   "community_apks": [
@@ -519,6 +525,55 @@
         "Neo device compatibility",
         "Other eight games gameplay",
         "Offline play"
+      ]
+    }
+  ],
+  "community_3d_models": [
+    {
+      "id": "neo-community-cases",
+      "title": "STEPX Neo 社区 3D 手机壳",
+      "section": "3d-printing",
+      "path": "community/3d-cases/README.md",
+      "content_origin": "third_party",
+      "artifact_type": "stl_model_collection",
+      "source": "社区提供",
+      "date": "2026-10-21",
+      "license": "未提供",
+      "measurements": "community/3d-cases/measurements.json",
+      "models": [
+        {
+          "id": "closed",
+          "file": "community/3d-cases/models/stepx-neo-case-closed.stl"
+        },
+        {
+          "id": "honeycomb",
+          "file": "community/3d-cases/models/stepx-neo-case-honeycomb.stl"
+        }
+      ],
+      "author_display": null,
+      "unit_assumption": "mm; STL does not encode units",
+      "outer_lwh_mm": [
+        154.6,
+        73.5,
+        10.42
+      ],
+      "inner_reference_lw_mm": [
+        152.6,
+        71.5
+      ],
+      "inner_reference_z_mm": 2.01,
+      "official_phone_lwh_confirmed": false,
+      "verified": [
+        "STL hashes and structural format",
+        "Orientation corrected geometry and sampled sections",
+        "Closed mesh, winding and connected component checks",
+        "Actual mesh renders"
+      ],
+      "not_verified": [
+        "Unit confirmation",
+        "Slicing and printing",
+        "Physical phone fit and port clearance",
+        "Back display readability"
       ]
     }
   ]

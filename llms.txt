@@ -57,3 +57,9 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [功能介绍](community/backscreenfun/README.md)：在线 URL 解析背屏动画、60 秒宣传片及图文实机报告。
 - [使用与在线 GIF 教程](community/backscreenfun/usage.md)：只支持可下载的 HTTPS GIF 直链；Tenor 页面不作为已支持的网页解析。
 - [4.0 安全报告](community/backscreenfun/security-4.0.md)：未鉴权信息返回路径，当前 ❗、APK 暂停公开下载。功能适配不等于安全通过。
+
+## 社区 3D 打印与配件
+
+- [独立分区](sections/3d-printing.md)
+- [Neo 手机壳](community/3d-cases/README.md)：封闭版与蜂窝版原始 STL、真实网格渲染和尺寸分析；作者暂不标记。
+- [测量数据](community/3d-cases/measurements.json)：community_3d_models 对应第三方 STL 集合。单位按毫米解释，壳体外形 154.60 × 73.50 × 10.42；参考内腔 152.60 × 71.50，不是裸机规格。未切片、未打印、未装机。
