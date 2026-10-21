@@ -1,8 +1,8 @@
-# 背屏达人 4.0 · 使用与在线 GIF 教程
+# 背屏达人安全修订 4.0.1 · 使用与在线 GIF 教程
 
 [应用详情与安全状态](README.md) · [图文实机报告](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-device-report.pdf)
 
-4.0 APK 当前暂停公开下载。以下记录已安装版本的实际操作；安全问题见[详细报告](security-4.0.md)。
+[下载安全修订版 4.0.1](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0.1-secure/backscreenfun-4.0.1-secure.apk)，采用独立包名，可与原版并存。下列媒体操作来自 4.0 实测，4.0.1 沿用相关实现，新版运行复测尚未完成；安全修改与验证范围见[报告](security-4.0.1.md)。原版 4.0 APK 仍暂停下载。
 
 ## 在线 URL 解析背屏动画
 
@@ -38,4 +38,18 @@
 
 “停止”可能保留最后图案，“恢复系统显示”用于交还控制。自动模式、姿态、相机联动和系统显示策略会影响点亮；本次熄屏通过只对应报告列明的临时条件。
 
-本机状态接口当前存在未鉴权读取问题。避免在状态消息中放入私人内容，不把背屏上的“批准 / 完成”显示当作可信执行授权；这些建议不能代替修复。
+安全修订版已为所有本机状态接口加入配对认证。背屏上的“批准 / 完成”是显示状态，不是执行授权。
+
+
+## 电脑助手配对（4.0.1）
+
+在 Xspace 查看本机生成的 32 位令牌，仅交给可信助手。用 USB 转发本机端口后，读取使用 GET，修改使用 POST；所有路径均需凭据。旧的外部广播已关闭。
+
+```sh
+adb forward tcp:47321 tcp:47321
+curl -H "Authorization: Bearer $BSF_TOKEN" http://127.0.0.1:47321/status
+curl -X POST -H "Authorization: Bearer $BSF_TOKEN" -d 'tool=codex&state=waiting' http://127.0.0.1:47321/status
+curl -X POST -H "Authorization: Bearer $BSF_TOKEN" http://127.0.0.1:47321/quit
+```
+
+`BSF_TOKEN` 是当前终端中私下设置的配对令牌变量；示例不含实际令牌。更换令牌后旧值立即失效；鉴权失败返回 401，GET 修改返回 405。`/feed` 不返回账号或原始诊断。联动测试结束，移除自己的 USB 转发：`adb forward --remove tcp:47321`。

@@ -1,54 +1,50 @@
-# 背屏达人 4.0
+# 背屏达人 · 安全修订 4.0.1
 
-[社区应用](../../sections/community-apks.md) · [研究所首页](../../README.md) · [使用教程](usage.md)
+[社区应用](../../sections/community-apks.md) · [研究所首页](../../README.md) · [使用教程](usage.md) · [安全报告](security-4.0.1.md)
 
-把 GIF、文字、表情和手绘图案变成 Neo 背屏上的像素动画。**作者：鸿渐 · 来源：社区群 · 社区作品，非 JIAYU STUDIO 自研应用。** 本页由 3.0 更新为 4.0，保留[历史记录](history-3.0.md)。
+把 GIF、文字、表情和手绘图案变成 Neo 背屏上的像素动画。**原作：鸿渐 · 来源：社区群；安全修订：JIAYU STUDIO / StepX Neo 研究所。** 原始工程和签名私钥未提供，4.0.1 是基于 4.0 APK 的独立安全修订，采用独立包名和新签名，可与原版并存。
+
+**[下载 4.0.1 安全修订版 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0.1-secure/backscreenfun-4.0.1-secure.apk)** · [发行说明与校验](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/community-backscreenfun-v4.0.1-secure)
 
 ## 核心功能：在线 URL 解析背屏动画
 
-复制可直接下载的 **HTTPS GIF 链接**，粘贴到“动画”页，点击“从在线 URL 导入 GIF”，完成转换后播放。应用把动画转换为 17×23 点阵，支持灰度、黑白、反色与完整适配/铺满裁切。
+**粘贴链接 → 解析动画 → 背屏播放。** 在“自定义背屏 → 动画”中粘贴可直接下载的 **HTTPS GIF 文件链接**，点击“从在线 URL 导入 GIF”，转换后播放。支持灰度、黑白、反色、完整适配与铺满裁切，转换为 17×23 点阵；取前 30 秒、每秒 12 帧，最多 360 帧。
 
-**粘贴链接 → 解析动画 → 背屏播放。** 这里指 GIF 文件直链，尚不支持把任意作品网页当作 GIF 直接解析。转换取前 30 秒、每秒 12 帧，最多 360 帧。
+链接指 GIF 文件直链；没有新增任意作品网页的 GIF 提取器。指定 Tenor 页面与媒体直链先前在手机连接阶段超时，电脑下载后本地转换为 29 帧播放；详细条件见[教程](usage.md)。
 
-[![背屏达人 4.0：在线 URL 解析背屏动画](images/promo-4.0.jpg)](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4)
+[![背屏达人：在线 URL 解析背屏动画](images/promo-4.0.jpg)](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4)
 
-**[播放 / 下载 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4)** · [版本资料](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/community-backscreenfun-v4.0)
+**[播放 / 下载 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4)**：沿用 4.0 功能演示，19–31 秒介绍在线 URL 核心流程，配完整 Suno 音乐。应用界面实录与绘制点阵，无外置摄像头画面。该片不演示安全修订，也不作为 4.0.1 实机通过证据。
 
-宣传片用 12 秒介绍在线 URL 核心流程，沿用应用的深色、青绿与橙黄风格，配完整 Suno 音乐。画面由应用界面实录和绘制点阵组成，不含外置摄像头画面；点阵演绎不作为硬件性能证据。
+## 修复了什么
 
-## 本次实测
-
-**[下载图文实机测试报告 PDF](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-device-report.pdf)**：9 页，含实体背屏照片、媒体导入、音乐律动、熄屏条件、帧率及后续补充。
-
-| 功能 | 2026-10-21 结果 |
+| 4.0 的问题 | 4.0.1 的处理 |
 | --- | --- |
-| 表情、中文逐字、手绘、宠物代表动作 | 代表图案有实体背屏照片 |
-| 在线 GIF 直链 | 8 帧加载环导入及物理背屏变化通过；另有链接下载超时 |
-| Tenor 篮球 GIF | 页面与媒体直链在手机连接阶段均超时；电脑下载后本地转换为 29 帧，应用循环播放；本次补测未拍摄该 GIF 的实体背屏 |
-| 本地 GIF / MP4 / PNG | 导入通过；35 秒、60 FPS 视频转换为 360 帧 |
-| 音乐律动 | 拒绝、允许、声音响应与停止释放捕获已检查，实体背屏可见频谱变化 |
-| 熄屏动画 | 临时“常亮”、关闭相机联动且接电条件下持续约 64.7 秒；不外推到默认设置或深度待机 |
-| 应用更新循环 | 数字雨采样约 16.16 次/秒；不是物理面板扫描刷新率 |
-| 待验 | 倾斜重力响应、全部生肖、真实插拔充电、B 站轮询、长时耗电与多设备兼容 |
+| 状态与诊断未鉴权读取 | 所有接口验证配对令牌；诊断不返回 UID、账号或原始错误 |
+| 未鉴权重置 | `/quit` 要求令牌和 POST |
+| 外部广播可改状态 | 接收器禁用、不导出，处理函数关闭 |
+| 请求及字段限制不足 | 限制请求行、头部、正文、字段、频率、线程、队列与读取期限 |
+| 鉴权失败仍返回 HTTP 200 | 缺失或错误凭证返回 401；方法、格式和超长请求使用对应错误码 |
 
-## 安全状态与获取
+令牌由 8 位十六进制增至 32 位（128 位随机值），私有保存、支持轮换；应用内配对帮助已更新。对外集成使用已配对的本机 HTTP，不再使用旧广播。[补丁源码与测试](security-patch-4.0.1/README.md)。
 
-**❗ 安全风险，4.0 APK 暂停公开下载。** 新版为部分写入操作加入配对令牌，但状态和服务诊断读取仍未鉴权，可能返回用户配置的账号字段或状态消息；该返回路径由代码审查和虚构数据隔离测试确认。未经授权的状态重置也已在实机复现。[查看 4.0 详细安全报告](security-4.0.md)。
+## 验证与安全状态
 
-本页保留功能资料、测试报告与宣传片，不提供 4.0 安装包下载，也不授予“已通过哆啦A梦安全验证✅”。功能验证与安全结论分别记录。原始 APK 未修改、重签或重新构建；源码和源码许可尚未提供。
+**🛡️ 未完全通过；安全修订版可下载。** 本轮已通过 65 项虚构数据离线协议回归、最终 APK 反编译回查、清单检查、签名校验及独立包名安装，启动到协议页。针对已报告问题的代码路径已修改；手机服务运行、独立未授权应用和实体背屏复测尚未完成，不授予“已通过哆啦A梦安全验证✅”。[查看版本绑定的报告与局限](security-4.0.1.md)。
 
-<details>
-<summary>版本与安装包校验信息</summary>
+原版 **4.0 仍为 ❗ 安全风险，继续暂停其 APK 下载**；原报告与历史资料保留。新包的结论不回溯覆盖原包。[4.0 安全报告](security-4.0.md) · [4.0 收录记录](history-4.0.md)。
 
-- 显示版本：4.0；versionCode：4；包名：`com.amoo.backscreenfun`。
-- 文件大小：370,823 字节。
-- SHA-256：`3dc9333bf7ddada0fd10f6ffab255152c6017edb13856003e0bce472c373918e`。
-- APK v2/v3 签名完整性通过；产品通用证书名称不单独证明作者身份。
-- 最低 Android 8.0；背屏功能需要 Neo 对应系统接口。
-- 版本以包内清单为准，原附件名中的“1.1”不是包内版本。
+**[4.0 图文实机报告 PDF](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-device-report.pdf)**：9 页，含实体背屏照片、音乐律动、熄屏条件与帧率记录。它对应原版 4.0，不能代替新签名、新包名的运行验证。媒体和点阵实现沿用原包，仍须分别记录新版复测结果。
 
-</details>
+## 安装与校验
+
+- 应用显示：背屏达人·安全修订 4.0.1；versionCode：40001。
+- 包名：`com.jiayu.backscreenfun.secure`；保留原类命名用于兼容，不代表原作者签名。
+- 文件大小：374,669 字节。
+- SHA-256：`d4600c1bd04c4edfd2e6cdc7ad05d334b07dd218783e0f2ce6892503cd1c3835`。
+- APK v2/v3 签名通过，证书使用通用产品和工作室名称；原版数据不自动迁移。
+- 最低 Android 8.0，背屏功能需要 Neo 系统接口。原作源码许可尚未提供；独立修订不意味着原作已开源或原作者认可。
 
 ## 历史
 
-[3.0 收录记录](history-3.0.md) · [3.0 安全报告](security-3.0.md)。历史记录仅对应当时的文件和验证范围，不代表 4.0 结论，也不作为绕过新版安全限制的建议。
+[4.0 收录记录](history-4.0.md) · [4.0 安全报告](security-4.0.md) · [3.0 收录记录](history-3.0.md) · [3.0 安全报告](security-3.0.md)。旧记录只对应当时文件与验证范围。
