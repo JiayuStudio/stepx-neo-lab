@@ -22,7 +22,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 | 分区 | 内容归属 | 去这里做什么 |
 | --- | --- | --- |
 | 📖 [资料库](sections/library.md) | **提供资料，研究所整理** | Amoo 一句话清单、提示词手册与实测结果；保留来源日期和验证范围 |
-| 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐的背屏达人 3.0（Neo 已认证；🛡️ 未完全通过，可下载）、造物集 4.0.0（基础实机验证完成；可下载）、九款经典小游戏「游戏厅」 |
+| 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐的背屏达人 4.0（主要功能实测；含宣传片；❗ APK 暂停下载）、造物集 4.0.0（基础实机验证完成；可下载）、九款经典小游戏「游戏厅」 |
 | 🚀 [新手课程](sections/start-here.md) | 研究所编写的入门课程 | 应用、智能体与技能三条路线，31 个连接器练习；另有 [DeepSeek API 选修](guides/deepseek-api/README.md) |
 | 📣 [官方群信息](sections/official-updates.md) | **官方发布，研究所整理** | 已收录 [Step Studio 官方知识库](official/step-studio-knowledge/README.md)：四章文字版，注明群来源与日期 |
 
@@ -53,6 +53,8 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 ## 宣传与功能视频
 
+- [背屏达人 4.0 · 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4)：在线 URL 解析背屏动画，完整 Suno 配乐；[功能与实测](community/backscreenfun/README.md)。
+
 - [拓麻歌子 · 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)：角色动画演示，Suno 配乐。
 - [StepX Neo Studio · 1 分 55 秒功能演示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4)：1.2 版界面，涵盖项目编辑、预览、APK 构建、协作与用量管理；部分配置及用量页面为功能示意。
 
@@ -64,4 +66,4 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 反馈请在对应项目提供应用版本、复现步骤与错误文字。研究所结构建议可在本仓库提出。
 
-维护：JIAYU STUDIO · 2026-10-20。原创资料保留版权，欢迎分享仓库链接；第三方软件遵循各自许可。
+维护：JIAYU STUDIO · 2026-10-21。原创资料保留版权，欢迎分享仓库链接；第三方软件遵循各自许可。

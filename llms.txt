@@ -51,3 +51,9 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 
 - [开发教程](guides/chess-bomber/README.md)：官方Step Studio案例，涵盖规则、移动端输入、服务状态、声音和宣传片。
 - [验证范围](guides/chess-bomber/05-verification.md)：独立网页检查、部分真机操作与Studio报告分开；真正双指真机及完整多人真机待验。未公开游戏或安装包。
+
+## 背屏达人 4.0
+
+- [功能介绍](community/backscreenfun/README.md)：在线 URL 解析背屏动画、60 秒宣传片及图文实机报告。
+- [使用与在线 GIF 教程](community/backscreenfun/usage.md)：只支持可下载的 HTTPS GIF 直链；Tenor 页面不作为已支持的网页解析。
+- [4.0 安全报告](community/backscreenfun/security-4.0.md)：未鉴权信息返回路径，当前 ❗、APK 暂停公开下载。功能适配不等于安全通过。

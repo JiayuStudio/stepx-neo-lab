@@ -6,14 +6,14 @@
 
 ## APK 推荐
 
-[社区 APK 安全检查与报告](../community/security/README.md)。背屏达人 3.0 当前为 🛡️ 未完全通过，保留下载；修改建议与可能风险见报告末尾；Neo 适配认证与安全状态分别记录。
+[社区 APK 安全检查与报告](../community/security/README.md)。背屏达人 4.0 当前为 ❗ 安全风险，APK 暂停公开下载；介绍、宣传片和图文报告保留，修改建议见新版报告末尾；Neo 适配认证与安全状态分别记录。
 
 | 应用 | 分类与用途 | 来源 | Neo 验证 |
 | --- | --- | --- | --- |
 | [造物集 4.0.0](../community/zaowuji/README.md) | 作品分享社区：发现网页、游戏与 App，发布和交流作品 | 木偶 · 社区群 | 基础实机验证完成；🛡️；可下载 |
-| [背屏达人 3.0](../community/backscreenfun/README.md) | 背屏与个性化：点阵手绘、文字与动画等玩法 | 鸿渐 · 社区群 | 已认证 |
+| [背屏达人 4.0](../community/backscreenfun/README.md) | 背屏与个性化：在线 URL 解析背屏动画、点绘、文字与宠物 | 鸿渐 · 社区群 | 主要功能实测；❗ APK 暂停下载 |
 
-[下载背屏达人 3.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v3.0/backscreenfun-3.0.apk)。Neo 认证状态由维护者确认，安装包信息与本次检查范围见详情。
+[背屏达人 4.0 介绍与安全报告](../community/backscreenfun/README.md) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4) · [使用教程](../community/backscreenfun/usage.md)。已完成代表功能实测，具体条件和待验项见详情。
 
 [下载造物集 4.0.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-zaowuji-v4.0.0/zaowuji-4.0.0.apk) · [造物集使用教程](../community/zaowuji/usage.md)。
 
