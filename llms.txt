@@ -56,7 +56,7 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 
 - [功能介绍](community/backscreenfun/README.md)：在线 URL 解析背屏动画、60 秒宣传片及图文实机报告。
 - [使用与在线 GIF 教程](community/backscreenfun/usage.md)：只支持可下载的 HTTPS GIF 直链；Tenor 页面不作为已支持的网页解析。
-- [4.0.1 修复报告](community/backscreenfun/security-4.0.1.md)：全路由认证、128 位令牌、关闭广播、输入/资源约束与状态码；65 项离线检查及安装完成，手机运行待复测，🛡️ 可下载。
+- [4.0.1 修复报告](community/backscreenfun/security-4.0.1.md)：全路由认证、128 位令牌、关闭广播、输入/资源约束与状态码；65 项离线检查、手机接口/轮换、独立应用与资源限制、在线GIF播放复测完成；实体背屏/完整流量等未覆盖，🛡️ 可下载。
 - [补丁源码与测试](community/backscreenfun/security-patch-4.0.1/README.md)：独立包名与新签名，不是原作者官方升级。
 - [4.0 原版报告](community/backscreenfun/security-4.0.md)：原包仍为 ❗、暂停下载；4.0 功能实拍不代替 4.0.1 验证。
 

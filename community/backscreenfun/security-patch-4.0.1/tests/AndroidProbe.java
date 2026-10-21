@@ -38,6 +38,23 @@ public final class AndroidProbe extends Activity {
                 slow.getOutputStream().write('G');
                 result.put("inactivity_timeout_status", responseStatus(slow));
             }
+            final Socket trickle = connect();
+            long deadlineStart = System.nanoTime();
+            Thread writer = new Thread(new Runnable() { public void run() {
+                byte[] bytes = "GET /status HTTP/1.1\r\nHost: localhost\r\n\r\n".getBytes(StandardCharsets.US_ASCII);
+                try {
+                    for (byte value : bytes) {
+                        trickle.getOutputStream().write(value);
+                        Thread.sleep(100);
+                    }
+                } catch (Exception expectedClose) { }
+            } }, "slow-input");
+            writer.setDaemon(true);
+            writer.start();
+            try { result.put("absolute_timeout_status", responseStatus(trickle)); }
+            finally { trickle.close(); }
+            result.put("absolute_timeout_millis", (System.nanoTime()-deadlineStart)/1000000L);
+            writer.join(1000);
             List<Socket> held = new ArrayList<>();
             JSONArray saturation = new JSONArray();
             for (int i = 0; i < 8; i++) held.add(connect());
@@ -46,10 +63,13 @@ public final class AndroidProbe extends Activity {
             }
             result.put("saturation_statuses", saturation);
             Thread.sleep(1200);
-            int limited = 0;
-            for (int i = 0; i < 64; i++)
-                if (request("GET", "/alive", null).getInt("status") == 429) limited++;
+            int limited = 0, transportRejected = 0;
+            for (int i = 0; i < 64; i++) {
+                try { if (request("GET", "/alive", null).getInt("status") == 429) limited++; }
+                catch (java.io.IOException | NumberFormatException | ArrayIndexOutOfBoundsException boundedRefusal) { transportRejected++; }
+            }
             result.put("rate_limited_requests", limited);
+            result.put("burst_transport_rejections", transportRejected);
             Thread.sleep(1200);
             result.put("recovery_unauthorized_status", request("GET", "/alive", null).getInt("status"));
             Intent legacy = new Intent("com.amoo.backscreenfun.STATUS");
@@ -75,8 +95,12 @@ public final class AndroidProbe extends Activity {
                     + body.getBytes(StandardCharsets.UTF_8).length + "\r\n")
                 + "\r\n" + (body == null ? "" : body);
         try (Socket socket = connect()) {
-            socket.getOutputStream().write(text.getBytes(StandardCharsets.US_ASCII));
-            socket.getOutputStream().flush();
+            try {
+                socket.getOutputStream().write(text.getBytes(StandardCharsets.US_ASCII));
+                socket.getOutputStream().flush();
+            } catch (java.io.IOException earlyRejection) {
+                // Admission limits may respond and close before the request is sent.
+            }
             ByteArrayOutputStream data = new ByteArrayOutputStream();
             byte[] buffer = new byte[1024];
             for (int n; (n = socket.getInputStream().read(buffer)) >= 0;) {

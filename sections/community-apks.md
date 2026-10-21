@@ -13,9 +13,9 @@
 | 应用 | 分类与用途 | 来源 | Neo 验证 |
 | --- | --- | --- | --- |
 | [造物集 4.0.0](../community/zaowuji/README.md) | 作品分享社区：发现网页、游戏与 App，发布和交流作品 | 木偶 · 社区群 | 基础实机验证完成；🛡️；可下载 |
-| [背屏达人安全修订 4.0.1](../community/backscreenfun/README.md) | 背屏与个性化：在线 URL 解析背屏动画、点绘、文字与宠物 | 原作鸿渐 · 社区群；研究所安全修订 | 🛡️；可下载；新版运行待复测 |
+| [背屏达人安全修订 4.0.1](../community/backscreenfun/README.md) | 背屏与个性化：在线 URL 解析背屏动画、点绘、文字与宠物 | 原作鸿渐 · 社区群；研究所安全修订 | 🛡️；可下载；安全接口与URL已复测 |
 
-[背屏达人安全修订版介绍与报告](../community/backscreenfun/README.md) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4) · [使用教程](../community/backscreenfun/usage.md)。原版已完成代表功能实测；修订版完成安装与 65 项离线检查，服务运行和实体背屏待复测，见详情。
+[背屏达人安全修订版介绍与报告](../community/backscreenfun/README.md) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4) · [使用教程](../community/backscreenfun/usage.md)。原版已完成代表功能实测；修订版完成 65 项离线检查、手机接口与独立应用对抗、在线 GIF 转换/播放；新版实体背屏待复测，见详情。
 
 [下载造物集 4.0.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-zaowuji-v4.0.0/zaowuji-4.0.0.apk) · [造物集使用教程](../community/zaowuji/usage.md)。
 

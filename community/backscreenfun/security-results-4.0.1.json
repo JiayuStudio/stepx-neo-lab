@@ -1,0 +1,377 @@
+{
+  "version": "4.0.1",
+  "apk_sha256": "d4600c1bd04c4edfd2e6cdc7ad05d334b07dd218783e0f2ce6892503cd1c3835",
+  "date": "2026-10-21",
+  "scope": "targeted security regression with fictional data; no real account identifiers",
+  "offline_checks_passed": 65,
+  "device_protocol": [
+    {
+      "case": "no credential /",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "wrong credential /",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "no credential /status",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "wrong credential /status",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "no credential /feed",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "wrong credential /feed",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "no credential /alive",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "wrong credential /alive",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "no credential /event",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "wrong credential /event",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "no credential /quit",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "wrong credential /quit",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "valid POST status",
+      "expected": 200,
+      "status": 200,
+      "passed": true
+    },
+    {
+      "case": "valid readback",
+      "expected": 200,
+      "status": 200,
+      "passed": true
+    },
+    {
+      "case": "unauthorized POST quit",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "authenticated GET quit prohibited",
+      "expected": 405,
+      "status": 405,
+      "passed": true
+    },
+    {
+      "case": "authenticated GET status write prohibited",
+      "expected": 405,
+      "status": 405,
+      "passed": true
+    },
+    {
+      "case": "message limit",
+      "expected": 400,
+      "status": 400,
+      "passed": true
+    },
+    {
+      "case": "unknown state",
+      "expected": 400,
+      "status": 400,
+      "passed": true
+    },
+    {
+      "case": "duplicate credential",
+      "expected": 400,
+      "status": 400,
+      "passed": true
+    },
+    {
+      "case": "duplicate form field",
+      "expected": 400,
+      "status": 400,
+      "passed": true
+    },
+    {
+      "case": "invalid UTF-8",
+      "expected": 400,
+      "status": 400,
+      "passed": true
+    },
+    {
+      "case": "oversized request line",
+      "expected": 414,
+      "status": 414,
+      "passed": true
+    },
+    {
+      "case": "oversized header",
+      "expected": 431,
+      "status": 431,
+      "passed": true
+    },
+    {
+      "case": "oversized declared body",
+      "expected": 413,
+      "status": 413,
+      "passed": true
+    },
+    {
+      "case": "unauthenticated POST status",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "all invalid requests left status unchanged",
+      "expected": 200,
+      "status": 200,
+      "passed": true
+    },
+    {
+      "case": "minimized feed",
+      "expected": 200,
+      "status": 200,
+      "passed": true
+    },
+    {
+      "case": "alive",
+      "expected": 200,
+      "status": 200,
+      "passed": true
+    },
+    {
+      "case": "browser origin denied",
+      "expected": 403,
+      "status": 403,
+      "passed": true
+    },
+    {
+      "case": "unknown authenticated route",
+      "expected": 404,
+      "status": 404,
+      "passed": true
+    }
+  ],
+  "device_rotation": [
+    {
+      "case": "old token invalid after UI rotation",
+      "expected": 401,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "case": "new token accepted after UI rotation",
+      "expected": 200,
+      "status": 200,
+      "passed": true
+    }
+  ],
+  "post_probe_state": {
+    "apk_sha256": "d4600c1bd04c4edfd2e6cdc7ad05d334b07dd218783e0f2ce6892503cd1c3835",
+    "checks": [
+      {
+        "case": "authorized read after independent probe",
+        "expected": 200,
+        "status": 200,
+        "passed": true
+      },
+      {
+        "case": "independent requests and broadcast did not mutate status",
+        "passed": true
+      },
+      {
+        "case": "valid write after resource pressure",
+        "expected": 200,
+        "status": 200,
+        "passed": true
+      },
+      {
+        "case": "valid POST event",
+        "expected": 200,
+        "status": 200,
+        "passed": true
+      },
+      {
+        "case": "event state readback",
+        "expected": 200,
+        "status": 200,
+        "passed": true
+      },
+      {
+        "case": "authorized quit",
+        "expected": 200,
+        "status": 200,
+        "passed": true
+      },
+      {
+        "case": "quit state readback",
+        "expected": 200,
+        "status": 200,
+        "passed": true
+      }
+    ],
+    "passed": 7,
+    "quit_business_state_verified": true,
+    "complete": true
+  },
+  "independent_android_probe": {
+    "inactivity_timeout_status": 408,
+    "absolute_timeout_status": 408,
+    "absolute_timeout_millis": 3016,
+    "saturation_statuses": [
+      408,
+      408,
+      408,
+      408,
+      408,
+      408,
+      503,
+      503
+    ],
+    "rate_limited_requests": 40,
+    "burst_transport_rejections": 0,
+    "recovery_unauthorized_status": 401,
+    "broadcast_attempt": "sent_without_privilege",
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/status",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "GET",
+        "path": "/feed",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "GET",
+        "path": "/alive",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "GET",
+        "path": "/quit",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "GET",
+        "path": "/event",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "GET",
+        "path": "/",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "POST",
+        "path": "/status",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "POST",
+        "path": "/quit",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "POST",
+        "path": "/event",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      },
+      {
+        "method": "GET",
+        "path": "/status?tool=untrusted&state=error",
+        "status": 401,
+        "contains_synthetic_message": false,
+        "contains_unauthorized_marker": false
+      }
+    ],
+    "complete": true,
+    "independent_uid": true,
+    "different_signer": true
+  },
+  "core_url": {
+    "url": "https://www.runoob.com/try/demo_source/demo_wait.gif",
+    "converted_frames": 8,
+    "playing": true,
+    "kind": "media",
+    "tick_advanced": true,
+    "evidence": "actual app UI and authenticated playback status",
+    "physical_rear_screen_camera_rechecked": false
+  },
+  "cleanup": {
+    "secure_app_force_stopped": true,
+    "temporary_probe_uninstalled": true,
+    "temporary_ui_dump_removed": true,
+    "private_test_token_copies_removed": true,
+    "phone_status_port_closed": true,
+    "adb_forward_created_by_this_run": false,
+    "added_projection_microphone_or_battery_permissions": false,
+    "custom_frame_released": true,
+    "display_mode_auto": true,
+    "original_package_preserved": true
+  },
+  "limitations": [
+    "No full traffic capture or bridge endpoint audit",
+    "No malformed-media fuzzing",
+    "No new physical rear-screen camera or deep-sleep acceptance for independent package"
+  ]
+}

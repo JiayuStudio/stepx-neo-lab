@@ -2,7 +2,7 @@
 
 [应用详情与安全状态](README.md) · [图文实机报告](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-device-report.pdf)
 
-[下载安全修订版 4.0.1](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0.1-secure/backscreenfun-4.0.1-secure.apk)，采用独立包名，可与原版并存。下列媒体操作来自 4.0 实测，4.0.1 沿用相关实现，新版运行复测尚未完成；安全修改与验证范围见[报告](security-4.0.1.md)。原版 4.0 APK 仍暂停下载。
+[下载安全修订版 4.0.1](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0.1-secure/backscreenfun-4.0.1-secure.apk)，采用独立包名，可与原版并存。下列媒体操作来自 4.0 实测，4.0.1 沿用相关实现，已回归在线 GIF 转换、应用播放与本机安全接口；其他功能及新版实体背屏复测范围见报告；安全修改与验证范围见[报告](security-4.0.1.md)。原版 4.0 APK 仍暂停下载。
 
 ## 在线 URL 解析背屏动画
 
