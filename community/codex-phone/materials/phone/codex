@@ -1,0 +1,18 @@
+#!/system/bin/sh
+# Isolated Codex installation launched with the current Android shell identity.
+stepneo_root=/data/local/tmp/stepneo-codex
+export HOME="$stepneo_root/home"
+export CODEX_HOME="$stepneo_root/config"
+export TMPDIR="$stepneo_root/tmp"
+export SHELL=/system/bin/sh
+export PATH="$stepneo_root/bin:$stepneo_root/codex-path:/system/bin:/system/xbin:$PATH"
+/system/bin/sh "$stepneo_root/network.sh" || {
+  echo 'Codex phone network setup failed.' >&2
+  exit 1
+}
+export HTTPS_PROXY=http://127.0.0.1:19092
+export HTTP_PROXY=http://127.0.0.1:19092
+export NO_PROXY=localhost,127.0.0.1,::1
+export SSL_CERT_FILE="$stepneo_root/config/android-ca-bundle.pem"
+cd "$stepneo_root/workspace" || exit 1
+exec "$stepneo_root/bin/codex" "$@"

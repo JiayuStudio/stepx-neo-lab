@@ -291,6 +291,12 @@
       "title": "3D 打印与配件",
       "path": "sections/3d-printing.md",
       "group": "community"
+    },
+    {
+      "id": "community-tools",
+      "title": "社区工具与技术方案",
+      "path": "sections/community-tools.md",
+      "group": "community"
     }
   ],
   "community_apks": [
@@ -575,6 +581,38 @@
         "Physical phone fit and port clearance",
         "Back display readability"
       ]
+    }
+  ],
+  "community_tools": [
+    {
+      "id": "codex-phone",
+      "title": "手机本地 Codex CLI + MCP",
+      "section": "community-tools",
+      "path": "community/codex-phone/README.md",
+      "analysis": "community/codex-phone/analysis.md",
+      "content_origin": "third_party",
+      "artifact_type": "source_and_technical_guide",
+      "shared_by": "当当946",
+      "source": "社区群分享；用户提供文件",
+      "original_author_independently_verified": false,
+      "license": "原分享未提供开放源码许可证",
+      "date": "2026-10-21",
+      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/community-codex-phone-20261021",
+      "security_status": "not_fully_passed",
+      "verified": [
+        "15 source manifest hashes",
+        "All 16 materials preserved byte-for-byte",
+        "Bundled DEX decompilation and targeted source comparison",
+        "28 isolated checks with worker mocked"
+      ],
+      "not_verified": [
+        "Independent Android installation or phone actions",
+        "Model calls and provider compatibility",
+        "Pairing race on Android",
+        "Sandbox isolation",
+        "Reboot and long-running service"
+      ],
+      "video_public": false
     }
   ]
 }

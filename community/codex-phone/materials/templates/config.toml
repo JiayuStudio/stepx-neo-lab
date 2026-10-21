@@ -1,0 +1,43 @@
+# Replace placeholders with YOUR endpoint and model. Never put an API key here.
+model_provider = "custom"
+model = "YOUR_MODEL_ID"
+# Uncomment only with an effort value supported by your provider and this CLI:
+# model_reasoning_effort = "medium"
+cli_auth_credentials_store = "file"
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "disabled"
+
+[features]
+unbounded_connection_retries = false
+
+[model_providers.custom]
+name = "Your Responses API"
+base_url = "https://api.example.com/v1"
+wire_api = "responses"
+requires_openai_auth = true
+supports_websockets = false
+request_max_retries = 0
+stream_max_retries = 0
+stream_idle_timeout_ms = 120000
+
+[mcp_servers.stepneo-phone]
+command = "/system/bin/sh"
+args = ["/data/local/tmp/stepneo-codex/phone-mcp.sh"]
+tool_timeout_sec = 30
+enabled_tools = ["phone_status", "phone_ui", "phone_screenshot", "phone_tap", "phone_swipe", "phone_key", "phone_launch", "phone_input", "phone_click"]
+env_vars = ["BOOTCLASSPATH", "DEX2OATBOOTCLASSPATH", "ANDROID_ROOT", "ANDROID_DATA", "ANDROID_ART_ROOT", "ANDROID_I18N_ROOT", "ANDROID_TZDATA_ROOT", "ANDROID_ASSETS", "ANDROID_BOOTLOGO", "ANDROID_STORAGE", "ASEC_MOUNTPOINT", "DOWNLOAD_CACHE", "EXTERNAL_STORAGE", "STANDALONE_SYSTEMSERVER_JARS", "SYSTEMSERVERCLASSPATH", "USER", "LOGNAME"]
+
+# Local phone actions allowed for tasks authorized by the device owner.
+[mcp_servers.stepneo-phone.tools.phone_launch]
+approval_mode = "approve"
+[mcp_servers.stepneo-phone.tools.phone_tap]
+approval_mode = "approve"
+[mcp_servers.stepneo-phone.tools.phone_swipe]
+approval_mode = "approve"
+[mcp_servers.stepneo-phone.tools.phone_key]
+approval_mode = "approve"
+[mcp_servers.stepneo-phone.tools.phone_input]
+approval_mode = "approve"
+[mcp_servers.stepneo-phone.tools.phone_click]
+approval_mode = "approve"

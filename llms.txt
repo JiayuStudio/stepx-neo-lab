@@ -63,3 +63,9 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [独立分区](sections/3d-printing.md)
 - [Neo 手机壳](community/3d-cases/README.md)：封闭版与蜂窝版原始 STL、真实网格渲染和尺寸分析；作者暂不标记。
 - [测量数据](community/3d-cases/measurements.json)：community_3d_models 对应第三方 STL 集合。单位按毫米解释，壳体外形 154.60 × 73.50 × 10.42；参考内腔 152.60 × 71.50，不是裸机规格。未切片、未打印、未装机。
+
+## 社区工具与技术方案
+
+- [分区](sections/community-tools.md)
+- [手机本地 Codex CLI + MCP](community/codex-phone/README.md)：当当946（社区群分享）；原材料与 JIAYU STUDIO 分析分别署名。
+- [逆向与安全分析](community/codex-phone/analysis.md)：源码及附带 DEX 定向核对、28 项隔离检查；首次配对、凭据边界、日志保留待加强。未独立手机实测，安全状态未完全通过。

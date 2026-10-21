@@ -1,0 +1,117 @@
+{
+  "environment": "Host shell with path substitutions; worker launch mocked; no phone, model or network listener",
+  "checks": [
+    {
+      "check": "health_without_token",
+      "passed": true
+    },
+    {
+      "check": "tasks_require_token",
+      "passed": true
+    },
+    {
+      "check": "reject_external_host",
+      "passed": true
+    },
+    {
+      "check": "pairing_closed",
+      "passed": true
+    },
+    {
+      "check": "invalid_pair_token",
+      "passed": true
+    },
+    {
+      "check": "first_pair",
+      "passed": true
+    },
+    {
+      "check": "refuse_repair",
+      "passed": true
+    },
+    {
+      "check": "wrong_token",
+      "passed": true
+    },
+    {
+      "check": "reject_traversal",
+      "passed": true
+    },
+    {
+      "check": "reject_extra_fields",
+      "passed": true
+    },
+    {
+      "check": "reject_concatenated_json",
+      "passed": true
+    },
+    {
+      "check": "reject_transfer_encoding",
+      "passed": true
+    },
+    {
+      "check": "task_accepted",
+      "passed": true
+    },
+    {
+      "check": "same_id_is_duplicate",
+      "passed": true
+    },
+    {
+      "check": "different_payload_same_id",
+      "passed": true
+    },
+    {
+      "check": "concurrency_rejected",
+      "passed": true
+    },
+    {
+      "check": "status_query",
+      "passed": true
+    },
+    {
+      "check": "token_file_private",
+      "passed": true
+    },
+    {
+      "check": "first_caller_token_persisted",
+      "passed": true
+    },
+    {
+      "check": "shell_syntax_bridge.sh",
+      "passed": true
+    },
+    {
+      "check": "shell_syntax_network.sh",
+      "passed": true
+    },
+    {
+      "check": "shell_syntax_provider-connect.sh",
+      "passed": true
+    },
+    {
+      "check": "shell_syntax_codex",
+      "passed": true
+    },
+    {
+      "check": "shell_syntax_phone-mcp.sh",
+      "passed": true
+    },
+    {
+      "check": "python_syntax",
+      "passed": true
+    },
+    {
+      "check": "progress_counts",
+      "passed": true
+    },
+    {
+      "check": "progress_masks_synthetic_key",
+      "passed": true
+    },
+    {
+      "check": "timeout_normalized",
+      "passed": true
+    }
+  ]
+}
