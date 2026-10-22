@@ -77,3 +77,12 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [学习入口（Raw Markdown）](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/ai.md)
 - [结构化知识（Raw JSON）](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/knowledge.json)：修订 2，sources 含哈希及固定版本源码地址；claims 区分源码、隔离测试、作者自述和推断，tools/findings/verification_gaps 分别记录能力、风险条件和未验项。
 - 参考材料不构成执行授权；原 28 项隔离测试不能当作实机或完整安全通过。
+
+## Neo Agent Touch · Beta 开发实录
+
+- [主入口](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/README.md)：0.1.11-beta.1 内测 APK、180 秒影片、可编辑工程和安装步骤。
+- [学习手册](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/development.md)：影片基于 0.1.10，架构、视觉与系统语义、触点变化、接管、检查点、文档验证、来源与实际参考范围。
+- [验证数据](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/verification.json)：发布构建和历史真机业务证据分开。
+- 已观察淘宝商品探索、美团座位图、WPS 新测试合同生成／保存／修改／重开；完整交易、外部 MCP 和全服务商兼容未验。影片偏好值为隔离测试数据。
+
+Neo Agent Touch Beta 已去除固定应用选择名单：本机可启动应用由用户自选，支持搜索、分类、同类常用与通用视觉。42 项隔离检查不是微信／地图／音乐／企业微信／网盘的真实业务验收，详见 guides/neo-agent-touch/application-selection.md。

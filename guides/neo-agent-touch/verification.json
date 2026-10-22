@@ -1,0 +1,60 @@
+{
+  "updated": "2026-10-23",
+  "app_version": "0.1.11-beta.1",
+  "status": "beta",
+  "release_apk_sha256": "e5d351ba28d3f7f7908ffc3c51f322643050161fc1983ac322040fa732b5aa3f",
+  "fresh_release_emulator": {
+    "checks": 42,
+    "passed": true,
+    "environment": "isolated Android 16 emulator",
+    "applications": "two synthetic launcher apps, not real WeChat/Amap/QQ Music/WeCom/Baidu Netdisk",
+    "model_calls": 0
+  },
+  "release_upgrade": {
+    "checks": 6,
+    "passed": true,
+    "scope": "same-version release replacement; selected and revoked apps preserved; version UI verified"
+  },
+  "pure_java_suites": 19,
+  "frontend_checks": {
+    "environment": "Ego Lite mobile viewport; synthetic app inventory, not a physical phone",
+    "checks": {
+      "five_requested_app_names_listed": true,
+      "search_filters_names_and_package": true,
+      "hidden_selections_retained": true,
+      "category_change_clears_stale_default": true,
+      "batch_select_30_apps": true,
+      "clear_visible_results": true,
+      "dirty_refresh_retains_choice": true,
+      "newly_installed_row_added_on_refresh": true,
+      "320px_no_horizontal_overflow": true
+    },
+    "live_model_or_third_party_actions": false
+  },
+  "physical_device_new_beta_tested": false,
+  "historical_physical_evidence_version": "0.1.10",
+  "historical_physical_results": [
+    "Taobao exact model/spec search and product/SKU exploration",
+    "Meituan date/showtime to unselected seat map",
+    "WPS generated/saved/reopened/replaced date and read back"
+  ],
+  "not_verified": [
+    "All complex workflows in arbitrary real applications",
+    "Formal shopping or movie order/payment completion",
+    "External network MCP/Amoo gateway",
+    "All providers, devices and long-term stability"
+  ],
+  "film": {
+    "duration_seconds": 180,
+    "picture_version": "1.0.1",
+    "editable_package_version": "1.0.1",
+    "full_decode_passed": true,
+    "privacy_ocr_samples": 591,
+    "avatar_and_location_masks": true
+  },
+  "assets_sha256": {
+    "Neo-Agent-Touch-0.1.11-beta.1.apk": "e5d351ba28d3f7f7908ffc3c51f322643050161fc1983ac322040fa732b5aa3f",
+    "neo-agent-touch-development-180s.mp4": "baee70edcdd1efa74eb8b57bec4f5be6617ed9614c827ac0b302737028809316",
+    "neo-agent-touch-film-editable-v1.0.1.zip": "9c8dfad93f12872603449a11526e09bccd258ee17edbf8c0615ae4a680502ae2"
+  }
+}

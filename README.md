@@ -13,7 +13,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 | 分区 | 去这里做什么 | 已收录 |
 | --- | --- | --- |
 | 🎮 [自研游戏](sections/games.md) | 下载游戏、了解玩法与背屏效果 | 拓麻歌子 · Neo 背屏电子宠物 |
-| 📱 [自研应用](sections/apps.md) | 安装应用、查看功能和更新方式 | StepX Neo Studio |
+| 📱 [自研应用](sections/apps.md) | 安装应用、查看功能和更新方式 | StepX Neo Studio、Neo Agent Touch Beta |
 | 🛠️ [自研工具与原创模板](sections/tools.md) | 找源码、接口参考与可复制提示词 | 背屏开发、Studio 提示词、Notion CLI |
 | 📚 [原创教程与研究](sections/guides.md) | 按步骤学习、了解能力与限制 | 第一款应用、背屏宠物实战、Amoo、Notion、GBox 教程 |
 
@@ -45,10 +45,17 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 [从需求到真实试玩](guides/chess-bomber/README.md)：官方 Step Studio 迭代、掌机布局、多点触控、账号与回放、Suno配乐和宣传片制作。更新至 0.15.2：危险格提示、公开观战与战绩、回放导出。
 
+## Neo Agent Touch · Beta 与 180 秒开发实录
+
+[内测 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/Neo-Agent-Touch-0.1.11-beta.1.apk) · [观看三分钟实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4) · [学习手册与可编辑工程](guides/neo-agent-touch/README.md)
+
+手机内的目标执行、蓝色边缘反馈与接管。实录重点展示淘宝商品探索、电影场次与座位图、WPS 合同生成和修改；购物与购票完整成交、外部 MCP 网关仍待验，详见[验证范围](guides/neo-agent-touch/README.md#已验证到哪里)。
+
 ## 常用下载
 
 | 项目 | 版本 | 说明与下载 |
 | --- | --- | --- |
+| Neo Agent Touch | 0.1.11-beta.1 | [内测说明与安装](guides/neo-agent-touch/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/Neo-Agent-Touch-0.1.11-beta.1.apk) |
 | 拓麻歌子 | 0.3.4 | [玩法和安装](guides/neo-pet/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4) |
 | StepX Neo Studio | 1.2.3 | [功能和安装](guides/neo-studio/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3) |
 | Amoo / Notion | 1.0.1 | [CLI 与手机附件](downloads/amoo-notion/README.md) · [离线手册和提示词包](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/amoo-notion-v1.0.1) |
@@ -56,6 +63,8 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 **StepX Neo Studio** 是由 **Jiayu Studio** 基于官方 [Step Studio 网页](https://studio.stepx.com/)打造的增强型 Android 开发工具，在官方 Studio 开发体验之上，加入本地项目编辑、多模型 AI 协作、美术资源生成和 APK 打包等能力，让 Neo 手机上的应用开发更方便。
 
 ## 宣传与功能视频
+
+- [Neo Agent Touch · 180 秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4)：淘宝、电影票与 WPS 真实探索，配套[架构、开发过程与代码阅读](guides/neo-agent-touch/README.md)。
 
 - [背屏达人 4.0 · 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4)：在线 URL 解析背屏动画，完整 Suno 配乐；[功能与实测](community/backscreenfun/README.md)。
 
@@ -70,4 +79,4 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 反馈请在对应项目提供应用版本、复现步骤与错误文字。研究所结构建议可在本仓库提出。
 
-维护：JIAYU STUDIO · 2026-10-21。原创资料保留版权，欢迎分享仓库链接；第三方软件遵循各自许可。
+维护：JIAYU STUDIO · 2026-10-23。原创资料保留版权，欢迎分享仓库链接；第三方软件遵循各自许可。

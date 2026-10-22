@@ -42,3 +42,7 @@
 ## 游戏开发实战
 
 - [用 Step Studio 开发象棋泡泡堂](../guides/chess-bomber/README.md)：从需求、规则与UI修复，到账号、回放、音乐和真实宣传片；网页与真机验证边界分别记录。
+
+## 手机 Agent 开发实录
+
+- [Neo Agent Touch：从目标到可验证的手机操作](../guides/neo-agent-touch/README.md)：三分钟实录、Beta APK、架构、原生控件与视觉、触点变化、接管与检查点、WPS 结果验证，以及论文和仓库的参考范围。提供可编辑影片工程及关键代码阅读样例。
