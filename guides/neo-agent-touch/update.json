@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "packageName": "studio.jiayu.neoagent",
+  "versionName": "0.1.16-beta.1",
+  "versionCode": 17,
+  "tag": "neo-agent-touch-v0.1.16-beta.1",
+  "assetName": "Neo-Agent-Touch-0.1.16-beta.1.apk",
+  "downloadUrl": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.16-beta.1/Neo-Agent-Touch-0.1.16-beta.1.apk",
+  "sha256": "8895a0549d3b2cc73d1aba540a66a24fcd4e160fe9450b4689582067460e8be6",
+  "size": 238821,
+  "notes": "修复多平台共用商品目标的规划误拦截；新增菜单与关于页一键检查更新，支持Beta。下载后核验完整性、包名、版本和签名，再由系统确认安装。"
+}
