@@ -34,6 +34,7 @@ final class AgentImeLease {
  static String imeId(Context context){return new ComponentName(context,AgentInputMethodService.class).flattenToShortString();}
  private static String canonical(String value){ComponentName component=ComponentName.unflattenFromString(value==null?"":value);return component==null?"":component.flattenToShortString();}
  private static String current(Context context){try{return canonical(Settings.Secure.getString(context.getContentResolver(),Settings.Secure.DEFAULT_INPUT_METHOD));}catch(RuntimeException denied){return "";}}
+ static boolean automationEnabled(Context context){return context.getSharedPreferences("ui",Context.MODE_PRIVATE).getBoolean("agentImeAuto",false);}
  static boolean enabled(Context context){return enabled(context,imeId(context));}
  private static boolean enabled(Context context,String id){
   if(id==null||id.isEmpty())return false;
@@ -68,7 +69,8 @@ final class AgentImeLease {
  private void watchUi(){if(watching)return;owner.getContentResolver().registerContentObserver(Settings.Secure.getUriFor(Settings.Secure.DEFAULT_INPUT_METHOD),false,observer);watching=true;}
  boolean acquire(long generation)throws Exception{
   final String run;synchronized(owner){owner.check(generation);run=owner.runId;}
-  final AgentImeRules rules=protocol();boolean held=owner.ui(()->{watchUi();return rules.acquire(generation,run);});
+  if(!automationEnabled(owner))return false;
+  final AgentImeRules rules=protocol();boolean held=owner.ui(()->{owner.check(generation);if(!run.equals(owner.runId)||!automationEnabled(owner))return false;watchUi();return rules.acquire(generation,run);});
   if(held)return true;
   AgentImeRules.Ticket ticket=rules.active;
   if(ticket==null||ticket.epoch!=generation||!run.equals(ticket.run))return false;
@@ -103,6 +105,8 @@ final class AgentImeLease {
   final Handler handler=new Handler(Looper.getMainLooper());final long until=SystemClock.elapsedRealtime()+1800;
   handler.post(new Runnable(){public void run(){try{if(!expected.same(read(context)))return;AgentImeLease live=latest.get();if(liveOwner(live))return;boolean done=live!=null&&live.owner==ControlService.instance&&live.owner.connected?live.protocol().release(expected):fallback.release(expected);if(!done&&SystemClock.elapsedRealtime()<until)handler.postDelayed(this,80);}catch(Exception failed){/* Durable record remains for reconnect/manual recovery. */}}});
  }
- void close(){releaseAsync();main.post(()->{if(watching){try{owner.getContentResolver().unregisterContentObserver(observer);}catch(RuntimeException ignored){}watching=false;}});}
- JSONObject status(){JSONObject result=new JSONObject();try{AgentImeRules.Ticket saved=read(owner);boolean active=held(owner.generation),opted=owner.runId.equals(preferences(owner).getString(BLOCKED,""))&&!owner.runId.isEmpty();result.put("enabled",enabled(owner)).put("active",active).put("selected",imeId(owner).equals(current(owner))).put("held",active).put("restore_pending",saved!=null&&!active).put("recovery_record_present",saved!=null).put("opted_out_this_run",opted).put("restore_original_enabled",saved!=null&&enabled(owner,saved.original)).put("state",protocol().state).put("requires_manual_enable",!enabled(owner)).put("manual_choice_respected",opted);}catch(Exception failed){try{result.put("enabled",false).put("active",false).put("restore_pending",true).put("opted_out_this_run",false).put("state","status_unavailable").put("restore_verified",false);}catch(Exception ignored){}}return result;}
+ void close(){close(true);}
+ /** A superseded service may unregister its observer, never adopt a newer shared ticket. */
+ void close(boolean restore){try{if(restore)releaseAsync();}finally{Runnable detach=()->{if(watching){try{owner.getContentResolver().unregisterContentObserver(observer);}finally{watching=false;}}};if(Looper.myLooper()==Looper.getMainLooper())detach.run();else main.post(detach);}}
+ JSONObject status(){JSONObject result=new JSONObject();try{AgentImeRules.Ticket saved=read(owner);boolean active=held(owner.generation),opted=owner.runId.equals(preferences(owner).getString(BLOCKED,""))&&!owner.runId.isEmpty();result.put("enabled",enabled(owner)).put("automation_enabled",automationEnabled(owner)).put("active",active).put("selected",imeId(owner).equals(current(owner))).put("held",active).put("restore_pending",saved!=null&&!active).put("recovery_record_present",saved!=null).put("opted_out_this_run",opted).put("restore_original_enabled",saved!=null&&enabled(owner,saved.original)).put("state",protocol().state).put("requires_manual_enable",!enabled(owner)).put("manual_choice_respected",opted);}catch(Exception failed){try{result.put("enabled",false).put("active",false).put("restore_pending",true).put("opted_out_this_run",false).put("state","status_unavailable").put("restore_verified",false);}catch(Exception ignored){}}return result;}
 }

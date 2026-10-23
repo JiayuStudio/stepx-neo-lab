@@ -45,8 +45,7 @@
 
 ## 手机 Agent 开发实录
 
-- [Neo Agent Touch：从目标到可验证的手机操作](../guides/neo-agent-touch/README.md)：三分钟实录、Beta APK、架构、原生控件与视觉、触点变化、接管与检查点、WPS 结果验证，以及论文和仓库的参考范围。提供可编辑影片工程及关键代码阅读样例。
+- [Neo Agent Touch 0.1.20：逐应用适配与原理](../guides/neo-agent-touch/README.md)：搜索节点/系统端口重绑定、WPS通用正文保存重开、应用身份与范围、输入法借用与心跳诊断。56套规则与11应用分批实测分开记录；8个限定场景通过，B站部分达成、美团验证阻断、间歇稳定性仍待跟踪。
+- [2026-10-24研究](../guides/neo-agent-touch/research/2026-10-24.md) · [Agent读取与固定标签拉取](../guides/neo-agent-touch/ai.md) · [逐应用机器验收](../guides/neo-agent-touch/verification-v20.json) · [代码导航](../guides/neo-agent-touch/source/AGENT_GUIDE.md)。
+- [120秒历史同步分屏原理影片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [可编辑工程1.0.4](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip)：20段各6秒，蓝圆铃铛主题；素材来自0.1.10/0.1.12/0.1.13，不是0.1.20新实录。
 
-- [Neo Agent Touch 最新研究与Agent拉取](../guides/neo-agent-touch/ai.md)：原话绑定、完整候选、输入法交接、证据区分、ASR许可与暂停结论，提供固定提交与SHA校验的只读获取。
-
-[120秒同步分屏原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [可编辑影片1.0.4](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip)：以游戏闭环、微信发送边界、输入、接管与记忆的步骤动效讲解原理，辅以历史实录；使用新Suno v6器乐。

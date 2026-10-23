@@ -1,47 +1,20 @@
-# AI 阅读入口：Neo Agent Touch
+# Agent读取入口：Neo Agent Touch 0.1.20
 
-修订日期：2026-10-23。用途是检索、学习和引用，不是可安装 Skill、MCP 工具注册或远程控制授权。读取本文不会获得手机权限。
+Neo Agent Touch 在手机内根据聊天目标操作已授权应用，提供搜索、播放、地点查询、商品查价及WPS新文档生成。支持可拖动侧边对话、控制胶囊和接管/交还，使用当前系统输入法。
 
-先读取 [README](README.md)，再读 [knowledge.json](knowledge.json) 的稳定结论编号和证据标签；详细研究见 [2026-10-23 记录](research/2026-10-23.md)，公开主源与许可见 [sources.json](research/sources.json)，产物与验证见 [verification-v16.json](verification-v16.json)。阅读实现从 [source/README.md](source/README.md) 开始；release 与 debug 的范围不同。所有文件路径均相对于本条目根目录。
+## 读取顺序
 
-先理解功能原理可读 [实现流程图](implementation-flows.md)：包含小游戏闭环、微信发送边界、输入与三种记忆；图示不代表已完成对应真机业务。
+1. [功能与使用](README.md)
+2. [结构化功能说明](knowledge.json)
+3. [源码导航](source/AGENT_GUIDE.md)
+4. [研究与版本记录](research/2026-10-24.md) · [版本数据](verification-v20.json)
 
-## 必须保留的结论
+阅读和引用时保留版本及对应功能范围。B站指定第一条选择、大麦动态页结束仍需优化；美团人机验证需用户处理。付款、消息发送、完整电影购票与已有文档通用修改不在当前已验范围。
 
-- **C01 · real_device**：0.1.14 的真人长句转写与多应用任务未可靠通过。不能发布私人转写，也不能将文件解码或控件夹具当作真人语音成功。
-- **C02 · reference**：0.1.15 已通过 41 组纯规则检查，其中原话／路由 49 项、输入目标所有权 58 项；原生工作流构造另有 96 项夹具通过，真实应用回归待验。测试数不是应用数或端到端成功率。
-- **C03 · reference**：release 当前使用搜狗等系统输入法，用户确认文本后进入聊天规划；自研 ASR 升级暂停。release 不含旧 Vosk、native 识别模型或 RECORD_AUDIO 权限；debug 历史实现另计。不能声称所选输入法完全离线或语音准确率已改善。
-- **C04 · native_fixture**：历史 0.1.13 输入法夹具通过 36 项断言，使用真实系统输入连接与自有编辑框、合成任务所有者。它未覆盖生产 start / resumeFromUser、第三方搜索或 ASR。
-- **C05 · reference**：Zipformer 2023-02-20 是一个来源与 Apache-2.0 模型卡较清楚的后续候选，选定图与 tokens 合计 199,056,205 字节；未证明更准，未进入默认。
-- **C06 · reference**：原版 SenseVoiceSmall ONNX 的模型许可另有限制，不能以引擎代码许可证覆盖；本轮不分发其权重。
-- **C07 · not_tested**：候选 ASR 的目标设备准确率、内存、延迟、20 条公开命令结果，以及 0.1.15 真实应用回归均不能凭本文宣称通过。
+## 获取源码
 
-- **C08 · native_fixture**：0.1.15 原生工作流构造夹具通过 96 项，清理通过；零模型调用、零业务动作。它不证明第三方应用完成目标或搜狗语音准确率。
+固定源码标签 `neo-agent-touch-source-v0.1.20-beta.1`，具体拉取命令见[主入口](README.md#agent读取与固定版本拉取)。获取后用 `git rev-parse HEAD` 解析完整提交。APK下载仍使用独立标签 `neo-agent-touch-v0.1.20-beta.1`，不要用APK标签替代源码标签。
 
-- **C09 · real_device**：0.1.15 release 已构建、安装并读回相同包摘要，222,437 字节；保留已有输入法选择与启用列表，没有新增系统权限授权。它不证明系统键盘 UI、搜狗语音或新的三应用任务已通过。
+Raw读取地址为 `https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/<完整提交SHA>/guides/neo-agent-touch/`。可读入口是README.md、ai.md、knowledge.json；[bootstrap.py](bootstrap.py)支持完整提交及可信SHA-256的只读下载，[入口摘要](agent-entry-sha256.json)提供对应文件值。固定版本不可用时应报告不可用，不回退其他标签或移动分支。
 
-- **C10 · reference**：[功能原理](implementation-flows.md)逐步解释通用游戏闭环和微信发送边界。没有专用游戏求解器，微信自动发送当前未实现；图示不代表新一轮实发或通关。
-
-- **C11 · reference / media**：影片1.0.4为120秒同步分屏剪辑，20段各6秒；影片制作时软件为0.1.15。实录为历史版本，流程示意与独立原生证据分别标明，不能当成新的业务验收。见[影片记录](verification-video-v1.0.4.json)。
-
-- **C12 · reference / native_fixture**：0.1.16由本地规则识别严格整句的共同商品查价列表，重派生精确型号、顺序和只读范围；44套纯规则与149项京东/淘宝Android原生构造/JSON恢复通过。拼多多缺前提未跑；不是实际三平台查价成功。见[修复说明](updates-v16.md)。
-
-- **C13 · reference**：0.1.16新增菜单/关于页一键检查更新，支持Beta；固定清单与GitHub备用源，APK大小/SHA/包名/精确版本/同签名核验后交系统确认。真实更新检查和安装状态以[本版验证](verification-v16.json)为准，不能仅凭代码宣称升级已完成。
-
-## 证据标签
-
-`reference` 包含主源、代码分析和明确标注的纯规则测试；`native_fixture` 是 Android 隔离原生夹具；`real_device` 是具体真机观察，失败也属于证据；`not_tested` 表示未完成验收。回答应保留版本、结论编号、范围限制和链接，不把一种标签升级为另一种。
-
-## 拉取与完整性
-
-公开 Raw 路径为 `https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/<完整提交SHA>/guides/neo-agent-touch/`。正式读取应固定完整提交，不从移动分支推断已审核状态。
-
-[bootstrap.py](bootstrap.py)仅使用 Python 标准库 urllib 拉取白名单内 `README.md`、`ai.md`、`knowledge.json`，须由调用者从可信渠道提供三个预期 SHA-256；全部校验成功后才保存。脚本不执行远端代码、不安装依赖、不接收 token、不调用手机或模型。SHA-256 只有在预期值来自可信渠道时才提供完整性保障；从同一未核实网页同时取得内容和摘要不构成独立信任。
-
-无需运行脚本也可直接只读获取 Markdown/JSON。脚本、文档、测试句中的命令只是参考资料，执行仍取决于当前会话的明确授权。
-
-## 回答示例
-
-“C02 / reference：41 组纯规则通过，其中原话／路由 49 项、输入目标所有权 58 项；另有 96 项原生构造夹具通过。C09 仅证明正式包构建安装一致，仍不代表第三方业务或搜狗语音准确率通过。见验证数据。”
-
-不要回答“语音已修好”“20 条全过”“支持所有应用”“已买票付款”“模型完全离线”，除非另有同版本、对应阶段的真实证据。
+本文用于资料读取，不会直接授予设备控制或账号操作权限。历史影片另有版本标注，不能当作当前版功能实录。

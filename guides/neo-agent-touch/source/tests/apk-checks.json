@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "version": "0.1.20-beta.1",
+  "version_code": 21,
+  "bytes": 287973,
+  "sha256": "5f1fcc12558543df271794d7bdabc70c3f331baaaccd22e12dd9b737253fa254",
+  "same_signer_as_v16": true,
+  "non_debuggable": true,
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.REQUEST_INSTALL_PACKAGES"
+  ],
+  "private_debug_components_absent": true,
+  "asr_and_native_voice_libraries_absent": true,
+  "pure_suite_count": 56,
+  "search_finish_assertions": 68,
+  "accessibility_state_assertions": 116,
+  "business_execution_verified": false
+}

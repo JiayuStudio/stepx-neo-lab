@@ -25,6 +25,7 @@ public class QaActivity extends Activity {
   if("checkout_review".equals(mode)){CheckoutReviewContracts.start(this);return;}
   if("memory".equals(mode)){new Thread(()->MemoryContracts.run(this)).start();finish();return;}
   if("mcp".equals(mode)){McpContracts.start(this);return;}
+  if("search_node".equals(mode)){SearchNodeContracts.start(this);return;}
   if("search_write".equals(mode)){SearchWriteContracts.start(this);return;}
   if("rejections".equals(mode)){RejectionContracts.start(this);return;}
   if("native_labels".equals(mode)){NativeLabelsContracts.start(this);return;}

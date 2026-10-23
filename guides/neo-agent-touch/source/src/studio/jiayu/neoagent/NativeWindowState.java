@@ -20,9 +20,8 @@ final class NativeWindowState {
    else{
     app.set(frame[0],frame[1],frame[2],frame[3]);
     for(AccessibilityWindowInfo w:windows){
-     if(w.getLayer()<=layer||w.getType()==AccessibilityWindowInfo.TYPE_INPUT_METHOD||s.controlBar.owns(w)||(w.getType()==AccessibilityWindowInfo.TYPE_ACCESSIBILITY_OVERLAY&&!s.effectsWindowTitle.isEmpty()&&s.effectsWindowTitle.contentEquals(w.getTitle()==null?"":w.getTitle())))continue;
+     if(w.getLayer()<=layer||w.getType()==AccessibilityWindowInfo.TYPE_INPUT_METHOD||s.controlBar.owns(w)||s.floatingChat.owns(w)||s.ownsEffectWindow(w))continue;
      AccessibilityNodeInfo other=w.getRoot();if(other!=null&&s.allowed.contentEquals(other.getPackageName()))continue;
-     if(w.getType()==AccessibilityWindowInfo.TYPE_ACCESSIBILITY_OVERLAY&&other!=null&&s.getPackageName().contentEquals(other.getPackageName()))continue;
      Rect obstruction=new Rect();w.getBoundsInScreen(obstruction);
      if(obstruction.intersect(app)&&(long)obstruction.width()*obstruction.height()>(long)app.width()*app.height()*.12){covered=true;break;}
     }

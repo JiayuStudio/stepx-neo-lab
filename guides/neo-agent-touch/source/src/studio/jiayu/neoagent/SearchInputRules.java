@@ -2,6 +2,8 @@ package studio.jiayu.neoagent;
 
 /** A native IME search action is required for the node-less input fallback. */
 final class SearchInputRules {
+ /** Shared by metadata and the two native submit ports. High flags are not actions. */
+ static boolean canSubmit(int imeOptions){return (imeOptions&255)==3&&(imeOptions&0x40000000)==0;}
  static boolean ready(int sdk,boolean started,boolean connection,boolean samePackage,int inputType,int imeOptions){
   int type=inputType&15,variation=inputType&4080;
   return sdk>=33&&started&&connection&&samePackage&&type==1

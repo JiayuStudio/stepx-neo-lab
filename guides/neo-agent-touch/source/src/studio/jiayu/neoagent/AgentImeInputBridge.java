@@ -7,7 +7,6 @@ import org.json.JSONObject;
 final class AgentImeInputBridge {
  final ControlService owner;
  final SearchInputRules.Pending writes=new SearchInputRules.Pending();
- final SearchSubmitRules.State submissions=new SearchSubmitRules.State();
  private AgentInputMethodService remembered;
  private String rememberedRun="";
  private final java.util.HashMap<Long,Object> editors=new java.util.HashMap<>();
@@ -26,11 +25,26 @@ final class AgentImeInputBridge {
   source.agentIme=ime;source.agentSearchEditor=editor;source.agentSearchKey=key;
   source.agentSearchText=text;
   SearchInputRules.Sample sample=text==null?null:new SearchInputRules.Sample(text,0,0,0);
-  boolean readable=text!=null&&text.length()<=500,unresolved=writes.unresolved(key,owner.runId,sample),submitted=readable&&submissions.dispatched(key,owner.runId,text);
+  boolean submitAllowed=SearchInputRules.canSubmit(editor.imeOptions);
+  boolean readable=text!=null&&text.length()<=500,unresolved=writes.unresolved(key,owner.runId,sample),reserved=readable&&owner.searchFinish.submissionState(owner.runId,g,key).dispatched(key,owner.runId,text);
+  SearchFinishRules.Decision finish=owner.searchFinish.beforeFinish(owner.runId,g,key,text,true,readable,unresolved,false);
+  boolean priorReserved=reserved&&finish!=SearchFinishRules.Decision.NO_LOCAL_BLOCK,submitted=reserved&&!priorReserved;
   return new JSONObject().put("focused",true).put("source","neo_agent_input_method").put("engine","agent_ime").put("purpose","搜索输入框").put("native_action","IME_ACTION_SEARCH")
    .put("readback_available",readable).put("readback_length",text==null?-1:text.length()).put("pending_write_unverified",unresolved).put("submit_dispatched_unverified",submitted)
-   .put("can_write",readable&&!unresolved).put("can_submit",readable&&!unresolved&&!submitted&&!text.trim().isEmpty())
-   .put("instruction",unresolved?"上一条输入已派发但尚未完整核验；先观察，不重复输入或提交。":submitted?"当前搜索已派发；观察实际结果，不重复提交。":readable?"Agent输入法已绑定当前目标应用的搜索编辑器。直接type(text)或submit_search，必须省略id；输入和提交后都要观察实际结果，不以派发回执代替结果页。":"Agent输入法已连接，但完整搜索词暂不能读回；先重新观察或重新聚焦，不盲目输入或提交。");
+   .put("can_write",readable&&!unresolved).put("can_submit",submitAllowed&&readable&&!unresolved&&!reserved&&!text.trim().isEmpty()).put("ime_submit_allowed",submitAllowed)
+   .put("finish_input_blocked",finish!=SearchFinishRules.Decision.NO_LOCAL_BLOCK).put("finish_input_instruction",SearchFinishRules.instruction(finish)).put("prior_query_submit_reserved",priorReserved)
+   .put("instruction",!submitAllowed?"当前编辑器未允许系统搜索动作；请使用应用内可见搜索按钮，不能调用submit_search或按键盘坐标。":unresolved?"上一条输入已派发但尚未完整核验；先观察，不重复输入或提交。":priorReserved?"该编辑器同词已有历史提交尝试，但不属于本次填写的提交回执；不重复派发，请返回搜索入口重新观察。":submitted?"当前搜索已派发；观察实际结果，不重复提交。":readable?"Agent输入法已绑定当前目标应用的搜索编辑器。直接type(text)或submit_search，必须省略id；输入和提交后都要观察实际结果，不以派发回执代替结果页。":"Agent输入法已连接，但完整搜索词暂不能读回；先重新观察或重新聚焦，不盲目输入或提交。");
+ }
+ /** Must be called after validating the fresh observation on the UI thread. */
+ SearchFinishRules.Decision finishDecision(ControlService.Observation source,long g)throws Exception{
+  if(source.agentSearchEditor==null)return SearchFinishRules.Decision.NO_LOCAL_BLOCK;
+  return owner.ui(()->{
+   String value=read(source,g);
+   if(source.agentSearchText==null||!source.agentSearchText.equals(value))throw new ControlService.UiChangedException();
+   SearchInputRules.Sample sample=value==null?null:new SearchInputRules.Sample(value,0,0,0);
+   boolean pendingWrite=writes.unresolved(source.agentSearchKey,owner.runId,sample);
+   return owner.searchFinish.beforeFinish(owner.runId,g,source.agentSearchKey,value,true,sample!=null&&sample.readable(),pendingWrite,false);
+  });
  }
  private AgentInputMethodService live(ControlService.Observation source,long g)throws Exception{
   owner.guard(g);owner.validateObservation(source,g,false);
@@ -57,7 +71,7 @@ final class AgentImeInputBridge {
    SearchInputRules.Sample sample=new SearchInputRules.Sample(before,0,0,0);
    if(writes.unresolved(source.agentSearchKey,owner.runId,sample))throw new ControlService.LocalBoundaryException("上一条输入尚未核验，不重复输入");
    if(before.equals(text)){already[0]=true;return true;}
-   writes.dispatched(source.agentSearchKey,owner.runId,text);ime.replaceText(owner,g,source.agentSearchEditor.epoch,text);return true;
+   ime.replaceText(owner,g,source.agentSearchEditor.epoch,text,()->{writes.dispatched(source.agentSearchKey,owner.runId,text);if(!owner.searchFinish.written(owner.runId,g,source.agentSearchKey,text,false))throw new IllegalStateException("搜索输入租约已变化，原动作未派发");});return true;
   }});
   if(already[0])return "Agent搜索编辑器已是本次关键词，未重复输入；请提交搜索后观察结果";
   for(int n=0;n<8;n++){Thread.sleep(100);owner.check(g);try{String value=owner.ui(()->read(source,g));if(text.equals(value)){writes.unresolved(source.agentSearchKey,owner.runId,new SearchInputRules.Sample(value,0,0,0));return "Agent输入法已填写并完整读回关键词；尚未提交，请使用submit_search后观察结果";}}catch(ControlService.UiChangedException changed){throw changed;}catch(Exception unavailable){owner.check(g);}}
@@ -68,8 +82,8 @@ final class AgentImeInputBridge {
    public SearchInputRules.Sample read()throws Exception{return owner.ui(()->{String value=AgentImeInputBridge.this.read(source,g);selected(source,action,value);if(source.agentSearchText==null||!source.agentSearchText.equals(value))throw new ControlService.UiChangedException();return new SearchInputRules.Sample(value,0,0,0);});}
    public void selectAll()throws Exception{throw new ControlService.LocalBoundaryException("完整字段读回不应需要未知范围选择");}
    public void pause(int ms)throws Exception{Thread.sleep(ms);owner.check(g);}
-   public void search(SearchInputRules.Sample expected,Runnable dispatching)throws Exception{owner.ui(()->{synchronized(owner){AgentInputMethodService ime=live(source,g);String value=AgentImeInputBridge.this.read(source,g);selected(source,action,value);if(!expected.text.equals(value))throw new ControlService.UiChangedException();query(value);dispatching.run();if(!ime.submitSearch(owner,g,source.agentSearchEditor.epoch))throw new ControlService.LocalBoundaryException("系统未确认搜索动作已接收；先观察实际结果，不重复提交");return true;}});}
+   public void search(SearchInputRules.Sample expected,Runnable dispatching)throws Exception{owner.ui(()->{synchronized(owner){AgentInputMethodService ime=live(source,g);String value=AgentImeInputBridge.this.read(source,g);selected(source,action,value);if(!expected.text.equals(value))throw new ControlService.UiChangedException();query(value);if(!ime.submitSearch(owner,g,source.agentSearchEditor.epoch,()->{dispatching.run();owner.searchFinish.submitted(owner.runId,g,source.agentSearchKey,value);}))throw new ControlService.LocalBoundaryException("系统未确认搜索动作已接收；先观察实际结果，不重复提交");return true;}});}
   };
-  try{return SearchSubmitRules.submit(port,writes,submissions,source.agentSearchKey,owner.runId,this::query);}catch(SearchSubmitRules.Rejected rejected){throw new ControlService.LocalBoundaryException(rejected.getMessage());}
+  try{return SearchSubmitRules.submit(port,writes,owner.searchFinish.submissionState(owner.runId,g,source.agentSearchKey),source.agentSearchKey,owner.runId,this::query);}catch(SearchSubmitRules.Rejected rejected){throw new ControlService.LocalBoundaryException(rejected.getMessage());}
  }
 }

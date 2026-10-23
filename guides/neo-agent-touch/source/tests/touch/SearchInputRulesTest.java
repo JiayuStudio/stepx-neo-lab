@@ -16,6 +16,12 @@ public final class SearchInputRulesTest {
  }
  static void rejected(Editor editor,SearchInputRules.Pending pending,Object session,String query)throws Exception{boolean refused=false;try{SearchInputRules.replace(editor,pending,session,"run",query);}catch(SearchInputRules.Rejected expected){refused=true;}check(refused,true);}
  public static void main(String[] args)throws Exception{
+  check(SearchInputRules.canSubmit(3),true);
+  check(SearchInputRules.canSubmit(3|0x1000000),true);
+  check(SearchInputRules.canSubmit(3|0x40000000),false);
+  check(SearchInputRules.canSubmit(3|0x41000000),false);
+  for(int action:new int[]{0,1,2,4,5,6})check(SearchInputRules.canSubmit(action),false);
+  check(SearchInputRules.ready(36,true,true,true,1,3|0x40000000),true); // Write focus remains usable; submit is separately prohibited.
   check(SearchInputRules.ready(36,true,true,true,1,3),true);
   check(SearchInputRules.ready(33,true,true,true,161,0x10000003),true);
   check(SearchInputRules.ready(33,true,true,true,177,3),true);

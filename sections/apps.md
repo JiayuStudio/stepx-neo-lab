@@ -19,16 +19,16 @@
 
 需要 Google Play？请看[教程分区中的 GBox](guides.md)，它是第三方容器方案，不是本研究所开发的 APP。
 
-## Neo Agent Touch · Beta
+## Neo Agent Touch · 0.1.20 Beta
 
-手机内运行的聊天式目标执行应用，视觉截图结合系统控件语义，支持蓝色贴边反馈、可拖动胶囊及接管／交还。
+手机内运行的聊天式目标执行应用，视觉截图结合系统控件语义，支持侧边对话、蓝色贴边反馈、可拖动胶囊及接管／交还。
 
-- [功能、内测安装与验证范围](../guides/neo-agent-touch/README.md)
-- [下载 0.1.16-beta.1 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.16-beta.1/Neo-Agent-Touch-0.1.16-beta.1.apk)
-- [180 秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4) · [开发手册](../guides/neo-agent-touch/development.md)
+- [功能、安装与本轮实测](../guides/neo-agent-touch/README.md) · [下载0.1.20-beta.1 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.20-beta.1/Neo-Agent-Touch-0.1.20-beta.1.apk)
+- [Agent阅读与固定版本源码](../guides/neo-agent-touch/ai.md) · [机器验收](../guides/neo-agent-touch/verification-v20.json)
 
-淘宝商品探索、电影场次至座位图、WPS 新建／保存／修改／重开已有真机记录；完整购物、购票与外部 MCP 网关尚未验通。需要用户自行配置视觉模型 API。
+56套规则检查通过，11个授权应用分批实测，8个场景按限定范围通过：音乐搜索Live播放、地点详情、当前工作台、微信搜一搜、京东/淘宝查价、WPS新文档保存重开全文读回、网盘搜索。B站严格第一条选择未通过；美团停在人机验证；网盘与大麦稳定性未宣称根治。拼多多不在本轮范围，未下单、付款或发消息。最后正式包安装摘要一致，不等于所有应用在最后二进制上重跑。
 
-0.1.16新增共享商品比价规划与一键检查更新，release使用当前系统输入法，不含旧ASR与麦克风权限；提供[Agent入口](../guides/neo-agent-touch/ai.md)、[结构化知识](../guides/neo-agent-touch/knowledge.json)与[源码](../guides/neo-agent-touch/source/README.md)。44套纯规则、149项京东/淘宝原生构造通过；拼多多缺前提，真实多平台查价和搜狗准确率待验。
+使用当前系统输入法，专用输入法自动切换独立且默认关闭；没有真人语音准确率结论。完整场景边界与逐项构建摘要见机器验收。
 
-[120秒同步分屏原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [可编辑影片1.0.4](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip)：以游戏闭环、微信发送边界、输入、接管与记忆的步骤动效讲解原理，辅以历史实录；使用新Suno v6器乐。
+[120秒历史原理影片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [历史180秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4) · [历史开发手册](../guides/neo-agent-touch/development.md)。历史影片不作为0.1.20实录。
+

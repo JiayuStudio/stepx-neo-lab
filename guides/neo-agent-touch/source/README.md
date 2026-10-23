@@ -1,15 +1,17 @@
-# Neo Agent Touch 0.1.16-beta.1
+# Neo Agent Touch 0.1.20 Beta
 
-Codex · 来源0.1.15-beta.1。独立修订目录，原交付不覆盖。
+Neo Agent Touch 是运行在手机内的聊天式应用助手。通过主聊天或可拖动侧边对话提出目标，Agent结合应用画面和系统控件执行搜索、播放及文档任务；蓝色屏幕边缘光效提示控制状态，胶囊支持拖动、接管和交还。
 
-三平台共用一个商品目标的整句比价指令由手机本地编译为名单顺序。完整型号、规格、原文预算和否定条件保留；各阶段仅查价，不加购、不下单、不付款。独立应用目标仍分别绑定原文，合法应用重访保持。规划器校正提示只用于内部重规划，用户看到固定简短结果。
+## 功能与使用
 
-菜单与关于页新增一键检查更新。固定公开更新清单为主源，GitHub应用发布为备用；支持Beta语义版本并排除影片和源码附件。用户选择更新后下载APK，校验字节数、SHA-256、包名、精确版本、递增versionCode及同一签名，再交给系统安装确认；安装来源许可按Android系统处理，执行任务时不会打开安装器。没有后台检查或静默安装。
+支持QQ音乐关键词搜索与播放、高德地点查询、微信搜一搜、企业微信工作台、淘宝/京东商品查价、网盘搜索，以及WPS新文档生成、保存和重开。B站指定第一条视频选择、大麦动态详情的结束判断仍需优化；美团遇到人机验证时交由用户处理。付款、消息发送、完整电影购票和已有文档通用修改不在当前已验范围。
 
-release继续使用搜狗等当前系统输入法，不内置API Key、不打包旧ASR模型、麦克风权限或调试活动。
+安装同签名新版可直接覆盖，无需先卸载。配置自己的HTTPS视觉模型接口与Key，选择允许控制的应用并开启系统无障碍服务，然后在主聊天或侧边对话中描述目标。使用搜狗等当前输入法时，核对文字后发送；专用输入法自动切换默认关闭。
 
-## 构建与测试
+[Android安装包](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.20-beta.1/Neo-Agent-Touch-0.1.20-beta.1.apk) · [APK校验值](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.20-beta.1/SHA256SUMS.txt)。
 
-需要JDK、Android SDK 36/build-tools 36.0.0和R8/D8 JAR。设置ANDROID_SDK_ROOT、JAVA_HOME、R8_JAR、独立NEO_AGENT_SIGNING_DIR，运行 `bash build.sh release`。产物在dist。独立签名文件不属于源码包，升级已安装版本须使用同一签名。运行 `bash tests/run-unit.sh` 检查本地纯规则。
+## 源码阅读
 
-更新实现及参考来源见 [tests/update-integration.md](tests/update-integration.md)。当前目录的测试和安装记录会在完成后登记；构建、原生构造检查、更新检查和实际购物闭环分别核验，不互相代替。
+本源码版本为 `0.1.20-beta.1`，Android versionCode为21。代码导航和构建方法见 [AGENT_GUIDE.md](AGENT_GUIDE.md)，功能与版本数据见 [tests/acceptance-v20.json](tests/acceptance-v20.json)。
+
+固定源码标签为 `neo-agent-touch-source-v0.1.20-beta.1`。Agent读取入口为该标签下的 `guides/neo-agent-touch/ai.md`，结构化说明为 `guides/neo-agent-touch/knowledge.json`；通过标签解析完整提交后读取，固定版本不可用时报告不可用，不切换APK标签。

@@ -19,6 +19,12 @@ final class PlanCoverage {
  private static final Pattern ASR_LAUNCH=Pattern.compile("(?:^|[，。；,;\\n]|然后|接着|最后|接下来|之后|随后)(?:(?:请|麻烦|帮我|给我|请你|我想要|我想|我要|现在|先|帮忙)\\s*)*召开开?\\s*$");
  private static final Pattern NEXT_ACTION=Pattern.compile("^[」”\"』》]?\\s*(?:里|中|上)?\\s*(?:帮我|给我|帮忙)?\\s*(?:"+ACTION+")");
  private static final Pattern ALTERNATIVE=Pattern.compile("\\s*[」”\"』》]?\\s*(?:或者|或是|或|还是|二选一)\\s*(?:打开|使用|用|在|去)?\\s*[「“\"『《]?\\s*");
+ private static final Pattern SEARCH_QUESTION=Pattern.compile("(?:搜索|搜一搜|搜一下|查找|查询)\\s*(?:如何|怎么|怎样)");
+ private static final Pattern QUERY_BOUNDARY=Pattern.compile("[，。；,;\\n]|然后|接着|最后|随后|接下来|之后|并且|同时|以及|再|并");
+ private static boolean searchQuestionObject(String user,int launchStart){
+  String before=user.substring(0,launchStart);Matcher question=SEARCH_QUESTION.matcher(before);int end=-1;while(question.find())end=question.end();
+  if(end<0)return false;String query=before.substring(end);return query.length()<=120&&!QUERY_BOUNDARY.matcher(query).find();
+ }
  static boolean inQuote(String user,int end){char closing=0;for(int i=0;i<end;i++){char c=user.charAt(i);if(closing!=0){if(c==closing)closing=0;continue;}int q="《「“\"『".indexOf(c);if(q>=0)closing="》」”\"』".charAt(q);}return closing!=0;}
  static List<Mention> mentions(String user){return mentions(user,Collections.emptyList());}
  static List<Mention> mentions(String user,Collection<String> selectedNames){
@@ -31,6 +37,8 @@ final class PlanCoverage {
    String after=user.substring(item.end);boolean hasAction=NEXT_ACTION.matcher(after).find();Matcher noisyLaunch=ASR_LAUNCH.matcher(before);boolean asrLaunch=!explicit&&hasAction&&noisyLaunch.find();if(asrLaunch)start=noisyLaunch.start();
    // App names quoted as the object of a search/title are content; quoted app launch labels are instructions.
    if(inQuote(user,start))continue;
+   // '搜索如何打开微信' keeps the launch words inside the search question. A later flow boundary ends it.
+   if(explicit&&searchQuestionObject(user,start))continue;
    if(i>0&&ALTERNATIVE.matcher(user.substring(all.get(i-1).end,item.start)).matches())continue;
    if(i+1<all.size()&&ALTERNATIVE.matcher(user.substring(item.end,all.get(i+1).start)).matches())continue;
    String immediate=user.substring(Math.max(0,start-32),start);

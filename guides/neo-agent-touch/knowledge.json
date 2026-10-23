@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "document_id": "neo-agent-touch",
-  "revision": 4,
-  "reviewed_on": "2026-10-23",
+  "revision": 5,
+  "reviewed_on": "2026-10-24",
   "language": "zh-CN",
   "purpose": "retrieval_and_learning_reference",
   "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
   "entry_path": "guides/neo-agent-touch",
   "entrypoint": "ai.md",
-  "current_research": "research/2026-10-23.md",
+  "current_research": "research/2026-10-24.md",
   "source_manifest": "research/sources.json",
   "evidence_types": {
     "reference": "Public sources, code analysis and explicitly marked pure-rule tests; no real-device implication",
@@ -200,12 +200,140 @@
           "path": "source/tests/update-integration.md"
         }
       ]
+    },
+    {
+      "id": "C14",
+      "evidence_type": "reference",
+      "version": "0.1.20-beta.1",
+      "status": "passed",
+      "statement": "56 pure-rule suites and JavaScript syntax passed; 49 suites explicitly report 2736 assertions, seven do not report a total.",
+      "scope_limit": "Rule counts are not applications, real speech accuracy or end-to-end success rates.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "evidence_type": "real_device",
+      "version": "0.1.20-beta.1",
+      "status": "pass_with_scope_limits",
+      "statement": "Eight stated scenarios accepted across QQ Music, Amap, WeCom, WeChat, JD, WPS, Baidu Netdisk and Taobao.",
+      "scope_limit": "WeCom reused current Workbench; QQ played Live; WeChat only search; no cart, order, payment, navigation, cloud file edits or full-song listening. WPS verifies only a new document.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "evidence_type": "real_device",
+      "version": "0.1.20-beta.1",
+      "status": "partial",
+      "statement": "Bilibili exact search and dynamic playback succeeded, but second result was selected.",
+      "scope_limit": "Strict first-result goal failed; do not generalize into exact list-order selection.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "evidence_type": "real_device",
+      "version": "0.1.20-beta.1",
+      "status": "unresolved_limits",
+      "statement": "Netdisk search succeeded once after diagnostic and fixture-overhead changes; Damai reached detail and ended with repeated verification. Meituan stopped at CAPTCHA.",
+      "scope_limit": "Heartbeat root cause unresolved; new Damai fallback branch not observed. No CAPTCHA solving or completed movie query. Pinduoduo outside current selected/receiver scope.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "evidence_type": "native_fixture",
+      "version": "0.1.20-beta.1",
+      "status": "failed",
+      "statement": "Isolated owned-editor ACTION_IME_ENTER received accepted=true but no SEARCH callback; seven earlier checks and cleanup passed.",
+      "scope_limit": "Third-party search success does not change this failed contract; no business bridge or speech accuracy acceptance.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "evidence_type": "real_device",
+      "version": "0.1.20-beta.1",
+      "status": "package_integrity_passed",
+      "statement": "Final formal release installed and APK readback SHA matched, private components removed and existing keyboard/accessibility choices preserved.",
+      "scope_limit": "This is package integrity; not all eleven apps were rerun on this last binary.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "evidence_type": "reference",
+      "version": "0.1.20-beta.1",
+      "status": "implemented",
+      "statement": "Phone-native planner, screenshots, native semantic snapshots, goal/window checks and action-feedback loop; host performs no business taps.",
+      "scope_limit": "User-configured external visual model receives target data. Node references and coordinates must be freshly checked, not permanent button positions.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "evidence_type": "reference",
+      "version": "0.1.20-beta.1",
+      "status": "implemented",
+      "statement": "System IME enabled status is separate from explicit automatic-switch opt-in, which defaults off.",
+      "scope_limit": "Current system-keyboard speech is not an independently verified on-device ASR engine; this round used synthetic text, not real-human speech.",
+      "evidence": [
+        {
+          "path": "verification-v20.json"
+        },
+        {
+          "path": "research/2026-10-24.md"
+        }
+      ]
     }
   ],
   "sources": [
     {
       "path": "ai.md",
-      "sha256": "437b315d8e40a780213aeb1bf5a28f0786b15603bc040a0e7d708f4ac27f966d",
+      "sha256": "81738e2ea45daa190fbd5c8d1a492a4a90982521f236144add2c8bf41e508c96",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
@@ -230,12 +358,12 @@
     },
     {
       "path": "source/README.md",
-      "sha256": "684de992ee80e3d1989c518ffd0f5193f428ee0f748e3afdd2a73e851b490be1",
+      "sha256": "4b206d6213c81c10ca49b5be0a8896b2b0ecf94b105521ab5e6d4630dd357948",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
       "path": "README.md",
-      "sha256": "7028f92ae8c1c04260c04b818606d0539707331b03868ed777fa651d734bb618",
+      "sha256": "cbb1ca3e7d247653ac02aa8537c172b68a45efdc968cdb8a9e953b43ce9665ae",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
@@ -275,7 +403,42 @@
     },
     {
       "path": "update.json",
-      "sha256": "eb015144884e74dcb0d6233413b2ec377ac507c6c54b22a25532379e6837d4f3",
+      "sha256": "6e43ca926311dace08be008df566886c8f2b46d22ce316634144b1d6ff073a82",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "research/2026-10-24.md",
+      "sha256": "d1616e947437e05b346af22abe0b2c666c900de1383b12927947df41ef8026ea",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "verification-v20.json",
+      "sha256": "4d6ab9897a50c897a333c2b4b7b808f2aae03ef034f4e99cac08c9ecee5cf59a",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "source-manifest-v20.json",
+      "sha256": "cff9d56bb17e18c1b9d249feead45054861309a650af196b2349b39e849d4c6b",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "source/AGENT_GUIDE.md",
+      "sha256": "3003f7c03001333665fe620d7263e537e6e3d95385e13b89cb841cf178dde9ab",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "source/tests/app-adaptation-v20.md",
+      "sha256": "a6d4a00eca36196f22952a93b05538596ff62fd44f4fe5a5cde422cfcb7ff191",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "source/tests/document-adaptation-v20.md",
+      "sha256": "1f4082558306ee7a28370ddb73987a2434c34337d0f71dc6c05457501ddcb01e",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "source/tests/search-write-route-integration.md",
+      "sha256": "3891aa92b77723c8ae1f9a8b0bbd7afab5e29312c2e34e97a38a6caa0550a472",
       "digest_scope": "this exact document, not linked remote binaries"
     }
   ],
@@ -297,21 +460,27 @@
     "embedded_credentials": false,
     "executes_remote_code": false
   },
-  "release_scope": "Research/learning materials; final package availability and current native results must be read separately from README and release verification.",
+  "release_scope": "0.1.20-beta.1 local acceptance and published-version reading material; actual release availability is separate from acceptance.",
   "current_release": {
-    "version": "0.1.16-beta.1",
-    "apk_bytes": 238821,
-    "apk_sha256": "8895a0549d3b2cc73d1aba540a66a24fcd4e160fe9450b4689582067460e8be6",
+    "version": "0.1.20-beta.1",
+    "version_code": 21,
+    "tag": "neo-agent-touch-v0.1.20-beta.1",
+    "apk_bytes": 287973,
+    "apk_sha256": "5f1fcc12558543df271794d7bdabc70c3f331baaaccd22e12dd9b737253fa254",
     "built": true,
-    "installed": false,
-    "installed_apk_readback_matches": false,
+    "installed": true,
+    "installed_apk_readback_matches": true,
     "record_audio_permission_present": false,
     "builtin_asr_present": false,
     "debug_research_is_separate": true,
     "source_reading_entry": "source/README.md",
-    "source_file_manifest": "source-manifest-v16.json",
-    "verification": "verification-v16.json",
-    "update_channel": "update.json"
+    "source_file_manifest": "source-manifest-v20.json",
+    "source_package_sha256": "c8feb33828a0240b1f765e1cb9e5aae4f2f052a2604f79a9fcb2d4a3f44792c5",
+    "verification": "verification-v20.json",
+    "update_channel": "update.json",
+    "all_apps_rerun_on_final_binary": false,
+    "source_tag": "neo-agent-touch-source-v0.1.20-beta.1",
+    "source_publication_status": "pending_separate_source_review"
   },
   "media": {
     "path": "README.md#120秒同步分屏原理展示",
@@ -320,7 +489,207 @@
     "timeline": "film-v1.0.4-timeline.json",
     "segments": 20,
     "maximum_segment_seconds": 6,
-    "scope": "Historical clips and labelled mechanism comparisons from film production with software 0.1.15; not 0.1.16 phone acceptance; WeChat automatic sending not implemented"
+    "scope": "Historical clips and mechanism comparisons from 0.1.10/0.1.12/0.1.13, produced with 0.1.15; not 0.1.20 acceptance or fresh footage."
   },
-  "implementation_flows": "implementation-flows.md"
+  "implementation_flows": "implementation-flows.md",
+  "current_scenarios": {
+    "covered_authorized_apps": 11,
+    "accepted_scenarios_with_stated_limits": 8,
+    "accepted_apps": [
+      "qq",
+      "amap",
+      "wecom",
+      "wechat",
+      "jd",
+      "wps",
+      "netdisk",
+      "taobao"
+    ],
+    "partially_met_strict_goal": [
+      "bili"
+    ],
+    "dynamic_detail_reached_but_stability_unresolved": [
+      "damai"
+    ],
+    "blocked_human_verification": [
+      "meituan"
+    ],
+    "skipped_outside_current_scope": [
+      "pdd"
+    ],
+    "all_apps_retested_on_final_apk": false
+  },
+  "scenario_details": [
+    {
+      "app": "qq",
+      "status": "pass_limited",
+      "scope": "Fresh query, search submission and Live recording playback; not full-song listening.",
+      "test_formal_apk_sha256": "a700c37b83cc55a1d220e0f2e20066620b3b0121e9c8a64df2a28a57aad36618",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 6,
+      "actions": 4,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "amap",
+      "status": "pass",
+      "scope": "Requested location detail opened; navigation not started.",
+      "test_formal_apk_sha256": "a700c37b83cc55a1d220e0f2e20066620b3b0121e9c8a64df2a28a57aad36618",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 9,
+      "actions": 5,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "wecom",
+      "status": "pass_limited",
+      "scope": "Workbench visible; existing page reused, fresh navigation untested.",
+      "test_formal_apk_sha256": "a700c37b83cc55a1d220e0f2e20066620b3b0121e9c8a64df2a28a57aad36618",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 1,
+      "actions": 0,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "wechat",
+      "status": "pass",
+      "scope": "Public search results shown; no messages sent.",
+      "test_formal_apk_sha256": "a700c37b83cc55a1d220e0f2e20066620b3b0121e9c8a64df2a28a57aad36618",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 8,
+      "actions": 7,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "jd",
+      "status": "pass",
+      "scope": "Search and product display price opened; no cart, order or payment.",
+      "test_formal_apk_sha256": "a700c37b83cc55a1d220e0f2e20066620b3b0121e9c8a64df2a28a57aad36618",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 9,
+      "actions": 5,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "wps",
+      "status": "pass",
+      "scope": "New document generated once, saved, reopened and exact native body readback.",
+      "test_formal_apk_sha256": "3d3307f3f6adc47d0adcaa2c190cd2e1bcde5dad874b0963473adeaab6426e64",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 23,
+      "actions": 21,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": true,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "netdisk",
+      "status": "pass_limited",
+      "scope": "Search results shown without file changes; intermittent heartbeat root cause unresolved.",
+      "test_formal_apk_sha256": "3d3307f3f6adc47d0adcaa2c190cd2e1bcde5dad874b0963473adeaab6426e64",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 7,
+      "actions": 3,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "taobao",
+      "status": "pass",
+      "scope": "Search and product display price opened; no cart, order or payment.",
+      "test_formal_apk_sha256": "3d3307f3f6adc47d0adcaa2c190cd2e1bcde5dad874b0963473adeaab6426e64",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 6,
+      "actions": 4,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "bili",
+      "status": "partial",
+      "scope": "Search and dynamic playback succeeded; second result selected, strict first-result requirement failed.",
+      "test_formal_apk_sha256": "3d3307f3f6adc47d0adcaa2c190cd2e1bcde5dad874b0963473adeaab6426e64",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 7,
+      "actions": 6,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "meituan",
+      "status": "blocked_human_verification",
+      "scope": "CAPTCHA displayed; movie query not completed or challenge solved.",
+      "test_formal_apk_sha256": "a700c37b83cc55a1d220e0f2e20066620b3b0121e9c8a64df2a28a57aad36618",
+      "phone_native_execution": true,
+      "host_business_taps": 0,
+      "native_ui_passed": true,
+      "model_calls": 5,
+      "actions": 2,
+      "builtin_goal_verified": false,
+      "builtin_stage_verified": false,
+      "independent_visual_review": true,
+      "raw_evidence_in_package": false
+    },
+    {
+      "app": "damai",
+      "status": "pass_limited",
+      "scope": "Related performance detail visible and run ended; repeated finish observation remains. New fallback branch not observed in the trace, so branch runtime acceptance remains pending.",
+      "test_formal_apk_sha256": "5f1fcc12558543df271794d7bdabc70c3f331baaaccd22e12dd9b737253fa254",
+      "builtin_goal_verified": false,
+      "model_calls": 18,
+      "actions": 10,
+      "independent_visual_review": true,
+      "host_business_taps": 0,
+      "new_finish_fallback_runtime_observed": false,
+      "fresh_query_typing_tested": false,
+      "search_entry": "Homepage and result entry observed; reused existing matching search suggestion, not a new text-input/submission test."
+    }
+  ],
+  "source_snapshot": {
+    "tag": "neo-agent-touch-source-v0.1.20-beta.1",
+    "commit_sha": null,
+    "commit_resolution": "Resolve this release tag to a full commit before reading; no guessed SHA.",
+    "missing_tag_behavior": "report source not yet available; do not silently use APK-only release tag or moving main",
+    "publication_status": "pending_separate_source_review"
+  }
 }

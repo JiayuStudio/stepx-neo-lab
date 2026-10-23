@@ -6,6 +6,7 @@ final class DocumentScope {
  static boolean blank(String text,String description){String e=entry(text,description);return e.matches("^(空白|空白文档|空白文字|新建空白|新建空白文档|新建DOCX文档|新建docx文档)$");}
  static boolean home(String text){return text.contains("最近")&&(text.contains("新建")||text.contains("创建"))&&(text.contains("首页")||text.contains("我的")||text.contains("文档"));}
  static boolean textComplete(String text){return text.contains("租赁合同")&&text.contains("甲方")&&text.contains("乙方")&&text.contains("租金")&&text.contains("押金")&&text.matches("(?s).*(签署|签字|盖章).*");}
+ static boolean textComplete(String request,String text){return text!=null&&!DocumentText.normalized(text).isEmpty()&&(!(request!=null&&request.matches("(?s).*(租赁合同|房屋租赁|租房合同).*"))||textComplete(text));}
  static boolean sameFile(String label,String name){if(label==null||name==null||name.isEmpty())return false;String base=name.trim().replaceFirst("(?i)\\.docx$","");return java.util.regex.Pattern.compile("(?:^|[\\s,，:：])"+java.util.regex.Pattern.quote(base)+"(?i:\\.docx)?(?=$|[\\s,，;；])").matcher(label.trim()).find();}
 
  static boolean saved(String text){return text!=null&&text.matches("(?s).*(保存成功|已保存|保存完成|同步成功|已同步).*" );}

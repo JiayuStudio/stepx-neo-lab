@@ -1,6 +1,6 @@
 # Offline Chinese voice input
 
-2026-10-23 · Codex · Added to the current unpublished 0.1.12 Beta source.
+2026-10-23 · Added to the current unpublished 0.1.12 Beta source.
 
 The physical device was observed to have no standard Android RecognitionService. This integration therefore bundles Vosk Android 0.3.75, JNA 5.18.1, and the official small Chinese 0.22 model. The official Android demo currently uses these Vosk/JNA versions; both upstream repositories were non-archived when checked. See dependencies.json for public origins, hashes, ABI targets, maintenance snapshot and license selections. These are actual bundled runtime/model dependencies, rather than research-only references.
 

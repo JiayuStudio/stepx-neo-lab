@@ -1,11 +1,11 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="studio.jiayu.neoagent" android:versionCode="17" android:versionName="0.1.16-beta.1">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="studio.jiayu.neoagent" android:versionCode="21" android:versionName="0.1.20-beta.1">
 <uses-sdk android:minSdkVersion="30" android:targetSdkVersion="36"/>
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 <uses-feature android:name="android.hardware.microphone" android:required="false"/>
 <queries><intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent><intent><action android:name="android.view.InputMethod"/></intent></queries>
-<application android:label="Neo Agent Touch 0.1.16 Beta" android:icon="@drawable/ic_launcher" android:theme="@style/Theme.NeoAgent" android:allowBackup="false" android:extractNativeLibs="true" android:usesCleartextTraffic="false">
+<application android:label="Neo Agent Touch 0.1.20 Beta" android:icon="@drawable/ic_launcher" android:theme="@style/Theme.NeoAgent" android:allowBackup="false" android:extractNativeLibs="true" android:usesCleartextTraffic="false">
 <activity android:name=".MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
 <activity android:name=".DemoActivity" android:exported="false"/>
 <provider android:name=".UpdateApkProvider" android:authorities="studio.jiayu.neoagent.updates" android:exported="false" android:grantUriPermissions="true"/>

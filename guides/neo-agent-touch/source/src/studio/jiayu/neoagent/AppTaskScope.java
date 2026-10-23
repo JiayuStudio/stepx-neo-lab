@@ -4,9 +4,9 @@ import android.content.Context;import org.json.*;import java.util.*;
 final class AppTaskScope {
  static final class Binding {final String source,original;final StageSourceRules.Clause clause;final boolean explicit;Binding(String s,String o,StageSourceRules.Clause c,boolean e){source=s;original=o;clause=c;explicit=e;}}
  static List<PlanCoverage.Mention> mentions(Context c,String user)throws Exception{
-  ArrayList<String> names=new ArrayList<>();JSONArray apps=new AppAccess(c).saved().optJSONArray("apps");
-  if(apps!=null)for(int i=0;i<apps.length();i++){JSONObject app=apps.getJSONObject(i);if(app.optBoolean("enabled")){names.add(app.optString("name"));names.add(app.optString("package"));}}
-  return PlanCoverage.mentions(user,names);
+  AppNameRules.Snapshot local=Conversation.localApps(c);List<PlanCoverage.Mention> mentions=PlanCoverage.mentions(user,local.names());
+  // Explicit app identities stay local. An unselected exact app cannot disappear from source coverage.
+  for(PlanCoverage.Mention mention:mentions)local.resolve(mention.app);return mentions;
  }
  static String original(Context c,String pkg,String user)throws Exception{
   List<PlanCoverage.Mention> all=mentions(c,user);Set<String> matching=new HashSet<>();for(PlanCoverage.Mention m:all)if(pkg.equals(Conversation.resolve(c,m.app)))matching.add(m.app);

@@ -89,27 +89,14 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [结构化知识（Raw JSON）](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/knowledge.json)：修订 2，sources 含哈希及固定版本源码地址；claims 区分源码、隔离测试、作者自述和推断，tools/findings/verification_gaps 分别记录能力、风险条件和未验项。
 - 参考材料不构成执行授权；原 28 项隔离测试不能当作实机或完整安全通过。
 
-## Neo Agent Touch · Beta 开发实录
+## Neo Agent Touch · 0.1.20 当前研究、实测与源码
 
-- [主入口](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/README.md)：0.1.11-beta.1 内测 APK、180 秒影片、可编辑工程和安装步骤。
-- [学习手册](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/development.md)：影片基于 0.1.10，架构、视觉与系统语义、触点变化、接管、检查点、文档验证、来源与实际参考范围。
-- [验证数据](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/verification.json)：发布构建和历史真机业务证据分开。
-- 已观察淘宝商品探索、美团座位图、WPS 新测试合同生成／保存／修改／重开；完整交易、外部 MCP 和全服务商兼容未验。影片偏好值为隔离测试数据。
-
-Neo Agent Touch Beta 已去除固定应用选择名单：本机可启动应用由用户自选，支持搜索、分类、同类常用与通用视觉。42 项隔离检查不是微信／地图／音乐／企业微信／网盘的真实业务验收，详见 guides/neo-agent-touch/application-selection.md。
-
-## Neo Agent Touch · 0.1.16 当前研究与源码
-
-- [AI直接阅读](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/ai.md)
-- [结构化结论](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/knowledge.json)：区分纯规则、Android原生构造、历史真机结果及未验项。
-- [最新研究与选型许可](guides/neo-agent-touch/research/2026-10-23.md)
-- [源码阅读与构建](guides/neo-agent-touch/source/README.md)
-- [只读校验拉取](guides/neo-agent-touch/bootstrap.py) · [三个入口SHA](guides/neo-agent-touch/agent-entry-sha256.json)
-- release使用搜狗等当前系统输入法，确认转写后发送；不含旧ASR或麦克风权限。0.1.15历史的41组纯规则、96项原生构造不等于真人三目标成功；旧真人长句失败，ASR升级暂停。
-
-- [Neo Agent Touch 120秒同步分屏原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4)：历史业务版本均标注，新Suno配乐；成片解码通过不能代替新beta业务验收或人耳试听。
-
-- 0.1.16新增共同商品目标的本地比价规划和一键检查更新；44套纯规则与149项京东/淘宝原生构造不等于真实三平台查价。[本次修复](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/updates-v16.md)。
+- [主入口](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/README.md) · [AI入口](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/ai.md) · [结构化知识](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/knowledge.json)。源码正式引用固定标签 `neo-agent-touch-source-v0.1.20-beta.1` 并解析完整提交SHA，移动main只作导航。
+- [逐应用机器验收](guides/neo-agent-touch/verification-v20.json) · [2026-10-24研究](guides/neo-agent-touch/research/2026-10-24.md) · [代码导航](guides/neo-agent-touch/source/AGENT_GUIDE.md) · [源码清单](guides/neo-agent-touch/source-manifest-v20.json)。
+- 56套规则通过；11应用分批实测，8个限定场景通过。B站实际第二条，严格第一条目标部分通过；美团验证阻断；网盘心跳根因与大麦结束稳定性仍待验。各应用测试摘要与最终安装摘要分开，不是最终二进制全应用重跑。
+- WPS本轮是新文档生成、保存、重开全文一致；微信仅搜一搜；音乐为Live播放，未全曲试听；淘宝/京东仅价页。无下单、付款、消息发送、电影购票或验证码处理；拼多多不在本轮范围。合成文字不是真人语音验收。
+- [只读校验拉取](guides/neo-agent-touch/bootstrap.py) · [三个入口SHA](guides/neo-agent-touch/agent-entry-sha256.json)。当前系统输入法，专用输入法自动切换默认关闭，无旧ASR/麦克风权限。
+- [120秒历史分屏影片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4)：历史0.1.10/0.1.12/0.1.13实录，不是0.1.20新实录。[历史开发与来源](guides/neo-agent-touch/development.md) · [旧研究](guides/neo-agent-touch/research/2026-10-23.md)。
 
 ## StepX Companion · 社区收录
 

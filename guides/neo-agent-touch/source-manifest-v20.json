@@ -1,0 +1,1315 @@
+{
+  "version": "0.1.20-beta.1",
+  "files": [
+    {
+      "path": "AGENT_GUIDE.md",
+      "bytes": 4904,
+      "sha256": "3003f7c03001333665fe620d7263e537e6e3d95385e13b89cb841cf178dde9ab"
+    },
+    {
+      "path": "AndroidManifest.xml",
+      "bytes": 2335,
+      "sha256": "2c9fab467df8601cac417e3d0c163377e2a0bba080d496a7778307da41e20014"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1882,
+      "sha256": "4b206d6213c81c10ca49b5be0a8896b2b0ecf94b105521ab5e6d4630dd357948"
+    },
+    {
+      "path": "assets/agent-skills/commerce.md",
+      "bytes": 2113,
+      "sha256": "ce46c0603b8e7bf1c44ff881fad0532b3f48f34c49b9cef91e37d7d60b69024b"
+    },
+    {
+      "path": "assets/agent-skills/core.md",
+      "bytes": 735,
+      "sha256": "e2397ee2dbac60c1f145b23f587ed67271479889e026c7d7efec432be20f1305"
+    },
+    {
+      "path": "assets/agent-skills/documents.md",
+      "bytes": 2684,
+      "sha256": "48c9895e1b69e56f0bf269a96cab159aabd4112a36de847b65b169183a0c9130"
+    },
+    {
+      "path": "assets/agent-skills/games.md",
+      "bytes": 1813,
+      "sha256": "fb33af8bf457324fec8c55ff94a5f95ef7af30dd601333d050aee9491e470858"
+    },
+    {
+      "path": "assets/agent-skills/search.md",
+      "bytes": 1677,
+      "sha256": "b83a73567c1c79d7caaa7db46e56257adcd7384577097198390c8270bee0cacc"
+    },
+    {
+      "path": "assets/app.js",
+      "bytes": 41177,
+      "sha256": "de2c0f88cbcc5da617eda9914b4c72d772f65df4719d943e5f33285c1450c83d"
+    },
+    {
+      "path": "assets/index.html",
+      "bytes": 539,
+      "sha256": "60431be3af484fef18b471f19edab751ad450ccccc83079ccb452a1b186f4b14"
+    },
+    {
+      "path": "assets/licenses/THIRD_PARTY.txt",
+      "bytes": 1093,
+      "sha256": "6e928165e6d4550daa9e3151d62ea6bb4950e223c8bce1f3da7af242e6912c9b"
+    },
+    {
+      "path": "assets/licenses/voice/JNA-APACHE-2.0.txt",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "assets/licenses/voice/JNA-LICENSE.txt",
+      "bytes": 797,
+      "sha256": "07c938b23950ab7d47a24ef35f9f5da3a05ae164278dc959ad6994135ed59ff1"
+    },
+    {
+      "path": "assets/licenses/voice/VOSK-APACHE-2.0.txt",
+      "bytes": 10173,
+      "sha256": "bb618af833c817ab01c1564bd3ec75ba4b4f9cf30910a4a2168e30a674ee8cc6"
+    },
+    {
+      "path": "assets/style.css",
+      "bytes": 21394,
+      "sha256": "1cf62cee57babe02739439e788555154141a1714dc4fbde1dd774a22535f3bc2"
+    },
+    {
+      "path": "build.sh",
+      "bytes": 4550,
+      "sha256": "f469d252c06b43506eb4e9060488207148136beadfbf3e0265dbd76806b09a46"
+    },
+    {
+      "path": "release-src/studio/jiayu/neoagent/OfflineVoice.java",
+      "bytes": 646,
+      "sha256": "8fba3f49ff1bcf2a073ea47b2b06d6fc3eecb25d240441fa15c463b14657eb0b"
+    },
+    {
+      "path": "res/drawable/ic_launcher.xml",
+      "bytes": 475,
+      "sha256": "8d2c268e521391f2d27af681348fa15498dcc7f145f413f425cdec9e223500dd"
+    },
+    {
+      "path": "res/values/strings.xml",
+      "bytes": 259,
+      "sha256": "1cf791b3c353ad51dcb47df0b9e8144c80d152299416af0646f5ba7edc7b7156"
+    },
+    {
+      "path": "res/values/styles.xml",
+      "bytes": 468,
+      "sha256": "4a313e6ee20b0aebf5c36f7151e98dd8be21e6573aff54c87c46802232904c51"
+    },
+    {
+      "path": "res/xml/accessibility.xml",
+      "bytes": 592,
+      "sha256": "0e168a51e7569e6514a602239c4d30fc42e5f1e7508e2cb5476f0670ef1f5c43"
+    },
+    {
+      "path": "res/xml/agent_ime.xml",
+      "bytes": 310,
+      "sha256": "517ab4c0bfae043bc1eac59468cb4ce8712d357e47679abf0fa6270cc0fdd396"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AccessibilityAccess.java",
+      "bytes": 6261,
+      "sha256": "a69968046fc6eff2726b1b9b33b9c8e3383a4ce87c6e26ae94d3d53a1fc4dde4"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AccessibilityStateRules.java",
+      "bytes": 1420,
+      "sha256": "a10aa47fa34b7a5e6104c5db096ae1857ad1519e7752cda4a81160f91dc922bb"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/Action.java",
+      "bytes": 2174,
+      "sha256": "b51ef0adfa6877a155d4cdae1583a5a20e2eb3d6b75aa3e94d1ea2330240e945"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ActionEnvelopeRules.java",
+      "bytes": 7751,
+      "sha256": "5f02065de43ed5adfa9adb4bbe17f73fa2efd0193a2c8960be92db0200b4d8b8"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ActionFailureAudit.java",
+      "bytes": 3004,
+      "sha256": "0b95cdb247bc685dc54a184bccc6a6ea60dedcbc83819a15c0b0c09ce57de0ec"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ActionGuard.java",
+      "bytes": 1017,
+      "sha256": "b5af9aa302180751cc805da89f90ca3a2ea7f5f4ae9cd9213d5225a352c66aa6"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AgentImeInputBridge.java",
+      "bytes": 9448,
+      "sha256": "d2393f069a6eb3b316cd8728f7f1032b32bceff8f574059f1251e12a40695453"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AgentImeLease.java",
+      "bytes": 11012,
+      "sha256": "54278d2cde324bdcb55f37d59ee13c80725b0833e19b1ad96ffd7e27fb76c50a"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AgentImeRules.java",
+      "bytes": 6778,
+      "sha256": "a04002c54202447306bf9581ec7ffe8dd067597143d369f98c30bf60643188dc"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AgentInputMethodService.java",
+      "bytes": 15324,
+      "sha256": "3e3185eacbe2e9d71cda7d1057bef6890aa71a76ac3501fe692871d234b75d14"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AppAccess.java",
+      "bytes": 14201,
+      "sha256": "f8f960f2b1ae16d76f79b9c6600847fa1a5b079582a5fbdb2fceeb86ebf52ad7"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AppCatalog.java",
+      "bytes": 336,
+      "sha256": "4abb3c9628b15fb58360ba9de3116b8e66f447f0517caa37ba55887c0d7c5e2d"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AppLauncher.java",
+      "bytes": 3050,
+      "sha256": "bced3bed8eff940a65d65015d3b20f69b738399f3dbe745c35f39df213d33fa6"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AppNameRules.java",
+      "bytes": 4106,
+      "sha256": "31c5059eb8bd287a5b085e3da482d2910b9a0371d85850bca2ca5d1ef1d052ed"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AppTaskScope.java",
+      "bytes": 2826,
+      "sha256": "8284e4015546a8fa766875618c159db4343d5cea977084fe802d55e4b1c1fbeb"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AppUpdateStore.java",
+      "bytes": 2473,
+      "sha256": "f6faec8a7895a9ac0783cb660cb93411e35c9fb75d77018ebe2f355b88eaecbd"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/AppUpdater.java",
+      "bytes": 15184,
+      "sha256": "598fb85e6e60bb73c28004d92ed4731c321eb520d2144d0d0e147954a73af2d2"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/CandidateRoutingRules.java",
+      "bytes": 264,
+      "sha256": "fc1acd90d09aed809355ca585ac5b98c0be8cc45d1c0f90105933a06c4c00c7c"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/CaptureRules.java",
+      "bytes": 897,
+      "sha256": "5a8477c6e9f14ce202c85d82d0afbebe11f4de53b4d8c17659f793af84ff7f51"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/CartReceipt.java",
+      "bytes": 1030,
+      "sha256": "befc66eb1510a795b027326f465fd5e1f6f47ad40cbd206d5843e417ba44d85f"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ChatStore.java",
+      "bytes": 4764,
+      "sha256": "206a50544f2d858435c77a7db430df454f62f8a0d3fe8be4c5461894e3ca9d7c"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/CheckoutReviewEvidence.java",
+      "bytes": 2315,
+      "sha256": "cdac0f83710c33721650cdc0772a0b558fbc2f4bdb1e0ea272a0206504ae3546"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/CommerceReadbackRules.java",
+      "bytes": 1510,
+      "sha256": "a5071a37c7f4815b6d1f9bcac76b34766236d1628868cab5d1e624eb382a075b"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/Config.java",
+      "bytes": 1464,
+      "sha256": "67574a28729b26549b611c279c41bfc57b15a739da17540658a26ff1bcb7b85a"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ContainerLabelProof.java",
+      "bytes": 4978,
+      "sha256": "3539ccedcc39ddde731d7818ffbf95912d248f0719bbb2affc19b943b2cf5558"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ControlBar.java",
+      "bytes": 6897,
+      "sha256": "3b49d2340cc134901823e46c9e9c2349739586f78c00e971be568036c436f385"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ControlCapsule.java",
+      "bytes": 1609,
+      "sha256": "4cdcb1221f16af3ffba50d84d23c7603a2e2d8eb5eb9f31fe6bb0a815f638a9f"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ControlEffects.java",
+      "bytes": 4348,
+      "sha256": "ffbfe145b56e8c0a29087f7fb4834225f1f5f95ff440e1c1663713a98cdf5ccd"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ControlService.java",
+      "bytes": 86702,
+      "sha256": "17307c68ce509ea50122c36695b82fcaa4cfd38e813aeb5cfe810bafac272ad8"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/Conversation.java",
+      "bytes": 6376,
+      "sha256": "c640c3ed1f4638555da3b5544109075804ae9c8b873a0bb3fabd4eff3f881779"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DemoActivity.java",
+      "bytes": 1343,
+      "sha256": "db8f255965ed56d9056bb9006e1563a1b4106f0a7a89bb58c012b6cae5686945"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DeviceMcp.java",
+      "bytes": 15115,
+      "sha256": "31334c80f908b7b44213b1959e275ef75a13592b2c024b37ab978818112cab24"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DeviceSkills.java",
+      "bytes": 1561,
+      "sha256": "bd2f68bbf1ebc1cd4c8d31a91109bfa392333ebf88fc97aafd0422a225626a97"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentEditContract.java",
+      "bytes": 2418,
+      "sha256": "d28483af8709c339507ad6f93734464925eb5584bd01dd41d85e3cd345014192"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentInputRules.java",
+      "bytes": 440,
+      "sha256": "a50ad9ca6ee08f9d210d0722fe4450afeed7707aba275e31992397a405241b8b"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentNameRules.java",
+      "bytes": 2270,
+      "sha256": "2ba30f2ed8723e16a2571e4f07f9c02fdc15cc317901a2d0a68b2d6a213ef507"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentReadback.java",
+      "bytes": 693,
+      "sha256": "765dd1eeb35349a4699314a47d88df2b46fa56f4405baced10fecdc42ce553f4"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentReopen.java",
+      "bytes": 597,
+      "sha256": "c7648186d7e4d4ae893c2a11ce60c639f04e80b40648a269592dc3af9c50af11"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentRuntime.java",
+      "bytes": 23207,
+      "sha256": "3fdde594a630d0cc01530bf8b9f336c22a4d7d487bd18ade2f17c8a580ec583b"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentScope.java",
+      "bytes": 2053,
+      "sha256": "27593fc3708f734b64919c2c55b75070f3f111bd70eaded8e6c987b800d13049"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/DocumentText.java",
+      "bytes": 1187,
+      "sha256": "066fbd48566873d5f7492fd94168053868bfc410d6a727d2af0f1ef00c91f115"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FinishObservationGate.java",
+      "bytes": 5966,
+      "sha256": "6d2f62c9170811c8c3be391290a25a38ea66622f81cd8c0f14f2ccc14383f0e9"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FinishObservationRules.java",
+      "bytes": 5705,
+      "sha256": "32e4db96a2587fb75196add4f2421b97abf059d28d6ce8bba376b8e4d517313c"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FloatingChat.java",
+      "bytes": 19187,
+      "sha256": "dee9b7a33a30a209c196216431a6221b426b0871e61c685aff5d3c5e5ad6fc16"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FloatingChatGeometry.java",
+      "bytes": 2042,
+      "sha256": "d3fb409d73dbef5a7caf4acf4bdad2f2ea5e19e9aa3ed197a17f7a389e0db4f8"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FloatingConversation.java",
+      "bytes": 19613,
+      "sha256": "c013a17b57c5174929be076a30a36a4a5d01261199e5dcbaea6cf8ca4c682057"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FloatingPlanRules.java",
+      "bytes": 1216,
+      "sha256": "5b091be357cdb62ba37f449469b04e1ad7e2d10f90fea41d941cd01dee31e452"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FloatingVoiceInput.java",
+      "bytes": 7151,
+      "sha256": "57df5579aa01f3ffbfaa056bbf920eca9c307fe8954c2d7049595fadddeb2321"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/FooterLabelRules.java",
+      "bytes": 871,
+      "sha256": "2d1c65c8b4784d5a1011f17187fafeebe5ef64ad9c2ac13396ae8a2a76f2283d"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/GameplayIntent.java",
+      "bytes": 2271,
+      "sha256": "5c7dad550c29e7cf766df85db2ec82fb5bb7dd24ced407186b966e51bd7e930b"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/GuiRevision.java",
+      "bytes": 1504,
+      "sha256": "3fee08c5b1499811a69f8977ea06218a7d1696c89e74b90ebd5a19245d7b8c1e"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/HealthRules.java",
+      "bytes": 2451,
+      "sha256": "70eb54c37f966538dd5e5375a77de1f0edfc724611190752ff107fa92ab280a2"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/KeyboardVisibilityLease.java",
+      "bytes": 2197,
+      "sha256": "d3087583204a2a9f63b801a8e92c32f6603fdfae1cc58bddb913dabe8e474343"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/LaunchRelayActivity.java",
+      "bytes": 1877,
+      "sha256": "22e30005bf96c99493018745905e77e3f26f7051fd4315d6436f0cd08ee02ec1"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/MainActivity.java",
+      "bytes": 36505,
+      "sha256": "9eb284129d7d0ac6034b5cdef427c38a4937a9ff408f136ea4d548c858e3f3e6"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/MemoryRules.java",
+      "bytes": 4601,
+      "sha256": "54307a270752a21bc76072ce52b1e00df55888cc2e78031231ef6f46c62e09c7"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ModelClient.java",
+      "bytes": 5371,
+      "sha256": "786a3f47bc31c802f705dd651ca4edb8212004b03af632ac5e3afe0ccfe89243"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ModelDecisionAudit.java",
+      "bytes": 2372,
+      "sha256": "a8cabf51a8bf69bf1ed169f04492c1a5c533ac45ac5828c0af60ed781ce84c2a"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/MovieBoundaryStop.java",
+      "bytes": 4598,
+      "sha256": "8ac9264ff8c348048fced5b20a32b8a0c0234a9ef07651a31e410fc53e247f80"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/MutationRules.java",
+      "bytes": 2385,
+      "sha256": "362db75142ca26e1ce2c46f5c2bc4af6007b6764efbdddfbd53602e029e735e2"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/NativeLabels.java",
+      "bytes": 5628,
+      "sha256": "cd4e1edfc384f498dc3d07b1dac164e09617956e9474d4ba5193e8ce6f8331cb"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/NativeWindowState.java",
+      "bytes": 2019,
+      "sha256": "734d3db38b0dc59b08677d78493929bf6569960f18ed78adb30183ea68f17154"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/OfflineVoice.java",
+      "bytes": 15672,
+      "sha256": "eee9374eb897e5fb0257bd151c640550b711967d1f05082f08cb47be68ad851f"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/OrderEvidenceRules.java",
+      "bytes": 1880,
+      "sha256": "e3e2dc39383166eb9b38c695b6e0d3b72aec68667997f431d193d1ed5356d78a"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PixelScene.java",
+      "bytes": 1548,
+      "sha256": "9563b9956dfec4eb98423863f6f7e57db7915c89613ad2bdc21821656ac1ce67"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PlanCoverage.java",
+      "bytes": 11667,
+      "sha256": "79a24976628a03f642b7ea6bfb0dc1e2de7e4db19de7f07ca381d1cb90e9feb6"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PrivateText.java",
+      "bytes": 732,
+      "sha256": "753613698dbe61488df644d57d4b930de09e1ccd533f544cbdd25665902ad432"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ProductTargetRules.java",
+      "bytes": 593,
+      "sha256": "22ceb7ad04d71e2dee3797cef61844cc7b94baecc0e8cda7687f55404d6b566b"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PurchaseFacts.java",
+      "bytes": 3673,
+      "sha256": "5ce008c950db505cd2ce411a6a8a77287130f99203c30d250f03e54399a7ab65"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PurchaseLedger.java",
+      "bytes": 1686,
+      "sha256": "df0ee75194114e1803d31ec5afca77ef3f2ff0707a40f9ea5e040bbb28c3f9cc"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PurchasePolicy.java",
+      "bytes": 2888,
+      "sha256": "b001028e4b892eb45b5bd7245bc0f98fd4c767b774a1cb6e404bd00f2383d458"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PurchaseRuntime.java",
+      "bytes": 9701,
+      "sha256": "e406054d46c3957ef75e5fd0b77145e757ffdc65198ed85d326da63711ea0781"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/PurchaseState.java",
+      "bytes": 2287,
+      "sha256": "ff4d9959210add27b9a272b430975ba7f9541120c1eabc75a72165b1ed89b8bd"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/RecoveryPolicy.java",
+      "bytes": 435,
+      "sha256": "10b9d9f382ac440fb4fac16f55e0f5a02ca8071b9e25b1e72dd6da5f43316f89"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/RejectedActions.java",
+      "bytes": 1035,
+      "sha256": "34196d7847d3bb334d46c09f189511f972d1667f54fa5d46c2f172d02e84773f"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/RouteIntent.java",
+      "bytes": 7201,
+      "sha256": "9e13c8373f01f5a924ef6f65a283ba2331d99cebf9d797cb03ee98a98bb82815"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/RoutineAccess.java",
+      "bytes": 4369,
+      "sha256": "58e625b53160e728d12eede84d18e3d9500841dafe2f8627073b2cf06ceca85a"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/RoutineAccessRules.java",
+      "bytes": 1679,
+      "sha256": "f7f6978cdcb135161e56c6369cb5de72cd469b2ebe524b47253a850c722eea70"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/RunOwnership.java",
+      "bytes": 1715,
+      "sha256": "b23b97560842d26c7a192c3269d2235939bbb47955f48ad06dd9366bc2ce6eb4"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/RuntimeHealth.java",
+      "bytes": 5830,
+      "sha256": "c554b138e869f8e359a316095273914d255c5f4a2900eb8055c9db9846cf531b"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ScreenshotWait.java",
+      "bytes": 1186,
+      "sha256": "f36a3fe4442aaa8b058faa0dcf7ae53c0f40a6945e2ced80c5fd8516438ab40d"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchFinishRules.java",
+      "bytes": 4874,
+      "sha256": "ecd00384737ba7f52e91e40ba549c1c88bbdf274086027be65ffddd43e43dc92"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchInputBridge.java",
+      "bytes": 25565,
+      "sha256": "d60fb12f5bea1adf27cce817f57ac756f1837a372b409cfaf6a01eb6c46aaebb"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchInputRules.java",
+      "bytes": 4214,
+      "sha256": "9d7556e84833c1da37ebe53240256de869d72df22c60dd111ea068190e093bb6"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchNodeRules.java",
+      "bytes": 2858,
+      "sha256": "1874ed540140870d8e28abbde341e31bffe6d1ac644d4a9e203fc16e27d15efd"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchQueryPolicy.java",
+      "bytes": 5595,
+      "sha256": "10152a74e01612fe40a40c36a6058ac5fa1a94fdb933a33da1501abf4c0f5b97"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchSubmitRules.java",
+      "bytes": 3485,
+      "sha256": "84f7f2aa2275901a04ab0fc46058735768262df78648ff9515e4f94744bddcde"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchTarget.java",
+      "bytes": 1982,
+      "sha256": "deb6ce3a95cb1e21e61c3d4bdd8483134f03643f187468d2a3d5043ae2fbdf17"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SearchWriteRouteRules.java",
+      "bytes": 1829,
+      "sha256": "7919de00e5ff0c78b27f20774709517b71f33038706f75d46e43500f9604f2e7"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SharedAppSourceRules.java",
+      "bytes": 5088,
+      "sha256": "e7a60148043d050ecce7f79c42c2db6f39dc12010b1d10119aaeeb396f5af7e2"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/SharedComparisonPlan.java",
+      "bytes": 1187,
+      "sha256": "642ed632de4e27eac9c09050eb9e93daad7459fe3a261f2af8c9f8e4f81a7b85"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/ShoppingIntent.java",
+      "bytes": 2105,
+      "sha256": "24439b886e144f920cde83017aec43957f38e2542c990648070df796c1446438"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/StageSourceRules.java",
+      "bytes": 5487,
+      "sha256": "4ce497f668166511b972c4ebeca7a0dc974a58f9c04860681a72059762fa6917"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TaskBoundary.java",
+      "bytes": 1118,
+      "sha256": "4b7bf94ff7aceb0ce0a16c7804b3ad2ab06134c347186b5a6e387dcf056fedef"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TaskCheckpoint.java",
+      "bytes": 5027,
+      "sha256": "138c6cbb3a5740fd78754045ea029fb2039ff67b19206d478bfc389cdf3a7e13"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TaskMemory.java",
+      "bytes": 1368,
+      "sha256": "282e547955b249f88483e152e6daf22c39365d1e772367b4b781d8f5d32b98cb"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TaskRequest.java",
+      "bytes": 926,
+      "sha256": "028fd85a1c4c91a2dde7f05aaeb82a8ec9a209704bef3fb8fd36f4293d154bc0"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TaskScope.java",
+      "bytes": 1272,
+      "sha256": "cebd83cdf115f6c928f652eb8f74d2b79759e46c4591d66fc805abb9dc411b3e"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TaskSpec.java",
+      "bytes": 2947,
+      "sha256": "6d80f55dac840da26c0ccc05aad6925c45a4f9a7f325bd8e51143fce626337e7"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TaskWorkflow.java",
+      "bytes": 6681,
+      "sha256": "d24c1c9796fc059341381bd12a2fa6736b1a0c9d02542964a0b7fa6859d9586c"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/TouchPointPicker.java",
+      "bytes": 1456,
+      "sha256": "b7fe57c7912f3280cbe94d64bcdd5d0202fe582a02015d6d55c0cbd9a2ee5b1c"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/UpdateApkProvider.java",
+      "bytes": 2005,
+      "sha256": "84f6c8083e6ac4bfb587d66e842072dfe36c065d5b65d2fe5e4e9e1b9460cee4"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/UpdateRules.java",
+      "bytes": 5408,
+      "sha256": "2e3ad1a1fac353c3cd1c34c7619e2dfe03f0a398b20129270c4602f92fa221ff"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/UserMemory.java",
+      "bytes": 6924,
+      "sha256": "b79481d2825395e2e150179a65bcb45a8a5121e526437970ebf90b075c4b1a99"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VariantRules.java",
+      "bytes": 2794,
+      "sha256": "9aa4358885b7d88de2d217d50bd8ecc56bf036db17af814d7dd1918bdce78463"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/Vault.java",
+      "bytes": 1873,
+      "sha256": "00a3566f100a60ff66b16f7eedff2de710cb23bd0ff0c3232c6e0f79af00a428"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VisionGrounding.java",
+      "bytes": 2542,
+      "sha256": "06c958bd13a62ab2930dc462f18a08f4de4b4594e9b5b851198a69efca474c59"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VisualActionRules.java",
+      "bytes": 4706,
+      "sha256": "687c037c483bcfd147bd8b83ed9e99189460ca4fba23de2fd4799a7e4daeb937"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VoiceCaptureRules.java",
+      "bytes": 3325,
+      "sha256": "831e3993c030767e0e844ab080198a018fae346d85cfa26c412754fb159e87d1"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VoiceEndpointRules.java",
+      "bytes": 1090,
+      "sha256": "1fb4ba4280534f279653e1dfa55e59fa11ec88e0cbe3dbcb41f9b8edd96fade1"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VoiceGoalTransfer.java",
+      "bytes": 11610,
+      "sha256": "977d95fa6f7c03197a3c438515c4641d9473b916158ed68f8bf2aad52da596a4"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VoiceIntentRules.java",
+      "bytes": 3629,
+      "sha256": "c8ba8750b592da5fb75182611ab8e1acacc2988280569ad6c115f4a35802b849"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VoiceSession.java",
+      "bytes": 2252,
+      "sha256": "57b89d702e987f602513842ef5cce14ec045ca272c7dbdf1785b49fa80e73524"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/VoiceShortcutRules.java",
+      "bytes": 748,
+      "sha256": "eb0919814a0861b94b6608d9732f11bb53699bd8e5f66c9f1143bfde952b1262"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/WindowFrame.java",
+      "bytes": 639,
+      "sha256": "2de2a4462bdb37f0841996ca1c5c5bd86c742cee4348425b09958e3c6adc4e45"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/WorkflowIntentRules.java",
+      "bytes": 2439,
+      "sha256": "67a5076ed3232148d48669145fff1111c188c806fffd01d66db6b3b3916e7c3c"
+    },
+    {
+      "path": "src/studio/jiayu/neoagent/WorkflowPlanException.java",
+      "bytes": 2063,
+      "sha256": "85ce4883d1d69347f5681e7c1bb4c38b053f4dd670850c2c67d76542d3018e52"
+    },
+    {
+      "path": "tests/acceptance-v20.json",
+      "bytes": 9682,
+      "sha256": "dd50b136d60598dc0c72b2a0c3df1bca9c33d1e1f8c9fc10055fa769ace37d60"
+    },
+    {
+      "path": "tests/accessibility-integration.md",
+      "bytes": 2122,
+      "sha256": "68ad1d18fa21c6c20f0240e0a65d41c703c41816867c331dbfad778c5caeb2cc"
+    },
+    {
+      "path": "tests/apk-checks.json",
+      "bytes": 571,
+      "sha256": "af2bb5e23a7de5f91bb474d829abff68a56294b0cbd5590dda788c4719936e11"
+    },
+    {
+      "path": "tests/app-adaptation-v20.md",
+      "bytes": 3360,
+      "sha256": "a6d4a00eca36196f22952a93b05538596ff62fd44f4fe5a5cde422cfcb7ff191"
+    },
+    {
+      "path": "tests/build-source-state.json",
+      "bytes": 20285,
+      "sha256": "29c9d08035f507f86e953021eb08827a221227d21bd4624e701d1acc7177db96"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/ActionEnvelopeContracts.java",
+      "bytes": 15541,
+      "sha256": "ffa72c948fb183e227eeab7bbac7dd2e1836b9868ec524a754fffd19d1461923"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/AdaptiveAppApproval.java",
+      "bytes": 1865,
+      "sha256": "32604f6f81587639a9974b15f0c3e81c90714a5ec35bc9b10b3851193f3e8803"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/AdaptiveRoutingContracts.java",
+      "bytes": 10474,
+      "sha256": "1a6def518618ccb4c6406a5bcdc4c3d5c4a7b92d8aaedcd84f5a120684b7717a"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/AgentImeContracts.java",
+      "bytes": 21775,
+      "sha256": "b80a9bff58a7d98be8e603d73ca89148c0b0087485ffe56ed8723e83f7c1172c"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/AppInventoryContracts.java",
+      "bytes": 1668,
+      "sha256": "6c9813416ad6e8f1c7e450e57438e8f6e7d93d87142540c63febcc98491e12a2"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/BoundaryWorkflowContracts.java",
+      "bytes": 3438,
+      "sha256": "7bccc316fac4dd7c05c8718c811cdb910eeff61f11c65c20b9087af5b182a72d"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/CaptureContracts.java",
+      "bytes": 2401,
+      "sha256": "005cfce528e113765bc86d0cea5a6ea552947b44fb963a7e7d07eb4c161bf2bb"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/CheckoutReviewContracts.java",
+      "bytes": 2978,
+      "sha256": "735535dcad4a542c86a52784960af0426be702086271cbeb8916fe45c376ce2c"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/CheckpointContracts.java",
+      "bytes": 6797,
+      "sha256": "cc0531d44a5991af8221ea01cdcbd51035224b189c2bce47245a95c7aa9cdfed"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/DocumentEvidenceContracts.java",
+      "bytes": 7714,
+      "sha256": "25f5b68ffbe8016378140c7c23b2a28dd11094f2cc860f97aeae34a31d6e18f8"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/EffectsContracts.java",
+      "bytes": 13412,
+      "sha256": "72afb16b271d5702221b4a08589126f3e739f57c35a5c18455ffe537f5e451e9"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/FlowQaActivity.java",
+      "bytes": 4144,
+      "sha256": "58c0737d48213109a2f61a3a927d04c3d3a4a2fd5c5b417332af9e3237703a4d"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/ImeEnterContracts.java",
+      "bytes": 10537,
+      "sha256": "4964a38c6d20b95c5bf4a845f725a3fab6535aef452363d83e6ffafb965507e2"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/InspectReceiver.java",
+      "bytes": 1944,
+      "sha256": "7436001568350d446c853456df48a368bbc69d466b9688e2ce16fe3ff79aada8"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/InvalidActionContracts.java",
+      "bytes": 6004,
+      "sha256": "475e11740a811aca409a7e0865bdd6d27f8fc899f291e865dc39eeaf19994f7c"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/KeyboardContracts.java",
+      "bytes": 8140,
+      "sha256": "c92f5a1d63d0d177558aba88b80ee25ff03f9c5158e8b4528c465a33ffd20dc3"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/LauncherContracts.java",
+      "bytes": 1993,
+      "sha256": "a6c4429ddc7af1ce55ea9bc25ddfaa520a6247059be2e1bba4022db03d1117be"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/McpContracts.java",
+      "bytes": 8245,
+      "sha256": "b0a5c4b3c35d467180e650f954ddc5d56ff1c2e87bcaa8035117ce0dda594c95"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/MemoryContracts.java",
+      "bytes": 4185,
+      "sha256": "6416de08d637d2e9d6af336bb05a819181bb5a1cbd6cbf60b4b6c58206c004f9"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/MemoryUiContracts.java",
+      "bytes": 4367,
+      "sha256": "ba2d00493c759d24ac14c42a2716d3ae15dba3c43d6b9e81f17ce5c901dd252e"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/ModelContracts.java",
+      "bytes": 4884,
+      "sha256": "39e4f8ba2fdd6ffb3cc2210673d687ebfa83d0bb04ccf9970829a4b76987c6d8"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/NativeLabelsContracts.java",
+      "bytes": 3432,
+      "sha256": "73263d7737462a9c1479c15bb1a9fe485d3f38b2bd7abec9736fb635c9fa30ae"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/OutcomeDeliveryContracts.java",
+      "bytes": 9233,
+      "sha256": "1b2b8154d0fe2984cef1cd663a321f4dd390f79b0d4b22ad3271b0d4274a8909"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/PurchaseContracts.java",
+      "bytes": 9460,
+      "sha256": "d2a4769c2118db0e7c2ce9b2c7f4fd9516b7eefd0de86acdbf0891e0c38bd34a"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/QaActivity.java",
+      "bytes": 9242,
+      "sha256": "87030e62e909dd6084871a228a6f21fb8939f622b8c6eb120eb10eccb1febb8a"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/RejectionContracts.java",
+      "bytes": 3101,
+      "sha256": "43e9675f38a28aa99f5282957afb44d1315108280b37cdcd997bd459872bb71b"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/RoutineContracts.java",
+      "bytes": 7724,
+      "sha256": "f9e094bda76f73cbcaaf00f418c5a51062cc5d1e5abcd492a14f32684f2ea3be"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/RuntimeContracts.java",
+      "bytes": 12095,
+      "sha256": "6d4f69b04676b97695f96c7990c3ac4cdf873350d0f59da3d4dd43b02e854917"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/SearchInputContracts.java",
+      "bytes": 6719,
+      "sha256": "3ad5aa890ae75283cbdbe8aa43ed3f5f6a88d7d8e3dffe5b93d1a8d1a93620b0"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/SearchNodeContracts.java",
+      "bytes": 17775,
+      "sha256": "7eb337272b453b8927a7c63efa09e5aed1eabc83057519cf19c5b0ff181a6a4b"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/SearchSubmitContracts.java",
+      "bytes": 12715,
+      "sha256": "87c457a04df952dff7d4b7d1f31cb4ffee9d26c5ac5ae38d50cf90e5695fa7c0"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/SearchWriteContracts.java",
+      "bytes": 3108,
+      "sha256": "6a2df986ded304f89b686a73a28918eea5fda6bf3d1fff7cc5891962ac54125d"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/SystemInputContracts.java",
+      "bytes": 3611,
+      "sha256": "e15934f3d2488d1b6ec1d04dcd814aa09cf147852a3919df3f176726fe937aae"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/UiQaActivity.java",
+      "bytes": 14432,
+      "sha256": "2ba23bbef69dac8009186af528f69b3759e6340793532b98efb8a5f2412356d7"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VisionCapabilityContracts.java",
+      "bytes": 2401,
+      "sha256": "571fe45c54d39cf93ca27ee6425e48d5f873ee7924c0277a878bc0af557f4133"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VisionContracts.java",
+      "bytes": 2412,
+      "sha256": "2dfd9364bcf46f9706959abb157ac95adc60dd879e7c68ad24252092a91135fd"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VisualActionContracts.java",
+      "bytes": 9222,
+      "sha256": "47b127c8b8822a589194cda04bc8c60965a8c4cf4edd5a6859f6633eca32ebea"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VisualScopeContracts.java",
+      "bytes": 4152,
+      "sha256": "4b954af6a1f78a368e11cf84bcdd7023b715d4f2714917c74cdeeb176c5c7e9c"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceAsrContracts.java",
+      "bytes": 2724,
+      "sha256": "d27882b0bc096f2c9d3204e3de294986c2910eb7960b67d6e3f5300f9bba5a8e"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceCaptureContracts.java",
+      "bytes": 4955,
+      "sha256": "f87264bb1cc3753fe13913339a95b58beb4384ab743485e4cada1aa950c95c1d"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceChatContracts.java",
+      "bytes": 2393,
+      "sha256": "a53778eb9c39184b4a08c2eed465b8f145c09ae057751d57755df8a16b1f01a5"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceDisplayContracts.java",
+      "bytes": 18086,
+      "sha256": "91f6507bab234de508629424bfdc716dc588c3b0e3474fbc0f5796ebe28db641"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceEndpointContracts.java",
+      "bytes": 12520,
+      "sha256": "778478a86c3b96ce3415e688c6d01188ec1a12420192fe5541315bbbe0cbce82"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceIntentContracts.java",
+      "bytes": 21921,
+      "sha256": "a6181b3ffecba53cc69e32a72d6d5443c1e4cc02f0c4c9f17e12c31a4d321780"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoicePcmChatContracts.java",
+      "bytes": 9372,
+      "sha256": "9a2a2f06cc766a4eb8395674d2297b276a519973aafda0074c749b80f3cb76da"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoicePcmRules.java",
+      "bytes": 1007,
+      "sha256": "5d05983f3d45e2de6b2605835472b578f347f3418ec92c5fbaa749ffa2c4fcfa"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoicePcmRulesTest.java",
+      "bytes": 1633,
+      "sha256": "4e94f74d71315e01fb4b866de75cafa894a4fc108de279847b4c8f789885a681"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoicePlanningContracts.java",
+      "bytes": 15632,
+      "sha256": "2445f62951513998033cab548f133c4677663f0f911ff2b6b265560b91bc7bcc"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceQaMode.java",
+      "bytes": 662,
+      "sha256": "7eeb4a39272ebdccb5ecec58ab2ebed8d961796fe0001bbae656243a75acb7ca"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceQaModeTest.java",
+      "bytes": 1690,
+      "sha256": "cd91f3003bab40084f9e2d07287957b2804dd5ec0586d47a56570a832e23591c"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/VoiceUiContracts.java",
+      "bytes": 5605,
+      "sha256": "d067fc3692ec81b2f05fbea07da04c5065729749c469ba6ecdfffd259446203c"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/WorkflowContracts.java",
+      "bytes": 8087,
+      "sha256": "dba43f56b16676e369387f5e8451cdeb0bd5e7a86c864c14990e9759ac28bd7a"
+    },
+    {
+      "path": "tests/debug-src/studio/jiayu/neoagent/WorkflowRoutingContracts.java",
+      "bytes": 9157,
+      "sha256": "fcfff7341f88967d3b4c658d3d5ca1f25d07e63760b759564b3a84952eed390c"
+    },
+    {
+      "path": "tests/document-adaptation-v20.md",
+      "bytes": 3387,
+      "sha256": "1f4082558306ee7a28370ddb73987a2434c34337d0f71dc6c05457501ddcb01e"
+    },
+    {
+      "path": "tests/native-container-integration.md",
+      "bytes": 1894,
+      "sha256": "ce60e2e38bb803715740396f98f89f64ce1e5dc6d21bb8758ce387d80cc79c76"
+    },
+    {
+      "path": "tests/run-unit.sh",
+      "bytes": 3737,
+      "sha256": "f14306e0b55fc2f93a3139109659fe66623d7670ce5a335653bd7ea267997147"
+    },
+    {
+      "path": "tests/search-write-route-integration.md",
+      "bytes": 3311,
+      "sha256": "3891aa92b77723c8ae1f9a8b0bbd7afab5e29312c2e34e97a38a6caa0550a472"
+    },
+    {
+      "path": "tests/touch/AccessibilityStateRulesTest.java",
+      "bytes": 2301,
+      "sha256": "748f259ce57993895c71cd16b0afe535c06802041d5e3c26a24db52a70f9cd97"
+    },
+    {
+      "path": "tests/touch/ActionEnvelopeRulesTest.java",
+      "bytes": 6551,
+      "sha256": "7e051ba51e6a5c7fce15724843f774978099ba0ab8d239271108d65b663d330f"
+    },
+    {
+      "path": "tests/touch/ActionGuardTest.java",
+      "bytes": 1572,
+      "sha256": "915f24242be5dfbb37318786d52cb964cae07e4212dcd100dc8cd538e2b061ea"
+    },
+    {
+      "path": "tests/touch/AgentImeRulesTest.java",
+      "bytes": 9076,
+      "sha256": "62d2b5b308a612bc0c554c9dccf01a549c3d9b6ce4895b91c27f7b40f29cfc19"
+    },
+    {
+      "path": "tests/touch/AppNameRulesTest.java",
+      "bytes": 6208,
+      "sha256": "794bd911d287e66a6a4d5dbd6344f4c619995b7a03b7397237f8fb0bba04f7dc"
+    },
+    {
+      "path": "tests/touch/CaptureRulesTest.java",
+      "bytes": 1063,
+      "sha256": "d75e651eb5ed520eaeabd70f5bd1bcafd3bda07ba0702326b1f95e5ce56dd788"
+    },
+    {
+      "path": "tests/touch/CheckoutReviewEvidenceTest.java",
+      "bytes": 2975,
+      "sha256": "e70f5293a1fe60c63f9166a042618a00505f947e1f3ed56ad3cc2d8eb697a779"
+    },
+    {
+      "path": "tests/touch/ContainerLabelProofTest.java",
+      "bytes": 8017,
+      "sha256": "bd4800e42f267ac77a84b26337dea1addaaa47c6ea83db34d3e20265ebc5bc16"
+    },
+    {
+      "path": "tests/touch/DocumentEditContractTest.java",
+      "bytes": 2336,
+      "sha256": "1c64f5fb75ce416b2d48455cb0ddd8344e0a51029f59a6d7f90f4f82e1af6fcc"
+    },
+    {
+      "path": "tests/touch/DocumentInputRulesTest.java",
+      "bytes": 641,
+      "sha256": "6ec38fbb28282e384c0a8ee79481e7be8a1a522151cfad096ff4ad6dcf9e8840"
+    },
+    {
+      "path": "tests/touch/DocumentNameRulesTest.java",
+      "bytes": 3514,
+      "sha256": "6a324389e0c9d3adc62636aa4a8d200d19edf4661cd82240dae2ca404044b645"
+    },
+    {
+      "path": "tests/touch/DocumentReadbackTest.java",
+      "bytes": 2848,
+      "sha256": "47096c8934d909ccf89f1d4654d846acea0e688c8e7548a69f77670289386fd4"
+    },
+    {
+      "path": "tests/touch/DocumentReopenTest.java",
+      "bytes": 777,
+      "sha256": "3ed89f920ef6c1e0215a7f7816f06b837c704f433ef6cbc86c06acb9b6d586f3"
+    },
+    {
+      "path": "tests/touch/DocumentTextTest.java",
+      "bytes": 1416,
+      "sha256": "f600cc959ca7cc2e17235d5c586d9052fcd366068a453453e258db70d5e89373"
+    },
+    {
+      "path": "tests/touch/FinishObservationRulesTest.java",
+      "bytes": 5831,
+      "sha256": "899f175b0fa8b4b1c9c9e8a9b048a4fe8ab6f2b74a94392d9ab27e594a193148"
+    },
+    {
+      "path": "tests/touch/FloatingChatGeometryTest.java",
+      "bytes": 1517,
+      "sha256": "8eeab4a00e82ce7e90e975fcd3b8bcacd49b71338c476510b5e5224f128697b2"
+    },
+    {
+      "path": "tests/touch/FloatingPlanRulesTest.java",
+      "bytes": 3131,
+      "sha256": "ad29326fc872ff247f52aceb5c84369da26bd208de4f38bf6369fab89f512e2d"
+    },
+    {
+      "path": "tests/touch/GameplayIntentTest.java",
+      "bytes": 2182,
+      "sha256": "8c9c149daca585df6d6802960a79b319070d254e267a4c2b3e8aa7faaaa5756f"
+    },
+    {
+      "path": "tests/touch/HealthRulesTest.java",
+      "bytes": 2984,
+      "sha256": "e74906da5d6d6934305f1c5e87db2d626f753fe913d6461d0e83ba9cb16d481f"
+    },
+    {
+      "path": "tests/touch/MemoryRulesTest.java",
+      "bytes": 2261,
+      "sha256": "fef6e0e0d7824464546feec0e17f8976a26117d57ddb32e549b5f584f27af572"
+    },
+    {
+      "path": "tests/touch/MovieBoundaryStopTest.java",
+      "bytes": 3416,
+      "sha256": "ff88e99ad9e9ce5ef32e2e68c8f682e185669597df32a03b3759cfe581f756b8"
+    },
+    {
+      "path": "tests/touch/PixelSceneTest.java",
+      "bytes": 1692,
+      "sha256": "c3dbe3ef989480e5e5e3eec6bd0507a6cc020a2a2ce2ffa4722b554921766cc7"
+    },
+    {
+      "path": "tests/touch/PlanCoverageTest.java",
+      "bytes": 10310,
+      "sha256": "749c36160991e5695e476b2fb589f165f52d385861c558d4e1e587664c6fb9c8"
+    },
+    {
+      "path": "tests/touch/PlannerFeedbackTest.java",
+      "bytes": 2972,
+      "sha256": "e371132e73c8100beb448606a0b4020996efd19c2e6e06ab0b1299ee22252c71"
+    },
+    {
+      "path": "tests/touch/PrivateTextTest.java",
+      "bytes": 2238,
+      "sha256": "0087572495b840354a63ef656ca0911063a012ade7e51522b1209511098ee047"
+    },
+    {
+      "path": "tests/touch/PurchasePolicyTest.java",
+      "bytes": 5158,
+      "sha256": "2c1f9d36f0beb571964e5b2b20515108628676b5b0b100ad1889795f6d60a52c"
+    },
+    {
+      "path": "tests/touch/PurchaseStateTest.java",
+      "bytes": 3253,
+      "sha256": "96cbaab40768268dde82540e15181f6a79f2fb802f99be2b9ebd7e1a47824873"
+    },
+    {
+      "path": "tests/touch/RecoveryPolicyTest.java",
+      "bytes": 622,
+      "sha256": "403c7f5859ac41f93ddff9c3c678c585d4970617694978c16baa3e2f3aab96ac"
+    },
+    {
+      "path": "tests/touch/RejectedActionsTest.java",
+      "bytes": 1293,
+      "sha256": "31d3c47aaa3319789b0e90d2cdbd2771b2eefae385f7cc306a122d6bb4d8b248"
+    },
+    {
+      "path": "tests/touch/RouteIntentTest.java",
+      "bytes": 6743,
+      "sha256": "bc8a072dab0da3081fd80660649be6c1d855bf6222e533bc39172adca5971e53"
+    },
+    {
+      "path": "tests/touch/RoutineAccessRulesTest.java",
+      "bytes": 4291,
+      "sha256": "0aecf4545eac4976f80cbe31a877efc9dcd8512221d2f29833975178044dbcfa"
+    },
+    {
+      "path": "tests/touch/RunOwnershipTest.java",
+      "bytes": 2828,
+      "sha256": "d331268cc27ac20ca58d36a047e2fb1d814af087e8eee633e53d85045855a2e7"
+    },
+    {
+      "path": "tests/touch/ScreenshotWaitTest.java",
+      "bytes": 2681,
+      "sha256": "c57eab196e2205d2b85b65ae6061b69cf3bd4c486ac4c875524e7b92b7de4119"
+    },
+    {
+      "path": "tests/touch/SearchFinishRulesTest.java",
+      "bytes": 9701,
+      "sha256": "7749dbef0c3a7878b4d280c91965a4528e10c2d9b8c35f9b4c0ac89a966e9144"
+    },
+    {
+      "path": "tests/touch/SearchInputRulesTest.java",
+      "bytes": 8393,
+      "sha256": "8902ed79d5afacfecaf6b8fae8c68d59ced118d865fed5497daea6c5ee756827"
+    },
+    {
+      "path": "tests/touch/SearchNodeRulesTest.java",
+      "bytes": 7849,
+      "sha256": "d25fc43d6621a97235fbe8f0f5d91de68d9e238b4cc172a105fa103f8539c1fe"
+    },
+    {
+      "path": "tests/touch/SearchQueryPolicyTest.java",
+      "bytes": 13020,
+      "sha256": "ad3b3666ddb4228fbc60d7bb2c7c9d35dac8310fb301ec470227ef333a1e0282"
+    },
+    {
+      "path": "tests/touch/SearchSubmitRulesTest.java",
+      "bytes": 6761,
+      "sha256": "46eb8950682b870fe2fbc1f02c3016a91747b0d3cd9181f97188cc1f55bda2dc"
+    },
+    {
+      "path": "tests/touch/SearchTargetTest.java",
+      "bytes": 2634,
+      "sha256": "53a5e6069edb10dc17fc70a67d194d9bf7df1239e6fdaacd3aabc69b632b75d1"
+    },
+    {
+      "path": "tests/touch/SearchWriteRouteRulesTest.java",
+      "bytes": 9796,
+      "sha256": "1edba1c2b5cfe3eaac3e38fe0939fe0eb01317b05b41bb3482275db7af15f32c"
+    },
+    {
+      "path": "tests/touch/SharedAppSourceRulesTest.java",
+      "bytes": 10613,
+      "sha256": "1f8f8e674aac3f5500cefc3f7e68cb35fb33437040a8bbbbd7c024678c4e2b06"
+    },
+    {
+      "path": "tests/touch/StageSourceRulesTest.java",
+      "bytes": 6926,
+      "sha256": "e1aa14d5c893b37bbdc498f5bed293c9a9a0cfd277c797533c0f528740774517"
+    },
+    {
+      "path": "tests/touch/TaskBoundaryTest.java",
+      "bytes": 1015,
+      "sha256": "ee344aa8f8af75976e748b3f1b13c6f076c4de1177075f5dea67762bba195969"
+    },
+    {
+      "path": "tests/touch/TaskMemoryTest.java",
+      "bytes": 1431,
+      "sha256": "4e165c3d989d267ddd81697c704915704cd9bd49ef4bfa4632dbdbbe4ce4c6bd"
+    },
+    {
+      "path": "tests/touch/TaskScopeTest.java",
+      "bytes": 1259,
+      "sha256": "6d58e48a7ab55b41692771ccc6636820ed96ed10bb12849468c57aaf4ec21ddd"
+    },
+    {
+      "path": "tests/touch/TouchPointPickerTest.java",
+      "bytes": 1356,
+      "sha256": "cdffd75b31c5ff3110efb801771b9efb067ae4fd1300d3c732b6bf96d1389dea"
+    },
+    {
+      "path": "tests/touch/UpdateRulesTest.java",
+      "bytes": 4430,
+      "sha256": "c2b217048093df342b3883d48ce1ad995e9c4f4852dcf37ff6c64c8c3657e0fe"
+    },
+    {
+      "path": "tests/touch/VisualActionRulesTest.java",
+      "bytes": 5565,
+      "sha256": "74100f9036a3168f7be56e96d1ccafd42e6cec8e3f7f9b6b28182cab72927de5"
+    },
+    {
+      "path": "tests/touch/VoiceCaptureRulesTest.java",
+      "bytes": 6575,
+      "sha256": "3375f3ce0162ee037cdc76090dee3be1acb4a42b7cbf27e72532c7c03e41c686"
+    },
+    {
+      "path": "tests/touch/VoiceEndpointRulesTest.java",
+      "bytes": 4147,
+      "sha256": "ad608abe85733ee11bfcfe1272d224957252aa81e66465165f2e7760491c641b"
+    },
+    {
+      "path": "tests/touch/VoiceIntentRulesTest.java",
+      "bytes": 3832,
+      "sha256": "16cfccb1b8fbdf06e66eedfca5672d25f8722444267525d49229a7b0c451ce9f"
+    },
+    {
+      "path": "tests/touch/VoiceSessionTest.java",
+      "bytes": 2696,
+      "sha256": "b9646b1c3daa23d2d4d7822bfa4d3040f9697644f42e2381e477ab0230347c63"
+    },
+    {
+      "path": "tests/touch/VoiceShortcutRulesTest.java",
+      "bytes": 1086,
+      "sha256": "0bd9c22f0216c296bc16b70d48158a1e270bf07e14d31c077ff72a93a38721b2"
+    },
+    {
+      "path": "tests/touch/WindowFrameTest.java",
+      "bytes": 1215,
+      "sha256": "504f7195a146f3006f225f645ec46f9aafee1ffb9100e510ccc451abd483aede"
+    },
+    {
+      "path": "tests/unit-result-v20.json",
+      "bytes": 945,
+      "sha256": "cbccf3d971c652c18a845d6d030cb9018c6f83ec1eeb079ec17b1f8d76680fc9"
+    },
+    {
+      "path": "tests/update-integration.md",
+      "bytes": 3266,
+      "sha256": "d483ed55d1a970b6c55b5f80c94e10bd2fccd2e6f81d193c60c7d33046c0dbc7"
+    },
+    {
+      "path": "tools/generate-update-feed.py",
+      "bytes": 2420,
+      "sha256": "2bfc9447d3265b42d39693b91da38de404d13118c5010e08c3645b5288f978c9"
+    },
+    {
+      "path": "vendor/voice/README.md",
+      "bytes": 3120,
+      "sha256": "0a0ac8b3e12ab11e8738fa4999800e17538ba305e0de4738108a2b747bfd1fef"
+    },
+    {
+      "path": "vendor/voice/dependencies.json",
+      "bytes": 2042,
+      "sha256": "39a8cebd02287e67fbf94eb43a165ae98675525cb294c79b636a026c61628cd3"
+    },
+    {
+      "path": "vendor/voice/prepare.py",
+      "bytes": 2318,
+      "sha256": "370ae03606aaaeed258c9e9560c2921511577e5f5ccd51e3b8cb0cddadc01d55"
+    },
+    {
+      "path": "开发日志.md",
+      "bytes": 1986,
+      "sha256": "ae6037b985894fe40cbda65210984c7487f5086f09e22545fa331364cb9e8000"
+    }
+  ]
+}
