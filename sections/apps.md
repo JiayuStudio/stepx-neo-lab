@@ -31,4 +31,4 @@
 
 0.1.15 release使用当前系统输入法，不含旧ASR与麦克风权限；提供[Agent入口](../guides/neo-agent-touch/ai.md)、[结构化知识](../guides/neo-agent-touch/knowledge.json)与[源码](../guides/neo-agent-touch/source/README.md)。41组纯规则、96项原生构造通过，真实应用回归和搜狗准确率待验。
 
-[120秒功能原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-principles-120s.mp4) · [可编辑影片1.0.3](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.3.zip)：以游戏闭环、微信发送边界、输入、接管与记忆的步骤动效讲解原理，辅以历史实录；使用新Suno v6器乐。
+[120秒同步分屏原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [可编辑影片1.0.4](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip)：以游戏闭环、微信发送边界、输入、接管与记忆的步骤动效讲解原理，辅以历史实录；使用新Suno v6器乐。

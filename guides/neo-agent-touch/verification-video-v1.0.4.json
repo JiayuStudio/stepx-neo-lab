@@ -1,0 +1,60 @@
+{
+  "revision": "1.0.4",
+  "artifact_type": "edited_video",
+  "software_version": "0.1.15-beta.1",
+  "software_changed": false,
+  "video": {
+    "file": "neo-agent-touch-splitflow-120s.mp4",
+    "bytes": 12789351,
+    "sha256": "5260fc2046d5d2834b91f64f32d253a40c4541ff0c3903ef4513140ffbc56ade",
+    "duration_seconds": 120,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 3600,
+    "audio": "AAC 48kHz stereo",
+    "full_av_decode": "passed"
+  },
+  "editing": {
+    "segments": 20,
+    "each_segment_seconds": 6,
+    "maximum_segment_seconds": 6,
+    "simultaneous_demo_and_flow": true,
+    "same_frame_focus_magnification": true,
+    "style": "blue and white round panels, yellow bell, red accents",
+    "timeline": "film-v1.0.4-timeline.json",
+    "root_contact_sheet_and_full_size_review": "passed"
+  },
+  "editable_archive": {
+    "file": "neo-agent-touch-film-editable-v1.0.4.zip",
+    "bytes": 75383389,
+    "sha256": "e9084b1f6bfa884ef767b89182ad6b39b1b2a0ecdceb89be5c100e20a2544f5c",
+    "zip_entries": 49,
+    "all_48_manifest_hashes": "passed",
+    "all_31_media_full_decode": "passed",
+    "relative_xml_refs": 21,
+    "xml_and_relocator_dtd": "valid",
+    "archive_metadata": "fixed 1980 timestamps, neutral creator, no extra fields/comments or symlinks"
+  },
+  "source_footage": {
+    "historical_versions": [
+      "0.1.10",
+      "0.1.12",
+      "0.1.13"
+    ],
+    "six_reviewed_clips_reused_without_changes": true,
+    "new_phone_recording_added": false,
+    "movie_tail_frame_hold_seconds": 3.5,
+    "ime_excerpt_has_jump_cut": true,
+    "wps_reopen_report_is_separate_from_visible_list_navigation": true,
+    "shopping_pending_order_state": "not_independently_verified",
+    "wechat_clip": "WPS input mechanism comparison, not WeChat recording",
+    "wechat_automatic_send": "not_implemented",
+    "game_clearance": "not_achieved"
+  },
+  "music": "Same three newly generated Suno v6 cues from this production session; no new generation for this style revision",
+  "signature": "JIAYU STUDIO · StepX Neo 研究所",
+  "human_listening": "not_performed",
+  "actual_final_cut_import": "not_tested",
+  "current_beta_live_three_app_acceptance": false
+}

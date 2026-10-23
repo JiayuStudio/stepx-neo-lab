@@ -1,0 +1,577 @@
+[
+  {
+    "index": 1,
+    "start": 0,
+    "end": 6,
+    "title": "边缘反馈，控制正在进行",
+    "media": "Media/Selected/edge-010.mp4",
+    "source_start": 0,
+    "source_play_seconds": 6,
+    "badge": "0.1.10外观实录 · 控制流程示意",
+    "nodes": [
+      "明确目标范围",
+      "观察当前画面",
+      "手机执行动作"
+    ],
+    "code": "ControlService · VisionGrounding",
+    "focus_crop_fraction": [
+      0.06,
+      0.53,
+      0.9,
+      0.42
+    ],
+    "note": "蓝光与胶囊是历史外观；流程为机制对照。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 2,
+    "start": 6,
+    "end": 12,
+    "title": "WPS：找到新建文档",
+    "media": "Media/Selected/wps-012.mp4",
+    "source_start": 0,
+    "source_play_seconds": 6,
+    "badge": "0.1.12历史实录",
+    "nodes": [
+      "进入新建入口",
+      "找到可编辑页",
+      "准备写入正文"
+    ],
+    "code": "DocumentRuntime",
+    "focus_crop_fraction": [
+      0,
+      0.12,
+      1,
+      0.55
+    ],
+    "note": "模型自己生成模板；画面只展示当时执行。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 3,
+    "start": 12,
+    "end": 18,
+    "title": "WPS：正文由Agent生成",
+    "media": "Media/Selected/wps-012.mp4",
+    "source_start": 5.2,
+    "source_play_seconds": 6,
+    "badge": "0.1.12历史实录",
+    "nodes": [
+      "生成占位文本",
+      "写入并读回",
+      "准备保存文档"
+    ],
+    "code": "DocumentRuntime.write",
+    "focus_crop_fraction": [
+      0,
+      0.14,
+      1,
+      0.55
+    ],
+    "note": "合同为占位模板，不是法律审查或真实双方信息。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 4,
+    "start": 18,
+    "end": 24,
+    "title": "WPS：保存之后，再看正文",
+    "media": "Media/Selected/wps-012.mp4",
+    "source_start": 11.8,
+    "source_play_seconds": 6,
+    "badge": "0.1.12历史实录",
+    "nodes": [
+      "操作保存入口",
+      "返回文档画面",
+      "重新读回正文"
+    ],
+    "code": "DocumentReadback",
+    "focus_crop_fraction": [
+      0,
+      0.05,
+      1,
+      0.57
+    ],
+    "note": "画面可见保存与正文；重开由独立原生报告佐证，剪辑未完整展示。",
+    "phase_starts": [
+      0,
+      3.2,
+      4.8
+    ]
+  },
+  {
+    "index": 5,
+    "start": 24,
+    "end": 30,
+    "title": "WPS：只修改指定条款",
+    "media": "Media/Selected/wps-012.mp4",
+    "source_start": 19.2,
+    "source_play_seconds": 6,
+    "badge": "0.1.12历史实录 · 修改结果由原生读回佐证",
+    "nodes": [
+      "定位唯一片段",
+      "唯一片段替换",
+      "全文再次核对"
+    ],
+    "code": "DocumentRuntime.replace",
+    "focus_crop_fraction": [
+      0,
+      0.7,
+      1,
+      0.28
+    ],
+    "note": "10日改5日为条款目标注释，由原生报告佐证；画面可见替换回执与字数变化。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ],
+    "focus_label": "可见证据：替换回执 / 字数"
+  },
+  {
+    "index": 6,
+    "start": 30,
+    "end": 36,
+    "title": "WPS：最终正文与条款读回",
+    "media": "Media/Selected/wps-012.mp4",
+    "source_start": 27.8,
+    "source_play_seconds": 6,
+    "badge": "0.1.12历史实录",
+    "nodes": [
+      "回看最终正文",
+      "核对付款日修改",
+      "原生读回作佐证"
+    ],
+    "code": "DocumentReadback",
+    "focus_crop_fraction": [
+      0,
+      0.17,
+      1,
+      0.55
+    ],
+    "note": "历史2次写入/2次重开据独立报告；此段画面不直接证明重开过程。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 7,
+    "start": 36,
+    "end": 42,
+    "title": "淘宝：从关键词到结果页",
+    "media": "Media/Selected/shopping-010.mp4",
+    "source_start": 0,
+    "source_play_seconds": 6,
+    "badge": "0.1.10历史实录",
+    "nodes": [
+      "读取目标关键词",
+      "等待搜索加载",
+      "读取候选商品"
+    ],
+    "code": "AppTaskScope · ControlService",
+    "focus_crop_fraction": [
+      0,
+      0.03,
+      1,
+      0.57
+    ],
+    "note": "价格只代表录制时页面；提交回执不是购买成功。",
+    "phase_starts": [
+      0,
+      1.5,
+      2.5
+    ]
+  },
+  {
+    "index": 8,
+    "start": 42,
+    "end": 48,
+    "title": "淘宝：进入商品详情",
+    "media": "Media/Selected/shopping-010.mp4",
+    "source_start": 6,
+    "source_play_seconds": 6,
+    "badge": "0.1.10历史实录",
+    "nodes": [
+      "观察商品详情",
+      "切换图片核对",
+      "查看页面价格"
+    ],
+    "code": "VisionGrounding · ActionGuard",
+    "focus_crop_fraction": [
+      0,
+      0.19,
+      1,
+      0.58
+    ],
+    "note": "商品详情为历史页面，不代表当前库存或报价。",
+    "phase_starts": [
+      0,
+      3,
+      4.6
+    ]
+  },
+  {
+    "index": 9,
+    "start": 48,
+    "end": 54,
+    "title": "淘宝：读取规格与真实停点",
+    "media": "Media/Selected/shopping-010.mp4",
+    "source_start": 21.2,
+    "source_play_seconds": 6,
+    "badge": "0.1.10历史实录",
+    "nodes": [
+      "识别规格区域",
+      "读取容量颜色",
+      "保留订单状态未知"
+    ],
+    "code": "TaskSpec · ActionGuard",
+    "focus_crop_fraction": [
+      0,
+      0.32,
+      1,
+      0.62
+    ],
+    "note": "未付款；是否形成待付款订单未独立核对，不宣称购物完成。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 10,
+    "start": 54,
+    "end": 60,
+    "title": "电影票：识别影片与日期",
+    "media": "Media/Selected/movie-012.mp4",
+    "source_start": 6.7,
+    "source_play_seconds": 6,
+    "badge": "0.1.12历史实录",
+    "nodes": [
+      "选择目标影片",
+      "读取日期标签",
+      "重新看场次页"
+    ],
+    "code": "ControlService · VisionGrounding",
+    "focus_crop_fraction": [
+      0,
+      0.32,
+      1,
+      0.62
+    ],
+    "note": "影院与位置已遮盖，日期以录制当天为准。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 11,
+    "start": 60,
+    "end": 66,
+    "title": "电影票：切到次日场次",
+    "media": "Media/Selected/movie-012.mp4",
+    "source_start": 10.7,
+    "source_play_seconds": 6,
+    "badge": "0.1.12历史实录",
+    "nodes": [
+      "切到明天日期",
+      "读取场次时间",
+      "进入座位页面"
+    ],
+    "code": "ActionGuard · VisualActionRules",
+    "focus_crop_fraction": [
+      0,
+      0.36,
+      1,
+      0.58
+    ],
+    "note": "历史次日10月24日；不使用当前位置重新规划。",
+    "phase_starts": [
+      0,
+      2.3,
+      4.8
+    ]
+  },
+  {
+    "index": 12,
+    "start": 66,
+    "end": 72,
+    "title": "电影票：看座位图，不下单",
+    "media": "Media/Selected/movie-012.mp4",
+    "source_start": 16.2,
+    "source_play_seconds": 2.5,
+    "badge": "0.1.12历史实录 · 尾帧停留",
+    "nodes": [
+      "等待页面加载",
+      "核对未选座图",
+      "停止在此停点"
+    ],
+    "code": "MovieBoundaryStop · ControlService",
+    "focus_crop_fraction": [
+      0,
+      0.34,
+      1,
+      0.6
+    ],
+    "note": "后3.5秒定格；未选座、未付款，不宣称购票完成。",
+    "phase_starts": [
+      0,
+      0.8,
+      2.5
+    ]
+  },
+  {
+    "index": 13,
+    "start": 72,
+    "end": 78,
+    "title": "音乐：输入通道与新页面",
+    "media": "Media/Selected/ime-music-013.mp4",
+    "source_start": 0,
+    "source_play_seconds": 6,
+    "badge": "0.1.13跳剪节选 · 机制对照",
+    "nodes": [
+      "Agent输入界面",
+      "中间流程有跳剪",
+      "新页面仍需核对"
+    ],
+    "code": "AgentImeLease · SearchSubmitRules",
+    "focus_crop_fraction": [
+      0,
+      0.56,
+      1,
+      0.42
+    ],
+    "note": "2.6秒处跳剪；不凭节选证明SEARCH一次成功。",
+    "phase_starts": [
+      0,
+      2.6,
+      3.0
+    ]
+  },
+  {
+    "index": 14,
+    "start": 78,
+    "end": 84,
+    "title": "音乐：进度增长才多一份证据",
+    "media": "Media/Selected/ime-music-013.mp4",
+    "source_start": 3.2,
+    "source_play_seconds": 6,
+    "badge": "0.1.13历史播放器节选",
+    "nodes": [
+      "核对歌曲与歌手",
+      "观察跨帧进度",
+      "保留可听性未知"
+    ],
+    "code": "SearchInputBridge · ControlService",
+    "focus_crop_fraction": [
+      0,
+      0.61,
+      1,
+      0.38
+    ],
+    "note": "只证明页面与进度增长；未独立听音，搜狗组合待验。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 15,
+    "start": 84,
+    "end": 90,
+    "title": "小游戏：先看棋盘与槽位",
+    "media": "Media/Selected/gameplay-012.mp4",
+    "source_start": 0,
+    "source_play_seconds": 6,
+    "badge": "0.1.12短试玩 · 通用闭环",
+    "nodes": [
+      "看当前棋盘槽位",
+      "模型提一个动作",
+      "复核目标仍有效"
+    ],
+    "code": "GameplayIntent · VisionGrounding",
+    "focus_crop_fraction": [
+      0.02,
+      0.2,
+      0.96,
+      0.5
+    ],
+    "note": "「羊了个羊：星球」；没有专用求解器或隐藏状态读取。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 16,
+    "start": 90,
+    "end": 96,
+    "title": "小游戏：点牌后再看反馈",
+    "media": "Media/Selected/gameplay-012.mp4",
+    "source_start": 6,
+    "source_play_seconds": 6,
+    "badge": "0.1.12短试玩 · 原速连续节选",
+    "nodes": [
+      "目标内有限偏移",
+      "派发触控手势",
+      "重看入槽与消除"
+    ],
+    "code": "TouchPointPicker · VisualActionRules",
+    "focus_crop_fraction": [
+      0,
+      0.53,
+      1,
+      0.43
+    ],
+    "note": "x/y各至多±4dp；短试玩主动结束，不宣称通关。",
+    "phase_starts": [
+      0,
+      2.6,
+      4.3
+    ]
+  },
+  {
+    "index": 17,
+    "start": 96,
+    "end": 102,
+    "title": "接管与交还：先让旧判断失效",
+    "media": "Media/Selected/edge-010.mp4",
+    "source_start": 1,
+    "source_play_seconds": 6,
+    "badge": "0.1.10外观实录 · 接管机制对照",
+    "nodes": [
+      "接管后暂停执行",
+      "旧观察与代次失效",
+      "交还先重新观察"
+    ],
+    "code": "RunOwnership · AgentImeLease",
+    "focus_crop_fraction": [
+      0.08,
+      0.52,
+      0.9,
+      0.43
+    ],
+    "note": "实录仅证明胶囊外观；接管/交还箭头为源码机制示意。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 18,
+    "start": 102,
+    "end": 108,
+    "title": "微信：通用输入与发送边界",
+    "media": "Media/Selected/wps-012.mp4",
+    "source_start": 2,
+    "source_play_seconds": 6,
+    "badge": "WPS输入界面对照 · 非微信录像",
+    "nodes": [
+      "可编辑控件输入",
+      "发送标签触发拦截",
+      "交给用户处理"
+    ],
+    "code": "ControlService.execute · ActionGuard",
+    "focus_crop_fraction": [
+      0,
+      0.52,
+      1,
+      0.46
+    ],
+    "note": "机制对照，微信未实测；自动发送当前未实现，IME不做SEND。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 19,
+    "start": 108,
+    "end": 114,
+    "title": "记忆：笔记不是成功事实",
+    "media": "Media/Selected/gameplay-012.mp4",
+    "source_start": 0,
+    "source_play_seconds": 6,
+    "badge": "执行画面作背景 · 记忆机制对照",
+    "nodes": [
+      "本阶段笔记有来源",
+      "派发不代表已成功",
+      "有限偏好多日推测"
+    ],
+    "code": "TaskMemory · UserMemory",
+    "focus_crop_fraction": [
+      0,
+      0.64,
+      1,
+      0.32
+    ],
+    "note": "阶段切换清理；限咖啡/外卖字段，不永久学习按钮或游戏策略。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "index": 20,
+    "start": 114,
+    "end": 120,
+    "title": "从目标到证据，每一步可核对",
+    "media": "Media/Selected/wps-012.mp4",
+    "source_start": 27.8,
+    "source_play_seconds": 6,
+    "badge": "已审历史实录蒙太奇 · 方法回顾",
+    "nodes": [
+      "目标与应用范围",
+      "受限动作与新观察",
+      "结果证据独立核对"
+    ],
+    "code": "DeviceSkills · DeviceMcp · TaskCheckpoint",
+    "focus_crop_fraction": [
+      0,
+      0.17,
+      1,
+      0.55
+    ],
+    "note": "三个画面为蒙太奇；不宣称付款、通关、微信发送或ASR成功。",
+    "phase_starts": [
+      0,
+      2,
+      4
+    ],
+    "mosaic": [
+      {
+        "media": "Media/Selected/wps-012.mp4",
+        "source_start": 27.8
+      },
+      {
+        "media": "Media/Selected/shopping-010.mp4",
+        "source_start": 21.2
+      },
+      {
+        "media": "Media/Selected/ime-music-013.mp4",
+        "source_start": 3.2
+      }
+    ]
+  }
+]

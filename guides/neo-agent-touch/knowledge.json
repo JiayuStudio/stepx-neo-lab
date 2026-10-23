@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "document_id": "neo-agent-touch",
-  "revision": 2,
+  "revision": 3,
   "reviewed_on": "2026-10-23",
   "language": "zh-CN",
   "purpose": "retrieval_and_learning_reference",
@@ -152,12 +152,28 @@
           "path": "implementation-flows.md"
         }
       ]
+    },
+    {
+      "id": "C11",
+      "evidence_type": "reference",
+      "verification_kind": "media_file_and_editing_checks",
+      "version": "film_1.0.4",
+      "statement": "The 120-second blue-round-bell film has twenty six-second segments, simultaneous device footage and short flow diagrams, with same-frame focus magnification.",
+      "scope_limit": "Media verification only. Six reused historical clips, not a new app workflow run; WeChat auto-send is not implemented and pending shopping order state was not independently verified.",
+      "evidence": [
+        {
+          "path": "verification-video-v1.0.4.json"
+        },
+        {
+          "path": "film-v1.0.4.md"
+        }
+      ]
     }
   ],
   "sources": [
     {
       "path": "ai.md",
-      "sha256": "6d906e69e6a16a70c8bb81a7126f5a2e54f4ea278fb9286c2911f37f2ea68fee",
+      "sha256": "a0119be074c297c869e6eff76c79159b341b27c0bc7e85b8de2a72f3d9b11958",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
@@ -187,12 +203,27 @@
     },
     {
       "path": "README.md",
-      "sha256": "81becdbab219b92401086e3d4f338991b2c64c2fd24b1a309a6ddfc32434d433",
+      "sha256": "33a46d9aae540e389d0d289b663c711df5cbcf21300e901fd8f38d1db060ee3d",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
       "path": "implementation-flows.md",
       "sha256": "9033829e7e876199df6fb9135e62d1cf26502f075afd95e879f1f8466049dc94",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "film-v1.0.4.md",
+      "sha256": "fc2c55fa38a3027e57d69d3efd0cb1e1d998e41f2c040d062bcc881add8dabf3",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "film-v1.0.4-timeline.json",
+      "sha256": "c076bfb23bf184b44046e187a40157dfde1077b1147628168d4c385e816db6b8",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "verification-video-v1.0.4.json",
+      "sha256": "5c0411c47c7446022d09c41f0fa8d38589bc00548ec178adb00b0f1650c5df0a",
       "digest_scope": "this exact document, not linked remote binaries"
     }
   ],
@@ -229,9 +260,13 @@
     "verification": "verification-v15.json"
   },
   "media": {
-    "path": "README.md#120秒功能原理展示",
-    "artifact": "120-second technical-principles film, revision 1.0.3",
-    "scope": "Stepwise source mechanisms with labelled historical clips; not current beta end-to-end acceptance; WeChat automatic sending is not implemented"
+    "path": "README.md#120秒同步分屏原理展示",
+    "artifact": "120-second simultaneous demo-and-flow film, revision 1.0.4",
+    "verification": "verification-video-v1.0.4.json",
+    "timeline": "film-v1.0.4-timeline.json",
+    "segments": 20,
+    "maximum_segment_seconds": 6,
+    "scope": "Historical clips and labelled mechanism comparisons, not new phone acceptance; software remains 0.1.15; WeChat automatic sending not implemented"
   },
   "implementation_flows": "implementation-flows.md"
 }

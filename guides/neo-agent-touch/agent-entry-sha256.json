@@ -2,8 +2,8 @@
   "schema_version": 1,
   "hash_algorithm": "sha256",
   "files": {
-    "README.md": "81becdbab219b92401086e3d4f338991b2c64c2fd24b1a309a6ddfc32434d433",
-    "ai.md": "6d906e69e6a16a70c8bb81a7126f5a2e54f4ea278fb9286c2911f37f2ea68fee",
-    "knowledge.json": "41f25ae7c03c483b8a4fd78c0a76b6227661ce8a194b8066efbbf83617a51553"
+    "README.md": "33a46d9aae540e389d0d289b663c711df5cbcf21300e901fd8f38d1db060ee3d",
+    "ai.md": "a0119be074c297c869e6eff76c79159b341b27c0bc7e85b8de2a72f3d9b11958",
+    "knowledge.json": "797ca3a0e06e781aca2b424b6badaca51c25de180b8f57b75ddd0811d99d453f"
   }
 }

@@ -9,17 +9,21 @@ JIAYU STUDIO · 2026-10-23
 - [最新研究](research/2026-10-23.md) · [主源与许可](research/sources.json) · [本版验证](verification-v15.json) · [可直接浏览的源码](source/README.md)
 - [历史开发手册](development.md) · [历史180秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.11-beta.1)
 
-## 120秒功能原理展示
+## 120秒同步分屏原理展示
 
-[▶ 观看120秒成片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-principles-120s.mp4) · [可编辑影片工程1.0.3](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.3.zip)
+[▶ 观看120秒成片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [可编辑影片工程1.0.4](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip)
 
-成片以技术原理为主：总闭环20秒、小游戏25秒、微信发送边界25秒、文档/购物/音乐输入18秒、接管与记忆20秒、证据与参考12秒。节点逐步高亮，配合实际源码类名和历史实录解释每一步为何执行。
+新版1.0.4采用蓝白圆面板、黄色铃铛与红色点缀。全片20段，每段6秒，共120秒；左侧持续展示完整手机实录与同帧焦点放大，右侧2–3个流程节点按画面推进高亮。内容加入WPS写改读回、淘宝搜索/详情/规格、电影日期/场次/座位图、音乐输入/播放器、小游戏、接管与记忆。
 
-小游戏采用通用视觉循环，没有专用求解器；微信部分为通用机制和本机发送边界示意，自动发送尚未实现，也没有实发验收。业务实录来自0.1.10/0.1.12/0.1.13，不能当作0.1.15全部业务已通过。详见[功能实现流程图](implementation-flows.md)。
+[分镜与剪辑说明](film-v1.0.4.md) · [结构化时间线](film-v1.0.4-timeline.json) · [影片验证](verification-video-v1.0.4.json)
+
+淘宝未付款，是否形成待付款订单未独立核对。小游戏采用通用视觉循环，没有专用求解器；微信部分为通用机制和本机发送边界示意，自动发送尚未实现，也没有实发验收。业务实录来自0.1.10/0.1.12/0.1.13，不能当作0.1.15全部业务已通过。详见[功能实现流程图](implementation-flows.md)。
+
+[原理版1.0.3存档](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-principles-120s.mp4) · [1.0.3工程](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.3.zip)。
 
 另保留[功能实录版1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4)与[对应可编辑工程](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip)。
 
-配乐使用本轮新生成的三段Suno v6器乐，经等功率交叉剪成120秒；未循环旧曲。成片完整音视频解码通过，已去除私有元数据；尚未完成人耳试听。底部署名JIAYU STUDIO · StepX Neo研究所。
+配乐沿用本轮生产中新生成的三段Suno v6器乐混音，经等功率交叉剪成120秒；本次风格修订未另生成歌曲。成片完整音视频解码通过，已去除私有元数据；尚未完成人耳试听。底部署名JIAYU STUDIO · StepX Neo研究所。
 
 ## 使用
 

@@ -251,11 +251,11 @@
       "artifact_type": "app_and_development_case",
       "updated": "2026-10-23",
       "apk": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1.apk",
-      "video": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-principles-120s.mp4",
+      "video": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4",
       "video_duration_seconds": 120,
       "video_case_version": "historical_0.1.10_0.1.12_0.1.13",
-      "editable_video_package_version": "1.0.3",
-      "editable_video_package": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.3.zip",
+      "editable_video_package_version": "1.0.4",
+      "editable_video_package": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip",
       "verified": [
         "0.1.10 physical-device: exact Taobao search, product/detail and SKU exploration",
         "0.1.10 physical-device: movie/cinema/date/showtime navigation to unselected seat map",
@@ -285,7 +285,9 @@
       "research": "guides/neo-agent-touch/research/2026-10-23.md",
       "input_method": "user-selected system keyboard; no bundled ASR in release",
       "implementation_flows": "guides/neo-agent-touch/implementation-flows.md",
-      "video_focus": "Technical principles with stepwise diagrams; WeChat automatic sending not implemented"
+      "video_focus": "20 six-second simultaneous demo-and-flow segments; blue, white round panels and yellow bell; historical footage and mechanism comparisons labelled",
+      "video_release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-film-v1.0.4",
+      "video_verification": "guides/neo-agent-touch/verification-video-v1.0.4.json"
     }
   ],
   "sections": [
