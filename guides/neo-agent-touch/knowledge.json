@@ -272,6 +272,11 @@
       "path": "source-manifest-v16.json",
       "sha256": "c777f1b04ed536a9bf6e4a3388e12ed2501289556d06bac8804dc95ae5cfb62d",
       "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "update.json",
+      "sha256": "eb015144884e74dcb0d6233413b2ec377ac507c6c54b22a25532379e6837d4f3",
+      "digest_scope": "this exact document, not linked remote binaries"
     }
   ],
   "reader_boundaries": [
@@ -305,7 +310,8 @@
     "debug_research_is_separate": true,
     "source_reading_entry": "source/README.md",
     "source_file_manifest": "source-manifest-v16.json",
-    "verification": "verification-v16.json"
+    "verification": "verification-v16.json",
+    "update_channel": "update.json"
   },
   "media": {
     "path": "README.md#120秒同步分屏原理展示",
