@@ -25,3 +25,7 @@
 `catalog.json` 中，维护者作品与原创资料使用 `projects`，第三方 APK 使用 `community_apks`，第三方网页游戏使用 `community_web_games`，官方公告使用 `official_updates`；社区 APK 已收录条目，官方信息已收录 Step Studio 官方知识库，来源依据与原发布时间另行标注。分区的 `group` 标明自研原创、社区、入门或官方信息，项目的 `content_origin` 与 `artifact_type` 标明内容归属和类型。
 
 资料集合使用独立的 `collections`，分区 `group` 为 `reference`；集合列出主入口、来源及结构化条目。`llms.txt` 只保留主要阅读链接，详细条目在各资料集合内维护，首页不重复展开。原稿实测、静态发现、文档声明和本次复测分别表述。
+
+## 双通道学习维护
+
+所有教程与参考 Markdown 纳入 catalog.json 的 learning，保留原有项目目录。新增、移动、归档或修改正文后，按[维护规则](maintenance/learning-policy.md)运行生成器与 --check，维护官方来源、实际核验日期和证据范围。不要把索引更新日期写成运行验证日期。

@@ -2,9 +2,11 @@
 
 [研究所首页](../../README.md) · [新人分区](../../sections/start-here.md) · [教程归档区](../../sections/archive.md)
 
-**2026-10-20 组件库更新版。** 从想法开始，用官方 Step Studio 的 8 个当前组件搭界面，再按需要接入数据和连接器。本课程由 JIAYU STUDIO 编写，不是官方发布课程。
+**2026-10-20 组件库更新版。** 从想法开始，用 2026-10-20 核查的 8 个官方 Step Studio 组件搭界面，再按需要接入数据和连接器。本课程由 JIAYU STUDIO 编写，不是官方发布课程。
 
 旧课程和旧截图已完整移入[早期版归档](../archive/official-step-studio-2026-10-20-early/README.md)。当前页面作为默认入口，旧记录不混入本版实测结论。
+
+零基础先读[应用、智能体、技能与 HTML/CSS/JS/JSON/API](programming-basics.md)，完成不联网的小练习再进入平台课程。官方能力数字是 2026-10-20 的核查快照，今天的核验范围见[维护记录](../../maintenance/2026-10-23-review.md)。
 
 ## 第一次来，按这个顺序
 
