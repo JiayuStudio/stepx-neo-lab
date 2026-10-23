@@ -1,0 +1,46 @@
+{
+  "version": "0.1.16-beta.1",
+  "version_code": 17,
+  "release_built": true,
+  "release_bytes": 238821,
+  "release_apk_sha256": "8895a0549d3b2cc73d1aba540a66a24fcd4e160fe9450b4689582067460e8be6",
+  "release_installed": false,
+  "installed_apk_readback_matches": false,
+  "same_signing_identity_as_v15": true,
+  "unit_suites": 44,
+  "shared_source_rule_assertions": 152,
+  "planner_feedback_assertions": 239,
+  "update_rule_assertions": 50,
+  "native_workflow_construction_checks": 149,
+  "native_workflow_platforms": [
+    "JD",
+    "Taobao"
+  ],
+  "native_workflow_scope": "isolated construction, scope binding, canonical model repair, native JSON restore and rejection of duplicate/missing/reordered shared stages",
+  "native_failed_fixtures": 0,
+  "three_platform_native_fixture": "not_run_missing_selected_launchable_Pinduoduo",
+  "native_model_calls": 0,
+  "native_business_actions": 0,
+  "authorization_unchanged": true,
+  "phone_update_check": "not_run_before_live_feed",
+  "download_and_system_upgrade_flow": "not_tested",
+  "record_audio_permission_present": false,
+  "builtin_asr_present": false,
+  "private_qa_in_release": false,
+  "source_archive": {
+    "file": "Neo-Agent-Touch-0.1.16-beta.1-source.zip",
+    "bytes": 459618,
+    "sha256": "4eb85a3238b5f048560efdbfec3d9fac81bb45078761a277fd1693dab8e673cb",
+    "files": 220,
+    "zip_crc_and_member_hashes": "passed",
+    "bit_identical_apk_claimed": false
+  },
+  "current_live_multi_app": "not_tested",
+  "scope_limits": [
+    "No newly verified live price comparison or purchase flow",
+    "Pinduoduo prerequisite was unavailable on the test phone",
+    "149 native checks are not third-party shopping execution",
+    "System installation permission, download and upgrade confirmation require separate verification"
+  ],
+  "media_revision": "1.0.4 unchanged historical film"
+}

@@ -2,7 +2,7 @@
 
 修订日期：2026-10-23。用途是检索、学习和引用，不是可安装 Skill、MCP 工具注册或远程控制授权。读取本文不会获得手机权限。
 
-先读取 [README](README.md)，再读 [knowledge.json](knowledge.json) 的稳定结论编号和证据标签；详细研究见 [2026-10-23 记录](research/2026-10-23.md)，公开主源与许可见 [sources.json](research/sources.json)，产物与验证见 [verification-v15.json](verification-v15.json)。阅读实现从 [source/README.md](source/README.md) 开始；release 与 debug 的范围不同。所有文件路径均相对于本条目根目录。
+先读取 [README](README.md)，再读 [knowledge.json](knowledge.json) 的稳定结论编号和证据标签；详细研究见 [2026-10-23 记录](research/2026-10-23.md)，公开主源与许可见 [sources.json](research/sources.json)，产物与验证见 [verification-v16.json](verification-v16.json)。阅读实现从 [source/README.md](source/README.md) 开始；release 与 debug 的范围不同。所有文件路径均相对于本条目根目录。
 
 先理解功能原理可读 [实现流程图](implementation-flows.md)：包含小游戏闭环、微信发送边界、输入与三种记忆；图示不代表已完成对应真机业务。
 
@@ -22,7 +22,11 @@
 
 - **C10 · reference**：[功能原理](implementation-flows.md)逐步解释通用游戏闭环和微信发送边界。没有专用游戏求解器，微信自动发送当前未实现；图示不代表新一轮实发或通关。
 
-- **C11 · reference / media**：影片1.0.4为120秒同步分屏剪辑，20段各6秒；软件仍为0.1.15。实录为历史版本，流程示意与独立原生证据分别标明，不能当成新的业务验收。见[影片记录](verification-video-v1.0.4.json)。
+- **C11 · reference / media**：影片1.0.4为120秒同步分屏剪辑，20段各6秒；影片制作时软件为0.1.15。实录为历史版本，流程示意与独立原生证据分别标明，不能当成新的业务验收。见[影片记录](verification-video-v1.0.4.json)。
+
+- **C12 · reference / native_fixture**：0.1.16由本地规则识别严格整句的共同商品查价列表，重派生精确型号、顺序和只读范围；44套纯规则与149项京东/淘宝Android原生构造/JSON恢复通过。拼多多缺前提未跑；不是实际三平台查价成功。见[修复说明](updates-v16.md)。
+
+- **C13 · reference**：0.1.16新增菜单/关于页一键检查更新，支持Beta；固定清单与GitHub备用源，APK大小/SHA/包名/精确版本/同签名核验后交系统确认。真实更新检查和安装状态以[本版验证](verification-v16.json)为准，不能仅凭代码宣称升级已完成。
 
 ## 证据标签
 

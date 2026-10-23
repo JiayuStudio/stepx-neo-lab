@@ -23,15 +23,9 @@ final class PlanCoverage {
  static List<Mention> mentions(String user){return mentions(user,Collections.emptyList());}
  static List<Mention> mentions(String user,Collection<String> selectedNames){
   ArrayList<Mention> found=new ArrayList<>();if(user==null||user.isEmpty())return found;
-  Set<String> names=new HashSet<>(Arrays.asList("WPS Office","WPS","哔哩哔哩","B站","淘宝","京东","美团外卖","美团","饿了么","大麦"));
-  for(String name:selectedNames)if(name!=null&&name.trim().length()>=2&&name.trim().length()<=120)names.add(name.trim());
-  ArrayList<String> ordered=new ArrayList<>(names);ordered.sort((a,b)->{int length=Integer.compare(b.length(),a.length());return length==0?a.compareTo(b):length;});ArrayList<String> patterns=new ArrayList<>();for(String name:ordered)patterns.add(Pattern.quote(name));
-  Matcher scan=Pattern.compile(String.join("|",patterns),Pattern.CASE_INSENSITIVE).matcher(user);ArrayList<Mention> all=new ArrayList<>();
-  while(scan.find()){
-   String raw=scan.group();if(asciiWordEdge(user,scan.start(),scan.end(),raw))continue;
-   String name=raw;if(name.toLowerCase(Locale.ROOT).startsWith("wps"))name="WPS";if(name.equalsIgnoreCase("b站"))name="哔哩哔哩";
-   all.add(new Mention(name,scan.start(),scan.end()));
-  }
+  List<Mention> all=rawMentions(user,selectedNames);
+  ArrayList<StageSourceRules.AppSpan> sharedSpans=new ArrayList<>();for(Mention m:all)sharedSpans.add(new StageSourceRules.AppSpan(m.app,m.start,m.end));
+  if(SharedAppSourceRules.detect(user,sharedSpans)!=null)return all;
   for(int i=0;i<all.size();i++){
    Mention item=all.get(i);String before=user.substring(0,item.start);Matcher prefix=PREFIX.matcher(before);boolean explicit=prefix.find();int start=explicit?prefix.start():item.start;
    String after=user.substring(item.end);boolean hasAction=NEXT_ACTION.matcher(after).find();Matcher noisyLaunch=ASR_LAUNCH.matcher(before);boolean asrLaunch=!explicit&&hasAction&&noisyLaunch.find();if(asrLaunch)start=noisyLaunch.start();
@@ -52,6 +46,19 @@ final class PlanCoverage {
    found.add(new Mention(item.app,start,item.end));
   }
   return found;
+ }
+ static List<Mention> rawMentions(String user,Collection<String> selectedNames){
+  if(user==null||user.isEmpty())return Collections.emptyList();
+  Set<String> names=new HashSet<>(Arrays.asList("WPS Office","WPS","哔哩哔哩","B站","淘宝","京东","拼多多","美团外卖","美团","饿了么","大麦"));
+  for(String name:selectedNames)if(name!=null&&name.trim().length()>=2&&name.trim().length()<=120)names.add(name.trim());
+  ArrayList<String> ordered=new ArrayList<>(names);ordered.sort((a,b)->{int length=Integer.compare(b.length(),a.length());return length==0?a.compareTo(b):length;});ArrayList<String> patterns=new ArrayList<>();for(String name:ordered)patterns.add(Pattern.quote(name));
+  Matcher scan=Pattern.compile(String.join("|",patterns),Pattern.CASE_INSENSITIVE).matcher(user);ArrayList<Mention> all=new ArrayList<>();
+  while(scan.find()){
+   String raw=scan.group();if(asciiWordEdge(user,scan.start(),scan.end(),raw))continue;
+   String name=raw;if(name.toLowerCase(Locale.ROOT).startsWith("wps"))name="WPS";if(name.equalsIgnoreCase("b站"))name="哔哩哔哩";
+   all.add(new Mention(name,scan.start(),scan.end()));
+  }
+  return all;
  }
  private static boolean asciiWordEdge(String text,int start,int end,String name){
   return asciiWord(name.charAt(0))&&start>0&&asciiWord(text.charAt(start-1))||asciiWord(name.charAt(name.length()-1))&&end<text.length()&&asciiWord(text.charAt(end));

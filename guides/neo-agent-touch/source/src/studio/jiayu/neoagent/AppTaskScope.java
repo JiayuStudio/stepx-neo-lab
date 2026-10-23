@@ -14,6 +14,7 @@ final class AppTaskScope {
  }
  static List<StageSourceRules.AppSpan> spans(Context c,String user)throws Exception{ArrayList<StageSourceRules.AppSpan> result=new ArrayList<>();for(PlanCoverage.Mention m:mentions(c,user)){String pkg;try{pkg=Conversation.resolve(c,m.app);}catch(Exception unavailable){pkg="unresolved:"+m.app;}result.add(new StageSourceRules.AppSpan(pkg,m.start,m.end));}return result;}
  static Binding bind(Context c,String pkg,String user,String source,List<StageSourceRules.AppSpan> spans)throws Exception{
+  SharedAppSourceRules.Group shared=SharedAppSourceRules.detect(user,spans);if(source.isEmpty()&&shared!=null&&shared.member(pkg)!=null)source=shared.source;
   if(source.isEmpty()){
    if(!StageSourceRules.explicit(spans,pkg,null)&&!c.getPackageName().equals(pkg))throw new WorkflowPlanException("source_required");
    return new Binding("",original(c,pkg,user),null,StageSourceRules.explicit(spans,pkg,null));

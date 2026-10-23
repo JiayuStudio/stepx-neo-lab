@@ -241,16 +241,16 @@
       "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/README.md",
       "development": "guides/neo-agent-touch/development.md",
-      "verification": "guides/neo-agent-touch/verification-v15.json",
-      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.15-beta.1",
+      "verification": "guides/neo-agent-touch/verification-v16.json",
+      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.16-beta.1",
       "category": "手机目标型 Agent",
-      "version": "0.1.15-beta.1",
+      "version": "0.1.16-beta.1",
       "status": "beta",
       "section": "apps",
       "content_origin": "jiayu_studio",
       "artifact_type": "app_and_development_case",
       "updated": "2026-10-23",
-      "apk": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1.apk",
+      "apk": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.16-beta.1/Neo-Agent-Touch-0.1.16-beta.1.apk",
       "video": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4",
       "video_duration_seconds": 120,
       "video_case_version": "historical_0.1.10_0.1.12_0.1.13",
@@ -264,7 +264,8 @@
         "180-second film: complete decode and audio measurements passed",
         "0.1.11-beta.1: 42 isolated release-APK checks for arbitrary launcher apps, selection/defaults, local resolution and native WebView persistence",
         "0.1.15-beta.1: 41 pure rule suites; 96 native workflow construction checks, no business actions",
-        "0.1.15-beta.1: signed release build installed and base APK SHA read back; no debug QA, ASR libraries/model or RECORD_AUDIO"
+        "0.1.15-beta.1: signed release build installed and base APK SHA read back; no debug QA, ASR libraries/model or RECORD_AUDIO",
+        "0.1.16-beta.1: 44 pure suites; 149 native JD/Taobao shared-plan and JSON restore checks, zero model/business actions"
       ],
       "not_verified": [
         "Full shopping order review, cart receipt or purchase/payment completion",
@@ -276,10 +277,11 @@
         "Merchant pending order creation during historical cashier exploration remains unknown",
         "Physical-device complex workflows in WeChat, Amap, QQ Music, WeCom and Baidu Netdisk",
         "0.1.14 live long-command speech failed; built-in ASR upgrade paused",
-        "0.1.15 live system-keyboard UI, Sogou ASR quality and new three-app workflow not accepted"
+        "0.1.15 live system-keyboard UI, Sogou ASR quality and new three-app workflow not accepted",
+        "0.1.16: Pinduoduo prerequisite missing; live three-platform price comparison and system update-install flow not accepted"
       ],
       "application_selection": "guides/neo-agent-touch/application-selection.md",
-      "source_package": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1-source.zip",
+      "source_package": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.16-beta.1/Neo-Agent-Touch-0.1.16-beta.1-source.zip",
       "ai_entrypoint": "guides/neo-agent-touch/ai.md",
       "knowledge": "guides/neo-agent-touch/knowledge.json",
       "research": "guides/neo-agent-touch/research/2026-10-23.md",
@@ -287,7 +289,8 @@
       "implementation_flows": "guides/neo-agent-touch/implementation-flows.md",
       "video_focus": "20 six-second simultaneous demo-and-flow segments; blue, white round panels and yellow bell; historical footage and mechanism comparisons labelled",
       "video_release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-film-v1.0.4",
-      "video_verification": "guides/neo-agent-touch/verification-video-v1.0.4.json"
+      "video_verification": "guides/neo-agent-touch/verification-video-v1.0.4.json",
+      "update_channel": "guides/neo-agent-touch/update.json"
     }
   ],
   "sections": [
@@ -725,17 +728,17 @@
       "external_scope": "three GBox pages already linked by sections/guides.md; not entire external repository"
     },
     "counts": {
-      "local_documents": 179,
+      "local_documents": 181,
       "external_references": 3,
       "by_root": {
         "community": 20,
         "courses": 100,
-        "guides": 37,
+        "guides": 39,
         "library": 17,
         "official": 5
       },
       "archived": 45,
-      "supporting_references": 10
+      "supporting_references": 11
     },
     "documents": [
       {
@@ -4083,7 +4086,7 @@
       },
       {
         "id": "doc:guides/neo-agent-touch/README.md",
-        "title": "Neo Agent Touch · 0.1.15 Beta",
+        "title": "Neo Agent Touch · 0.1.16 Beta",
         "path": "guides/neo-agent-touch/README.md",
         "kind": "learning_document",
         "audience": [
@@ -4092,7 +4095,7 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/README.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/README.md",
-        "sha256": "33a46d9aae540e389d0d289b663c711df5cbcf21300e901fd8f38d1db060ee3d",
+        "sha256": "7028f92ae8c1c04260c04b818606d0539707331b03868ed777fa651d734bb618",
         "content_status": "indexed",
         "availability_status": "review_required",
         "inventory_checked": "2026-10-23",
@@ -4115,7 +4118,7 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/ai.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/ai.md",
-        "sha256": "a0119be074c297c869e6eff76c79159b341b27c0bc7e85b8de2a72f3d9b11958",
+        "sha256": "437b315d8e40a780213aeb1bf5a28f0786b15603bc040a0e7d708f4ac27f966d",
         "content_status": "indexed",
         "availability_status": "review_required",
         "inventory_checked": "2026-10-23",
@@ -4267,7 +4270,7 @@
       },
       {
         "id": "doc:guides/neo-agent-touch/source/README.md",
-        "title": "Neo Agent Touch 0.1.15-beta.1 源码",
+        "title": "Neo Agent Touch 0.1.16-beta.1",
         "path": "guides/neo-agent-touch/source/README.md",
         "kind": "supporting_reference",
         "audience": [
@@ -4276,7 +4279,7 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/source/README.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/README.md",
-        "sha256": "12bbcb7ba937275a7dc79f943a87e75070a1a675e825326d29680fef5e44b7b1",
+        "sha256": "684de992ee80e3d1989c518ffd0f5193f428ee0f748e3afdd2a73e851b490be1",
         "content_status": "indexed",
         "availability_status": "review_required",
         "inventory_checked": "2026-10-23",
@@ -4404,6 +4407,29 @@
         "retirement_reason": null
       },
       {
+        "id": "doc:guides/neo-agent-touch/source/tests/update-integration.md",
+        "title": "一键更新接线与验证范围",
+        "path": "guides/neo-agent-touch/source/tests/update-integration.md",
+        "kind": "supporting_reference",
+        "audience": [
+          "human",
+          "agent"
+        ],
+        "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/source/tests/update-integration.md",
+        "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/tests/update-integration.md",
+        "sha256": "d483ed55d1a970b6c55b5f80c94e10bd2fccd2e6f81d193c60c7d33046c0dbc7",
+        "content_status": "indexed",
+        "availability_status": "review_required",
+        "inventory_checked": "2026-10-23",
+        "last_official_verified": null,
+        "official_sources": [],
+        "evidence_scope": "inventory_only; preserve_verification_limits_in_source",
+        "source_notes": "官方链接仅供核查；缺少链接不代表无来源，详见原文。",
+        "verification_record": "maintenance/2026-10-23-review.md",
+        "replacement_path": null,
+        "retirement_reason": null
+      },
+      {
         "id": "doc:guides/neo-agent-touch/source/vendor/voice/README.md",
         "title": "Offline Chinese voice input",
         "path": "guides/neo-agent-touch/source/vendor/voice/README.md",
@@ -4415,6 +4441,29 @@
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/source/vendor/voice/README.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/vendor/voice/README.md",
         "sha256": "ce129ced13f98e51d86952dfb185d05a443eb3f62138a8c87ee20862c7400064",
+        "content_status": "indexed",
+        "availability_status": "review_required",
+        "inventory_checked": "2026-10-23",
+        "last_official_verified": null,
+        "official_sources": [],
+        "evidence_scope": "inventory_only; preserve_verification_limits_in_source",
+        "source_notes": "官方链接仅供核查；缺少链接不代表无来源，详见原文。",
+        "verification_record": "maintenance/2026-10-23-review.md",
+        "replacement_path": null,
+        "retirement_reason": null
+      },
+      {
+        "id": "doc:guides/neo-agent-touch/updates-v16.md",
+        "title": "0.1.16：共享比价目标与一键检查更新",
+        "path": "guides/neo-agent-touch/updates-v16.md",
+        "kind": "learning_document",
+        "audience": [
+          "human",
+          "agent"
+        ],
+        "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/updates-v16.md",
+        "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/updates-v16.md",
+        "sha256": "4045aa72cc1276ab9254bbd70ba4b1572dbbd65afd64f3d3e942ea65c97a2b77",
         "content_status": "indexed",
         "availability_status": "review_required",
         "inventory_checked": "2026-10-23",

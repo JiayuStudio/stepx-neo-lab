@@ -4,7 +4,7 @@
 
 此页由 `python3 tools/learning_index.py` 生成。逐页来源、核验日期、状态、哈希及替代路径见 [catalog.json 的 learning 字段](../catalog.json)。
 
-本地 179 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
+本地 181 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
 
 | 页面 | 原始 Markdown | 内容状态 |
 | --- | --- | --- |
@@ -146,7 +146,7 @@
 | [案例来源与版本演进](../guides/chess-bomber/sources.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/chess-bomber/sources.md) | indexed |
 | [DeepSeek API Key：申请、配置与第一次使用](../guides/deepseek-api/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/deepseek-api/README.md) | indexed |
 | [第一款应用：在 Neo 上制作口袋计数器](../guides/first-app/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/first-app/README.md) | indexed |
-| [Neo Agent Touch · 0.1.15 Beta](../guides/neo-agent-touch/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/README.md) | indexed |
+| [Neo Agent Touch · 0.1.16 Beta](../guides/neo-agent-touch/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/README.md) | indexed |
 | [AI 阅读入口：Neo Agent Touch](../guides/neo-agent-touch/ai.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/ai.md) | indexed |
 | [自选应用：从固定名单到通用视觉](../guides/neo-agent-touch/application-selection.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/application-selection.md) | indexed |
 | [Neo Agent Touch：从目标到可验证的手机操作](../guides/neo-agent-touch/development.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/development.md) | indexed |
@@ -154,13 +154,15 @@
 | [1.0.4：同步分屏与蓝圆铃铛主题](../guides/neo-agent-touch/film-v1.0.4.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/film-v1.0.4.md) | indexed |
 | [功能原理：从画面到下一步动作](../guides/neo-agent-touch/implementation-flows.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/implementation-flows.md) | indexed |
 | [Neo Agent Touch：截至 2026-10-23 的研究与验证边界](../guides/neo-agent-touch/research/2026-10-23.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/research/2026-10-23.md) | indexed |
-| [Neo Agent Touch 0.1.15-beta.1 源码](../guides/neo-agent-touch/source/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/README.md) | indexed |
+| [Neo Agent Touch 0.1.16-beta.1](../guides/neo-agent-touch/source/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/README.md) | indexed |
 | [购物流程与订单核验](../guides/neo-agent-touch/source/assets/agent-skills/commerce.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/assets/agent-skills/commerce.md) | indexed |
 | [手机目标执行](../guides/neo-agent-touch/source/assets/agent-skills/core.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/assets/agent-skills/core.md) | indexed |
 | [自主文档起草与写入](../guides/neo-agent-touch/source/assets/agent-skills/documents.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/assets/agent-skills/documents.md) | indexed |
 | [小程序游戏的视觉决策](../guides/neo-agent-touch/source/assets/agent-skills/games.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/assets/agent-skills/games.md) | indexed |
 | [应用内搜索与打开](../guides/neo-agent-touch/source/assets/agent-skills/search.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/assets/agent-skills/search.md) | indexed |
+| [一键更新接线与验证范围](../guides/neo-agent-touch/source/tests/update-integration.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/tests/update-integration.md) | indexed |
 | [Offline Chinese voice input](../guides/neo-agent-touch/source/vendor/voice/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/vendor/voice/README.md) | indexed |
+| [0.1.16：共享比价目标与一键检查更新](../guides/neo-agent-touch/updates-v16.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/updates-v16.md) | indexed |
 | [拓麻歌子 · Neo 背屏电子宠物](../guides/neo-pet/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-pet/README.md) | indexed |
 | [从 17×23 点阵到背屏宠物](../guides/neo-pet/development.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-pet/development.md) | indexed |
 | [Step Studio 背屏宠物开发提示词](../guides/neo-pet/studio-prompts.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-pet/studio-prompts.md) | indexed |

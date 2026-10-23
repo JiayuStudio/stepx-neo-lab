@@ -1,15 +1,15 @@
-# Neo Agent Touch 0.1.15-beta.1 源码
+# Neo Agent Touch 0.1.16-beta.1
 
-Android 原生聊天、视觉执行和系统输入法交接。release 使用当前系统输入法转写文字，不包含旧 Vosk 引擎、模型、麦克风权限或调试活动；debug 保留旧离线识别研究及自有夹具。
+Codex · 来源0.1.15-beta.1。独立修订目录，原交付不覆盖。
 
-## 构建
+三平台共用一个商品目标的整句比价指令由手机本地编译为名单顺序。完整型号、规格、原文预算和否定条件保留；各阶段仅查价，不加购、不下单、不付款。独立应用目标仍分别绑定原文，合法应用重访保持。规划器校正提示只用于内部重规划，用户看到固定简短结果。
 
-需要 JDK、Android SDK 36/build-tools 36.0.0 和 R8/D8 JAR。设置 `ANDROID_SDK_ROOT`、`JAVA_HOME`、`R8_JAR`、独立的 `NEO_AGENT_SIGNING_DIR`，运行 `bash build.sh release`。首次会在指定私有签名目录创建产品证书；不要上传该目录。APK生成在dist，未内置API Key。首次运行自行配置自己的视觉API。
+菜单与关于页新增一键检查更新。固定公开更新清单为主源，GitHub应用发布为备用；支持Beta语义版本并排除影片和源码附件。用户选择更新后下载APK，校验字节数、SHA-256、包名、精确版本、递增versionCode及同一签名，再交给系统安装确认；安装来源许可按Android系统处理，执行任务时不会打开安装器。没有后台检查或静默安装。
 
-纯规则：`bash tests/run-unit.sh`。debug 额外需要按 vendor/voice/dependencies.json 固定 URL/字节/SHA获取3个依赖到对应file路径，再运行 `bash build.sh debug`。这些旧依赖只为研究夹具保留，不代表语音已验收。
+release继续使用搜狗等当前系统输入法，不内置API Key、不打包旧ASR模型、麦克风权限或调试活动。
 
-## 路由与原话
+## 构建与测试
 
-先看 AppAccess、StageSourceRules、TaskSpec、TaskWorkflow；所有已选应用参与候选，隐含阶段必须绑定完整原文子句。再看 MainActivity 的一次有界计划修复、VoiceGoalTransfer 的持久交接、ControlService 的代次核验；无效计划不会先执行。
+需要JDK、Android SDK 36/build-tools 36.0.0和R8/D8 JAR。设置ANDROID_SDK_ROOT、JAVA_HOME、R8_JAR、独立NEO_AGENT_SIGNING_DIR，运行 `bash build.sh release`。产物在dist。独立签名文件不属于源码包，升级已安装版本须使用同一签名。运行 `bash tests/run-unit.sh` 检查本地纯规则。
 
-发布包与构建、原生夹具及历史业务证据分别记录在上级 verification-v15.json；相同测试数字不能外推任意应用成功。
+更新实现及参考来源见 [tests/update-integration.md](tests/update-integration.md)。当前目录的测试和安装记录会在完成后登记；构建、原生构造检查、更新检查和实际购物闭环分别核验，不互相代替。
