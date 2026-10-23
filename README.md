@@ -6,6 +6,8 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 第一次来？想用 Amoo，看[一句话清单](library/amoo/quick-start.md)；想自己做应用，从[新手第一课](sections/start-here.md)开始。
 
+**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-23-review.md)。
+
 ## JIAYU STUDIO 自研与原创
 
 以下四个分区按内容类型整理维护者自己的作品与资料。自研软件使用的上游依赖及许可见各项目说明；原创教程涉及的第三方软件会单独标明来源。
