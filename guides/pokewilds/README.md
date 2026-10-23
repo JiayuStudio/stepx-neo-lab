@@ -60,6 +60,7 @@ APK 约 **306 MiB**，面向 ARM64 Android 8.0 及以上；已验证设备系列
 | **libGDX** | 原游戏引擎及相应原生库 | [原项目](https://github.com/libgdx/libgdx)；Apache-2.0，依赖另有声明 |
 | **ASM** | 中文 / Neo 字节码补丁 9.8；修复代理内使用 9.7 | [OW2 ASM](https://asm.ow2.io/)；BSD 3-Clause |
 | **PokeAPI 数据与中文图鉴** | 中文名称核对；PokeAPI `bc92d3b` 和 2026-10-05 图鉴快照 | [固定数据来源](https://github.com/PokeAPI/pokeapi/tree/bc92d3b6029ef1abe9e7ad424c400b338f3c11fe) · [中文宝可梦图鉴](https://pokedex.pokemon.cn/)；来源与译名处理见本目录中文补丁，数据及品牌权利分别适用 |
+| **旧汉化包的中文 8×8 字形** | 沿用用户提供的 `pokemon-wilds-v0.8.3-cn-v0.1.zip` 中基础字形，重新组织显示 | [素材来源说明](RESOURCE_SOURCES.md)；原作者与统一许可未在收到材料中完整标明，不宣称原字形为本项目原创 |
 | **AndroidX AppCompat / Preference / Lifecycle** | 原生界面与生命周期；1.7.1 / 1.2.1 / 2.11.0 | [AndroidX](https://android.googlesource.com/platform/frameworks/support/)；Apache-2.0 |
 | **Kotlin standard library** | Lorie 依赖；2.4.20 | [Kotlin](https://github.com/JetBrains/kotlin)；Apache-2.0 |
 | **Apache Commons Compress** | 档案读取；1.27.1 | [原项目](https://commons.apache.org/proper/commons-compress/)；Apache-2.0 |
