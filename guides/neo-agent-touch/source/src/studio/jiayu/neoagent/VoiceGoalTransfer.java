@@ -64,7 +64,7 @@ final class VoiceGoalTransfer {
   try{
    if(!held(hold))throw new Exception("旧目标在准备期间变化，未替换");
    owner.generation=owner.ownership.replacePaused(hold.generation);staged=true;
-   owner.allowed=first.pkg;owner.task=first.goal;owner.runId=run;owner.ownerSession=session;owner.activeRequest=new TaskRequest(first.pkg,first.original,first.target,first.checkout);
+   owner.allowed=first.pkg;owner.task=first.goal;owner.runId=run;owner.ownerSession=session;owner.activeRequest=new TaskRequest(first.pkg,first.original,first.target,first.checkout,first.sharedComparison);
    owner.checkout=owner.activeRequest.checkout;owner.runConfig=stage;owner.workflow=plan;owner.running=true;owner.paused=false;owner.nextStep=1;owner.semanticBacks=0;
    owner.activeMillis=0;owner.activeSince=SystemClock.elapsedRealtime();owner.startedAt=started;owner.currentObservation=null;owner.pendingDispatch=false;owner.recoveryHold="";
    owner.modelCalls=owner.screenshots=owner.actions=owner.launchRecoveries=0;owner.outcomeDetail="";owner.trace=new StringBuilder("语音新目标已准备\n");

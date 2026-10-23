@@ -241,16 +241,16 @@
       "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/README.md",
       "development": "guides/neo-agent-touch/development.md",
-      "verification": "guides/neo-agent-touch/verification-v15.json",
-      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.15-beta.1",
+      "verification": "guides/neo-agent-touch/verification-v16.json",
+      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.16-beta.1",
       "category": "手机目标型 Agent",
-      "version": "0.1.15-beta.1",
+      "version": "0.1.16-beta.1",
       "status": "beta",
       "section": "apps",
       "content_origin": "jiayu_studio",
       "artifact_type": "app_and_development_case",
       "updated": "2026-10-23",
-      "apk": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1.apk",
+      "apk": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.16-beta.1/Neo-Agent-Touch-0.1.16-beta.1.apk",
       "video": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4",
       "video_duration_seconds": 120,
       "video_case_version": "historical_0.1.10_0.1.12_0.1.13",
@@ -264,7 +264,8 @@
         "180-second film: complete decode and audio measurements passed",
         "0.1.11-beta.1: 42 isolated release-APK checks for arbitrary launcher apps, selection/defaults, local resolution and native WebView persistence",
         "0.1.15-beta.1: 41 pure rule suites; 96 native workflow construction checks, no business actions",
-        "0.1.15-beta.1: signed release build installed and base APK SHA read back; no debug QA, ASR libraries/model or RECORD_AUDIO"
+        "0.1.15-beta.1: signed release build installed and base APK SHA read back; no debug QA, ASR libraries/model or RECORD_AUDIO",
+        "0.1.16-beta.1: 44 pure suites; 149 native JD/Taobao shared-plan and JSON restore checks, zero model/business actions"
       ],
       "not_verified": [
         "Full shopping order review, cart receipt or purchase/payment completion",
@@ -276,10 +277,11 @@
         "Merchant pending order creation during historical cashier exploration remains unknown",
         "Physical-device complex workflows in WeChat, Amap, QQ Music, WeCom and Baidu Netdisk",
         "0.1.14 live long-command speech failed; built-in ASR upgrade paused",
-        "0.1.15 live system-keyboard UI, Sogou ASR quality and new three-app workflow not accepted"
+        "0.1.15 live system-keyboard UI, Sogou ASR quality and new three-app workflow not accepted",
+        "0.1.16: Pinduoduo prerequisite missing; live three-platform price comparison and system update-install flow not accepted"
       ],
       "application_selection": "guides/neo-agent-touch/application-selection.md",
-      "source_package": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1-source.zip",
+      "source_package": "https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.16-beta.1/Neo-Agent-Touch-0.1.16-beta.1-source.zip",
       "ai_entrypoint": "guides/neo-agent-touch/ai.md",
       "knowledge": "guides/neo-agent-touch/knowledge.json",
       "research": "guides/neo-agent-touch/research/2026-10-23.md",
@@ -287,7 +289,8 @@
       "implementation_flows": "guides/neo-agent-touch/implementation-flows.md",
       "video_focus": "20 six-second simultaneous demo-and-flow segments; blue, white round panels and yellow bell; historical footage and mechanism comparisons labelled",
       "video_release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-film-v1.0.4",
-      "video_verification": "guides/neo-agent-touch/verification-video-v1.0.4.json"
+      "video_verification": "guides/neo-agent-touch/verification-video-v1.0.4.json",
+      "update_channel": "guides/neo-agent-touch/update.json"
     }
   ],
   "sections": [

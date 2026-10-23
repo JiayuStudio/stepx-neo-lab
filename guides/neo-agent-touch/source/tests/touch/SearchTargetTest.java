@@ -11,6 +11,10 @@ public class SearchTargetTest {
   String original="在QQ音乐搜索许嵩的《有何不可》，播放免费版本";String t=SearchTarget.fromUser(original);
   for(String query:new String[]{"许嵩 有何不可","有何不可 许嵩","许嵩有何不可","有何不可许嵩"}){if(!SearchQueryPolicy.allowed(original,original,t,"com.tencent.qqmusic",query))throw new AssertionError("Derived target rejected public song query");n++;}
   if(SearchQueryPolicy.allowed(original,original,t,"com.tencent.qqmusic","周杰伦 有何不可"))throw new AssertionError("Wrong performer accepted");n++;
+  String quoted="去京东淘宝拼多多搜索「海信G7 Pro」65英寸的价格",exact="海信G7 Pro 65英寸";
+  if(!SearchTarget.product(quoted,exact).equals(exact))throw new AssertionError("Quoted model/specification lost its native public search target");n++;
+  if(!SearchQueryPolicy.allowed(quoted,quoted,SearchTarget.product(quoted,exact),"com.taobao.taobao",exact))throw new AssertionError("Native product query rejected its own exact target");n++;
+  if(SearchQueryPolicy.allowed(quoted,quoted,SearchTarget.product(quoted,exact),"com.taobao.taobao","海信"))throw new AssertionError("Brand-only query weakened the exact model/specification");n++;
   System.out.println("PASS: "+n+" original-query parsing, quoted titles, interface nouns and music runtime-target checks");
  }
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "document_id": "neo-agent-touch",
-  "revision": 3,
+  "revision": 4,
   "reviewed_on": "2026-10-23",
   "language": "zh-CN",
   "purpose": "retrieval_and_learning_reference",
@@ -168,12 +168,44 @@
           "path": "film-v1.0.4.md"
         }
       ]
+    },
+    {
+      "id": "C12",
+      "evidence_type": "native_fixture",
+      "version": "0.1.16-beta.1",
+      "status": "partial",
+      "statement": "Native shared comparison planning keeps the exact target, app order and read-only scope; 44 pure suites and 149 native JD/Taobao construction and JSON restore checks passed.",
+      "scope_limit": "Pinduoduo prerequisite missing; zero model calls/business actions. Not live three-platform price comparison.",
+      "evidence": [
+        {
+          "path": "verification-v16.json"
+        },
+        {
+          "path": "updates-v16.md"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "evidence_type": "reference",
+      "version": "0.1.16-beta.1",
+      "status": "implemented",
+      "statement": "One-click official update-channel check supports beta releases, verified APK download and system-confirmed installation.",
+      "scope_limit": "Code/rule checks are separate from live metadata checks, downloads and system upgrade completion. Read verification-v16.json.",
+      "evidence": [
+        {
+          "path": "updates-v16.md"
+        },
+        {
+          "path": "source/tests/update-integration.md"
+        }
+      ]
     }
   ],
   "sources": [
     {
       "path": "ai.md",
-      "sha256": "a0119be074c297c869e6eff76c79159b341b27c0bc7e85b8de2a72f3d9b11958",
+      "sha256": "437b315d8e40a780213aeb1bf5a28f0786b15603bc040a0e7d708f4ac27f966d",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
@@ -198,12 +230,12 @@
     },
     {
       "path": "source/README.md",
-      "sha256": "12bbcb7ba937275a7dc79f943a87e75070a1a675e825326d29680fef5e44b7b1",
+      "sha256": "684de992ee80e3d1989c518ffd0f5193f428ee0f748e3afdd2a73e851b490be1",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
       "path": "README.md",
-      "sha256": "33a46d9aae540e389d0d289b663c711df5cbcf21300e901fd8f38d1db060ee3d",
+      "sha256": "7028f92ae8c1c04260c04b818606d0539707331b03868ed777fa651d734bb618",
       "digest_scope": "this exact document, not linked remote binaries"
     },
     {
@@ -224,6 +256,21 @@
     {
       "path": "verification-video-v1.0.4.json",
       "sha256": "5c0411c47c7446022d09c41f0fa8d38589bc00548ec178adb00b0f1650c5df0a",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "verification-v16.json",
+      "sha256": "57653c21dd0671a85d415768c3d7b1dd79bce93a7bd76f9cf1762a70727ab13e",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "updates-v16.md",
+      "sha256": "4045aa72cc1276ab9254bbd70ba4b1572dbbd65afd64f3d3e942ea65c97a2b77",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "source-manifest-v16.json",
+      "sha256": "c777f1b04ed536a9bf6e4a3388e12ed2501289556d06bac8804dc95ae5cfb62d",
       "digest_scope": "this exact document, not linked remote binaries"
     }
   ],
@@ -247,17 +294,18 @@
   },
   "release_scope": "Research/learning materials; final package availability and current native results must be read separately from README and release verification.",
   "current_release": {
-    "version": "0.1.15-beta.1",
-    "apk_bytes": 222437,
-    "apk_sha256": "36b4b5dedc391e80737dbc9f288157c474cbe6850b1870690ff58d4739acff30",
+    "version": "0.1.16-beta.1",
+    "apk_bytes": 238821,
+    "apk_sha256": "8895a0549d3b2cc73d1aba540a66a24fcd4e160fe9450b4689582067460e8be6",
     "built": true,
-    "installed": true,
-    "installed_apk_readback_matches": true,
+    "installed": false,
+    "installed_apk_readback_matches": false,
     "record_audio_permission_present": false,
     "builtin_asr_present": false,
     "debug_research_is_separate": true,
     "source_reading_entry": "source/README.md",
-    "verification": "verification-v15.json"
+    "source_file_manifest": "source-manifest-v16.json",
+    "verification": "verification-v16.json"
   },
   "media": {
     "path": "README.md#120秒同步分屏原理展示",
@@ -266,7 +314,7 @@
     "timeline": "film-v1.0.4-timeline.json",
     "segments": 20,
     "maximum_segment_seconds": 6,
-    "scope": "Historical clips and labelled mechanism comparisons, not new phone acceptance; software remains 0.1.15; WeChat automatic sending not implemented"
+    "scope": "Historical clips and labelled mechanism comparisons from film production with software 0.1.15; not 0.1.16 phone acceptance; WeChat automatic sending not implemented"
   },
   "implementation_flows": "implementation-flows.md"
 }

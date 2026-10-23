@@ -4,7 +4,7 @@ import java.util.regex.*;
 final class SearchTarget {
  static final Pattern SEARCH=Pattern.compile("搜索|搜一下|查找|找一下|(?<!搜一)搜(?!一搜)");
  static final Pattern STOP=Pattern.compile("然后|并且|并|再|打开|播放|观看|看看|的视频");
- static String product(String user,String proposal){String t=proposal==null?"":proposal.trim();return MutationRules.targetMentioned(user,t)?t:shopping(user);}
+ static String product(String user,String proposal){String t=proposal==null?"":proposal.trim();String publicText=user==null?"":user.replaceAll("[《》「」“”\"『』]"," ");return MutationRules.targetMentioned(user,t)||MutationRules.targetMentioned(publicText,t)?t:shopping(user);}
  static String shopping(String user){if(user==null||user.matches("(?s).*(不要|禁止|别|不用|不必).{0,3}(搜|查找|找一下).*"))return "";Matcher searches=SEARCH.matcher(user);int count=0;while(searches.find())count++;return count==1?fromUser(user):"";}
  static String fromUser(String user){if(user==null)return "";Matcher m=SEARCH.matcher(user);while(m.find()){
   String rest=user.substring(m.end()).trim().replaceFirst("^(?:关键词|关键字)\\s*[:：]?\\s*","");if(rest.matches("(?s)^(入口|按钮|功能|输入框|框|栏)(?:[，。,；;\\s]|$).*"))continue;

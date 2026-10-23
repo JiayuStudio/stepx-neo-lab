@@ -1,10 +1,12 @@
 package studio.jiayu.neoagent;
-/** Fixed local planner feedback. Never reflect model output or the user's source text. */
+/** Keep model-only repair guidance separate from the fixed user-facing fallback. */
 final class WorkflowPlanException extends Exception {
+ private static final String USER_MESSAGE="这次未能完成任务规划，尚未开始操作。请重试。";
  private final String code;
- WorkflowPlanException(String value){super(feedback(value));code=known(value)?value:"source_invalid";}
+ WorkflowPlanException(String value){super(USER_MESSAGE);code=known(value)?value:"source_invalid";}
  String code(){return code;}
  String safeFeedback(){return feedback(code);}
+ String userMessage(){return USER_MESSAGE;}
  private static boolean known(String c){return "source_required".equals(c)||"source_invalid".equals(c)||"source_order".equals(c)||"source_app_mismatch".equals(c)||"source_context".equals(c)||"source_denied".equals(c)||"category_conflict".equals(c);}
  private static String feedback(String c){
   if("category_conflict".equals(c))return "任务目标与所选应用类别明显冲突。请从完整已授权候选中选择适合的应用，保留用户明确指定的应用与原顺序，不新增授权。";

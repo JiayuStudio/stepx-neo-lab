@@ -18,7 +18,7 @@ final class AppAccess {
  JSONObject saved(){try{String raw=new Vault(context).get(KEY);return raw.isEmpty()?new JSONObject():new JSONObject(raw);}catch(Exception e){return new JSONObject();}}
  static boolean adapted(String pkg){return pkg.equals("tv.danmaku.bili")||DocumentScope.applies(pkg)||AppCatalog.isCommerce(pkg);}
  static String category(String pkg){
-  if(pkg.equals("com.taobao.taobao")||pkg.equals("com.jingdong.app.mall"))return "购物";
+  if(pkg.equals("com.taobao.taobao")||pkg.equals("com.jingdong.app.mall")||pkg.equals("com.xunmeng.pinduoduo"))return "购物";
   if(pkg.equals("tv.danmaku.bili"))return "视频";
   if(DocumentScope.applies(pkg))return "办公";
   if(pkg.equals("com.sankuai.meituan")||pkg.equals("com.sankuai.meituan.takeoutnew")||pkg.equals("me.ele"))return "外卖";
