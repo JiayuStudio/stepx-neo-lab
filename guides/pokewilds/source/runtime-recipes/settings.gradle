@@ -1,0 +1,9 @@
+pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
+rootProject.name = 'PokeWildsStandalone'
+def x11 = file(System.getenv('X11_SOURCE_DIR') ?: '.cache/termux-x11')
+if (!new File(x11, 'lorie/build.gradle').exists()) throw new GradleException('Run ./prepare.sh first (or set X11_SOURCE_DIR).')
+include ':android-app', ':lorie', ':shell-loader:stub'
+project(':lorie').projectDir = new File(x11, 'lorie')
+project(':shell-loader:stub').projectDir = new File(x11, 'shell-loader/stub')
+
+project(":shell-loader").projectDir = file("build-support/shell-loader")

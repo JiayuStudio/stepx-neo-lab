@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+def runtimeGraphics = project.findProperty('runtimeGraphics') ?: 'native'
+if (!(runtimeGraphics in ['native', 'angle-gl', 'angle-vulkan', 'software'])) {
+    throw new GradleException('runtimeGraphics must be native, angle-gl, angle-vulkan, or software')
+}
+android {
+    buildFeatures { buildConfig true; resValues true }
+    namespace 'local.pokewilds.standalone'
+    compileSdk 36
+    defaultConfig {
+        applicationId = (project.findProperty('runtimeApplicationId') ?: 'studio.jiayu.pokewilds.neo')
+        minSdk 26
+        // Neo firmware publishes display_ext to apps targeting current Android.
+        // Runtime and rear display are validated together at target 36.
+        targetSdk = Integer.parseInt(project.findProperty('runtimeTargetSdk') ?: '36')
+        versionCode 815
+        versionName '0.8.15'
+        buildConfigField 'String', 'RUNTIME_GRAPHICS', '"' + runtimeGraphics + '"'
+        ndk { abiFilters 'arm64-v8a' }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_9
+        targetCompatibility JavaVersion.VERSION_1_9
+    }
+    androidResources { noCompress += ['bin'] }
+    packaging { jniLibs { useLegacyPackaging = true } }
+    sourceSets.main {
+        assets.srcDirs += ['../runtime/build/android-assets']
+        assets.srcDirs += ['../game-patches/dist']
+        assets.srcDirs += ['../control-patches/dist']
+        jniLibs.srcDirs += ['../native/build/jniLibs']
+    }
+    signingConfigs {
+        localRelease {
+            def key = rootProject.file('.signing/standalone.p12')
+            def password = rootProject.file('.signing/password')
+            if (key.exists() && password.exists()) {
+                storeFile key
+                storePassword password.text.trim()
+                keyAlias 'standalone'
+                keyPassword password.text.trim()
+            }
+        }
+    }
+    buildTypes { release { minifyEnabled false; signingConfig signingConfigs.localRelease } }
+}
+dependencies {
+    implementation project(':lorie')
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'org.apache.commons:commons-compress:1.27.1'
+    testImplementation 'junit:junit:4.13.2'
+}
+

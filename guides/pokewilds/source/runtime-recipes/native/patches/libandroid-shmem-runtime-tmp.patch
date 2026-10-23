@@ -1,0 +1,47 @@
+--- shmem.c
++++ shmem.c
+@@ -13,7 +13,6 @@
+ #include <sys/socket.h>
+ #include <sys/un.h>
+ #include <unistd.h>
+-#include <paths.h>
+ 
+ #if __ANDROID_API__ < 26
+ #define __u32 uint32_t
+@@ -23,7 +22,6 @@
+ #include "shm.h"
+ 
+ #define DBG(...) __android_log_print(ANDROID_LOG_INFO, "shmem", __VA_ARGS__)
+-#define ASHV_KEY_SYMLINK_PATH _PATH_TMP "ashv_key_%d"
+ #define ANDROID_SHMEM_SOCKNAME "/dev/shm/%08x"
+ #define ROUND_UP(N, S) ((((N) + (S) - 1) / (S)) * (S))
+ 
+@@ -51,6 +49,14 @@
+ static int ashv_pid_setup = 0;
+ static pthread_t ashv_listening_thread_id = 0;
+ 
++static int ashv_key_path(char *path, size_t path_size, key_t key)
++{
++	const char *tmp = getenv("TMPDIR");
++	if (tmp == NULL || tmp[0] == '\0') tmp = "/data/local/tmp";
++	return snprintf(path, path_size, "%s%sashv_key_%d",
++			tmp, tmp[strlen(tmp) - 1] == '/' ? "" : "/", key);
++}
++
+ static int ancil_send_fd(int sock, int fd)
+ {
+ 	char nothing = '!';
+@@ -349,7 +355,12 @@
+ 		// (3) If connected and opened, done. If connection refused
+ 		//     take ownership of the key and create the symlink.
+ 		// (4) If no symlink, create it.
+-		sprintf(symlink_path, ASHV_KEY_SYMLINK_PATH, key);
++		int path_length = ashv_key_path(symlink_path, sizeof(symlink_path), key);
++		if (path_length < 0 || (size_t)path_length >= sizeof(symlink_path)) {
++			pthread_mutex_unlock(&mutex);
++			errno = ENAMETOOLONG;
++			return -1;
++		}
+ 		char path_buffer[256];
+ 		char num_buffer[64];
+ 		while (true) {

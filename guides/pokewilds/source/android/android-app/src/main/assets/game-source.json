@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "version": "0.8.11",
+  "url": "https://github.com/SheerSt/pokewilds/releases/download/v0.8.11/pokewilds-otherplatforms.zip",
+  "sha256": "389f2bacac4f0b1ec04d929e557d4b1bb19bceb88644f2e5d38553aff77d116a",
+  "archiveMember": "pokewilds-v0.8.11-otherplatforms",
+  "jarSha256": "f9787102803bb83cd39227f8231d30ba5e6aea407b8c70690c47687df933af71",
+  "requiredFiles": [
+    "pokewilds.jar",
+    "README.txt"
+  ]
+}

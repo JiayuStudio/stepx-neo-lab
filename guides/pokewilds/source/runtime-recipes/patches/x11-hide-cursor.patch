@@ -1,0 +1,13 @@
+diff --git a/lorie/src/main/cpp/lorie/renderer.cpp b/lorie/src/main/cpp/lorie/renderer.cpp
+--- a/lorie/src/main/cpp/lorie/renderer.cpp
++++ b/lorie/src/main/cpp/lorie/renderer.cpp
+@@ -1270,5 +1270,9 @@ void Renderer::drawRegion(GLuint texture, float x1, float y1, float x2, float
+ 
+ void Renderer::drawCursor(float displayWidth, float displayHeight, float sourceLeft, float sourceTop, float cursorX, float cursorY) {
++    // PokeWilds uses touch at screen coordinates. Keep X pointer events for
++    // Swing dialogs, but do not paint the desktop X cursor over the game.
++    return;
++
+     float x, y, w, h;
+ 
+     if (!state->cursor.width || !state->cursor.height || !state->cursor.visible)

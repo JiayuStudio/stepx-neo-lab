@@ -1,0 +1,23 @@
+{
+  "SPEED": "速度",
+  "HP": "HP",
+  "PRZ": "麻痹",
+  "EXP": "经验",
+  "PP": "PP",
+  "Enemy": "对手",
+  "Throw ": "扔出 ",
+  "Toss ": "丢弃 ",
+  "higher": "提高",
+  "lower": "降低",
+  " damage!": " 点伤害！",
+  "Attack": "攻击",
+  "Defense": "防御",
+  "Speed": "速度",
+  "Hit ": "命中了 ",
+  " time(s)!": " 次！",
+  " dropped!": " 降低了！",
+  "ACCURACY": "命中率",
+  "EVASION": "闪避率",
+  "SPECIAL ATTACK": "特攻",
+  "SPECIAL DEFENSE": "特防"
+}

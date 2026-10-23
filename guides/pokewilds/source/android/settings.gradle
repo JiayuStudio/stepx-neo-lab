@@ -1,0 +1,3 @@
+pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
+rootProject.name='PokeWildsNeo'
+include ':android-app', ':lorie', ':shell-loader:stub'

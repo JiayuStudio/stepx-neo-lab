@@ -1,0 +1,179 @@
+{
+  "repository": "https://packages.termux.dev/apt/termux-main/",
+  "packages": [
+    {
+      "Package": "abseil-cpp",
+      "Version": "20260526.0",
+      "Filename": "pool/main/a/abseil-cpp/abseil-cpp_20260526.0_aarch64.deb",
+      "SHA256": "e489fac652cddc39d9436141e627285f1034a545a06fbb19c420514a419ad877"
+    },
+    {
+      "Package": "angle-android",
+      "Version": "2.1.24923-f09a19ce-2",
+      "Filename": "pool/main/a/angle-android/angle-android_2.1.24923-f09a19ce-2_aarch64.deb",
+      "SHA256": "3e421cecefc8cb5ca9c57ffe1eb38f77dc315d88d99f1018ef0fdd2add6ca330"
+    },
+    {
+      "Package": "dbus",
+      "Version": "1.16.2-3",
+      "Filename": "pool/main/d/dbus/dbus_1.16.2-3_aarch64.deb",
+      "SHA256": "1b6d5e349708414acbbb1404210e32d4e3f390890d02e162639dec1016a8657b"
+    },
+    {
+      "Package": "libandroid-execinfo",
+      "Version": "0.1-3",
+      "Filename": "pool/main/liba/libandroid-execinfo/libandroid-execinfo_0.1-3_aarch64.deb",
+      "SHA256": "725dd2c6da7fc96e860fcc928e18aa9fb0e85e0bdcaf4f8ce0f0654ca6860fc2"
+    },
+    {
+      "Package": "libandroid-glob",
+      "Version": "0.6-3",
+      "Filename": "pool/main/liba/libandroid-glob/libandroid-glob_0.6-3_aarch64.deb",
+      "SHA256": "2276ae8adedf0db76c2f4ffc94cc4cceb2f4f5d78e021b54e2e046d1233e7826"
+    },
+    {
+      "Package": "libandroid-stub",
+      "Version": "30",
+      "Filename": "pool/main/liba/libandroid-stub/libandroid-stub_30_aarch64.deb",
+      "SHA256": "39ac1597d20a81276748237c02051906a0433beaf9a1918584d9e22135c4ce2e"
+    },
+    {
+      "Package": "libandroid-support",
+      "Version": "29-1",
+      "Filename": "pool/main/liba/libandroid-support/libandroid-support_29-1_aarch64.deb",
+      "SHA256": "f2f145d6135ad4843ac9670153be3e3944dc1e6f1736d46d2306c28f2b86f517"
+    },
+    {
+      "Package": "libc++",
+      "Version": "30",
+      "Filename": "pool/main/libc/libc++/libc++_30_aarch64.deb",
+      "SHA256": "53d0b84a7ba7459024257cb94d5b136fe13ef858567f65a8064b35950799f2ca"
+    },
+    {
+      "Package": "libexpat",
+      "Version": "2.8.5",
+      "Filename": "pool/main/libe/libexpat/libexpat_2.8.5_aarch64.deb",
+      "SHA256": "3b2c9b061fa890b69b88d2f5dd993efba902d678fe8e1990268892d1faf15e5e"
+    },
+    {
+      "Package": "libflac",
+      "Version": "1.5.0-1",
+      "Filename": "pool/main/libf/libflac/libflac_1.5.0-1_aarch64.deb",
+      "SHA256": "d1d6fcac6fd6d15c36f34464cb01d5e2140e321d8448dfc396cd7eb1536b1f6c"
+    },
+    {
+      "Package": "libiconv",
+      "Version": "1.19",
+      "Filename": "pool/main/libi/libiconv/libiconv_1.19_aarch64.deb",
+      "SHA256": "fe9481b1dc101c6c3552943f25435109fd522aecc615ae49594f9fbee863bb37"
+    },
+    {
+      "Package": "libltdl",
+      "Version": "2.6.2",
+      "Filename": "pool/main/libl/libltdl/libltdl_2.6.2_aarch64.deb",
+      "SHA256": "7b4643fe9d0ab42c0c3c8a1018640816bdb43d422f2268a5e4ea80675624f539"
+    },
+    {
+      "Package": "libmp3lame",
+      "Version": "4.0-1",
+      "Filename": "pool/main/libm/libmp3lame/libmp3lame_4.0-1_aarch64.deb",
+      "SHA256": "59f70ad8885578063bcbea3b11e74fb69e2416ca036b47aa255c1fa4f074565e"
+    },
+    {
+      "Package": "libmpg123",
+      "Version": "1.33.7",
+      "Filename": "pool/main/libm/libmpg123/libmpg123_1.33.7_aarch64.deb",
+      "SHA256": "883b104faae53820b2e758363300ccf99e28f627a263d766af61ae07b73b07b3"
+    },
+    {
+      "Package": "libogg",
+      "Version": "1.3.6-1",
+      "Filename": "pool/main/libo/libogg/libogg_1.3.6-1_aarch64.deb",
+      "SHA256": "4f1700a532f251ad3600f44f88cd764f1f6b0542d3343391117944b47a92802d"
+    },
+    {
+      "Package": "libopus",
+      "Version": "1.6.1",
+      "Filename": "pool/main/libo/libopus/libopus_1.6.1_aarch64.deb",
+      "SHA256": "005a9335ce0ec0f510bbe6e0229c901d6f920cc375fcda56461e96cef70f8ff0"
+    },
+    {
+      "Package": "libsndfile",
+      "Version": "1.2.2-3",
+      "Filename": "pool/main/libs/libsndfile/libsndfile_1.2.2-3_aarch64.deb",
+      "SHA256": "1e1fb77b14ec26f3ff6ded069e9ec816ab7535ae5d074122c6727b0f59d8aff3"
+    },
+    {
+      "Package": "libsoxr",
+      "Version": "0.1.3-8",
+      "Filename": "pool/main/libs/libsoxr/libsoxr_0.1.3-8_aarch64.deb",
+      "SHA256": "a1c5f66aae3b9900e9a492b43901b2b98586870c7905feb9f3c835cc9af464be"
+    },
+    {
+      "Package": "libvorbis",
+      "Version": "1.3.7-4",
+      "Filename": "pool/main/libv/libvorbis/libvorbis_1.3.7-4_aarch64.deb",
+      "SHA256": "6bfd70c4b570b85594bd06116b75a6f8109ec58cbc123e938b630a6eefdedf4e"
+    },
+    {
+      "Package": "libwebrtc-audio-processing",
+      "Version": "1.3-5",
+      "Filename": "pool/main/libw/libwebrtc-audio-processing/libwebrtc-audio-processing_1.3-5_aarch64.deb",
+      "SHA256": "136f87d3c8aec04b94392a10174851936d21402f2f28aacdefd2cfd05ced367c"
+    },
+    {
+      "Package": "libx11",
+      "Version": "1.8.13-1",
+      "Filename": "pool/main/libx/libx11/libx11_1.8.13-1_aarch64.deb",
+      "SHA256": "a18c5cf3cfe2670bf1cb4243e3140a0b7639350a4175b5229c969402fdb12e9f"
+    },
+    {
+      "Package": "libxau",
+      "Version": "1.0.12-2",
+      "Filename": "pool/main/libx/libxau/libxau_1.0.12-2_aarch64.deb",
+      "SHA256": "2d86bed61ce89dd8fdb55e565aede10155f2ce3adaccb61d5f1375aec3314083"
+    },
+    {
+      "Package": "libxcb",
+      "Version": "1.17.0-1",
+      "Filename": "pool/main/libx/libxcb/libxcb_1.17.0-1_aarch64.deb",
+      "SHA256": "191c3642b6a8c754bc75b69b94a81858ecb5f18766dc085aff55559b8087ad34"
+    },
+    {
+      "Package": "libxdmcp",
+      "Version": "1.1.5-2",
+      "Filename": "pool/main/libx/libxdmcp/libxdmcp_1.1.5-2_aarch64.deb",
+      "SHA256": "caea0cf5c0028af0840774094b8900ef7afffd8f9bbd7b1abfbe66851f0d6077"
+    },
+    {
+      "Package": "pulseaudio",
+      "Version": "17.0-4",
+      "Filename": "pool/main/p/pulseaudio/pulseaudio_17.0-4_aarch64.deb",
+      "SHA256": "b119f3a5beb33273a6457e648a2ea501d6a507be8e99501737897c3ea07854cd"
+    },
+    {
+      "Package": "speexdsp",
+      "Version": "1.2.1-1",
+      "Filename": "pool/main/s/speexdsp/speexdsp_1.2.1-1_aarch64.deb",
+      "SHA256": "21cd5d122a8d24dffb9b2926dff7059f8f42cde7c5a91f27ea5c9b4f40356be0"
+    },
+    {
+      "Package": "virglrenderer-android",
+      "Version": "1.3.0-1",
+      "Filename": "pool/main/v/virglrenderer-android/virglrenderer-android_1.3.0-1_aarch64.deb",
+      "SHA256": "f1a7297bc0edf701b2955fcc9ba679707e092e1b78d9f1d620ba9e4567aa0c5b"
+    },
+    {
+      "Package": "xorg-util-macros",
+      "Version": "1.20.2",
+      "Filename": "pool/main/x/xorg-util-macros/xorg-util-macros_1.20.2_all.deb",
+      "SHA256": "11765ad1a6f181e36f807464f7b4360593d847dce245202a393eb2ca156520d0"
+    },
+    {
+      "Package": "xorgproto",
+      "Version": "2025.1",
+      "Filename": "pool/main/x/xorgproto/xorgproto_2025.1_all.deb",
+      "SHA256": "cd2a6405a79540f6cc0dbc991fffdbe68058f3223ed456ac66c07207048ef62f"
+    }
+  ]
+}

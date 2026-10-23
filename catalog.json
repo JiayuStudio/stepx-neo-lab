@@ -1,7 +1,7 @@
 {
   "title": "StepX Neo 研究所",
   "maintainer": "JiayuStudio",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "projects": [
     {
       "title": "免 ROOT 使用 Google Play：GBox 手机教程",
@@ -291,6 +291,31 @@
       "video_release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-film-v1.0.4",
       "video_verification": "guides/neo-agent-touch/verification-video-v1.0.4.json",
       "update_channel": "guides/neo-agent-touch/update.json"
+    },
+    {
+      "title": "宝可梦荒野 · Neo 中文适配",
+      "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
+      "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/pokewilds/README.md",
+      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15",
+      "version": "0.8.15",
+      "game_core": "PokeWilds 0.8.11",
+      "category": "Neo 游戏与非官方适配",
+      "section": "games",
+      "content_origin": "jiayu_studio_adaptation",
+      "artifact_type": "android_game_port",
+      "source": "guides/pokewilds/source/README.md",
+      "verification": "guides/pokewilds/release.json",
+      "verified": [
+        "0.8.14 physical Neo controls, save/load and portrait/landscape session continuity",
+        "0.8.15 public APK build, signing and game bytecode / allocated native sections equivalence",
+        "Public Android wrapper source rebuild from pinned binary inputs"
+      ],
+      "not_verified": [
+        "0.8.15 fresh physical-device regression",
+        "All field skills and multitouch combinations",
+        "Long deep standby, optical FPS and battery/thermal behavior",
+        "Complete third-party runtime rebuilt from source"
+      ]
     }
   ],
   "sections": [

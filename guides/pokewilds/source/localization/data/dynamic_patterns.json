@@ -1,0 +1,1110 @@
+[
+  [
+    "Your party is full! {0} was sent to the last safe place.",
+    "同行宝可梦已满！{0}被送到上次的安全地点了。"
+  ],
+  [
+    "The battlefield quakes under REGIGIGAS' presence!",
+    "在雷吉奇卡斯的威压下，战场震颤着！"
+  ],
+  [
+    "{0} was PARALYZED! It might not be able to attack!",
+    "{0}麻痹了！可能无法使出招式！"
+  ],
+  [
+    "{0} seems aggressive... it may attack if provoked!",
+    "{0}似乎很凶猛……招惹它可能会遭到攻击！"
+  ],
+  [
+    "{0} is using POWER! Power machinery by pressing Z.",
+    "{0}正在发电！按Z给机器通电。"
+  ],
+  [
+    "A voice whispers from within... {0}... bring {0}...",
+    "里面传来低语……{0}……带来{0}……"
+  ],
+  [
+    "{0} used PAINT! Press C and V to select designs.",
+    "{0}开始涂绘！按C和V选择图案。"
+  ],
+  [
+    "Release {0} to the wild? This can't be undone!",
+    "将{0}放归野外吗？放生后无法撤回！"
+  ],
+  [
+    "{0} used DIG! Press C and V to select terrain.",
+    "{0}使用了挖洞！按C和V选择地形。"
+  ],
+  [
+    "{0} used BUILD! Press C and V to select tiles.",
+    "{0}开始建造！按C和V选择建材。"
+  ],
+  [
+    "{0} must be fully evolved to CUT large trees.",
+    "{0}必须进化到最终阶段，才能用居合斩砍伐大树。"
+  ],
+  [
+    "{0} seems uncomfortable in this environment. ",
+    "{0}似乎不适应这里的环境。"
+  ],
+  [
+    "Release {0} to the wild? This canì be undone!",
+    "将{0}放归野外吗？放生后无法撤回！"
+  ],
+  [
+    "{0} does not take a liking to the weather.",
+    "{0}不喜欢这样的天气。"
+  ],
+  [
+    "{0}'s infatuation kept it from attacking!",
+    "{0}因着迷而无法使出招式！"
+  ],
+  [
+    "{0}' infatuation kept it from attacking!",
+    "{0}因着迷而无法使出招式！"
+  ],
+  [
+    "{0} looks like it's holding something...",
+    "{0}好像拿着什么东西……"
+  ],
+  [
+    "Wow! {0} blends in with the environment!",
+    "哇！{0}和周围环境融为一体了！"
+  ],
+  [
+    "{0} looks like it' holding something...",
+    "{0}好像拿着什么东西……"
+  ],
+  [
+    "{0} feels comfortable under the snow.",
+    "{0}在雪地里很自在。"
+  ],
+  [
+    "{0} is having trouble with the sand.",
+    "{0}在沙子里行动困难。"
+  ],
+  [
+    "{0}'s POKéMON gained {1} EXP. Points!",
+    "{0}的宝可梦获得了{1}点经验值！"
+  ],
+  [
+    "{0} doesn't want me to go too far.",
+    "{0}不想让你走得太远。"
+  ],
+  [
+    "{0} makes its way across the sand.",
+    "{0}正在穿过沙地。"
+  ],
+  [
+    "{0} takes in the cold environment.",
+    "{0}感受着寒冷的环境。"
+  ],
+  [
+    "{0} is impressed by the landscape.",
+    "{0}被这里的风景吸引了。"
+  ],
+  [
+    "{0} makes its way across the path.",
+    "{0}正在沿小路前进。"
+  ],
+  [
+    "{0}' POKéMON gained {1} EXP. Points!",
+    "{0}的宝可梦获得了{1}点经验值！"
+  ],
+  [
+    "SPIKES scattered all around {0} !",
+    "撒菱散布在{0}的周围！"
+  ],
+  [
+    "{0} keeps away from the sunlight.",
+    "{0}躲避着阳光。"
+  ],
+  [
+    "{0} is moving easily in the sand.",
+    "{0}在沙子里行动自如。"
+  ],
+  [
+    "Enemy {0}'s attack went way up!",
+    "对手的{0}的攻击大幅提高了！"
+  ],
+  [
+    "{0} feels sunlight on its back.",
+    "{0}感受着背上的阳光。"
+  ],
+  [
+    "{0} notices the crashing waves.",
+    "{0}注意到了拍岸的浪花。"
+  ],
+  [
+    "{0} takes in the natural scent.",
+    "{0}闻着大自然的气息。"
+  ],
+  [
+    "{0} is out of useable POKéMON!",
+    "{0}已经没有能战斗的宝可梦了！"
+  ],
+  [
+    "{0} is protected by SAFEGUARD!",
+    "{0}受到了神秘守护的保护！"
+  ],
+  [
+    "Enemy {0}' attack went way up!",
+    "对手的{0}的攻击大幅提高了！"
+  ],
+  [
+    "Enemy {0}' ATTACK went way up!",
+    "对手的{0}的攻击大幅提高了！"
+  ],
+  [
+    "{0}'s {1} is no longer disabled!",
+    "{0}的{1}不再被封印了！"
+  ],
+  [
+    "{0} snapped out of confusion!",
+    "{0}从混乱中恢复了！"
+  ],
+  [
+    "The SANDSTORM hits Enemy {0}!",
+    "对手的{0}受到了沙暴的伤害！"
+  ],
+  [
+    "{0} can't be placed in water.",
+    "{0}不能放在水里。"
+  ],
+  [
+    "{0} notices scattered papers.",
+    "{0}注意到了散落的纸张。"
+  ],
+  [
+    "{0} stares into ice crystals.",
+    "{0}凝视着冰晶。"
+  ],
+  [
+    "{0} takes in the sea's aroma.",
+    "{0}闻着大海的气息。"
+  ],
+  [
+    "{0} spots shells in the sand.",
+    "{0}发现了沙子里的贝壳。"
+  ],
+  [
+    "{0} watches by the cliffside.",
+    "{0}在悬崖边眺望。"
+  ],
+  [
+    "{0} admires the fresh plants.",
+    "{0}欣赏着鲜嫩的植物。"
+  ],
+  [
+    "{0} stares into the treetops.",
+    "{0}凝视着树梢。"
+  ],
+  [
+    "{0}' {1} is no longer disabled!",
+    "{0}的{1}不再被封印了！"
+  ],
+  [
+    "Enemy {0}'s SAFEGUARD faded!",
+    "对手的{0}的神秘守护消失了！"
+  ],
+  [
+    "{0} canì be placed in water.",
+    "{0}不能放在水里。"
+  ],
+  [
+    "{0} must be placed in water.",
+    "{0}必须放在水里。"
+  ],
+  [
+    "{0} is following you around!",
+    "{0}正在跟着你！"
+  ],
+  [
+    "{0} wants to mountain climb.",
+    "{0}想去爬山。"
+  ],
+  [
+    "{0} wants to soar the skies.",
+    "{0}想在天空中翱翔。"
+  ],
+  [
+    "{0} is enjoying the flowers.",
+    "{0}欣赏着花朵。"
+  ],
+  [
+    "{0} is carefully eyeing you.",
+    "{0}仔细地打量着你。"
+  ],
+  [
+    "{0} is keeping at your pace.",
+    "{0}跟着你的步伐。"
+  ],
+  [
+    "Enemy {0}' SAFEGUARD faded!",
+    "对手的{0}的神秘守护消失了！"
+  ],
+  [
+    "{0} powered up the machine!",
+    "{0}给机器通电了！"
+  ],
+  [
+    "{0} is scouting for ghosts.",
+    "{0}正在寻找幽灵。"
+  ],
+  [
+    "{0} pieces events together.",
+    "{0}正在梳理事情的经过。"
+  ],
+  [
+    "{0} notices the frigid air.",
+    "{0}注意到了冰冷的空气。"
+  ],
+  [
+    "{0} feels the powdery snow.",
+    "{0}感受着松软的雪。"
+  ],
+  [
+    "{0} is enjoying the breeze.",
+    "{0}享受着微风。"
+  ],
+  [
+    "All right! {0} was caught!",
+    "太好了！抓到{0}了！"
+  ],
+  [
+    "Huh? {0} stopped evolving!",
+    "咦？{0}停止进化了！"
+  ],
+  [
+    "{0} blends into the night.",
+    "{0}融入了夜色。"
+  ],
+  [
+    "{0} is soaking up the sun.",
+    "{0}正在晒太阳。"
+  ],
+  [
+    "{0} shutters from the air.",
+    "{0}被冷风吹得发抖。"
+  ],
+  [
+    "{0} is surveying the area.",
+    "{0}观察着周围。"
+  ],
+  [
+    "{0} looks towards the sky.",
+    "{0}望向了天空。"
+  ],
+  [
+    "{0}' {1} won’t go any higher!",
+    "{0}的{1}已经无法再提高了！"
+  ],
+  [
+    "{0}' {1} won’t go any higher.",
+    "{0}的{1}已经无法再提高了。"
+  ],
+  [
+    "Congratulations! Your {0}",
+    "恭喜！你的{0}"
+  ],
+  [
+    "{0} seems interested in {1}.",
+    "{0}似乎对{1}感兴趣。"
+  ],
+  [
+    "{0} is submerged in sand.",
+    "{0}埋在了沙子里。"
+  ],
+  [
+    "{0} reaches for a branch.",
+    "{0}伸向了树枝。"
+  ],
+  [
+    "{0}' {1} wonì go any higher!",
+    "{0}的{1}已经无法再提高了！"
+  ],
+  [
+    "{0}' {1} won’t go any lower!",
+    "{0}的{1}已经无法再降低了！"
+  ],
+  [
+    "{0}' {1} won’t go any lower.",
+    "{0}的{1}已经无法再降低了。"
+  ],
+  [
+    "{0}'s covered by a veil!",
+    "{0}被神秘的幕帘笼罩了！"
+  ],
+  [
+    "{0} is trying to learn {1}.",
+    "{0}想要学习{1}。"
+  ],
+  [
+    "{0}'s hurt by the CURSE!",
+    "{0}受到了诅咒的伤害！"
+  ],
+  [
+    "{0} gained {1} EXP. Points!",
+    "{0}获得了{1}点经验值！"
+  ],
+  [
+    "{0} came out of its EGG!",
+    "{0}从蛋里孵化出来了！"
+  ],
+  [
+    "{0} came to it's senses.",
+    "{0}从混乱中恢复了。"
+  ],
+  [
+    "Give up on learning {0}?",
+    "放弃学习{0}吗？"
+  ],
+  [
+    "{0} is using ROCK SMASH!",
+    "{0}正在使用碎岩！"
+  ],
+  [
+    "{0} sticks to the waves.",
+    "{0}紧跟着海浪。"
+  ],
+  [
+    "{0}' {1} wonì go any lower!",
+    "{0}的{1}已经无法再降低了！"
+  ],
+  [
+    "{0}' covered by a veil!",
+    "{0}被神秘的幕帘笼罩了！"
+  ],
+  [
+    "{0}'s hurt by its burn!",
+    "{0}受到了灼伤的伤害！"
+  ],
+  [
+    "{0}' hurt by the CURSE!",
+    "{0}受到了诅咒的伤害！"
+  ],
+  [
+    "{0} is fully paralyzed!",
+    "{0}麻痹了，无法行动！"
+  ],
+  [
+    "The SANDSTORM hits {0}!",
+    "{0}受到了沙暴的伤害！"
+  ],
+  [
+    "Enemy {0} was revealed!",
+    "对手的{0}现身了！"
+  ],
+  [
+    "{0} is enjoying itself.",
+    "{0}玩得很开心。"
+  ],
+  [
+    "{0}'s rid of paralysis.",
+    "{0}的麻痹治好了。"
+  ],
+  [
+    "{0} came to it' senses.",
+    "{0}从混乱中恢复了。"
+  ],
+  [
+    "{0} can't walk on land.",
+    "{0}无法在陆地上行走。"
+  ],
+  [
+    "{0} digs into the sand.",
+    "{0}钻进了沙子里。"
+  ],
+  [
+    "{0} has a brain freeze.",
+    "{0}冷得脑袋都僵住了。"
+  ],
+  [
+    "{0} spots pretty rocks.",
+    "{0}发现了漂亮的石头。"
+  ],
+  [
+    "{0} is chittering away.",
+    "{0}正在吱吱鸣叫。"
+  ],
+  [
+    "{0} transformed into {1}!",
+    "{0}变成了{1}！"
+  ],
+  [
+    "{0}'s SAFEGUARD faded!",
+    "{0}的神秘守护消失了！"
+  ],
+  [
+    "{0}' hurt by its burn!",
+    "{0}受到了灼伤的伤害！"
+  ],
+  [
+    "It doesn't affect {0}!",
+    "对{0}没有效果！"
+  ],
+  [
+    "{0}'s hit with recoil!",
+    "{0}受到了反作用力的伤害！"
+  ],
+  [
+    "{0} cut its own hp and",
+    "{0}减少了自己的HP，"
+  ],
+  [
+    "Unhooked {0} attacked!",
+    "脱钩的{0}发动了攻击！"
+  ],
+  [
+    "What? {0} is evolving!",
+    "咦？{0}开始进化了！"
+  ],
+  [
+    "Add {0} to your party?",
+    "让{0}加入同行队伍吗？"
+  ],
+  [
+    "{0}' rid of paralysis.",
+    "{0}的麻痹治好了。"
+  ],
+  [
+    "{0}'s cured of poison.",
+    "{0}的中毒治好了。"
+  ],
+  [
+    "{0}'s burn was healed.",
+    "{0}的灼伤治好了。"
+  ],
+  [
+    "{0}'s health returned.",
+    "{0}恢复了体力。"
+  ],
+  [
+    "{0} is using HEADBUTT!",
+    "{0}正在使用头锤！"
+  ],
+  [
+    "{0} canì walk on land.",
+    "{0}无法在陆地上行走。"
+  ],
+  [
+    "{0} dislikes the heat.",
+    "{0}不喜欢炎热的天气。"
+  ],
+  [
+    "{0} loves the hot sun.",
+    "{0}喜欢炎热的阳光。"
+  ],
+  [
+    "{0} picks up a signal.",
+    "{0}感应到了信号。"
+  ],
+  [
+    "{0} nervously follows.",
+    "{0}紧张地跟着你。"
+  ],
+  [
+    "{0} plays in the sand.",
+    "{0}正在玩沙子。"
+  ],
+  [
+    "{0} is on the lookout.",
+    "{0}正在警戒。"
+  ],
+  [
+    "{0} took in sunlight!",
+    "{0}吸收了阳光！"
+  ],
+  [
+    "{0} made a whirlwind!",
+    "{0}卷起了旋风！"
+  ],
+  [
+    "{0}'s badly poisoned!",
+    "{0}陷入了剧毒状态！"
+  ],
+  [
+    "{0}' SAFEGUARD faded!",
+    "{0}的神秘守护消失了！"
+  ],
+  [
+    "{0} can't escape now!",
+    "{0}无法逃走了！"
+  ],
+  [
+    "{0}'s hurt by poison!",
+    "{0}受到了毒的伤害！"
+  ],
+  [
+    "{0} is in love with {1}!",
+    "{0}对{1}着迷了！"
+  ],
+  [
+    "It doesnì affect {0}!",
+    "对{0}没有效果！"
+  ],
+  [
+    "{0}' hit with recoil!",
+    "{0}受到了反作用力的伤害！"
+  ],
+  [
+    "{0} blew away SPIKES!",
+    "{0}吹散了撒菱！"
+  ],
+  [
+    "{0} was released by {1}!",
+    "{0}从{1}的束缚中挣脱了！"
+  ],
+  [
+    "{0}'s hurt by SPIKES!",
+    "{0}受到了撒菱的伤害！"
+  ],
+  [
+    "{0}' cured of poison.",
+    "{0}的中毒治好了。"
+  ],
+  [
+    "{0}' burn was healed.",
+    "{0}的灼伤治好了。"
+  ],
+  [
+    "{0}' health returned.",
+    "{0}恢复了体力。"
+  ],
+  [
+    "{0} watches its step.",
+    "{0}小心地迈着步子。"
+  ],
+  [
+    "{0} is thinking hard.",
+    "{0}正在认真思考。"
+  ],
+  [
+    "{0} is eager to help.",
+    "{0}很想帮上忙。"
+  ],
+  [
+    "{0} fled from battle!",
+    "{0}逃离了战斗！"
+  ],
+  [
+    "{0}' {1} won't go any {2,choice,0#lower|0<higher}!",
+    "{0}的{1}已经无法再{2,choice,0#降低|0<提高}了！"
+  ],
+  [
+    "{0}'s stats went up!",
+    "{0}的能力提高了！"
+  ],
+  [
+    "{0}'s {1} sharply fell!",
+    "{0}的{1}大幅降低了！"
+  ],
+  [
+    "{0}' badly poisoned!",
+    "{0}陷入了剧毒状态！"
+  ],
+  [
+    "{0} canì escape now!",
+    "{0}无法逃走了！"
+  ],
+  [
+    "{0}' hurt by poison!",
+    "{0}受到了毒的伤害！"
+  ],
+  [
+    "{0} is frozen solid!",
+    "{0}被冻住了，无法行动！"
+  ],
+  [
+    "{0} regained health!",
+    "{0}恢复了HP！"
+  ],
+  [
+    "{0}'s {1} was disabled!",
+    "{0}的{1}被封印了！"
+  ],
+  [
+    "{0}' hurt by SPIKES!",
+    "{0}受到了撒菱的伤害！"
+  ],
+  [
+    "{0} seems friendly. ",
+    "{0}似乎很友善。"
+  ],
+  [
+    "Not even a nibble{0}",
+    "连一点动静也没有{0}"
+  ],
+  [
+    "{0} is using ATTACK!",
+    "{0}正在攻击！"
+  ],
+  [
+    "{0} can't be caught!",
+    "{0}无法被捕捉！"
+  ],
+  [
+    "{0} shakes sand off.",
+    "{0}抖掉了身上的沙子。"
+  ],
+  [
+    "{0} enjoys the view.",
+    "{0}欣赏着风景。"
+  ],
+  [
+    "{0} is looking wary.",
+    "{0}看起来很警惕。"
+  ],
+  [
+    "{0} passes the time.",
+    "{0}悠闲地打发着时间。"
+  ],
+  [
+    "{0} shakes its head.",
+    "{0}摇了摇头。"
+  ],
+  [
+    "{0} received an EGG.",
+    "{0}收到了一个蛋。"
+  ],
+  [
+    "{0} received an EGG!",
+    "{0}收到了一个蛋！"
+  ],
+  [
+    "Not even a nibble",
+    "连一点动静也没有……"
+  ],
+  [
+    "{0}' {1} wonì go any {2,choice,0#lower|0<higher}!",
+    "{0}的{1}已经无法再{2,choice,0#降低|0<提高}了！"
+  ],
+  [
+    "{0}' stats went up!",
+    "{0}的能力提高了！"
+  ],
+  [
+    "{0}'s {1} went way up!",
+    "{0}的{1}大幅提高了！"
+  ],
+  [
+    "{0}' {1} sharply fell!",
+    "{0}的{1}大幅降低了！"
+  ],
+  [
+    "{0}'s frozen solid!",
+    "{0}被冻住了！"
+  ],
+  [
+    "Wild {0} is eating!",
+    "野生的{0}正在吃东西！"
+  ],
+  [
+    "{0} was blown away!",
+    "{0}被吹飞了！"
+  ],
+  [
+    "{0}'s {1} is DISABLED!",
+    "{0}的{1}被封印了！"
+  ],
+  [
+    "{0} is fast asleep!",
+    "{0}正在熟睡！"
+  ],
+  [
+    "put a CURSE on {0}!",
+    "对{0}施加了诅咒！"
+  ],
+  [
+    "{0}' {1} was disabled!",
+    "{0}的{1}被封印了！"
+  ],
+  [
+    "Angry {0} attacked!",
+    "愤怒的{0}发动了攻击！"
+  ],
+  [
+    "{0} did not learn {1}.",
+    "{0}没有学会{1}。"
+  ],
+  [
+    "{0} saved the game!",
+    "{0}保存了游戏！"
+  ],
+  [
+    "{0} grew to level {1}!",
+    "{0}升到了{1}级！"
+  ],
+  [
+    "{0} is using CHARM!",
+    "{0}正在撒娇！"
+  ],
+  [
+    "{0} is using REPEL!",
+    "{0}正在驱散宝可梦！"
+  ],
+  [
+    "{0} canì be caught!",
+    "{0}无法被捕捉！"
+  ],
+  [
+    "{0} looks confused.",
+    "{0}看起来很困惑。"
+  ],
+  [
+    "What? {0} hugs you!",
+    "咦？{0}抱住了你！"
+  ],
+  [
+    "{0}' {1} went way up!",
+    "{0}的{1}大幅提高了！"
+  ],
+  [
+    "{0}' frozen solid!",
+    "{0}被冻住了！"
+  ],
+  [
+    "Wild {0} is angry!",
+    "野生的{0}生气了！"
+  ],
+  [
+    "{0} must recharge!",
+    "{0}必须休息！"
+  ],
+  [
+    "{0}' {1} is DISABLED!",
+    "{0}的{1}被封印了！"
+  ],
+  [
+    "Wild {0} appeared!",
+    "野生的{0}出现了！"
+  ],
+  [
+    "Enemy {0} fainted!",
+    "对手的{0}倒下了！"
+  ],
+  [
+    "{0} A POKéMON egg!",
+    "{0}是宝可梦的蛋！"
+  ],
+  [
+    "{0} was defrosted.",
+    "{0}的冰融化了。"
+  ],
+  [
+    "{0} forgot {1} and...",
+    "{0}忘记了{1}，并且……"
+  ],
+  [
+    "{0} used TELEPORT!",
+    "{0}使用了瞬间移动！"
+  ],
+  [
+    "{0} is using RIDE!",
+    "{0}正在供你骑乘！"
+  ],
+  [
+    "{0} is using SURF!",
+    "{0}正在使用冲浪！"
+  ],
+  [
+    "{0} collects snow.",
+    "{0}正在收集积雪。"
+  ],
+  [
+    "{0} is stretching.",
+    "{0}正在舒展身体。"
+  ],
+  [
+    "{0} wants to spar.",
+    "{0}想和你切磋一下。"
+  ],
+  [
+    "{0} wants to play.",
+    "{0}想和你玩。"
+  ],
+  [
+    "{0} flew up high!",
+    "{0}飞到了高空！"
+  ],
+  [
+    "{0} was poisoned!",
+    "{0}中毒了！"
+  ],
+  [
+    "{0} fell in love!",
+    "{0}陷入了着迷状态！"
+  ],
+  [
+    "{0} fled in fear!",
+    "{0}害怕地逃走了！"
+  ],
+  [
+    "{0}'s HP is full!",
+    "{0}的HP已经满了！"
+  ],
+  [
+    "evolved into {0}!",
+    "进化成了{0}！"
+  ],
+  [
+    "{0} seems happy. ",
+    "{0}似乎很开心。"
+  ],
+  [
+    "A {0} doll. Cute!",
+    "{0}的玩偶，真可爱！"
+  ],
+  [
+    "{0} is using CUT!",
+    "{0}正在使用居合斩！"
+  ],
+  [
+    "{0} looks sleepy.",
+    "{0}看起来困了。"
+  ],
+  [
+    "{0} is shivering.",
+    "{0}正在发抖。"
+  ],
+  [
+    "{0} darts around.",
+    "{0}跑来跑去。"
+  ],
+  [
+    "{0} fell asleep!",
+    "{0}睡着了！"
+  ],
+  [
+    "{0} is confused!",
+    "{0}混乱了！"
+  ],
+  [
+    "{0}' HP is full!",
+    "{0}的HP已经满了！"
+  ],
+  [
+    "{0} was trapped!",
+    "{0}被困住了！"
+  ],
+  [
+    "{0} is disabled!",
+    "{0}被封印了！"
+  ],
+  [
+    "{0} notices you.",
+    "{0}注意到了你。"
+  ],
+  [
+    "{0} looks happy.",
+    "{0}看起来很开心。"
+  ],
+  [
+    "{0} dug a hole!",
+    "{0}挖了一个洞！"
+  ],
+  [
+    "{0} is glowing!",
+    "{0}正在发光！"
+  ],
+  [
+    "{0}'s {1} went up!",
+    "{0}的{1}提高了！"
+  ],
+  [
+    "{0} was burned!",
+    "{0}灼伤了！"
+  ],
+  [
+    "{0}'s hurt by {1}!",
+    "{0}受到了{1}的伤害！"
+  ],
+  [
+    "{0} whited out!",
+    "{0}眼前一片漆黑！"
+  ],
+  [
+    "{0} thawed out!",
+    "{0}的冰融化了！"
+  ],
+  [
+    "{0} gained {1} hp!",
+    "{0}恢复了{1}点HP！"
+  ],
+  [
+    "{0} is trapped!",
+    "{0}被困住了！"
+  ],
+  [
+    "Crafted an {0}!",
+    "制作了{0}！"
+  ],
+  [
+    "{0}' {1} went up!",
+    "{0}的{1}提高了！"
+  ],
+  [
+    "{0}' hurt by {1}!",
+    "{0}受到了{1}的伤害！"
+  ],
+  [
+    "{0} sketched {1}!",
+    "{0}写生了{1}！"
+  ],
+  [
+    "{0} received {1}!",
+    "{0}收到了{1}！"
+  ],
+  [
+    "{0} gave you {1}!",
+    "{0}给了你{1}！"
+  ],
+  [
+    "Crafted a {0}!",
+    "制作了{0}！"
+  ],
+  [
+    "EXP POINTS {0}",
+    "经验值 {0}"
+  ],
+  [
+    "Wild {0} ran!",
+    "野生的{0}逃走了！"
+  ],
+  [
+    "{0} flinched!",
+    "{0}畏缩了！"
+  ],
+  [
+    "Crafted {0} {1}!",
+    "制作了{0}个{1}！"
+  ],
+  [
+    "{0} attacked!",
+    "{0}发动了攻击！"
+  ],
+  [
+    "{0} learned {1}!",
+    "{0}学会了{1}！"
+  ],
+  [
+    "Found an {0}!",
+    "发现了{0}！"
+  ],
+  [
+    "{0}'s {1} fell!",
+    "{0}的{1}降低了！"
+  ],
+  [
+    "{0}'s {1} rose!",
+    "{0}的{1}提高了！"
+  ],
+  [
+    "{0} fainted!",
+    "{0}倒下了！"
+  ],
+  [
+    "{0} woke up!",
+    "{0}醒来了！"
+  ],
+  [
+    "Found a {0}!",
+    "发现了{0}！"
+  ],
+  [
+    "{0} woke up.",
+    "{0}醒来了。"
+  ],
+  [
+    "Replace {0}?",
+    "替换{0}吗？"
+  ],
+  [
+    "Applied {0}!",
+    "使用了{0}！"
+  ],
+  [
+    "{0} got an {1}!",
+    "{0}获得了{1}！"
+  ],
+  [
+    "LEVEL UP {0}",
+    "升级所需 {0}"
+  ],
+  [
+    "{0}' {1} fell!",
+    "{0}的{1}降低了！"
+  ],
+  [
+    "{0}' {1} rose!",
+    "{0}的{1}提高了！"
+  ],
+  [
+    "Found {0} {1}!",
+    "发现了{0}个{1}！"
+  ],
+  [
+    "{0} got a {1}!",
+    "{0}获得了{1}！"
+  ],
+  [
+    "{0} used {1}!",
+    "{0}使出了{1}！"
+  ],
+  [
+    "{0}A bite!",
+    "{0}有宝可梦上钩了！"
+  ],
+  [
+    "{0} got {1} {2}!",
+    "{0}获得了{1}个{2}！"
+  ],
+  [
+    "A bite!",
+    "有宝可梦上钩了！"
+  ],
+  [
+    "SP.ATK {0}",
+    "特攻 {0}"
+  ],
+  [
+    "SP.DEF {0}",
+    "特防 {0}"
+  ],
+  [
+    "Go! {0}!",
+    "去吧，{0}！"
+  ],
+  [
+    "FPS {0}",
+    "帧率 {0}"
+  ],
+  [
+    "ATK {0}",
+    "攻击 {0}"
+  ],
+  [
+    "DEF {0}",
+    "防御 {0}"
+  ],
+  [
+    "SPD {0}",
+    "速度 {0}"
+  ],
+  [
+    "TO {0}",
+    "到 {0}"
+  ],
+  [
+    "OT {0}",
+    "初训家 {0}"
+  ],
+  [
+    "Enemy {0}",
+    "对手的{0}"
+  ],
+  [
+    "Wild {0}",
+    "野生的{0}"
+  ]
+]

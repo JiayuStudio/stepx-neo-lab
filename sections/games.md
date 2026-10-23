@@ -1,5 +1,11 @@
 # JIAYU STUDIO 自研游戏
 
+## 宝可梦荒野 · Neo 中文适配
+
+基于 PokeWilds 0.8.11 的非官方适配，原作与 Neo 开发分别署名。横屏 GBA、竖屏 Game Boy、自动保存、队伍联动背屏伙伴。
+
+[下载与玩法](../guides/pokewilds/README.md) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [源码与引用库](../guides/pokewilds/source/README.md)
+
 [研究所首页](../README.md) · [APP](apps.md) · [开发工具](tools.md) · [教程与研究](guides.md)
 
 本区只整理 **JIAYU STUDIO 自己开发的游戏**。其他作者的应用与游戏推荐请看[社区 APK](community-apks.md)。

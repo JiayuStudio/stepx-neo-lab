@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="manage_saves"
+        android:enabled="true"
+        android:icon="@mipmap/ic_pokewilds"
+        android:shortcutShortLabel="@string/manage_saves_short"
+        android:shortcutLongLabel="@string/manage_saves_long">
+        <!-- Shortcut targets must be literal package names; resource IDs are not resolved here. -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="local.pokewilds.standalone"
+            android:targetClass="local.pokewilds.standalone.LauncherActivity">
+            <extra android:name="local.pokewilds.standalone.MANAGE_SAVES" android:value="true" />
+        </intent>
+    </shortcut>
+</shortcuts>

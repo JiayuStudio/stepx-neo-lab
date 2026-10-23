@@ -1,0 +1,210 @@
+diff --git a/lorie/src/main/cpp/CMakeLists.txt b/lorie/src/main/cpp/CMakeLists.txt
+index 7c96a8a..036a185 100644
+--- a/lorie/src/main/cpp/CMakeLists.txt
++++ b/lorie/src/main/cpp/CMakeLists.txt
+@@ -20,7 +20,13 @@ find_package(Python3 REQUIRED)
+ find_package(BISON REQUIRED)
+ 
+ function(target_apply_patch patch_target d p)
+-    execute_process(COMMAND "bash" "-c" "patch -p1 -d ${d} -i ${p} -R --dry-run > /dev/null 2>&1 || patch -p1 -N -d ${d} -i ${p} -r -")
++    execute_process(COMMAND git -C "${d}" apply --reverse --check "${p}" RESULT_VARIABLE already_applied OUTPUT_QUIET ERROR_QUIET)
++    if(NOT already_applied EQUAL 0)
++        execute_process(COMMAND git -C "${d}" apply "${p}" RESULT_VARIABLE apply_result)
++        if(NOT apply_result EQUAL 0)
++            message(FATAL_ERROR "Failed to apply ${p}")
++        endif()
++    endif()
+ endfunction()
+ 
+ set(test_compile_options
+diff --git a/lorie/src/main/cpp/patches/Xtrans.patch b/lorie/src/main/cpp/patches/Xtrans.patch
+index b8e4fdb..05da0cd 100644
+--- a/lorie/src/main/cpp/patches/Xtrans.patch
++++ b/lorie/src/main/cpp/patches/Xtrans.patch
+@@ -1,3 +1,4 @@
++--- ./Xtranssock.c
+ +++ ./Xtranssock.c
+ @@ -233,20 +233,28 @@
+ 
+@@ -36,6 +37,7 @@
+  #endif /* ICE_t */
+ 
+ 
++--- ./Xtransutil.c
+ +++ ./Xtransutil.c
+ @@ -478,7 +478,7 @@
+  	 * certain security implications. If effective user ID
+diff --git a/lorie/src/main/cpp/patches/xserver.patch b/lorie/src/main/cpp/patches/xserver.patch
+index e5970f9..94b0527 100644
+--- a/lorie/src/main/cpp/patches/xserver.patch
++++ b/lorie/src/main/cpp/patches/xserver.patch
+@@ -1,3 +1,4 @@
++--- ./Xext/shm.c
+ +++ ./Xext/shm.c
+ @@ -193,6 +193,10 @@
+  
+@@ -10,6 +11,7 @@
+  static Bool
+  ShmCloseScreen(ScreenPtr pScreen)
+  {
++--- ./Xext/shmint.h
+ +++ ./Xext/shmint.h
+ @@ -80,6 +80,8 @@
+  #define SHMDESC_IS_FD(shmdesc)  (0)
+@@ -20,6 +22,7 @@
+  extern _X_EXPORT void
+   ShmRegisterFuncs(ScreenPtr pScreen, ShmFuncsPtr funcs);
+  
++--- ./dix/dixutils.c
+ +++ ./dix/dixutils.c
+ @@ -504,6 +504,11 @@
+   * sleeps for input.
+@@ -46,6 +49,7 @@
+   * Manage a queue of sleeping clients, awakening them
+   * when requested, by using the OS functions IgnoreClient
+ 
++--- ./dix/enterleave.c
+ +++ ./dix/enterleave.c
+ @@ -1541,6 +1541,8 @@
+      }
+@@ -66,6 +70,7 @@
+      if (!IsKeyboardDevice(pDev))
+          return;
+  
++--- ./dix/main.c
+ +++ ./dix/main.c
+ @@ -268,6 +268,7 @@
+          }
+@@ -75,6 +80,7 @@
+  
+          InputThreadInit();
+  
++--- ./include/os.h
+ +++ ./include/os.h
+ @@ -557,6 +557,8 @@
+  extern _X_EXPORT void
+@@ -85,6 +91,7 @@
+  ddxInputThreadInit(void);
+  extern _X_EXPORT int
+  TimeSinceLastInputEvent(void);
++--- ./include/xkbfile.h
+ +++ ./include/xkbfile.h
+ @@ -79,6 +79,36 @@
+  
+@@ -123,6 +130,7 @@
+  _XFUNCPROTOBEGIN
+  
+  extern _X_EXPORT char *XkbIndentText(unsigned   /* size */
++--- ./os/connection.c
+ +++ ./os/connection.c
+ @@ -185,9 +185,10 @@
+  {
+@@ -136,6 +144,7 @@
+          RunFromSmartParent = TRUE;
+      OsSignal(SIGUSR1, handler);
+      ParentProcess = getppid();
++--- ./os/osinit.c
+ +++ ./os/osinit.c
+ @@ -170,13 +170,11 @@
+  #endif
+@@ -153,6 +162,7 @@
+              SIGXCPU,
+              SIGXFSZ,
+  #ifdef SIGEMT
++--- ./os/utils.c
+ +++ ./os/utils.c
+ @@ -214,6 +214,8 @@
+  {
+@@ -289,6 +299,7 @@
+      if (last == NULL)
+          pidlist = cur->next;
+      else
++--- ./present/present.h
+ +++ ./present/present.h
+ @@ -93,6 +93,9 @@
+                                    uint64_t target_msc,
+@@ -308,6 +319,7 @@
+      present_unflip_ptr                  unflip;
+      present_check_flip2_ptr             check_flip2;
+  
++--- ./present/present_execute.c
+ +++ ./present/present_execute.c
+ @@ -34,5 +34,7 @@
+      ScreenPtr               screen = vblank->screen;
+@@ -398,6 +410,7 @@
+      screen_priv->flush(window);
+  
+      present_pixmap_idle(vblank->pixmap, vblank->window, vblank->serial, vblank->idle_fence);
++--- ./present/present_priv.h
+ +++ ./present/present_priv.h
+ @@ -24,6 +24,7 @@
+  #define _PRESENT_PRIV_H_
+@@ -439,6 +452,7 @@
+  typedef struct present_screen_priv present_screen_priv_rec, *present_screen_priv_ptr;
+  typedef struct present_window_priv present_window_priv_rec, *present_window_priv_ptr;
+  
++--- ./present/present_scmd.c
+ +++ ./present/present_scmd.c
+ @@ -252,6 +252,21 @@
+      }
+@@ -471,6 +485,7 @@
+                  return;
+              }
+  
++--- ./present/present_vblank.c
+ +++ ./present/present_vblank.c
+ @@ -188,6 +188,14 @@
+                    vblank->pixmap->drawable.id, vblank->window->drawable.id,
+@@ -501,6 +516,7 @@
+      /* Remove vblank from window and screen lists */
+      xorg_list_del(&vblank->window_list);
+      /* Also make sure vblank is removed from event queue (wnmd) */
++--- ./xkb/ddxLoad.c
+ +++ ./xkb/ddxLoad.c
+ @@ -56,6 +56,9 @@
+  #define PATHSEPARATOR "/"
+diff --git a/lorie/src/main/cpp/recipes/xkbcomp.cmake b/lorie/src/main/cpp/recipes/xkbcomp.cmake
+index a7a2a33..1ec0fac 100644
+--- a/lorie/src/main/cpp/recipes/xkbcomp.cmake
++++ b/lorie/src/main/cpp/recipes/xkbcomp.cmake
+@@ -58,11 +58,11 @@ target_include_directories(xkbcomp
+         PRIVATE
+         "xkbcomp"
+         "libx11/include"
+-        "libx11/include/X11"
+         "libx11/src"
+         "libx11/src/xlibi18n"
+         "libxkbfile/include/X11/extensions"
+         "${CMAKE_CURRENT_BINARY_DIR}")
++target_compile_options(xkbcomp PRIVATE "-iquote${CMAKE_CURRENT_SOURCE_DIR}/libx11/include/X11")
+ target_link_libraries(xkbcomp PRIVATE xorgproto)
+ target_link_options(xkbcomp PRIVATE "-fPIE" "-fPIC")
+ target_compile_options(xkbcomp PRIVATE ${common_compile_options} "-fvisibility=hidden" "-DHAVE_STRCASECMP" "-DHAVE_STRDUP" "-DDFLT_XKB_CONFIG_ROOT=\"/\"" "-DHAVE_SYS_IOCTL_H" "-fPIE" "-fPIC" "-DPACKAGE_VERSION=\"2.70\"" "-Wno-shadow")
+diff --git a/lorie/src/main/cpp/recipes/xserver.cmake b/lorie/src/main/cpp/recipes/xserver.cmake
+index 6faa562..0a857e5 100644
+--- a/lorie/src/main/cpp/recipes/xserver.cmake
++++ b/lorie/src/main/cpp/recipes/xserver.cmake
+@@ -23,6 +23,7 @@ file(GENERATE
+ #define XKM_OUTPUT_DIR (getenv(\"TMPDIR\") ?: \"/tmp\")
+ ")
+ 
++target_apply_patch(libepoxy "${CMAKE_CURRENT_SOURCE_DIR}/libepoxy" "${CMAKE_CURRENT_SOURCE_DIR}/patches/libepoxy.patch")
+ file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/xserver")
+ file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/xserver/GL")
+ file(GENERATE OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/xserver/GL/glext.h" CONTENT "#include <GL/gl.h>")
+diff --git a/lorie/src/main/java/com/termux/x11/CmdEntryPoint.java b/lorie/src/main/java/com/termux/x11/CmdEntryPoint.java
+index 692c01b..75fa15b 100644
+--- a/lorie/src/main/java/com/termux/x11/CmdEntryPoint.java
++++ b/lorie/src/main/java/com/termux/x11/CmdEntryPoint.java
+@@ -189,6 +189,11 @@ public class CmdEntryPoint extends ICmdEntryInterface.Stub {
+     private static void initEntryPoint() {
+         ctx = createContext();
+ 
++        String embeddedDir = System.getenv("POKEWILDS_NATIVE_DIR");
++        if (embeddedDir != null) {
++            System.load(new java.io.File(embeddedDir, "libXlorie.so").getAbsolutePath());
++            return;
++        }
+         String path = "lib/" + Build.SUPPORTED_ABIS[0] + "/libXlorie.so";
+         ClassLoader loader = CmdEntryPoint.class.getClassLoader();
+         URL res = loader != null ? loader.getResource(path) : null;

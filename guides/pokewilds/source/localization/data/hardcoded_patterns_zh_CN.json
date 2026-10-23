@@ -1,0 +1,382 @@
+[
+  [
+    "{0} looks sleepy.",
+    "{0}看起来有些困。"
+  ],
+  [
+    "{0} blends into the night.",
+    "{0}融入了夜色。"
+  ],
+  [
+    "{0} is scouting for ghosts.",
+    "{0}正在寻找幽灵。"
+  ],
+  [
+    "{0} doesn't want me to go too far.",
+    "{0}不想让我走得太远。"
+  ],
+  [
+    "{0} keeps away from the sunlight.",
+    "{0}躲着阳光。"
+  ],
+  [
+    "{0} dislikes the heat.",
+    "{0}不喜欢炎热。"
+  ],
+  [
+    "{0} is soaking up the sun.",
+    "{0}正在享受阳光。"
+  ],
+  [
+    "{0} is submerged in sand.",
+    "{0}埋进了沙子里。"
+  ],
+  [
+    "{0} is moving easily in the sand.",
+    "{0}在沙地上行动自如。"
+  ],
+  [
+    "{0} loves the hot sun.",
+    "{0}喜欢炽热的阳光。"
+  ],
+  [
+    "{0} is having trouble with the sand.",
+    "{0}不太适应沙地。"
+  ],
+  [
+    "{0} feels sunlight on its back.",
+    "{0}感受着背上的阳光。"
+  ],
+  [
+    "{0} digs into the sand.",
+    "{0}钻进了沙子里。"
+  ],
+  [
+    "{0} makes its way across the sand.",
+    "{0}穿过了沙地。"
+  ],
+  [
+    "{0} shakes sand off.",
+    "{0}抖掉了身上的沙子。"
+  ],
+  [
+    "{0} picks up a signal.",
+    "{0}感应到了什么。"
+  ],
+  [
+    "{0} pieces events together.",
+    "{0}正在梳理事件的线索。"
+  ],
+  [
+    "{0} watches its step.",
+    "{0}小心地迈着步子。"
+  ],
+  [
+    "{0} notices scattered papers.",
+    "{0}注意到了散落的纸张。"
+  ],
+  [
+    "{0} nervously follows.",
+    "{0}紧张地跟着你。"
+  ],
+  [
+    "{0} looks confused.",
+    "{0}看起来很困惑。"
+  ],
+  [
+    "{0} feels comfortable under the snow.",
+    "{0}在雪中感到很舒适。"
+  ],
+  [
+    "{0} takes in the cold environment.",
+    "{0}正在感受寒冷的环境。"
+  ],
+  [
+    "{0} shutters from the air.",
+    "{0}被冷风吹得发抖。"
+  ],
+  [
+    "{0} does not take a liking to the weather.",
+    "{0}不喜欢这样的天气。"
+  ],
+  [
+    "{0} is shivering.",
+    "{0}冷得发抖。"
+  ],
+  [
+    "{0} has a brain freeze.",
+    "{0}冻得脑袋发懵。"
+  ],
+  [
+    "{0} notices the frigid air.",
+    "{0}感受到了冰冷的空气。"
+  ],
+  [
+    "{0} stares into ice crystals.",
+    "{0}凝视着冰晶。"
+  ],
+  [
+    "{0} collects snow.",
+    "{0}收集了一些雪。"
+  ],
+  [
+    "{0} feels the powdery snow.",
+    "{0}摸了摸松软的雪。"
+  ],
+  [
+    "{0} takes in the sea's aroma.",
+    "{0}闻着大海的气息。"
+  ],
+  [
+    "{0} sticks to the waves.",
+    "{0}紧贴着海浪。"
+  ],
+  [
+    "{0} notices the crashing waves.",
+    "{0}注意到了拍打的浪花。"
+  ],
+  [
+    "{0} plays in the sand.",
+    "{0}在沙滩上玩耍。"
+  ],
+  [
+    "{0} spots shells in the sand.",
+    "{0}发现了沙里的贝壳。"
+  ],
+  [
+    "{0} is impressed by the landscape.",
+    "{0}被眼前的景色吸引了。"
+  ],
+  [
+    "Wow! {0} blends in with the environment!",
+    "哇！{0}和周围环境融为一体了！"
+  ],
+  [
+    "{0} wants to mountain climb.",
+    "{0}想去爬山。"
+  ],
+  [
+    "{0} is enjoying the breeze.",
+    "{0}享受着微风。"
+  ],
+  [
+    "{0} wants to soar the skies.",
+    "{0}想在天空翱翔。"
+  ],
+  [
+    "{0} enjoys the view.",
+    "{0}欣赏着风景。"
+  ],
+  [
+    "{0} spots pretty rocks.",
+    "{0}发现了漂亮的石头。"
+  ],
+  [
+    "{0} watches by the cliffside.",
+    "{0}在悬崖边张望。"
+  ],
+  [
+    "{0} admires the fresh plants.",
+    "{0}欣赏着新鲜的植物。"
+  ],
+  [
+    "{0} reaches for a branch.",
+    "{0}伸向了一根树枝。"
+  ],
+  [
+    "{0} is chittering away.",
+    "{0}叽叽喳喳地叫着。"
+  ],
+  [
+    "{0} is enjoying the flowers.",
+    "{0}欣赏着花朵。"
+  ],
+  [
+    "{0} is on the lookout.",
+    "{0}正在警戒。"
+  ],
+  [
+    "{0} stares into the treetops.",
+    "{0}凝视着树梢。"
+  ],
+  [
+    "{0} takes in the natural scent.",
+    "{0}闻着大自然的气息。"
+  ],
+  [
+    "{0} makes its way across the path.",
+    "{0}沿着小路前进。"
+  ],
+  [
+    "{0} is stretching.",
+    "{0}正在伸展身体。"
+  ],
+  [
+    "{0} wants to spar.",
+    "{0}想切磋一下。"
+  ],
+  [
+    "{0} is thinking hard.",
+    "{0}正在认真思考。"
+  ],
+  [
+    "{0} is looking wary.",
+    "{0}看起来很警惕。"
+  ],
+  [
+    "{0} wants to play.",
+    "{0}想玩耍。"
+  ],
+  [
+    "{0} is carefully eyeing you.",
+    "{0}正仔细地看着你。"
+  ],
+  [
+    "{0} is keeping at your pace.",
+    "{0}跟着你的步伐。"
+  ],
+  [
+    "{0} is eager to help.",
+    "{0}迫不及待地想帮忙。"
+  ],
+  [
+    "{0} is surveying the area.",
+    "{0}正在观察周围。"
+  ],
+  [
+    "{0} looks towards the sky.",
+    "{0}望向了天空。"
+  ],
+  [
+    "{0} notices you.",
+    "{0}注意到了你。"
+  ],
+  [
+    "{0} looks happy.",
+    "{0}看起来很开心。"
+  ],
+  [
+    "{0} darts around.",
+    "{0}到处跑来跑去。"
+  ],
+  [
+    "{0} passes the time.",
+    "{0}正在打发时间。"
+  ],
+  [
+    "What? {0} hugs you!",
+    "咦？{0}抱住了你！"
+  ],
+  [
+    "{0} shakes its head.",
+    "{0}摇了摇头。"
+  ],
+  [
+    "{0} gained {1} hp!",
+    "{0}恢复了{1}HP！"
+  ],
+  [
+    "{0} gained {1} EXP. Points!",
+    "{0}获得了{1}点经验值！"
+  ],
+  [
+    "{0}' POKéMON gained {1} EXP. Points!",
+    "{0}的宝可梦获得了{1}点经验值！"
+  ],
+  [
+    "{0} grew to level {1}!",
+    "{0}升到了{1}级！"
+  ],
+  [
+    "{0} gave you {1}!",
+    "{0}给了你{1}！"
+  ],
+  [
+    "{0} received an EGG.",
+    "{0}得到了一颗蛋。"
+  ],
+  [
+    "{0} got {1} {2}!",
+    "{0}得到了{2}！"
+  ],
+  [
+    "A {0} doll. Cute!",
+    "一个{0}玩偶。真可爱！"
+  ],
+  [
+    "Found a {0}!",
+    "发现了一个{0}！"
+  ],
+  [
+    "Add {0} to your party?",
+    "让{0}加入同行队伍吗？"
+  ],
+  [
+    "Release {0} to the wild? This canì be undone!",
+    "将{0}放归野外吗？此操作无法撤销！"
+  ],
+  [
+    "{0} is no longer disabled!",
+    "{0}不再被定身了！"
+  ],
+  [
+    "{0} is DISABLED!",
+    "{0}被定身了！"
+  ],
+  [
+    "{0} was disabled!",
+    "{0}被定身了！"
+  ],
+  [
+    "{0} was released by {1}!",
+    "{0}摆脱了{1}的束缚！"
+  ],
+  [
+    "SPIKES scattered all around {0} !",
+    "撒菱散布在{0}周围！"
+  ],
+  [
+    "It doesnì affect {0}!",
+    "对{0}完全没有效果！"
+  ],
+  [
+    "{0}' hurt by {1}!",
+    "{0}受到了{1}的伤害！"
+  ],
+  [
+    "{0}' {1} rose!",
+    "{0}的{1}提高了！"
+  ],
+  [
+    "{0}' {1} went up!",
+    "{0}的{1}提高了！"
+  ],
+  [
+    "{0}' {1} went way up!",
+    "{0}的{1}大幅提高了！"
+  ],
+  [
+    "{0}' {1} fell!",
+    "{0}的{1}降低了！"
+  ],
+  [
+    "{0}' {1} sharply fell!",
+    "{0}的{1}大幅降低了！"
+  ],
+  [
+    "{0}' {1} wonì go any higher!",
+    "{0}的{1}无法再提高了！"
+  ],
+  [
+    "{0}' {1} wonì go any lower!",
+    "{0}的{1}无法再降低了！"
+  ],
+  [
+    "Congratulations! Your {0}evolved into {1}!",
+    "恭喜！你的{0}进化成了{1}！"
+  ],
+  [
+    "TRAINER TIPS! {0}",
+    "训练家小贴士！{0}"
+  ]
+]

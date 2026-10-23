@@ -1,0 +1,9 @@
+.gradle/
+.cache/
+.signing/
+build/
+local.properties
+android/native/build/
+android/android-app/src/main/assets/runtime.bin
+android/android-app/src/main/assets/neo-game.zip
+evidence/
