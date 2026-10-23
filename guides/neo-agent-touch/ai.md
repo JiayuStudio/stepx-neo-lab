@@ -4,6 +4,8 @@
 
 先读取 [README](README.md)，再读 [knowledge.json](knowledge.json) 的稳定结论编号和证据标签；详细研究见 [2026-10-23 记录](research/2026-10-23.md)，公开主源与许可见 [sources.json](research/sources.json)，产物与验证见 [verification-v15.json](verification-v15.json)。阅读实现从 [source/README.md](source/README.md) 开始；release 与 debug 的范围不同。所有文件路径均相对于本条目根目录。
 
+先理解功能原理可读 [实现流程图](implementation-flows.md)：包含小游戏闭环、微信发送边界、输入与三种记忆；图示不代表已完成对应真机业务。
+
 ## 必须保留的结论
 
 - **C01 · real_device**：0.1.14 的真人长句转写与多应用任务未可靠通过。不能发布私人转写，也不能将文件解码或控件夹具当作真人语音成功。
@@ -17,6 +19,8 @@
 - **C08 · native_fixture**：0.1.15 原生工作流构造夹具通过 96 项，清理通过；零模型调用、零业务动作。它不证明第三方应用完成目标或搜狗语音准确率。
 
 - **C09 · real_device**：0.1.15 release 已构建、安装并读回相同包摘要，222,437 字节；保留已有输入法选择与启用列表，没有新增系统权限授权。它不证明系统键盘 UI、搜狗语音或新的三应用任务已通过。
+
+- **C10 · reference**：[功能原理](implementation-flows.md)逐步解释通用游戏闭环和微信发送边界。没有专用游戏求解器，微信自动发送当前未实现；图示不代表新一轮实发或通关。
 
 ## 证据标签
 

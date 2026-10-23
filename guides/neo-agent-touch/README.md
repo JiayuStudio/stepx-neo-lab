@@ -9,11 +9,15 @@ JIAYU STUDIO · 2026-10-23
 - [最新研究](research/2026-10-23.md) · [主源与许可](research/sources.json) · [本版验证](verification-v15.json) · [可直接浏览的源码](source/README.md)
 - [历史开发手册](development.md) · [历史180秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.11-beta.1)
 
-## 120秒功能技术展示
+## 120秒功能原理展示
 
-[▶ 观看120秒成片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4) · [可编辑影片工程1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip)
+[▶ 观看120秒成片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-principles-120s.mp4) · [可编辑影片工程1.0.3](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.3.zip)
 
-真实WPS合同生成/修改/重开、淘宝商品和规格探索、美团电影场次与未选座地图合计70秒，另含专用输入法搜索、小游戏短试玩、架构、触点变化与接管图解。业务实录分别来自0.1.10/0.1.12/0.1.13，片内标注版本和停点；不作为0.1.15全部业务已通过的证明。搜狗路径仅为本版输入策略，未宣称准确率已验。
+成片以技术原理为主：总闭环20秒、小游戏25秒、微信发送边界25秒、文档/购物/音乐输入18秒、接管与记忆20秒、证据与参考12秒。节点逐步高亮，配合实际源码类名和历史实录解释每一步为何执行。
+
+小游戏采用通用视觉循环，没有专用求解器；微信部分为通用机制和本机发送边界示意，自动发送尚未实现，也没有实发验收。业务实录来自0.1.10/0.1.12/0.1.13，不能当作0.1.15全部业务已通过。详见[功能实现流程图](implementation-flows.md)。
+
+另保留[功能实录版1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4)与[对应可编辑工程](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip)。
 
 配乐使用本轮新生成的三段Suno v6器乐，经等功率交叉剪成120秒；未循环旧曲。成片完整音视频解码通过，已去除私有元数据；尚未完成人耳试听。底部署名JIAYU STUDIO · StepX Neo研究所。
 

@@ -96,4 +96,4 @@ Neo Agent Touch Beta 已去除固定应用选择名单：本机可启动应用�
 - [只读校验拉取](guides/neo-agent-touch/bootstrap.py) · [三个入口SHA](guides/neo-agent-touch/agent-entry-sha256.json)
 - release使用搜狗等当前系统输入法，确认转写后发送；不含旧ASR或麦克风权限。41组纯规则、96项原生构造不等于真人三目标成功；旧真人长句失败，ASR升级暂停。
 
-- [Neo Agent Touch 120秒功能技术展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4)：历史业务版本均标注，新Suno配乐；成片解码通过不能代替新beta业务验收或人耳试听。
+- [Neo Agent Touch 120秒功能原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-principles-120s.mp4)：历史业务版本均标注，新Suno配乐；成片解码通过不能代替新beta业务验收或人耳试听。

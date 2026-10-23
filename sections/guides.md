@@ -49,4 +49,4 @@
 
 - [Neo Agent Touch 最新研究与Agent拉取](../guides/neo-agent-touch/ai.md)：原话绑定、完整候选、输入法交接、证据区分、ASR许可与暂停结论，提供固定提交与SHA校验的只读获取。
 
-[120秒功能技术展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4) · [可编辑影片1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip)：历史业务实录＋架构动效，新Suno v6器乐；与当前beta实测范围分开。
+[120秒功能原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-principles-120s.mp4) · [可编辑影片1.0.3](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.3.zip)：以游戏闭环、微信发送边界、输入、接管与记忆的步骤动效讲解原理，辅以历史实录；使用新Suno v6器乐。

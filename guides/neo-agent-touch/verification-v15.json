@@ -33,6 +33,51 @@
   "installed_apk_readback_matches": true,
   "release_install_has_no_new_permission_grants": true,
   "video": {
+    "file": "neo-agent-touch-principles-120s.mp4",
+    "revision": "1.0.3",
+    "duration_s": 120,
+    "bytes": 6870645,
+    "sha256": "2e274d82ba0a6fa3b0ccedb32f1a76f6fb55beef8a689d7be7a3a6bb27e2a3cb",
+    "resolution": "1920x1080",
+    "fps": 30,
+    "all_av_decoded": true,
+    "focus": "Stepwise technical-principle diagrams, with labelled historical clips",
+    "chapters_seconds": {
+      "runtime_loop": 20,
+      "game": 25,
+      "wechat_boundaries": 25,
+      "wps_shopping_search": 18,
+      "takeover_memory": 20,
+      "evidence_sources": 12
+    },
+    "historical_footage_versions": [
+      "0.1.10",
+      "0.1.12",
+      "0.1.13"
+    ],
+    "wechat_automatic_send": "not_implemented",
+    "game_specific_solver": false,
+    "music": "Three newly generated Suno v6 cues from this production session; same new mix as revision 1.0.2",
+    "human_listening_approved": false,
+    "current_beta_business_acceptance": false
+  },
+  "source_archive": {
+    "file": "Neo-Agent-Touch-0.1.15-beta.1-source.zip",
+    "bytes": 433129,
+    "sha256": "f8e596c269fd340402cc61d3e73922ff1c6b2c77483123a6014199f93eb06d4a",
+    "release_build_and_41_rule_suites_from_archive": "passed",
+    "bit_identical_apk_claimed": false
+  },
+  "editable_film_archive": {
+    "file": "neo-agent-touch-film-editable-v1.0.3.zip",
+    "bytes": 61884667,
+    "sha256": "24864470221928e5c9c3bef79ccf3d3e50f85293bf99e7f4163eb2dfdecff553",
+    "zip_crc_and_33_manifest_hashes": "passed",
+    "all_17_media_full_decode": "passed",
+    "relative_fcpxml_dtd_and_9_refs": "passed",
+    "actual_final_cut_import": "not_tested"
+  },
+  "supplementary_video": {
     "file": "neo-agent-touch-features-120s.mp4",
     "duration_s": 120,
     "sha256": "eba72d097da777c4d1974cd557db063100731463d44073bc99deca9e3f739bf1",
@@ -49,14 +94,7 @@
     "human_listening_approved": false,
     "current_beta_business_acceptance": false
   },
-  "source_archive": {
-    "file": "Neo-Agent-Touch-0.1.15-beta.1-source.zip",
-    "bytes": 433129,
-    "sha256": "f8e596c269fd340402cc61d3e73922ff1c6b2c77483123a6014199f93eb06d4a",
-    "release_build_and_41_rule_suites_from_archive": "passed",
-    "bit_identical_apk_claimed": false
-  },
-  "editable_film_archive": {
+  "supplementary_editable_film_archive": {
     "file": "neo-agent-touch-film-editable-v1.0.2.zip",
     "bytes": 67619093,
     "sha256": "5c7da016379df3f1a657bbaae7240134e3a4cf27eff57f335c678ece286bd090",

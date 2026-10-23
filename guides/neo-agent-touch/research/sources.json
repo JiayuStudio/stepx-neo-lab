@@ -253,6 +253,25 @@
       "why": "Visible control boundaries, takeover and understandable state feedback",
       "reuse": "Interaction/appearance inspiration only; internal framework not obtained or copied",
       "evidence_type": "reference"
+    },
+    {
+      "id": "set-of-mark",
+      "repository": "https://github.com/microsoft/SoM",
+      "reviewed_readme_blob_sha": "7c994a7e9474fc77509079abb57e22714ade2d8f",
+      "why": "Numbered visual marks help express the intended target; this project uses system-control bounds rather than bundling segmentation models.",
+      "reuse": "Method reference only; no repository code or models bundled",
+      "evidence_type": "reference",
+      "primary_text_blob_integrity_checked": true
+    },
+    {
+      "id": "cradle",
+      "repository": "https://github.com/BAAI-Agents/Cradle",
+      "reviewed_readme_blob_sha": "d37735ba9d522c4a4d2c5943c44b7ae4d1acb5c0",
+      "why": "Screenshot input, actions and subsequent feedback inform a general software/game control loop.",
+      "reuse": "Architecture reference only; no framework, desktop executor or game solver bundled",
+      "evidence_type": "reference",
+      "read_scope": "README; not a full paper review or benchmark run",
+      "primary_text_blob_integrity_checked": true
     }
   ],
   "project_reference_license_limit": "Research-only repository/paper references are not vendored dependencies. Runtime/model licenses are assessed separately above; no paper or reference repository license grants rights to unrelated weights.",
