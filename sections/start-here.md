@@ -2,11 +2,13 @@
 
 [研究所首页](../README.md) · [原创教程](guides.md) · [教程归档区](archive.md)
 
+零基础先读[应用、智能体、技能与 HTML/CSS/JS/JSON/API](../courses/official-step-studio/programming-basics.md)，完成不联网的小练习再进入平台课程。官方能力数字是 2026-10-20 的核查快照，今天的核验范围见[维护记录](../maintenance/2026-10-23-review.md)。
+
 ## 官方 Step Studio · 新版
 
 **[进入 2026-10-20 组件库更新版课程 →](../courses/official-step-studio/README.md)**
 
-先用 8 个当前官方组件搭出可操作界面，再按需学习数据和连接器。研究所编写，非官方发布课程。
+先用 2026-10-20 核查的 8 个官方组件搭出可操作界面，再按需学习数据和连接器。研究所编写，非官方发布课程。
 
 - [第一款应用：个人作品目录](../courses/official-step-studio/01-create.md)
 - [8 个组件：用途、官方截图与提示词](../courses/official-step-studio/components.md)
