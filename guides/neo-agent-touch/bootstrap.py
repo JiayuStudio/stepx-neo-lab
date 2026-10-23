@@ -13,12 +13,15 @@ are required. --verify-local DIRECTORY performs the same checks without network.
 import argparse
 import hashlib
 import hmac
+import http.client
 import json
 from pathlib import Path
 import re
 import shutil
 import ssl
 import sys
+import time
+import urllib.error
 import urllib.request
 
 FILES = ("README.md", "ai.md", "knowledge.json")
@@ -58,6 +61,27 @@ def verify_document(name, content, expected):
     return content
 
 
+def read_bounded(response):
+    """A successful read may return fewer bytes than requested; continue to EOF."""
+    chunks = []
+    size = 0
+    deadline = time.monotonic() + 20
+    while True:
+        if time.monotonic() > deadline:
+            raise ValueError("document read exceeded time limit")
+        chunk = response.read(min(64 * 1024, MAX_BYTES + 1 - size))
+        if time.monotonic() > deadline:
+            raise ValueError("document read exceeded time limit")
+        if not isinstance(chunk, bytes):
+            raise ValueError("document response must contain bytes")
+        if not chunk:
+            return b"".join(chunks)
+        size += len(chunk)
+        if size > MAX_BYTES:
+            raise ValueError("document exceeds size limit")
+        chunks.append(chunk)
+
+
 def read_remote(revision):
     # A fixed origin, HTTPS verification and no redirects/proxy credentials.
     opener = urllib.request.build_opener(
@@ -67,11 +91,27 @@ def read_remote(revision):
     for name in FILES:
         url = f"{RAW_ROOT}/{revision}/{ENTRY_PATH}/{name}"
         request = urllib.request.Request(url, headers={
-            "User-Agent": "NeoAgentTouchResearchReader/1.0", "Accept": "text/plain"})
-        with opener.open(request, timeout=20) as response:
-            if response.status != 200:
-                raise ValueError("document request did not return HTTP 200")
-            result[name] = response.read(MAX_BYTES + 1)
+            "User-Agent": "NeoAgentTouchResearchReader/1.0", "Accept": "text/plain",
+            "Accept-Encoding": "identity", "Cache-Control": "no-cache"})
+        for attempt in range(3):
+            try:
+                with opener.open(request, timeout=20) as response:
+                    if response.status != 200:
+                        raise ValueError("document request did not return HTTP 200")
+                    declared = response.headers.get("Content-Length")
+                    if declared is not None and (
+                            not declared.isdecimal() or int(declared) > MAX_BYTES):
+                        raise ValueError("invalid or excessive document length")
+                    content = read_bounded(response)
+                    if declared is not None and len(content) != int(declared):
+                        raise OSError("document response was incomplete")
+                    result[name] = content
+                break
+            except urllib.error.HTTPError:
+                raise
+            except (OSError, http.client.IncompleteRead):
+                if attempt == 2:
+                    raise
     return result
 
 
