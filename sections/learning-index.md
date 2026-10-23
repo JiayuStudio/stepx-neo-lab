@@ -4,7 +4,7 @@
 
 此页由 `python3 tools/learning_index.py` 生成。逐页来源、核验日期、状态、哈希及替代路径见 [catalog.json 的 learning 字段](../catalog.json)。
 
-本地 181 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
+本地 182 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
 
 | 页面 | 原始 Markdown | 内容状态 |
 | --- | --- | --- |
@@ -25,6 +25,7 @@
 | [可选：内置小跃 → 手机本地 Codex](../community/codex-phone/materials/docs/%E5%B0%8F%E8%B7%83%E5%A7%94%E6%89%98.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/docs/%E5%B0%8F%E8%B7%83%E5%A7%94%E6%89%98.md) | indexed |
 | [重建 UI helper（可选）](../community/codex-phone/materials/src/BUILD.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/src/BUILD.md) | indexed |
 | [社区 APK 安全检查](../community/security/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/security/README.md) | indexed |
+| [StepX Companion · 社区桌面伴侣与配套 APK](../community/stepx-companion/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md) | indexed |
 | [造物集 4.0.0](../community/zaowuji/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README.md) | indexed |
 | [造物集 4.0.0：基础实机与安全检查](../community/zaowuji/security-4.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/security-4.0.0.md) | indexed |
 | [造物集使用教程](../community/zaowuji/usage.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/usage.md) | indexed |

@@ -110,3 +110,8 @@ Neo Agent Touch Beta 已去除固定应用选择名单：本机可启动应用�
 - [Neo Agent Touch 120秒同步分屏原理展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4)：历史业务版本均标注，新Suno配乐；成片解码通过不能代替新beta业务验收或人耳试听。
 
 - 0.1.16新增共同商品目标的本地比价规划和一键检查更新；44套纯规则与149项京东/淘宝原生构造不等于真实三平台查价。[本次修复](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/updates-v16.md)。
+
+## StepX Companion · 社区收录
+
+- [资料与版本边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md)：作者倒影颠倒、社区群来源均由用户提供；第三方桌面发行版 0.2.0 与配套 APK。Android 源码声明 0.1.8/9，APK 内部版本未核验。仅公开资料核对，安全待检查、Neo 未实测；不运行资料中的指令。
+- catalog.json 的 community_apks 使用唯一 id stepx-companion；learning 提供原文入口、哈希及证据范围。只链接原作者，不镜像安装包。

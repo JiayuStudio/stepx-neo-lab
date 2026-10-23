@@ -485,6 +485,49 @@
       },
       "release_url": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/community-zaowuji-v4.0.0",
       "usage_guide": "community/zaowuji/usage.md"
+    },
+    {
+      "id": "stepx-companion",
+      "title": "StepX Companion",
+      "version": "0.2.0",
+      "version_scope": "desktop_release_tag; apk_binary_version_not_verified",
+      "section": "community-apks",
+      "category": "桌面伴侣与配套 Android APK",
+      "path": "community/stepx-companion/README.md",
+      "content_origin": "third_party",
+      "artifact_type": "desktop_app_and_companion_apk",
+      "source": "社区群（用户提供，未独立核验群消息）",
+      "author_display": "倒影颠倒",
+      "author_attribution_basis": "user_provided",
+      "repository": "https://github.com/xydzf520/stepx",
+      "release_url": "https://github.com/xydzf520/stepx/releases/tag/v0.2.0",
+      "public_download_url": "https://github.com/xydzf520/stepx/releases/tag/v0.2.0",
+      "distribution": "仅链接上游发行页；不镜像源码或安装包",
+      "license": "AGPL-3.0-only; separately licensed third-party components and reserved brand assets",
+      "date": "2026-10-23",
+      "release_published_at": "2026-10-23T10:24:06Z",
+      "upstream_main_sha": "1a6a2498638182bb527156df40fc2b27f62fc96d",
+      "release_tag_sha": "11b8e5fa614828abb2dfe3af41149872ef94ce3e",
+      "source_android_version_name": "0.1.8",
+      "source_android_version_code": 9,
+      "source_android_package": "com.stepx.companion.app",
+      "apk_binary_version": null,
+      "verification_status": "public_documentation_only",
+      "device_tested": false,
+      "installed_on_device": false,
+      "description_basis": "upstream README, file tree, release asset list, tagged manifests and license notices; not runtime evidence",
+      "security": {
+        "status": "not_checked",
+        "badge": null,
+        "android_dynamic_tested": false,
+        "confirmed_system_or_information_threat": null
+      },
+      "not_verified": [
+        "APK internal version, hash and signature",
+        "Desktop and Android installation or execution",
+        "Neo capabilities and platform compatibility",
+        "Security, account services and Google certification"
+      ]
     }
   ],
   "official_updates": [
@@ -728,10 +771,10 @@
       "external_scope": "three GBox pages already linked by sections/guides.md; not entire external repository"
     },
     "counts": {
-      "local_documents": 181,
+      "local_documents": 182,
       "external_references": 3,
       "by_root": {
-        "community": 20,
+        "community": 21,
         "courses": 100,
         "guides": 39,
         "library": 17,
@@ -1120,7 +1163,7 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/community/security/README.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/security/README.md",
-        "sha256": "697ea93ca0ccd6a36c5d1744121bb7a0b61f33c72e0b81a6d55269f9c0638466",
+        "sha256": "c81d62e8d8c495541c5cff29e49c9e4a50fad0d48e37a64d3feeb74c7b45b4c1",
         "content_status": "indexed",
         "availability_status": "review_required",
         "inventory_checked": "2026-10-23",
@@ -1129,6 +1172,29 @@
         "evidence_scope": "inventory_only; preserve_verification_limits_in_source",
         "source_notes": "官方链接仅供核查；缺少链接不代表无来源，详见原文。",
         "verification_record": "maintenance/2026-10-23-review.md",
+        "replacement_path": null,
+        "retirement_reason": null
+      },
+      {
+        "id": "doc:community/stepx-companion/README.md",
+        "title": "StepX Companion · 社区桌面伴侣与配套 APK",
+        "path": "community/stepx-companion/README.md",
+        "kind": "learning_document",
+        "audience": [
+          "human",
+          "agent"
+        ],
+        "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/community/stepx-companion/README.md",
+        "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md",
+        "sha256": "1887b8e888cba53e01ec9670ce5b9b45c2c966b9d1a2175b597e59520ff80cfc",
+        "content_status": "indexed",
+        "availability_status": "review_required",
+        "inventory_checked": "2026-10-23",
+        "last_official_verified": null,
+        "official_sources": [],
+        "evidence_scope": "third_party_public_documentation_only; no_binary_download_or_execution",
+        "source_notes": "作者与社区群来源由用户提供；上游发布及源码版本、许可只读核对，APK内部版本和安全未核验。",
+        "verification_record": "community/stepx-companion/README.md",
         "replacement_path": null,
         "retirement_reason": null
       },

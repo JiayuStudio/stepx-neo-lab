@@ -10,6 +10,13 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 **双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-23-review.md)。
 
+## 最新收录与更新
+
+- **2026-10-23 · 社区收录**：[StepX Companion 0.2.0](community/stepx-companion/README.md)——倒影颠倒的桌面伴侣与配套 Android APK，来源社区群（用户提供）；公开资料已核对，未安装或安全测试。收录在[社区 APK 与网页游戏](sections/community-apks.md)，不进入自研网站展示。
+- **2026-10-23 · 学习更新**：[双通道逐页索引](sections/learning-index.md)与[零基础编程课](courses/official-step-studio/programming-basics.md)，分别提供 Agent 原文提取和人类循序练习；索引覆盖不代表功能全部实测。
+
+更多历史见[更新记录](CHANGELOG.md)；日期表示研究所实际收录或有意义更新，不代替上游发布日期。
+
 ## JIAYU STUDIO 自研与原创
 
 以下四个分区按内容类型整理维护者自己的作品与资料。自研软件使用的上游依赖及许可见各项目说明；原创教程涉及的第三方软件会单独标明来源。

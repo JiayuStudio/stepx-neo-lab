@@ -12,6 +12,7 @@
 
 | 应用 | 分类与用途 | 来源 | Neo 验证 |
 | --- | --- | --- | --- |
+| [StepX Companion 0.2.0](../community/stepx-companion/README.md) | 桌面伴侣与配套 Android APK：Amoo/Work、投屏、文件与背屏；含背屏体感游戏 | 倒影颠倒 · 社区群（用户提供） | 仅公开资料核对；未安装、未实测；安全待检查 |
 | [造物集 4.0.0](../community/zaowuji/README.md) | 作品分享社区：发现网页、游戏与 App，发布和交流作品 | 木偶 · 社区群 | 基础实机验证完成；🛡️；可下载 |
 | [背屏达人安全修订 4.0.1](../community/backscreenfun/README.md) | 背屏与个性化：在线 URL 解析背屏动画、点绘、文字与宠物 | 原作鸿渐 · 社区群；研究所安全修订 | 🛡️；可下载；安全接口与URL已复测 |
 
