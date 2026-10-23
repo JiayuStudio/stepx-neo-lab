@@ -351,7 +351,11 @@
         "All field skills and multitouch combinations",
         "Long deep standby, optical FPS and battery/thermal behavior",
         "Complete third-party runtime rebuilt from source"
-      ]
+      ],
+      "download_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15.apk",
+      "source_archive_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15-source.zip",
+      "checksums_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/SHA256SUMS.txt",
+      "promo_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4"
     }
   ],
   "sections": [

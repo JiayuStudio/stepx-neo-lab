@@ -2,9 +2,11 @@
 
 在手机正面探索荒野，把队伍伙伴带到背面的点阵屏。JIAYU STUDIO 基于 **PokeWilds 0.8.11** 和已有 Android 运行环境制作的非官方中文适配，当前公开测试版 **0.8.15**。
 
-[下载 Android APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-0.8.15.apk) · [观看 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [本版发行与校验文件](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15) · [源代码与构建](source/README.md)
+[下载 Android APK](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15.apk) · [观看 60 秒宣传片](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [本版发行与校验文件](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15) · [源代码与构建](source/README.md)
 
 ![游戏与背屏伙伴展示](images/promo.jpg)
+
+[本站适配源码包](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15-source.zip) · [SHA-256 校验文件](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/SHA256SUMS.txt) · [GitHub 原发行备用](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-0.8.15.apk)
 
 ## 荒野里的日常
 

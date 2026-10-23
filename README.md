@@ -51,7 +51,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 正面探索、捕捉与建造，背面点阵伙伴陪伴。基于 PokeWilds 0.8.11 的非官方中文适配：竖屏 Game Boy、横屏 GBA、一键切换、自动保存，以及 17×23 原作风格背屏形象。
 
-[0.8.15 测试版 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-0.8.15.apk) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [安装、玩法与验证范围](guides/pokewilds/README.md) · [源代码](guides/pokewilds/source/README.md)
+[0.8.15 测试版 APK](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15.apk) · [60 秒宣传片](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [安装、玩法与验证范围](guides/pokewilds/README.md) · [源代码](guides/pokewilds/source/README.md)
 
 前屏为 0.8.14 真机实录，片中背屏按真实点阵资源渲染；快速展示 528 项伙伴与形态。0.8.15 是公开整理修订，重建通过，尚未重做本版真机回归。
 
