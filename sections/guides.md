@@ -43,9 +43,9 @@
 
 - [用 Step Studio 开发象棋泡泡堂](../guides/chess-bomber/README.md)：从需求、规则与UI修复，到账号、回放、音乐和真实宣传片；网页与真机验证边界分别记录。
 
-## 手机 Agent 开发实录
+## 手机 Agent 功能与原理
 
-- [Neo Agent Touch 0.1.20：逐应用适配与原理](../guides/neo-agent-touch/README.md)：搜索节点/系统端口重绑定、WPS通用正文保存重开、应用身份与范围、输入法借用与心跳诊断。56套规则与11应用分批实测分开记录；8个限定场景通过，B站部分达成、美团验证阻断、间歇稳定性仍待跟踪。
-- [2026-10-24研究](../guides/neo-agent-touch/research/2026-10-24.md) · [Agent读取与固定标签拉取](../guides/neo-agent-touch/ai.md) · [逐应用机器验收](../guides/neo-agent-touch/verification-v20.json) · [代码导航](../guides/neo-agent-touch/source/AGENT_GUIDE.md)。
-- [120秒历史同步分屏原理影片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [可编辑工程1.0.4](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip)：20段各6秒，蓝圆铃铛主题；素材来自0.1.10/0.1.12/0.1.13，不是0.1.20新实录。
+- [Neo Agent Touch 0.1.20：功能与实现](../guides/neo-agent-touch/README.md)：手机内聊天式目标执行、应用画面与系统控件结合、搜索和输入、音乐与地点查询、WPS 文档生成、蓝色边缘提示及接管交还。
+- [研究与实现](../guides/neo-agent-touch/research/2026-10-24.md) · [Agent 读取与固定版本拉取](../guides/neo-agent-touch/ai.md) · [源码导航](../guides/neo-agent-touch/source/AGENT_GUIDE.md) · [版本数据](../guides/neo-agent-touch/verification-v20.json)。
+- [120 秒历史分屏原理影片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [可编辑工程 1.0.4](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-film-editable-v1.0.4.zip)：蓝圆铃铛主题，20 段各 6 秒，手机实录与流程图同步展示；素材来自 0.1.10、0.1.12、0.1.13。
 

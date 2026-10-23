@@ -21,14 +21,12 @@
 
 ## Neo Agent Touch · 0.1.20 Beta
 
-手机内运行的聊天式目标执行应用，视觉截图结合系统控件语义，支持侧边对话、蓝色贴边反馈、可拖动胶囊及接管／交还。
+手机内运行的聊天式应用助手，结合应用画面与系统控件完成搜索、播放、地点查询、商品查价和 WPS 新文档生成。支持自选应用与模型接口、侧边对话、蓝色贴边提示、可拖动胶囊、接管与交还、偏好记忆及一键检查更新。
 
-- [功能、安装与本轮实测](../guides/neo-agent-touch/README.md) · [下载0.1.20-beta.1 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.20-beta.1/Neo-Agent-Touch-0.1.20-beta.1.apk)
-- [Agent阅读与固定版本源码](../guides/neo-agent-touch/ai.md) · [机器验收](../guides/neo-agent-touch/verification-v20.json)
+- [功能与安装](../guides/neo-agent-touch/README.md) · [下载 0.1.20-beta.1 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.20-beta.1/Neo-Agent-Touch-0.1.20-beta.1.apk)
+- [Agent 阅读与固定版本源码](../guides/neo-agent-touch/ai.md) · [结构化功能说明](../guides/neo-agent-touch/knowledge.json)
 
-56套规则检查通过，11个授权应用分批实测，8个场景按限定范围通过：音乐搜索Live播放、地点详情、当前工作台、微信搜一搜、京东/淘宝查价、WPS新文档保存重开全文读回、网盘搜索。B站严格第一条选择未通过；美团停在人机验证；网盘与大麦稳定性未宣称根治。拼多多不在本轮范围，未下单、付款或发消息。最后正式包安装摘要一致，不等于所有应用在最后二进制上重跑。
+使用当前系统输入法，核对文字后发送；专用输入法自动切换默认关闭。B站指定第一条视频与大麦动态页仍需优化，美团遇人机验证时由用户处理。付款、消息发送、完整电影购票和已有文档通用修改不在当前已验范围。
 
-使用当前系统输入法，专用输入法自动切换独立且默认关闭；没有真人语音准确率结论。完整场景边界与逐项构建摘要见机器验收。
-
-[120秒历史原理影片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [历史180秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4) · [历史开发手册](../guides/neo-agent-touch/development.md)。历史影片不作为0.1.20实录。
+[120 秒历史原理影片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-film-v1.0.4/neo-agent-touch-splitflow-120s.mp4) · [历史 180 秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4) · [原理与来源](../guides/neo-agent-touch/development.md)。120 秒影片素材来自 0.1.10、0.1.12、0.1.13。
 
