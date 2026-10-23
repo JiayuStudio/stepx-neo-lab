@@ -1,0 +1,9 @@
+package studio.jiayu.neoagent;
+public class DocumentEditContractTest {static int n;static void check(boolean x){if(!x)throw new AssertionError("case "+n);n++;}public static void main(String[] args){
+ String request="只把租金支付条款修改为每月5日前支付，其他段落保持不变";String before="租赁合同\n甲方[]\n租金每月10日前支付，押金1000元\n乙方负责维修\n签署[]";String next=before.replace("每月10日","每月5日");
+ check(DocumentEditContract.constrained(request));check(DocumentEditContract.day(request)==5);check(DocumentEditContract.permits(request,before,next));check(DocumentEditContract.targetSatisfied(request,next));check(!DocumentEditContract.targetSatisfied(request,before));
+ check(!DocumentEditContract.permits(request,before,next.replace("维修","装修")));check(!DocumentEditContract.permits(request,before,next.replace("1000","2000")));check(!DocumentEditContract.permits(request,before,next+"\n新增条款"));check(!DocumentEditContract.permits(request,before,next.replace("甲方","出租人")));check(!DocumentEditContract.permits(request,before,next.replace("10","5").replace("签署[]","签署：[]")));
+ check(DocumentEditContract.permits(request,before,"\n"+next.replace("\n","\r\n")+"\n"));check(DocumentEditContract.targetSatisfied("将租金改成每月 5 号支付",next));check(!DocumentEditContract.targetSatisfied("修改为每月32日",next));check(!DocumentEditContract.permits("只修改为每月32日，其他段落不变",before,next));
+ check(!DocumentEditContract.targetSatisfied(request,"押金每月5日结清\n租金每月10日支付"));check(!DocumentEditContract.permits(request,"水电每月10日支付\n租金每月20日支付","水电每月5日支付\n租金每月20日支付"));
+ check(DocumentEditContract.permits("修改押金，其他段落不变",before,before.replace("1000","2000")));check(!DocumentEditContract.permits("修改押金，其他段落不变",before,before.replace("1000","2000").replace("维修","装修")));check(!DocumentEditContract.permits("修改押金，其他段落不变",before,before+"\n新增条款"));check(DocumentEditContract.permits("重新起草整份本任务合同",before,"新合同"));
+ System.out.println("PASS: "+n+" document edit invariants, out-of-scope changes and requested date checks");}}

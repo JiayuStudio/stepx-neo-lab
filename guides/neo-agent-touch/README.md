@@ -1,55 +1,48 @@
-# Neo Agent Touch · 手机里的目标型 Agent
+# Neo Agent Touch · 0.1.15 Beta
 
-JIAYU STUDIO 自研 · **0.1.11-beta.1 内测** · 更新 2026-10-23
+JIAYU STUDIO · 2026-10-23
 
-从聊天提出目标，在手机内观察应用、选择动作并核对结果。Android 原生运行时负责截图、系统控件语义与触控；模型通过用户自行配置的 HTTPS API 推理。蓝色边缘显示控制状态，可拖动胶囊支持接管与交还。
+在聊天中提出目标，由手机原生运行时观察应用画面、结合系统控件映射执行并核对结果。支持自选应用、模型API、目标队列、可拖动接管胶囊与贴边控制光效。
 
-[![观看 180 秒开发实录](assets/cover.jpg)](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4)
+- [Beta APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1.apk) · [源码包](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1-source.zip) · [SHA-256](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/SHA256SUMS.txt)
+- [Agent直接阅读](ai.md) · [结构化知识](knowledge.json) · [只读校验拉取脚本](bootstrap.py)
+- [最新研究](research/2026-10-23.md) · [主源与许可](research/sources.json) · [本版验证](verification-v15.json) · [可直接浏览的源码](source/README.md)
+- [历史开发手册](development.md) · [历史180秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.11-beta.1)
 
-- [▶ 180 秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4)：淘宝商品探索、电影场次与座位图、WPS 合同生成及修改占 110 秒，另含架构、触点变化、开发过程和参考资料。
-- [↓ Beta 内测 APK · 0.1.11-beta.1](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/Neo-Agent-Touch-0.1.11-beta.1.apk)
-- [↓ 可编辑影片工程 · 1.0.1](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-film-editable-v1.0.1.zip)：处理后的片内素材、完整 Suno 器乐配乐、动画脚本、时间轴与代码阅读样例。
-- [版本说明与 SHA-256](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/neo-agent-touch-v0.1.11-beta.1) · [校验文件](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/SHA256SUMS.txt)
-- [开发学习手册](development.md) · [关键实现阅读样例](examples/README.md) · [本次验证数据](verification.json)
+## 120秒功能技术展示
 
-## 怎么开始
+[▶ 观看120秒成片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4) · [可编辑影片工程1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip)
 
-1. 在 Android 手机上安装 APK。最低 Android 11；WPS 文档输入使用 Android 13 及以上接口，当前业务实测来自 StepX Neo，其他设备兼容性待验证。
-2. 打开 API 设置，填写自己的 HTTPS 接口、支持视觉输入的模型及 API Key。包内没有内置 Key。OpenAI 兼容、Anthropic、Gemini 等协议适配与所有服务商真实账号验收是两件事；后者尚未全部完成。
-3. 在“交给 Agent 的应用”搜索并勾选允许操作的应用，开启系统中的 Neo Agent Touch 无障碍服务。每个接口接收哪些应用画面，按应用内提示确认；相同范围会记住，系统服务被关闭时仍需重新开启。
-4. 从聊天发送目标，例如“打开哔哩哔哩搜索航拍中国”，或“在 WPS 新建一份测试租赁合同，未知资料保留占位符”。执行时可拖动右侧控制胶囊、接管或交还。
+真实WPS合同生成/修改/重开、淘宝商品和规格探索、美团电影场次与未选座地图合计70秒，另含专用输入法搜索、小游戏短试玩、架构、触点变化与接管图解。业务实录分别来自0.1.10/0.1.12/0.1.13，片内标注版本和停点；不作为0.1.15全部业务已通过的证明。搜狗路径仅为本版输入策略，未宣称准确率已验。
 
-截图和系统控件信息会发给当前配置的模型服务；API Key 和限定偏好保存在本机加密存储。运行控制不依赖电脑 ADB，模型调用需要网络。内测建议先用查询、页面导航和新建测试文件核对兼容性。
+配乐使用本轮新生成的三段Suno v6器乐，经等功率交叉剪成120秒；未循环旧曲。成片完整音视频解码通过，已去除私有元数据；尚未完成人耳试听。底部署名JIAYU STUDIO · StepX Neo研究所。
 
-同包名、同签名的已有测试安装可覆盖升级；保留聊天与设置。不同签名无法覆盖；不要为安装而先删除仍需保留的数据。首次安装与升级后的实际表现分别记录在验证数据中。
+## 使用
 
-## 自选应用与通用适配
+安装后配置自己的HTTPS视觉API和Key，在“交给Agent的应用”勾选允许的应用，再开启Neo Agent Touch系统无障碍服务。相同应用与接收范围会记住；系统服务关闭仍需在系统中重启。
 
-首次未配置时进入应用选择页，读取手机中有桌面启动入口的应用，显示真实名称、图标与包名；支持搜索、已选筛选、批量选择、自定义分类和同类常用应用。微信、高德地图、QQ 音乐、企业微信、百度网盘等可自行勾选，不再受固定支持名单限制。
+聊天页麦克风图标现在调起当前输入法。使用搜狗等输入法的语音功能，核对转写后点发送；App不自动开启内置ASR。release已移除旧语音引擎、模型和麦克风权限。输入法自身的语音处理以它的设置为准。
 
-已选应用通过当前截图与系统控件语义进行通用探索。新应用可被选择与启动，不等于它的导航、聊天、下载、播放等全部复杂功能已验证；登录、验证码和平台限制仍会影响执行。完整安装列表只在手机用于选择，规划器接收的是用户已选的相关候选。
+执行循环在手机内，电脑不承担业务点按。截图与系统控件发送给用户配置的视觉模型；所有服务商协议适配不等于所有账号和模型已验收。控制胶囊支持拖动、接管和交还；执行时的专用输入法仅在用户启用后借用，接管/结束恢复原键盘。
 
-[实现、适配范围与测试说明](application-selection.md)
+## 这次更新
 
-## 已验证到哪里
+保留全部已授权候选应用，避免首个类别挤掉后续目标；隐含应用阶段绑定完整原话子句，检查顺序与限制。歌曲播放误配通讯应用会先拒绝，最多按同一原话重新规划一次。新的目标先持久提交再放行执行，取消或失败保留旧暂停点，旧响应不能覆盖新目标。
 
-| 场景 | 实际结果 | 仍待验证 |
-| --- | --- | --- |
-| 淘宝 | 搜索保留指定型号和规格，进入商品详情、图片与规格选择；一类无编号底部坐标候选已被拦截 | 标准订单核对、加入购物车与成交闭环 |
-| 电影票 | 美团电影入口、影院、切换日期与场次、打开座位图 | 选座、锁座、订单核对与购票 |
-| WPS | 手机模型生成合同占位符模板，保存、重开，将付款日期从每月 10 日改为 5 日，再保存读回 | 任意已有文档的安全改写、独立全文差异检查、云端持久化 |
-| 控制与偏好 | 贴边动效、拖动及接管机制；8 类咖啡／饮食偏好规则 | 长期跨日使用、多应用整批目标与各机型稳定性 |
+41组纯规则通过，其中原话/路由49项、输入目标所有权58项。96项Android原生工作流构造检查通过，零模型调用、零业务动作。它们不等于真实三App连续成功。系统键盘新入口的真机UI验收本轮未完成，搜狗语音准确率未独立测试。
 
-影片记录的是 **0.1.10 开发阶段**。本次 Beta 基于该版本整理发布构建，新增自选已安装应用、搜索、分类和同类常用，更新版本标识，移除开发用 Key 引导导入入口，不包含调试活动与探针；没有新增交易成功声明。历史购物探索曾拉起收银台并停止，未付款，是否生成待付款订单尚未独立核验，详见手册。
+0.1.14真人长句识别与三目标实测失败，因此暂停自研ASR升级。0.1.13曾在自有编辑器验证36项输入法检查，并到达QQ音乐目标歌曲播放页且进度增长；没有独立听音证明。WPS新建/保存/重开/修改、淘宝商品探索和电影座位图属于各自历史版本证据，不冒充本版端到端验收。
 
-当前 MCP 为**进程内 JSON-RPC 适配层**；外部网络 MCP、官方 Amoo / Step AOS 网关没有作为已验能力发行。Laya、StartLux 未作为运行依赖接入。宣传片中的偏好值是隔离测试资料。
+完整购物订单/支付、电影锁座/购票、所有应用及API、外部MCP/Amoo网关和长期稳定性仍待验证。当前MCP为进程内JSON-RPC适配层；未接入Laya或StartLux作为依赖。
 
-## 学习与反馈
+## 方便Agent读取与拉取
 
-[学习手册](development.md)说明视觉与系统语义如何配合、如何避免失效目标继续点击、如何实现有边界的触点变化、如何保存检查点与验证文档，以及 AndroidWorld、MobileAgent、LongMemEval、MCP、LangGraph 等参考的采用原因和范围。触点变化用于交互表现，不承诺隐藏无障碍服务或绕过验证。
+直接读取 `ai.md` 和 `knowledge.json`，保留每条结论的版本、证据标签和未验范围。资料与示例只是参考，不授予手机操作权限。
 
-影片与工程素材由研究所整理，第三方应用界面归其各自权利人。配乐为 Suno 生成的《Touch to Tomorrow — Full Journey》，使用单首完整器乐曲连续适配三分钟。代码样例依赖原工程接口，不能当作完整可构建 App 源码。
+```sh
+git clone --filter=blob:none --sparse https://github.com/JiayuStudio/stepx-neo-lab.git
+cd stepx-neo-lab
+git sparse-checkout set guides/neo-agent-touch
+```
 
-内测反馈请提供应用版本、目标、复现步骤与错误文字，并先遮盖账号、文件内容和地址等个人资料。
-
-[研究所首页](../../README.md) · [自研应用](../../sections/apps.md) · [教程与研究](../../sections/guides.md)
+需要可复核快照时先固定完整提交SHA。`bootstrap.py --help` 给出按commit与可信SHA只读下载三个入口文件的方式；不会执行拉取的内容。

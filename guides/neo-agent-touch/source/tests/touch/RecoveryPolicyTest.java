@@ -1,0 +1,2 @@
+package studio.jiayu.neoagent;
+public class RecoveryPolicyTest {public static void main(String[] args){RecoveryPolicy p=new RecoveryPolicy();if(!p.retry("找不到搜索入口")||!p.retry("等待加载")||p.retry("入口仍未找到"))throw new AssertionError("bounded recovery");for(String s:new String[]{"验证码","需要登录","提交订单","接受协议","隐私信息","授权"})if(new RecoveryPolicy().retry(s))throw new AssertionError("personal decision retried");p.progressed();if(!p.retry("页面变化"))throw new AssertionError("progress reset");System.out.println("RecoveryPolicy: 8 boundaries passed");}}

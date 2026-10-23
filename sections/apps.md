@@ -24,7 +24,11 @@
 手机内运行的聊天式目标执行应用，视觉截图结合系统控件语义，支持蓝色贴边反馈、可拖动胶囊及接管／交还。
 
 - [功能、内测安装与验证范围](../guides/neo-agent-touch/README.md)
-- [下载 0.1.11-beta.1 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/Neo-Agent-Touch-0.1.11-beta.1.apk)
+- [下载 0.1.15-beta.1 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1.apk)
 - [180 秒开发实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4) · [开发手册](../guides/neo-agent-touch/development.md)
 
 淘宝商品探索、电影场次至座位图、WPS 新建／保存／修改／重开已有真机记录；完整购物、购票与外部 MCP 网关尚未验通。需要用户自行配置视觉模型 API。
+
+0.1.15 release使用当前系统输入法，不含旧ASR与麦克风权限；提供[Agent入口](../guides/neo-agent-touch/ai.md)、[结构化知识](../guides/neo-agent-touch/knowledge.json)与[源码](../guides/neo-agent-touch/source/README.md)。41组纯规则、96项原生构造通过，真实应用回归和搜狗准确率待验。
+
+[120秒功能技术展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4) · [可编辑影片1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip)：历史业务实录＋架构动效，新Suno v6器乐；与当前beta实测范围分开。

@@ -1,0 +1,19 @@
+package studio.jiayu.neoagent;
+final class VoiceEndpointRulesTest {
+ static int checks;
+ static void yes(boolean value,String why){if(!value)throw new AssertionError(why);checks++;}
+ public static void main(String[] args){
+  VoiceEndpointRules silent=new VoiceEndpointRules(1000);yes(!silent.shouldStop(10999),"Initial quiet grace shortened");yes(silent.shouldStop(11000),"True silence never ends");yes(!silent.heard(),"Silence became recognized speech");
+  VoiceEndpointRules soft=new VoiceEndpointRules(0);soft.audio(100,9900);soft.partial("打开企业微信",9900);yes(soft.heard(),"Quiet decoder progress not recognized");yes(!soft.shouldStop(10100),"Quiet speech cut at old ten-second timer");yes(!soft.shouldStop(13099),"Trailing quiet grace shortened");yes(soft.shouldStop(13100),"Unchanging quiet decoder output never ends");
+  VoiceEndpointRules mixed=new VoiceEndpointRules(0);mixed.audio(900,1000);mixed.partial("先打开企业微信",3900);mixed.audio(70,4500);mixed.partial("先打开企业微信然后打开高德地图",6500);yes(!mixed.shouldStop(7000),"Soft continuation cut after earlier loud speech");yes(mixed.lastActivity()==6500,"Low energy overwrote decoder activity");
+  for(int t=6750;t<=9500;t+=250)mixed.partial("先打开企业微信然后打开高德地图",t);
+  yes(mixed.lastActivity()==6500,"Repeated partial extended capture");yes(mixed.shouldStop(9700),"Repeated hypotheses prevent end of speech");
+  VoiceEndpointRules boundary=new VoiceEndpointRules(0);boundary.partial("打开",1000);boundary.partial("",2000);yes(boundary.lastActivity()==1000,"Empty partial extended recording");boundary.partial("打开",3000);yes(boundary.lastActivity()==3000,"Same words after empty boundary ignored");boundary.segment("",3500);yes(boundary.lastActivity()==3000,"Empty final extended recording");boundary.partial("打开",5000);yes(boundary.lastActivity()==5000,"Same words after empty final boundary ignored");boundary.segment("打开",6000);yes(boundary.lastActivity()==6000,"New final segment did not count");boundary.partial("打开",6500);yes(boundary.lastActivity()==6500,"New segment repeats earlier words but must count");
+  VoiceEndpointRules revised=new VoiceEndpointRules(0);revised.partial("上海图书馆东莞",1000);revised.partial("上海图书馆",3500);yes(revised.lastActivity()==3500&&!revised.shouldStop(4200),"Shorter decoder revision ignored");revised.partial("上海图书馆东馆",5500);yes(!revised.shouldStop(6000),"Corrected decoder revision ignored");
+  VoiceEndpointRules whitespace=new VoiceEndpointRules(0);whitespace.partial("你 好",1000);whitespace.partial("你好",3000);yes(whitespace.lastActivity()==1000,"Formatting alone extends capture");whitespace.partial(" \n\t",3500);yes(whitespace.lastActivity()==1000,"Whitespace counted as speech");
+  VoiceEndpointRules threshold=new VoiceEndpointRules(0);threshold.audio(500,1000);yes(!threshold.heard(),"Energy threshold changed");threshold.audio(501,2000);yes(threshold.heard()&&threshold.lastActivity()==2000,"Acoustic speech no longer counted");
+  VoiceSession session=new VoiceSession();long old=session.begin(true);session.listening(old);VoiceEndpointRules oldEndpoint=new VoiceEndpointRules(0);oldEndpoint.partial("旧回调",2000);session.cancel();long fresh=session.begin(true);VoiceEndpointRules next=new VoiceEndpointRules(3000);if(session.current(old))next.partial("旧回调",12000);yes(!next.heard()&&next.shouldStop(13000),"Old lease extends new capture");yes(!session.current(old)&&session.current(fresh),"Endpoint bypassed lease ownership");
+  VoiceEndpointRules longSpeech=new VoiceEndpointRules(0);for(int t=0;t<=90000;t+=1000)longSpeech.partial("公开合成长句"+t,t);yes(!longSpeech.shouldStop(90000),"Decoder activity lost before hard limit");session.segment(fresh,"已确认文字");session.forceDraft(fresh);session.stop(fresh);VoiceSession.Result limit=session.finish(fresh,true);yes(limit!=null&&!limit.direct,"Hard limit still allowed direct execution");
+  System.out.println("PASS: VoiceEndpointRules "+checks+" quiet-speech progress, unchanged partial, boundary and hard-limit ownership checks");
+ }
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "document_id": "neo-agent-touch-public-commands-20",
+  "language": "zh-CN",
+  "purpose": "Fixed public text references for a possible future independent ASR evaluation",
+  "evidence_type": "not_tested",
+  "contains_audio": false,
+  "contains_personal_transcripts": false,
+  "evaluation_results_included": false,
+  "commands_are_execution_authorization": false,
+  "normalization_policy": "Preserve raw hypotheses; declare any whitespace/punctuation normalization separately. No lexical answer correction.",
+  "commands": [
+    {
+      "id": "public-01",
+      "text": "打开企业微信查看工作台",
+      "entities_in_order": [
+        "企业微信",
+        "工作台"
+      ]
+    },
+    {
+      "id": "public-02",
+      "text": "用高德地图搜索上海图书馆东馆",
+      "entities_in_order": [
+        "高德地图",
+        "上海图书馆东馆"
+      ]
+    },
+    {
+      "id": "public-03",
+      "text": "用QQ音乐播放许嵩的有何不可",
+      "entities_in_order": [
+        "QQ音乐",
+        "许嵩",
+        "有何不可"
+      ]
+    },
+    {
+      "id": "public-04",
+      "text": "先打开企业微信查看工作台，再用高德地图搜索附近加油站，最后用QQ音乐播放许嵩的有何不可",
+      "entities_in_order": [
+        "企业微信",
+        "工作台",
+        "高德地图",
+        "附近加油站",
+        "QQ音乐",
+        "许嵩",
+        "有何不可"
+      ]
+    },
+    {
+      "id": "public-05",
+      "text": "先在淘宝搜索保温杯，再到京东查看同规格价格，只比较，不下单",
+      "entities_in_order": [
+        "淘宝",
+        "保温杯",
+        "京东",
+        "只比较",
+        "不下单"
+      ]
+    },
+    {
+      "id": "public-06",
+      "text": "打开哔哩哔哩播放名侦探柯南第一集",
+      "entities_in_order": [
+        "哔哩哔哩",
+        "名侦探柯南",
+        "第一集"
+      ]
+    },
+    {
+      "id": "public-07",
+      "text": "在WPS新建租赁合同模板，保存后重新打开，不签署，不发送",
+      "entities_in_order": [
+        "WPS",
+        "租赁合同",
+        "保存",
+        "重新打开",
+        "不签署",
+        "不发送"
+      ]
+    },
+    {
+      "id": "public-08",
+      "text": "打开微信搜索阶跃星辰，不发送任何消息",
+      "entities_in_order": [
+        "微信",
+        "阶跃星辰",
+        "不发送"
+      ]
+    },
+    {
+      "id": "public-09",
+      "text": "在百度网盘搜索测试文件，不下载，不删除",
+      "entities_in_order": [
+        "百度网盘",
+        "测试文件",
+        "不下载",
+        "不删除"
+      ]
+    },
+    {
+      "id": "public-10",
+      "text": "去高德地图查看从上海火车站到上海自然博物馆的步行路线",
+      "entities_in_order": [
+        "高德地图",
+        "上海火车站",
+        "上海自然博物馆",
+        "步行路线"
+      ]
+    },
+    {
+      "id": "public-11",
+      "text": "不要下单，只在淘宝搜索抽纸，含运费不超过五元",
+      "entities_in_order": [
+        "不要下单",
+        "淘宝",
+        "抽纸",
+        "含运费",
+        "不超过五元"
+      ]
+    },
+    {
+      "id": "public-12",
+      "text": "先打开企业微信查看工作台，再打开高德地图搜索人民广场，最后回到企业微信工作台",
+      "entities_in_order": [
+        "企业微信",
+        "工作台",
+        "高德地图",
+        "人民广场",
+        "企业微信",
+        "工作台"
+      ]
+    },
+    {
+      "id": "public-13",
+      "text": "打开QQ音乐，搜索陈奕迅的十年，播放免费版本，不开通会员",
+      "entities_in_order": [
+        "QQ音乐",
+        "陈奕迅",
+        "十年",
+        "免费",
+        "不开通会员"
+      ]
+    },
+    {
+      "id": "public-14",
+      "text": "在WPS把本次新建合同的租金支付时间从每月十日前改成每月五日前",
+      "entities_in_order": [
+        "WPS",
+        "本次新建合同",
+        "租金",
+        "十日前",
+        "五日前"
+      ]
+    },
+    {
+      "id": "public-15",
+      "text": "打开大麦搜索许嵩演唱会，只查看，不买票",
+      "entities_in_order": [
+        "大麦",
+        "许嵩",
+        "演唱会",
+        "只查看",
+        "不买票"
+      ]
+    },
+    {
+      "id": "public-16",
+      "text": "打开高德地图搜索附近充电站，不要使用附近加油站作为搜索词",
+      "entities_in_order": [
+        "高德地图",
+        "附近充电站",
+        "不要",
+        "附近加油站"
+      ]
+    },
+    {
+      "id": "public-17",
+      "text": "在哔哩哔哩搜索打开微信的教程，不要切换到微信",
+      "entities_in_order": [
+        "哔哩哔哩",
+        "打开微信的教程",
+        "不要切换到微信"
+      ]
+    },
+    {
+      "id": "public-18",
+      "text": "在WPS文档里写上播放歌曲这四个字，不要真的播放",
+      "entities_in_order": [
+        "WPS",
+        "文档",
+        "播放歌曲",
+        "不要真的播放"
+      ]
+    },
+    {
+      "id": "public-19",
+      "text": "打开微信查看朋友圈里的公开视频，不评论，不点赞",
+      "entities_in_order": [
+        "微信",
+        "朋友圈",
+        "公开",
+        "不评论",
+        "不点赞"
+      ]
+    },
+    {
+      "id": "public-20",
+      "text": "先到京东搜索蓝牙键盘，再打开百度网盘搜索键盘说明书，最后在QQ音乐播放周杰伦的晴天",
+      "entities_in_order": [
+        "京东",
+        "蓝牙键盘",
+        "百度网盘",
+        "键盘说明书",
+        "QQ音乐",
+        "周杰伦",
+        "晴天"
+      ]
+    }
+  ]
+}

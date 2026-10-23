@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-23",
+  "scope": "Public primary-source research only; no model/AAR download, candidate execution, microphone capture, audio upload or production integration in this round.",
+  "decision": {
+    "self_hosted_asr_upgrade": "paused",
+    "current_input_direction": "Release uses a user-selected system input method such as Sogou; user confirms text before sending. No built-in microphone recognition in the release variant.",
+    "preferred_future_screening_candidate": "sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20",
+    "candidate_is_production_default": false,
+    "sensevoice_original_onnx_distribution": "not selected; restrictive model-license purpose requires separate clearance"
+  },
+  "runtime": {
+    "repository": "https://github.com/k2-fsa/sherpa-onnx",
+    "version": "v1.13.8",
+    "version_is_claimed_latest": false,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.8/LICENSE",
+    "android_examples": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.8/android/README.md",
+    "aar_build_guide": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.8/android/SherpaOnnxAar/README.md",
+    "android_build_config": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.8/android/SherpaOnnxAar/sherpa_onnx/build.gradle.kts",
+    "dependency_versions": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.8/android/SherpaOnnxAar/gradle/libs.versions.toml",
+    "declared_min_sdk": 21,
+    "declared_jvm_target": "1.8",
+    "declared_kotlin_version": "1.7.20",
+    "official_android_abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "asset": {
+      "name": "sherpa-onnx-static-link-onnxruntime-1.13.8.aar",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.8/sherpa-onnx-static-link-onnxruntime-1.13.8.aar",
+      "sha256": "b22c3fc1b6a45666d28892bb2f7694beeb77a8362d7ebd77c1a5431ec9435471",
+      "digest_source": "publisher GitHub release asset digest",
+      "digest_source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/expanded_assets/v1.13.8",
+      "binary_downloaded_or_rehashed_in_this_round": false
+    },
+    "integration_limits": [
+      "Kotlin runtime dependencies and exact classes/JNI contents still require inspection of the chosen AAR.",
+      "A precompiled AAR may be consumed by javac/d8; this is not an implemented build integration.",
+      "Final APK native ABI, ELF/ZIP alignment, loading, memory and device behavior remain untested."
+    ]
+  },
+  "zipformer_bilingual": {
+    "id": "csukuangfj/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20",
+    "revision": "98590b7ed6443e77b714204da2757d75e1a642f4",
+    "model_card": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/blob/98590b7ed6443e77b714204da2757d75e1a642f4/README.md",
+    "converted_model_card_license": "Apache-2.0",
+    "original_model": {
+      "id": "pfluo/k2fsa-zipformer-chinese-english-mixed",
+      "revision": "6eb615ae77ecac05c5628d5c8ed7037c14a338d5",
+      "model_card": "https://huggingface.co/pfluo/k2fsa-zipformer-chinese-english-mixed/blob/6eb615ae77ecac05c5628d5c8ed7037c14a338d5/README.md",
+      "model_card_license": "Apache-2.0"
+    },
+    "official_model_documentation": "https://github.com/k2-fsa/sherpa/blob/master/docs/source/onnx/pretrained_models/online-transducer/zipformer-transducer-models.rst",
+    "documentation_revision_is_fixed": false,
+    "android_kotlin_config": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.8/sherpa-onnx/kotlin-api/OnlineRecognizer.kt",
+    "android_config_evidence": "getModelConfig type=0 names this bilingual model; OnlineTransducerModelConfig and modelType=zipformer. Quantized filenames must be selected explicitly.",
+    "selected_configuration": "INT8 encoder + FP32 decoder + INT8 joiner + tokens, matching the official quantized command example",
+    "assets": [
+      {
+        "name": "encoder-epoch-99-avg-1.int8.onnx",
+        "bytes": 181895032,
+        "sha256": "8fa764187a261844f859d7143ebaa563af5d10adfece4c18a8f414c88cba2a9b",
+        "digest_source": "publisher Hugging Face LFS oid",
+        "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/resolve/98590b7ed6443e77b714204da2757d75e1a642f4/encoder-epoch-99-avg-1.int8.onnx"
+      },
+      {
+        "name": "decoder-epoch-99-avg-1.onnx",
+        "bytes": 13876452,
+        "sha256": "2e3b5ec371f8899ee6acd829fd753ba45772df57a91bdf37cde3136354e7db7d",
+        "digest_source": "publisher Hugging Face LFS oid",
+        "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/resolve/98590b7ed6443e77b714204da2757d75e1a642f4/decoder-epoch-99-avg-1.onnx"
+      },
+      {
+        "name": "joiner-epoch-99-avg-1.int8.onnx",
+        "bytes": 3228404,
+        "sha256": "1ed689c5ed19dbaa725d9d191bb4822b5f4855a39e1ffd28cbc1f340d25b2ee0",
+        "digest_source": "publisher Hugging Face LFS oid",
+        "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/resolve/98590b7ed6443e77b714204da2757d75e1a642f4/joiner-epoch-99-avg-1.int8.onnx"
+      },
+      {
+        "name": "tokens.txt",
+        "bytes": 56317,
+        "sha256": "a8e0e4ec53810e433789b54a5c0134a7eaa2ffca595a6334d54c00da858841d3",
+        "digest_source": "computed from fetched public text bytes; not a publisher LFS digest",
+        "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/resolve/98590b7ed6443e77b714204da2757d75e1a642f4/tokens.txt"
+      }
+    ],
+    "selected_assets_total_bytes": 199056205,
+    "official_full_archive_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2",
+    "full_archive_sha256": null,
+    "full_archive_digest_verified": false,
+    "model_binaries_downloaded_in_this_round": false,
+    "candidate_execution_in_this_round": false,
+    "limitations": [
+      "Apache-2.0 is declared in both the converted and original publisher model cards; training-data rights were not independently audited.",
+      "Original checkpoint/search benchmark metrics cannot establish the converted INT8 greedy decoder or any device's command accuracy.",
+      "199056205 bytes is selected asset size, not compressed archive size, APK increment or runtime memory.",
+      "No measured accuracy advantage over the existing baseline is claimed."
+    ]
+  },
+  "sensevoice_original_onnx": {
+    "id": "csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17",
+    "revision": "2365baeacb507f821a0c8120fcee3d484dba7a07",
+    "original_model_card": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall/blob/main/README.md",
+    "original_model_card_revision_is_fixed": false,
+    "original_model_card_license_metadata": {
+      "license": "other",
+      "license_name": "model-license"
+    },
+    "converted_license": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/blob/2365baeacb507f821a0c8120fcee3d484dba7a07/LICENSE",
+    "applicable_model_agreement": {
+      "name": "FunASR MODEL_LICENSE",
+      "version": "1.1",
+      "repository_revision": "fbbfe01800a8c4c9103cb2150fb1a5d06cc64758",
+      "url": "https://github.com/modelscope/FunASR/blob/fbbfe01800a8c4c9103cb2150fb1a5d06cc64758/MODEL_LICENSE",
+      "text_sha256": "7dba975a2069691db4992b0592d70828b330d2f8a30a71450f4e152a554e84f8",
+      "text_sha256_source": "computed from fetched public license text",
+      "material_terms_summary": [
+        "Applies to model weights and derivatives.",
+        "Permits use/copy/modify/share subject to the agreement and requires source/author attribution and model-name retention.",
+        "Section 3 limits purpose to reference and learning; unrestricted commercial redistribution is not established."
+      ]
+    },
+    "official_deployment_documentation": "https://github.com/k2-fsa/sherpa/blob/master/docs/source/onnx/sense-voice/pretrained.rst",
+    "documentation_revision_is_fixed": false,
+    "model_type": "non-streaming",
+    "assets_metadata_only": [
+      {
+        "name": "model.int8.onnx",
+        "bytes": 239233841,
+        "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+        "digest_source": "publisher Hugging Face LFS oid",
+        "url": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/2365baeacb507f821a0c8120fcee3d484dba7a07/model.int8.onnx"
+      },
+      {
+        "name": "tokens.txt",
+        "bytes": 315894,
+        "sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc",
+        "digest_source": "computed from fetched public text bytes; not a publisher LFS digest",
+        "url": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/2365baeacb507f821a0c8120fcee3d484dba7a07/tokens.txt"
+      }
+    ],
+    "model_binaries_downloaded_in_this_round": false,
+    "candidate_execution_in_this_round": false,
+    "production_or_public_apk_inclusion": false,
+    "license_conclusion_scope": "Engineering distribution decision from the cited text; not legal advice, not a license grant. A runtime/code license does not replace the weight license."
+  },
+  "future_evaluation_boundaries": {
+    "input": "Predeclared public-command PCM only; no personal recording is required by this research plan.",
+    "preserve_raw_hypothesis": true,
+    "lexical_answer_correction_allowed_in_asr_score": false,
+    "metrics": [
+      "CER with declared normalization",
+      "application names",
+      "actions",
+      "locations/numbers",
+      "negation",
+      "multi-task order",
+      "noise/silence false commands",
+      "load/decode latency",
+      "peak memory"
+    ],
+    "synthetic_samples_prove_real_microphone_accuracy": false,
+    "offline_decode_proves_end_to_end_app_control": false,
+    "required_execution_guards": [
+      "final-only",
+      "session/request binding",
+      "cancellation",
+      "timeout remains draft"
+    ]
+  },
+  "publication_context": {
+    "document_id": "neo-agent-touch-research-2026-10-23",
+    "evidence_categories": [
+      "reference",
+      "native_fixture",
+      "real_device",
+      "not_tested"
+    ],
+    "personal_recordings_or_transcripts_included": false,
+    "research_only": true,
+    "release_variant_and_debug_research_must_be_distinguished": true
+  },
+  "project_reference_sources": [
+    {
+      "id": "android-accessibility",
+      "url": "https://developer.android.com/guide/topics/ui/accessibility/service",
+      "why": "Native UI semantics, gestures and accessibility lifecycle",
+      "reuse": "Platform APIs used; no platform implementation copied",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "android-ime",
+      "url": "https://developer.android.com/reference/android/inputmethodservice/InputMethodService",
+      "related_url": "https://developer.android.com/reference/android/view/inputmethod/InputConnection",
+      "why": "Real editor connection, SEARCH action and input-method lifecycle",
+      "reuse": "Platform APIs used; framework binding must be tested separately from third-party results",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "vosk",
+      "url": "https://github.com/alphacep/vosk-api",
+      "related_url": "https://github.com/alphacep/vosk-android-demo",
+      "why": "Existing offline streaming ASR baseline and Android integration example",
+      "reuse": "Historical/debug development implementation uses Vosk Android 0.3.75, JNA 5.18.1 and small Chinese 0.22. The 0.1.15 release variant excludes the old engine/model and RECORD_AUDIO permission.",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "androidworld",
+      "url": "https://arxiv.org/abs/2405.14573",
+      "repository": "https://github.com/google-research/android_world",
+      "why": "Separate task setup, actions, independent success checks and cleanup",
+      "reuse": "Evaluation design reference only; no desktop executor port or full benchmark run",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "mobileagent",
+      "url": "https://github.com/X-PLUG/MobileAgent",
+      "why": "Use action errors and history in subsequent decisions",
+      "reuse": "Concept reference only; no wholesale ADB framework copied",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "longmemeval",
+      "url": "https://arxiv.org/abs/2410.10813",
+      "repository": "https://github.com/xiaowu0162/LongMemEval",
+      "why": "Distinguish memory updates, temporal/cross-session recall and uncertainty",
+      "reuse": "Evaluation dimensions only; dataset not copied and paper results are not application results",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "mcp",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+      "related_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/lifecycle",
+      "why": "Structured tool descriptions, initialization, calls and errors",
+      "reuse": "Existing in-process protocol adaptation; no claim of external network MCP or gateway acceptance",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "langgraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "related_url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "why": "Distinguish checkpoints, current state and pending work",
+      "reuse": "Concept reference only; Python framework not bundled",
+      "evidence_type": "reference"
+    },
+    {
+      "id": "ego-lite",
+      "url": null,
+      "why": "Visible control boundaries, takeover and understandable state feedback",
+      "reuse": "Interaction/appearance inspiration only; internal framework not obtained or copied",
+      "evidence_type": "reference"
+    }
+  ],
+  "project_reference_license_limit": "Research-only repository/paper references are not vendored dependencies. Runtime/model licenses are assessed separately above; no paper or reference repository license grants rights to unrelated weights.",
+  "current_release": {
+    "version": "0.1.15-beta.1",
+    "apk_bytes": 222437,
+    "apk_sha256": "36b4b5dedc391e80737dbc9f288157c474cbe6850b1870690ff58d4739acff30",
+    "built": true,
+    "installed": true,
+    "installed_apk_readback_matches": true,
+    "old_vosk_or_native_asr_model_present": false,
+    "record_audio_permission_present": false,
+    "compatibility_stub": "source/release-src/studio/jiayu/neoagent/OfflineVoice.java",
+    "verification": "../verification-v15.json",
+    "debug_legacy_asr_is_separate": true,
+    "system_keyboard_ui_fixture": "not_run",
+    "sogou_asr_accuracy": "not_tested",
+    "new_three_app_business_task": "not_tested",
+    "existing_input_method_choice_and_enabled_list_preserved": true,
+    "new_system_permission_grants": false
+  }
+}

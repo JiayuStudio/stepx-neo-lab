@@ -86,3 +86,14 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - 已观察淘宝商品探索、美团座位图、WPS 新测试合同生成／保存／修改／重开；完整交易、外部 MCP 和全服务商兼容未验。影片偏好值为隔离测试数据。
 
 Neo Agent Touch Beta 已去除固定应用选择名单：本机可启动应用由用户自选，支持搜索、分类、同类常用与通用视觉。42 项隔离检查不是微信／地图／音乐／企业微信／网盘的真实业务验收，详见 guides/neo-agent-touch/application-selection.md。
+
+## Neo Agent Touch · 0.1.15 当前研究与源码
+
+- [AI直接阅读](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/ai.md)
+- [结构化结论](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/knowledge.json)：区分纯规则、Android原生构造、历史真机结果及未验项。
+- [最新研究与选型许可](guides/neo-agent-touch/research/2026-10-23.md)
+- [源码阅读与构建](guides/neo-agent-touch/source/README.md)
+- [只读校验拉取](guides/neo-agent-touch/bootstrap.py) · [三个入口SHA](guides/neo-agent-touch/agent-entry-sha256.json)
+- release使用搜狗等当前系统输入法，确认转写后发送；不含旧ASR或麦克风权限。41组纯规则、96项原生构造不等于真人三目标成功；旧真人长句失败，ASR升级暂停。
+
+- [Neo Agent Touch 120秒功能技术展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4)：历史业务版本均标注，新Suno配乐；成片解码通过不能代替新beta业务验收或人耳试听。

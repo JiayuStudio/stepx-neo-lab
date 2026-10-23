@@ -46,3 +46,7 @@
 ## 手机 Agent 开发实录
 
 - [Neo Agent Touch：从目标到可验证的手机操作](../guides/neo-agent-touch/README.md)：三分钟实录、Beta APK、架构、原生控件与视觉、触点变化、接管与检查点、WPS 结果验证，以及论文和仓库的参考范围。提供可编辑影片工程及关键代码阅读样例。
+
+- [Neo Agent Touch 最新研究与Agent拉取](../guides/neo-agent-touch/ai.md)：原话绑定、完整候选、输入法交接、证据区分、ASR许可与暂停结论，提供固定提交与SHA校验的只读获取。
+
+[120秒功能技术展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4) · [可编辑影片1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip)：历史业务实录＋架构动效，新Suno v6器乐；与当前beta实测范围分开。

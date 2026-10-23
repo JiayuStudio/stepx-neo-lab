@@ -1,0 +1,68 @@
+{
+  "version": "0.1.15-beta.1",
+  "release_apk_sha256": "36b4b5dedc391e80737dbc9f288157c474cbe6850b1870690ff58d4739acff30",
+  "release_built": true,
+  "release_installed": true,
+  "debug_apk_sha256": "323005c776d864b1914ba2cb68c56d6d2d6d7ae78393fad3817a0bb789224811",
+  "unit_suites": 41,
+  "new_source_and_routing_rule_checks": 49,
+  "voice_ownership_rule_checks": 58,
+  "native_workflow_construction_checks": 96,
+  "native_workflow_cleanup_verified": true,
+  "native_business_actions": 0,
+  "system_keyboard_ui_test": "not_run_device_inactive",
+  "sogou_asr_accuracy": "not_tested",
+  "builtin_asr_upgrade": "paused",
+  "historical_live_voice_three_app": "failed_on_0.1.14",
+  "current_live_multi_app": "not_tested",
+  "prior_verified_results": {
+    "0.1.13": "Owned IME 36 native checks; QQ Music target player progress increased; no listening proof",
+    "0.1.12": "WPS two revisions each saved and reopened; movie date and unselected seat map; brief game play"
+  },
+  "verification_gaps": [
+    "Full commerce/payment",
+    "All app/provider compatibility",
+    "New live three-app workflow",
+    "Long-term use",
+    "External MCP/Amoo gateway",
+    "Process restart recovery"
+  ],
+  "release_bytes": 222437,
+  "release_microphone_permission": false,
+  "release_builtin_asr_present": false,
+  "installed_apk_readback_matches": true,
+  "release_install_has_no_new_permission_grants": true,
+  "video": {
+    "file": "neo-agent-touch-features-120s.mp4",
+    "duration_s": 120,
+    "sha256": "eba72d097da777c4d1974cd557db063100731463d44073bc99deca9e3f739bf1",
+    "resolution": "1920x1080",
+    "fps": 30,
+    "all_av_decoded": true,
+    "historical_footage_versions": [
+      "0.1.10",
+      "0.1.12",
+      "0.1.13"
+    ],
+    "complex_app_footage_seconds": 70,
+    "music": "Three newly generated Suno v6 instrumental cues; crossfaded; no old track reused",
+    "human_listening_approved": false,
+    "current_beta_business_acceptance": false
+  },
+  "source_archive": {
+    "file": "Neo-Agent-Touch-0.1.15-beta.1-source.zip",
+    "bytes": 433129,
+    "sha256": "f8e596c269fd340402cc61d3e73922ff1c6b2c77483123a6014199f93eb06d4a",
+    "release_build_and_41_rule_suites_from_archive": "passed",
+    "bit_identical_apk_claimed": false
+  },
+  "editable_film_archive": {
+    "file": "neo-agent-touch-film-editable-v1.0.2.zip",
+    "bytes": 67619093,
+    "sha256": "5c7da016379df3f1a657bbaae7240134e3a4cf27eff57f335c678ece286bd090",
+    "zip_crc_and_34_manifest_hashes": "passed",
+    "all_21_media_full_decode": "passed",
+    "relative_fcpxml_dtd_and_11_refs": "passed",
+    "actual_final_cut_import": "not_tested"
+  }
+}

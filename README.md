@@ -45,17 +45,21 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 [从需求到真实试玩](guides/chess-bomber/README.md)：官方 Step Studio 迭代、掌机布局、多点触控、账号与回放、Suno配乐和宣传片制作。更新至 0.15.2：危险格提示、公开观战与战绩、回放导出。
 
-## Neo Agent Touch · Beta 与 180 秒开发实录
+## Neo Agent Touch · Beta 与开发实录
 
-[内测 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/Neo-Agent-Touch-0.1.11-beta.1.apk) · [观看三分钟实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4) · [学习手册与可编辑工程](guides/neo-agent-touch/README.md)
+[内测 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1.apk) · [观看120秒功能展示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-features-120s.mp4) · [学习手册与可编辑工程](guides/neo-agent-touch/README.md)
 
-手机内的目标执行、蓝色边缘反馈与接管。实录重点展示淘宝商品探索、电影场次与座位图、WPS 合同生成和修改；购物与购票完整成交、外部 MCP 网关仍待验，详见[验证范围](guides/neo-agent-touch/README.md#已验证到哪里)。
+手机内的目标执行、蓝色边缘反馈与接管。实录重点展示淘宝商品探索、电影场次与座位图、WPS 合同生成和修改；购物与购票完整成交、外部 MCP 网关仍待验，详见[验证范围](guides/neo-agent-touch/verification-v15.json)。
+
+最新0.1.15：采用搜狗等当前系统输入法，41组纯规则与96项原生构造检查通过；真人三目标仍待验。[Agent阅读与拉取](guides/neo-agent-touch/ai.md) · [最新研究](guides/neo-agent-touch/research/2026-10-23.md)。
+
+120秒片含历史业务实录和架构动效，使用新Suno v6配乐。[可编辑影片1.0.2](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/neo-agent-touch-film-editable-v1.0.2.zip) · [历史180秒实录](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/neo-agent-touch-development-180s.mp4)。
 
 ## 常用下载
 
 | 项目 | 版本 | 说明与下载 |
 | --- | --- | --- |
-| Neo Agent Touch | 0.1.11-beta.1 | [内测说明与安装](guides/neo-agent-touch/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.11-beta.1/Neo-Agent-Touch-0.1.11-beta.1.apk) |
+| Neo Agent Touch | 0.1.15-beta.1 | [内测说明与安装](guides/neo-agent-touch/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.15-beta.1/Neo-Agent-Touch-0.1.15-beta.1.apk) |
 | 拓麻歌子 | 0.3.4 | [玩法和安装](guides/neo-pet/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4) |
 | StepX Neo Studio | 1.2.3 | [功能和安装](guides/neo-studio/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3) |
 | Amoo / Notion | 1.0.1 | [CLI 与手机附件](downloads/amoo-notion/README.md) · [离线手册和提示词包](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/amoo-notion-v1.0.1) |

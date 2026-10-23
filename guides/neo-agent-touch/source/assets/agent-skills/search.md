@@ -1,0 +1,8 @@
+# 应用内搜索与打开
+先点击可见搜索入口，输入目标关键词；输入后点击搜索按钮，或对 submit_search=true 的搜索框调用 device.submit_search。不要一直等待未提交的查询。搜索结果按目标含义选择，不以剪辑、广告、配件或推荐替代指定目标。进入目标详情后核对名称与状态；播放目标还需核对当前集数与进度。
+
+若 native_search_input.can_write=true，系统输入法已确认当前目标应用的搜索输入通道可写，直接使用device.type并省略id。focused=true本身不代表可写；can_write=false或存在未核验写入时，先重新观察与核对，不重复输入。没有控件树不等于没有输入焦点；不要反复点同一输入框。该通道只接收与原目标一致的公开搜索词，聊天发送框和密码框不适用。
+
+若 native_search_input.can_submit=true，可用device.submit_search省略id：手机重新核对当前编辑器、目标应用、完整搜索词和原目标，再派发系统IME_ACTION_SEARCH。这对应输入法的搜索动作，无须点击键盘坐标。若submit_dispatched_unverified=true，不重复提交；先观察结果页。填写成功、动作派发与搜索结果出现是不同状态，只有结果页能验证搜索。
+
+若native_search_input.can_submit_node=true，按submit_node_id调用device.submit_search。该通道将当前聚焦搜索节点的完整读回，与Android当前同应用SEARCH编辑器绑定，发送明确的系统IME_SEARCH；不能把ACTION_IME_ENTER的true回执当作已进入搜索结果。旧节点失焦时先重新聚焦和观察，不向失焦节点反复发动作。

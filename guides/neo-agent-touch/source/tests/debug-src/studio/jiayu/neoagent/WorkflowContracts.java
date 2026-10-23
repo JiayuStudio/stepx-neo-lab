@@ -1,0 +1,39 @@
+package studio.jiayu.neoagent;
+import android.app.Activity;import android.os.*;import org.json.*;import java.io.*;import java.net.*;import java.util.concurrent.*;import java.util.concurrent.atomic.*;
+/** Dedicated emulator: actual Android screenshots/gestures, fake provider, owned demo only. */
+final class WorkflowContracts {
+ final Activity a;final ControlService s;final CountDownLatch second=new CountDownLatch(1),release=new CountDownLatch(1);final AtomicBoolean held=new AtomicBoolean();final AtomicInteger requests=new AtomicInteger(),firstRequests=new AtomicInteger(),proposals=new AtomicInteger();int passed;
+ WorkflowContracts(Activity a){this.a=a;s=ControlService.instance;}
+ static void start(Activity a){new Thread(()->new WorkflowContracts(a).run()).start();}
+ void yes(boolean ok,String reason)throws Exception{if(!ok)throw new Exception(reason);passed++;}
+ void await(java.util.function.BooleanSupplier test,long ms)throws Exception{long end=SystemClock.elapsedRealtime()+ms;while(SystemClock.elapsedRealtime()<end){if(test.getAsBoolean())return;Thread.sleep(50);}throw new Exception("Workflow wait timed out");}
+ Config config(){Config c=new Config();c.endpoint="https://example.invalid";c.key="LOCAL_WORKFLOW_FIXTURE";c.model="fixture";c.maxSteps=12;return c;}
+ JSONObject plan(String... targets)throws Exception{JSONArray entries=new JSONArray();for(String target:targets)entries.put(new JSONObject().put("app","Neo Agent 本地演示").put("goal","在本地演示中搜索"+target+"，看到对应搜索结果后停止").put("target",target).put("checkout",false));return new JSONObject().put("kind","task").put("tasks",entries);}
+ String response(String text)throws Exception{
+  requests.incrementAndGet();String goal=text.substring(0,text.indexOf("前面目标结果"));String target=goal.contains("搜索北京")?"北京":goal.contains("搜索上海")?"上海":"广州";
+  if(target.equals("北京"))firstRequests.incrementAndGet();if(target.equals("上海")&&held.compareAndSet(false,true)){second.countDown();release.await(15,TimeUnit.SECONDS);}
+  JSONObject state=new JSONObject(text.substring(text.indexOf("当前界面：")+5));JSONArray nodes=state.getJSONArray("nodes");JSONObject input=null,search=null;boolean done=false;
+  for(int i=0;i<nodes.length();i++){JSONObject n=nodes.getJSONObject(i);if(n.optBoolean("editable"))input=n;if(n.optString("text").equals("搜索"))search=n;if(n.optString("text").equals("搜索结果："+target))done=true;}
+  done=s.ui(()->{android.view.accessibility.AccessibilityNodeInfo root=s.getRootInActiveWindow();String expected="搜索结果："+target;for(android.view.accessibility.AccessibilityNodeInfo n:root.findAccessibilityNodeInfosByText(expected))if(n.isVisibleToUser()&&expected.contentEquals(n.getText()))return true;return false;});
+  if(done)return "{\"action\":\"finish\",\"message\":\"当前原生结果文字已匹配\"}";
+  if(input==null||search==null)throw new Exception("Missing owned demo controls");proposals.incrementAndGet();
+  if(!input.optString("text").equals(target)){if(!input.optBoolean("focused"))return new JSONObject().put("action","tap").put("id",input.getInt("id")).toString();return new JSONObject().put("action","type").put("id",input.getInt("id")).put("text",target).toString();}
+  return new JSONObject().put("action","tap").put("id",search.getInt("id")).toString();
+ }
+ void run(){JSONObject report=new JSONObject();String grant="",oldOutcome="",oldConfig=a.getSharedPreferences("settings",0).getString("config","");try{
+  yes(android.os.Build.HARDWARE.equals("ranchu")||android.os.Build.HARDWARE.equals("goldfish"),"Emulator only");yes(s!=null&&s.connected&&!s.busy(),"Not idle");Vault v=new Vault(a);grant=v.get(RoutineAccess.KEY);oldOutcome=v.get("last-outcome");Config c=config();c.save(a);new RoutineAccess(a).approve(c,java.util.Collections.singletonList(a.getPackageName()));
+  URL.setURLStreamHandlerFactory(protocol->protocol.equals("https")?new URLStreamHandler(){protected URLConnection openConnection(URL url){return new ModelContracts.Fake(url){public InputStream getInputStream(){try{JSONObject request=new JSONObject(body.toString("UTF-8"));Object content=request.getJSONArray("messages").getJSONObject(1).get("content");String text=((JSONArray)content).getJSONObject(0).getString("text");String action=response(text);return new ByteArrayInputStream(new JSONObject().put("choices",new JSONArray().put(new JSONObject().put("message",new JSONObject().put("content",action)))).toString().getBytes("UTF-8"));}catch(Exception error){return new ByteArrayInputStream("{}".getBytes());}}};}}:null);
+  boolean rejected=false;try{new TaskWorkflow(a,plan("1","2","3","4","5","6","7"),"合成");}catch(Exception expected){rejected=true;}yes(rejected&&requests.get()==0,"Oversized plan started");
+  JSONObject invalid=plan("北京","上海");invalid.getJSONArray("tasks").getJSONObject(1).put("app","不存在的合成应用");rejected=false;try{new TaskWorkflow(a,invalid,"合成");}catch(Exception expected){rejected=true;}yes(rejected&&!s.busy(),"Partial invalid plan started");
+  TaskWorkflow workflow=new TaskWorkflow(a,plan("北京","上海","广州"),"依次在本地演示搜索北京、上海、广州");workflow.baseSteps=12;
+  yes(workflow.steps.size()==3&&workflow.packages().size()==1,"Plan not preserved");yes(s.ui(()->s.startWorkflow(c,workflow,"workflow-fixture-session")),"Cannot start workflow");
+  yes(second.await(35,TimeUnit.SECONDS),"Did not reach second goal");yes(s.workflow.index==1&&s.workflow.steps.get(0).verified&&s.workflow.steps.get(0).state.equals("verified"),"First goal not natively verified");int first=firstRequests.get();long oldLease=s.generation;String run=s.runId;
+  s.ui(()->{s.pauseForUser();return true;});yes(s.paused&&!s.ownership.accepts(oldLease),"Pause did not revoke");release.countDown();CompletableFuture<Boolean> drained=new CompletableFuture<>();s.worker.submit(()->drained.complete(true));yes(drained.get(5,TimeUnit.SECONDS)&&s.workflow.index==1,"Late response advanced queue");
+  s.ui(()->{s.ownership.end();s.paused=false;s.runConfig=null;s.workflow=null;return true;});yes(s.ui(()->TaskCheckpoint.restore(s)),"Queue checkpoint not restored");yes(s.paused&&!s.running&&s.workflow.index==1&&s.runId.equals(run),"Restored wrong stage");yes(s.workflow.steps.get(0).verified&&s.workflow.steps.get(0).state.equals("verified")&&s.workflow.current().state.equals("paused"),"Finished stage lost");
+  yes(s.ui(s::resumeFromUser),"Cannot resume queue");await(()->!s.busy(),40000);yes(s.workflow.index==2&&s.workflow.steps.size()==3,"Queue did not finish");yes(firstRequests.get()==first,"Completed first goal replayed");
+  for(TaskSpec item:s.workflow.steps)yes(item.verified&&item.state.equals("verified"),"Goal without native result");yes(s.actions==proposals.get()-1&&s.actions>=6&&s.actions<=9,"Duplicate or missing native actions");yes(!v.has(TaskCheckpoint.KEY),"Completed queue resurrects");JSONObject outcome=new JSONObject(v.get("last-outcome"));yes(outcome.getString("session").equals("workflow-fixture-session")&&outcome.getString("detail").contains("3. "),"Outcome omitted queue");
+  report.put("success",true).put("workflow",s.workflow.json()).put("actions",s.actions).put("completed_stage_replayed",false).put("restored_stage",1);
+ }catch(Throwable error){try{report.put("success",false).put("failure",error.getMessage()).put("runtime_status",s==null?"none":s.status);}catch(Exception ignored){}}
+ finally{release.countDown();if(s!=null)s.stop("多目标合成回归结束");try{new Vault(a).put(RoutineAccess.KEY,grant);new Vault(a).put("last-outcome",oldOutcome);a.getSharedPreferences("settings",0).edit().putString("config",oldConfig).commit();report.put("passed",passed).put("mock_requests",requests.get()).put("real_network_calls",0).put("third_party_actions",0).put("sampledAt",System.currentTimeMillis());try(FileOutputStream out=a.openFileOutput("workflow-contracts.json",0)){out.write(report.toString(2).getBytes("UTF-8"));}}catch(Exception ignored){}new Handler(Looper.getMainLooper()).post(a::finish);}
+ }
+}

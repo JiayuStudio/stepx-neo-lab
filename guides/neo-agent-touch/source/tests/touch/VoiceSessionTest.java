@@ -1,0 +1,12 @@
+package studio.jiayu.neoagent;
+public class VoiceSessionTest {
+ static int checks;static void yes(boolean b,String why){if(!b)throw new AssertionError(why);checks++;}
+ public static void main(String[]args){VoiceSession s=new VoiceSession();long t=s.begin(true);yes(t>0,"start");yes(s.begin(true)<0,"duplicate starts");yes(s.listening(t),"capture begins");yes(s.preview(t,"打开 微信").contains("打开微信"),"partial preview");yes(s.finish(t,true)==null,"partial must not execute");
+  t=s.begin(true);s.listening(t);s.segment(t,"打开 微 信");s.segment(t,"然后 打开 QQ 音乐");yes(s.stop(t),"explicit stop");VoiceSession.Result r=s.finish(t,true);yes(r!=null&&r.direct&&r.text.equals("打开微信 然后打开 QQ 音乐"),"final multi goal");yes(s.finish(t,true)==null,"duplicate final");yes(!s.segment(t,"旧回调"),"late final");
+  long old=s.begin(true);s.listening(old);s.segment(old,"不要执行");s.cancel();yes(s.finish(old,true)==null,"cancelled final");t=s.begin(false);s.listening(t);s.segment(t,"打开WPS");yes(!s.finish(t,true).direct,"draft only mode");
+  t=s.begin(true);s.listening(t);s.segment(t,"打开淘宝");yes(s.finish(t,false)==null,"background never submits");yes(s.state()==VoiceSession.State.IDLE,"background cleanup");
+  t=s.begin(true);s.listening(t);boolean denied=false;try{s.segment(t,new String(new char[6001]).replace('\0','字'));}catch(IllegalArgumentException expected){denied=true;}yes(denied,"bounded recognition");s.cancel();yes(!s.listening(t),"old capture cannot rearm");yes(VoiceSession.normalize(" 先 打开 WPS  然后 打开 微信 ").equals("先打开 WPS 然后打开微信"),"Chinese words join and English preserved");
+  t=s.begin(true);s.listening(t);s.segment(t,"先打开微信然后");yes(s.forceDraft(t),"hard deadline marks current utterance draft only");s.stop(t);r=s.finish(t,true);yes(r!=null&&!r.direct&&r.text.equals("先打开微信然后"),"truncated multi-goal speech must not execute");old=t;t=s.begin(true);s.listening(t);s.segment(t,"打开高德地图");yes(!s.forceDraft(old),"old deadline cannot alter new utterance");s.stop(t);yes(s.finish(t,true).direct,"normal stop still permits direct mode after old deadline");
+  old=s.begin(true);s.listening(old);s.segment(old,"旧模式中的指令");s.cancel();t=s.begin(false);s.listening(t);s.segment(t,"新模式草稿");yes(s.finish(old,true)==null,"mode change cancellation invalidates old final");r=s.finish(t,true);yes(r!=null&&!r.direct&&r.text.equals("新模式草稿"),"new mode must not inherit old auto execution");
+  System.out.println("PASS: VoiceSession "+checks+" final-only, cancellation, duplicate callbacks, foreground and multi-goal checks");}
+}

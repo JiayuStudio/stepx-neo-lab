@@ -1,0 +1,15 @@
+This build does not bundle Tesseract, Leptonica or local OCR libraries.
+
+Offline Chinese speech recognition:
+- Vosk Android 0.3.75: Apache License 2.0.
+  Source: https://github.com/alphacep/vosk-api
+  Unmodified official Android AAR is bundled; custom microphone/lifecycle/chat integration is implemented in this application.
+- vosk-model-small-cn-0.22: Apache License 2.0, as listed by the official model catalog.
+  Source and model terms: https://alphacephei.com/vosk/models
+  The model is bundled unmodified for local Mandarin decoding.
+- Java Native Access (JNA) 5.18.1: dual LGPL-2.1-or-later or Apache-2.0; this distribution selects Apache-2.0.
+  Source: https://github.com/java-native-access/jna
+
+License texts are included in assets/licenses/voice/.
+Pinned artifact sources and SHA-256 digests are in vendor/voice/dependencies.json in the source distribution.
+Microphone audio is processed locally by Vosk and is not uploaded or written to audio files by the production capture path. Recognized final text can be sent to the configured chat model only by the selected user input mode.

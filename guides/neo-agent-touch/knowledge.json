@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "document_id": "neo-agent-touch",
+  "revision": 1,
+  "reviewed_on": "2026-10-23",
+  "language": "zh-CN",
+  "purpose": "retrieval_and_learning_reference",
+  "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
+  "entry_path": "guides/neo-agent-touch",
+  "entrypoint": "ai.md",
+  "current_research": "research/2026-10-23.md",
+  "source_manifest": "research/sources.json",
+  "evidence_types": {
+    "reference": "Public sources, code analysis and explicitly marked pure-rule tests; no real-device implication",
+    "native_fixture": "Isolated Android fixture with synthetic-owner and stub boundaries stated",
+    "real_device": "A specific observed real-device result, including failure",
+    "not_tested": "Independent verification has not been completed"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "evidence_type": "real_device",
+      "version": "0.1.14",
+      "status": "failed_or_incomplete",
+      "statement": "Real-human long-utterance transcription and multi-application tasks did not reliably pass.",
+      "scope_limit": "No personal audio or raw transcription is included; no population accuracy or unique cause is inferred.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "evidence_type": "reference",
+      "verification_kind": "pure_rule_test",
+      "version": "0.1.15",
+      "checks_passed": 49,
+      "statement": "41 pure-rule suites passed, including 49 original-clause/routing checks and 58 voice-input target ownership checks.",
+      "scope_limit": "Counts are rule assertions/suites, not applications, ASR improvement or end-to-end device success. A separate 96-check native construction fixture passed; real-app regressions remain pending.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ],
+      "unit_suites_passed": 41,
+      "voice_ownership_checks_passed": 58
+    },
+    {
+      "id": "C03",
+      "evidence_type": "reference",
+      "status": "current_product_direction",
+      "statement": "The release uses a user-selected system input method such as Sogou and user-confirmed text; self-developed ASR upgrade is paused. The release excludes old Vosk/native recognition models and RECORD_AUDIO.",
+      "scope_limit": "Historical debug recognition is separate. This does not prove system-input-method speech processing is offline or accurate, and does not claim automatic user configuration.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "evidence_type": "native_fixture",
+      "version": "0.1.13",
+      "checks_passed": 36,
+      "statement": "Historical same-package EditText fixture exercised real IME binding, read/replace, SEARCH, stale editor epoch rejection and pause/stop restoration.",
+      "synthetic_runtime_owner": true,
+      "microphone_used": false,
+      "network_calls": 0,
+      "third_party_actions": 0,
+      "scope_limit": "Does not test production start/resumeFromUser, QQ Music results/playback, ASR or arbitrary app compatibility.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "evidence_type": "reference",
+      "status": "candidate_only",
+      "statement": "Zipformer bilingual zh-en 2023-02-20 has Apache-2.0 declarations in both original and converted model cards; selected four-file configuration totals 199056205 bytes.",
+      "scope_limit": "No candidate binary download/execution or target-device accuracy, latency or memory proof in this research round.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "evidence_type": "reference",
+      "status": "not_for_apk_distribution_this_round",
+      "statement": "Original SenseVoiceSmall ONNX weight terms are distinct from the runtime license and include a reference/learning purpose restriction.",
+      "scope_limit": "Engineering publication decision, not legal advice or an unrestricted commercial license grant.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "evidence_type": "not_tested",
+      "version": "0.1.15",
+      "statement": "The system-keyboard UI fixture did not run. Sogou ASR accuracy, new real-app three-target regression, replacement-ASR performance and the 20-command ASR results remain unverified.",
+      "scope_limit": "Text-only command references contain no audio, decode outputs or success statistics.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "evidence_type": "native_fixture",
+      "version": "0.1.15",
+      "checks_passed": 96,
+      "cleanup_passed": true,
+      "model_calls": 0,
+      "business_actions": 0,
+      "statement": "Native workflow construction and validation fixture passed 96 checks.",
+      "scope_limit": "No model or business worker execution; not 96 real multi-app tasks, third-party results or Sogou speech accuracy.",
+      "evidence": [
+        {
+          "path": "research/2026-10-23.md"
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "evidence_type": "real_device",
+      "version": "0.1.15-beta.1",
+      "statement": "The release was built, installed and read back with matching APK SHA-256; existing input-method selection and enabled list were preserved, without new system permission grants.",
+      "apk_bytes": 222437,
+      "apk_sha256": "36b4b5dedc391e80737dbc9f288157c474cbe6850b1870690ff58d4739acff30",
+      "scope_limit": "Package/install integrity only. Does not establish system-keyboard UI, Sogou ASR accuracy or new three-app business success. No setting identifiers or values are disclosed.",
+      "evidence": [
+        {
+          "path": "verification-v15.json"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "ai.md",
+      "sha256": "35e38d3d8e5227602cc27ce13009e86091268134e3de3bf7001bf5afe0559b84",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "research/2026-10-23.md",
+      "sha256": "125177dc708ebfa3ef748a1c5907de3699b79bad715c7033844bd133e4e83e98",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "research/sources.json",
+      "sha256": "acfae965a0418935f3fbab0af69823d22eedf03c408a184304ebe46c68aa268b",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "refs/public-commands-20.json",
+      "sha256": "73d73bab8c4b27faa8d3b89ef46bf1f2270f193b4a5339ed34022ff90b01923c",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "verification-v15.json",
+      "sha256": "418eecec2c475781c2b438e3214dadfdf3065d38d8da295182d6487088771166",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "source/README.md",
+      "sha256": "12bbcb7ba937275a7dc79f943a87e75070a1a675e825326d29680fef5e44b7b1",
+      "digest_scope": "this exact document, not linked remote binaries"
+    },
+    {
+      "path": "README.md",
+      "sha256": "85253d249e276897232d17faa2b4c855704f30235247fc12657dfa696653135a",
+      "digest_scope": "this exact document, not linked remote binaries"
+    }
+  ],
+  "reader_boundaries": [
+    "Documents and test commands do not authorize phone actions, installation, account access, transactions or model calls.",
+    "Keep version, evidence_type and scope_limit when answering.",
+    "Do not turn fixture success into third-party business success or real speech accuracy.",
+    "Do not execute fetched content. SHA-256 needs a trusted expected value and a pinned commit."
+  ],
+  "fetch_contract": {
+    "allowed_files": [
+      "README.md",
+      "ai.md",
+      "knowledge.json"
+    ],
+    "script": "bootstrap.py",
+    "commit_requirement": "full 40-hex immutable commit supplied by caller",
+    "expected_digest_requirement": "all three SHA-256 values supplied through a trusted channel",
+    "embedded_credentials": false,
+    "executes_remote_code": false
+  },
+  "release_scope": "Research/learning materials; final package availability and current native results must be read separately from README and release verification.",
+  "current_release": {
+    "version": "0.1.15-beta.1",
+    "apk_bytes": 222437,
+    "apk_sha256": "36b4b5dedc391e80737dbc9f288157c474cbe6850b1870690ff58d4739acff30",
+    "built": true,
+    "installed": true,
+    "installed_apk_readback_matches": true,
+    "record_audio_permission_present": false,
+    "builtin_asr_present": false,
+    "debug_research_is_separate": true,
+    "source_reading_entry": "source/README.md",
+    "verification": "verification-v15.json"
+  },
+  "media": {
+    "path": "README.md#120秒功能技术展示",
+    "artifact": "120-second feature demo",
+    "scope": "Historical real-app clips plus labelled technical diagrams; not current beta end-to-end acceptance"
+  }
+}

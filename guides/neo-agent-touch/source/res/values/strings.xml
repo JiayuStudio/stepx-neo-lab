@@ -1,0 +1,1 @@
+<resources><string name="accessibility_description">根据你启动的任务读取当前应用界面并点击、滑动、输入。视觉模式会向你选择的模型服务发送画面。可随时点击停止；停止后不读取界面。</string></resources>

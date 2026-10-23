@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="studio.jiayu.neoagent" android:versionCode="16" android:versionName="0.1.15-beta.1">
+<uses-sdk android:minSdkVersion="30" android:targetSdkVersion="36"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+<uses-feature android:name="android.hardware.microphone" android:required="false"/>
+<queries><intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent><intent><action android:name="android.view.InputMethod"/></intent></queries>
+<application android:label="Neo Agent Touch 0.1.15 Beta" android:icon="@drawable/ic_launcher" android:theme="@style/Theme.NeoAgent" android:allowBackup="false" android:extractNativeLibs="true" android:usesCleartextTraffic="false">
+<activity android:name=".MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+<activity android:name=".DemoActivity" android:exported="false"/>
+<activity android:name=".LaunchRelayActivity" android:exported="false" android:noHistory="true" android:excludeFromRecents="true" android:taskAffinity=""/>
+<service android:name=".ControlService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:exported="true"><intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter><meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility"/></service>
+<service android:name=".AgentInputMethodService" android:label="Neo Agent Touch AI 输入法" android:permission="android.permission.BIND_INPUT_METHOD" android:exported="true"><intent-filter><action android:name="android.view.InputMethod"/></intent-filter><meta-data android:name="android.view.im" android:resource="@xml/agent_ime"/></service>
+</application></manifest>

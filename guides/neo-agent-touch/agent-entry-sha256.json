@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "hash_algorithm": "sha256",
+  "files": {
+    "README.md": "85253d249e276897232d17faa2b4c855704f30235247fc12657dfa696653135a",
+    "ai.md": "35e38d3d8e5227602cc27ce13009e86091268134e3de3bf7001bf5afe0559b84",
+    "knowledge.json": "2af504ea2300309159f900340d9639817e1e015b2ff630dade6f3b92052987ba"
+  }
+}

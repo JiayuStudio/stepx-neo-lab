@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "checked": "2026-10-23",
+  "purpose": "Offline Chinese ASR on Android; no cloud audio recipient",
+  "architectures": [
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "sample_rate": 16000,
+  "dependencies": [
+    {
+      "file": "vendor/voice/vosk-android-0.3.75.aar",
+      "url": "https://repo.maven.apache.org/maven2/com/alphacephei/vosk-android/0.3.75/vosk-android-0.3.75.aar",
+      "sha256": "ab2f8b91ac8051561aa325546b35fed9a68b36b8121bac5c6fb927525c4adfad",
+      "bytes": 13472638,
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "vendor/voice/jna-5.18.1.aar",
+      "url": "https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.18.1/jna-5.18.1.aar",
+      "sha256": "7f053e3ec99e14dd71259c82c1c8a02738d64a13c31226b2acc170f3060951e0",
+      "bytes": 522677,
+      "license": "Apache-2.0 (dual license; Apache selected)"
+    },
+    {
+      "file": "assets/voice/vosk-model-small-cn-0.22.zip",
+      "url": "https://alphacephei.com/vosk/models/vosk-model-small-cn-0.22.zip",
+      "sha256": "3af8b0e7e0f835ae9d414ce5df580237a3cfb08d586c9fbbb0f7ff29ad5b14ba",
+      "bytes": 43898754,
+      "license": "Apache-2.0 (official model list)"
+    }
+  ],
+  "references": [
+    {
+      "repository": "alphacep/vosk-api",
+      "archived": false,
+      "pushed_at": "2026-10-15T08:36:44Z",
+      "default_branch": "master"
+    },
+    {
+      "repository": "alphacep/vosk-android-demo",
+      "archived": false,
+      "pushed_at": "2025-12-08T21:35:00Z",
+      "default_branch": "master"
+    }
+  ],
+  "official_demo_gradle": "https://github.com/alphacep/vosk-android-demo/blob/master/app/build.gradle",
+  "model_list": "https://alphacephei.com/vosk/models",
+  "reuse": "Binary Vosk/JNA runtime and unmodified Chinese model; custom lifecycle, chat and capture integration",
+  "limitations": [
+    "small Chinese model accuracy must be physically tested",
+    "microphone permission must be granted in Android dialog; no adb grant",
+    "native smoke and synthetic transcript tests do not prove microphone recognition"
+  ]
+}

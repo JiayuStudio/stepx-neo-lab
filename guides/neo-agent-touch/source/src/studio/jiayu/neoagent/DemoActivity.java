@@ -1,0 +1,6 @@
+package studio.jiayu.neoagent;
+import android.app.Activity;import android.os.Bundle;import android.widget.*;
+/** Public synthetic screen for safe model/gesture integration tests; no accounts or device data. */
+public class DemoActivity extends Activity {
+ @Override public void onCreate(Bundle b){super.onCreate(b);LinearLayout box=new LinearLayout(this);box.setOrientation(1);box.setPadding(36,120,36,30);box.setBackgroundColor(0xFFF3F6FA);setContentView(box);TextView h=new TextView(this);h.setText("Neo Agent Touch 本地演示");h.setTextSize(26);box.addView(h);EditText input=new EditText(this);input.setHint("输入关键词");input.setSingleLine();box.addView(input);Button search=new Button(this);search.setText("搜索");box.addView(search);TextView result=new TextView(this);result.setText("等待搜索");result.setTextSize(22);box.addView(result);Button video=new Button(this);video.setText("航拍中国 · 演示视频");video.setVisibility(8);box.addView(video);search.setOnClickListener(v->{result.setText("搜索结果："+input.getText());video.setVisibility(0);((android.view.inputmethod.InputMethodManager)getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(input.getWindowToken(),0);});video.setOnClickListener(v->{result.setText("演示视频详情 · 已打开：航拍中国");video.setVisibility(8);});}
+}

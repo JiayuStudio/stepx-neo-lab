@@ -1,0 +1,11 @@
+package studio.jiayu.neoagent;
+import android.content.Context;import android.graphics.*;import org.json.*;import java.io.*;import java.util.*;
+/** Synthetic, no device screenshot, account data or GUI metadata. Tests actual configured vision API. */
+final class VisionCapabilityContracts {
+ static void run(Context c){JSONArray trials=new JSONArray();JSONObject report=new JSONObject();long began=System.currentTimeMillis();try{Config cfg=Config.load(c);cfg.validate();ArrayList<Integer> positions=new ArrayList<>(Arrays.asList(0,1,2,3));Collections.shuffle(positions,new java.security.SecureRandom());String[] labels={"左上","右上","左下","右下"};int correct=0;
+ for(int index:positions){Bitmap b=Bitmap.createBitmap(520,520,Bitmap.Config.ARGB_8888);String image;try{b.eraseColor(Color.WHITE);Canvas canvas=new Canvas(b);Paint p=new Paint(3);for(int j=0;j<4;j++){int x=j%2==0?140:380,y=j<2?140:380;if(j==index){p.setColor(Color.rgb(15,90,240));canvas.drawCircle(x,y,65,p);}else{p.setColor(j%2==0?Color.RED:Color.rgb(40,160,70));canvas.drawRect(x-65,y-65,x+65,y+65,p);}}image=ControlService.encodeImage(b);}finally{b.recycle();}
+ long at=System.currentTimeMillis();String answer=new ModelClient().request(cfg,"只根据图片回答，输出JSON对象，不要Markdown。","图中唯一蓝色圆形位于哪一象限？position只能填写左上、右上、左下、右下之一。没有文字、控件树或其他位置提示。返回{\"position\":\"...\"}。",image);JSONObject parsed=new JSONObject(answer.trim().replaceAll("^```(?:json)?\\s*|\\s*```$",""));String choice=parsed.optString("position");boolean pass=labels[index].equals(choice);if(pass)correct++;trials.put(new JSONObject().put("expected",labels[index]).put("answer",Arrays.asList(labels).contains(choice)?choice:"unrecognized").put("correct",pass).put("elapsedMs",System.currentTimeMillis()-at));}
+ report.put("success",correct==4).put("correct",correct).put("total",4);
+ }catch(Exception e){try{report.put("success",false).put("failure",ControlService.safeError(e));}catch(Exception ignored){}}
+ finally{try(FileOutputStream out=c.openFileOutput("vision-capability.json",0)){out.write(report.put("sampledAt",System.currentTimeMillis()).put("elapsedMs",System.currentTimeMillis()-began).put("trials",trials).put("source","synthetic images only; no GUI metadata").toString(2).getBytes("UTF-8"));}catch(Exception ignored){}}}
+}
