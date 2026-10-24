@@ -1,4 +1,9 @@
-# StepX Neo Studio
+# Step工作台（StepX Neo Studio）
+
+![应用图标](assets/app-icon.png)
+
+展示名：Step工作台。原项目名称、包名和既有签名升级链保持兼容。
+
 
 [观看／下载宣传与功能演示（1 分 55 秒）](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4)
 

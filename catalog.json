@@ -54,7 +54,7 @@
       "artifact_type": "guide_and_tool"
     },
     {
-      "title": "StepX Neo Studio",
+      "title": "Step工作台（StepX Neo Studio）",
       "repository": "https://github.com/JiayuStudio/stepx-neo-studio",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-studio/README.md",
       "release": "https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3",
@@ -114,33 +114,39 @@
       "video_version": "1.2",
       "video_duration_seconds": 115.267,
       "content_origin": "jiayu_studio",
-      "artifact_type": "app"
+      "artifact_type": "app",
+      "icon": "guides/neo-studio/assets/app-icon.png"
     },
     {
       "title": "拓麻歌子 · Neo 背屏电子宠物",
       "repository": "https://github.com/JiayuStudio/stepx-neo-pet",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-pet/README.md",
-      "release": "https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4",
+      "release": "https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.8",
       "category": "背屏与电子宠物",
-      "version": "0.3.4",
+      "version": "0.3.8",
       "verified": [
         "0.3.4: 5600 packaged-art checks passed; 1014 appearance and hatch animations plus fallback",
         "0.3.4: same-signature upgrade installed and Android package version verified",
         "0.3.4: user confirmed physical rear-screen animation and continued screen-off operation; duration not independently timed",
-        "0.3.4: browser safe-area, navigation and responsive layout checked"
+        "0.3.4: browser safe-area, navigation and responsive layout checked",
+        "0.3.8: Web/Android build; 342px/390px navigation and anchors; bottom update detection; anonymous release downloads match"
       ],
       "not_verified": [
         "All-day battery performance",
         "Unplugged deep standby",
         "Automatic boot recovery",
-        "All firmware versions and freezer-exception persistence"
+        "All firmware versions and freezer-exception persistence",
+        "0.3.8 physical-device rear display and screen-off regression"
       ],
       "video": "https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4",
       "section": "games",
       "development": "guides/neo-pet/development.md",
       "prompts": "guides/neo-pet/studio-prompts.md",
       "content_origin": "jiayu_studio",
-      "artifact_type": "game"
+      "artifact_type": "game",
+      "icon": "guides/neo-pet/assets/app-icon.png",
+      "pets": 8,
+      "basic_animation_clips": 120
     },
     {
       "title": "Amoo 能力研究",
@@ -237,7 +243,7 @@
       ]
     },
     {
-      "title": "Neo Agent Touch",
+      "title": "Agent Touch",
       "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/neo-agent-touch/README.md",
       "development": "guides/neo-agent-touch/development.md",
@@ -326,7 +332,8 @@
         "0.1.15-beta.1: signed release build installed and base APK SHA read back; no debug QA, ASR libraries/model or RECORD_AUDIO",
         "0.1.16-beta.1: 44 pure suites; 149 native JD/Taobao shared-plan and JSON restore checks, zero model/business actions"
       ],
-      "source_publication_status": "pending_separate_source_review"
+      "source_publication_status": "published_and_verified",
+      "icon": "guides/neo-agent-touch/assets/app-icon.png"
     },
     {
       "title": "宝可梦荒野 · Neo 中文适配",

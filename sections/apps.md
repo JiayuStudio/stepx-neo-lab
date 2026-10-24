@@ -4,7 +4,7 @@
 
 本区只整理 **JIAYU STUDIO 自己开发的应用**。其他作者的仓库与 APK 单独收录在[社区推荐](community-apks.md)。
 
-## StepX Neo Studio
+## Step工作台（StepX Neo Studio）
 
 第三方 Android 开发客户端，提供端侧 AI、本地项目编辑、预览、受支持项目的 APK 构建、绘图 API 与云端项目协作。
 
@@ -19,7 +19,7 @@
 
 需要 Google Play？请看[教程分区中的 GBox](guides.md)，它是第三方容器方案，不是本研究所开发的 APP。
 
-## Neo Agent Touch · 0.1.20 Beta
+## Agent Touch · 0.1.20 Beta
 
 手机内运行的聊天式应用助手，结合应用画面与系统控件完成搜索、播放、地点查询、商品查价和 WPS 新文档生成。支持自选应用与模型接口、侧边对话、蓝色贴边提示、可拖动胶囊、接管与交还、偏好记忆及一键检查更新。
 

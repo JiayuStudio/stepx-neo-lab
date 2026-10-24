@@ -1,42 +1,33 @@
 # 拓麻歌子 · Neo 背屏电子宠物
 
-让 Neo 的 17×23 背屏住进一只可照料、成长和换装的小伙伴。正面是基于 Mori 的养成世界，背面是星跃或方跃；支持从蛋孵化及耳机造型。
+让 Neo 的17×23背屏住进一只可照料、成长和换装的小伙伴。当前版本 **0.3.8**，2026-10-24。
 
-当前版本 **0.3.4**，2026-10-20。
+![拓麻歌子应用图标](assets/app-icon.png)
 
-[公开源码与完整说明](https://github.com/JiayuStudio/stepx-neo-pet) · [下载 APK](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4) · [开源来源](https://github.com/JiayuStudio/stepx-neo-pet/blob/main/NOTICE.md) · [返回研究所](../../README.md)
+[公开源码与完整说明](https://github.com/JiayuStudio/stepx-neo-pet) · [下载0.3.8 APK](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.8) · [更新记录](https://github.com/JiayuStudio/stepx-neo-pet/blob/main/CHANGELOG.md) · [来源与许可](https://github.com/JiayuStudio/stepx-neo-pet/blob/main/NOTICE.md)
 
-[观看／下载60秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)（动画演示，非真机实拍；Suno配乐）
+## 可以做什么
 
-## 自己开发
+- 八位原创点阵小伙伴：星跃、方跃、芽灵、绒兔、焰狐、泡獭、眠鸮、角龙。
+- 每只拥有15个动画场景、每场景8帧，共120段基础动画，包含走动、吃饭、玩耍、洗澡、睡觉、抚摸、开心，以及饥饿、不开心、生病、死亡和孵化过程。
+- 喂食、陪玩、洗澡、休息、拥抱与探索；五项需求影响状态，保留成长、性格、亲密度、回忆和饰品。
+- 正面像素预览与原生背屏共用养成进度；包含接星星、记忆信号小游戏和本地备份恢复。
+- 暖纸色背景、彩色块、马克笔描边与硬阴影，配套粉色电子宠物机和绿色像素萌宠图标。
 
-[背屏点阵开发实战](development.md) · [可复制的 Step Studio 提示词](studio-prompts.md) · [游戏分区](../../sections/games.md)
+## 0.3.8 使用与更新
 
-## 玩法
+黄色导航位于标题栏下方，滚动时吸附顶部；“检查更新”位于页面最后的存档区之后。可检查GitHub正式版并打开安装下载入口。
 
-- 喂食、陪玩、洗澡、休息、拥抱、探索，照顾五项需求。
-- 三种成长阶段、三种性格、回忆剧情、日常事件、饰品与房间摆件。
-- 接星星、记忆信号两款小游戏，四种主题，存档导出与恢复。
-- 背屏根据同一份进度呈现表情、成长、性格和穿戴，共 1014 组角色及孵化动画，另有默认帧。
+下载安装包后按Android提示安装。同签名版本可以覆盖更新，升级或卸载前建议导出存档。开启背屏需兼容的STEPX Neo接口；进入后台设置后按系统实际提示配置，再检查锁屏显示。停止陪伴会清帧并恢复之前的系统背屏模式。游戏本地运行，不需要账号或API Key。
 
-## 安装和开始陪伴
+本版Web/Android构建、342px与390px浏览器布局、五个导航锚点避让和更新检测通过。0.3.7可发现0.3.8，0.3.8显示当前最新。**0.3.8安装、真实背屏与锁屏仍待实机复验**；历史0.3.4曾获用户真机确认，不能代替新版验收。不同固件、省电、温度、遮挡和后台策略均可能影响显示；长期耗电、深度待机和重启恢复待验证。
 
-1. 下载 `diandian-native-0.3.4.apk`，按 Android 提示安装。已有同签名原生版可覆盖升级，建议先在“存档”导出备份。
-2. 打开“拓麻歌子”，允许通知，点“开启背屏”。一次只运行一个背屏播放器。
-3. 进入“后台设置”，允许后台运行并关闭本应用的电池优化。
-4. 把背屏朝上或竖直放置，保持无遮挡，再锁屏观察是否持续动作。
-5. 点“停止陪伴”会清帧并恢复之前的系统背屏模式。
+## 演示与开发
 
-游戏离线运行，不需要账号或 API Key。背屏依赖兼容的 STEPX Neo 接口；其他手机不支持。卸载前请导出存档。
+[历史0.3.4版60秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)为旧版角色动画演示，不代表本版八宠物界面或真机实拍。
 
-## 锁屏动画与限制
-
-原生前台服务独立于正面 WebView 运行。部分 Neo 固件仍会冻结后台进程，需要单独为本应用设置冻结例外；APK 无权自动完成此操作。具体 ADB 命令与撤销方法见[后台说明](https://github.com/JiayuStudio/stepx-neo-pet#锁屏后不动时)。
-
-0.3.4 已完成同签名覆盖安装，用户确认真机背屏动画和锁屏持续运行成功。本轮未记录独立计时的锁屏时长；5600 项点阵检查通过，手机预览安全区及导航布局已实际检查。
-
-长期耗电、脱离充电的深度待机、重启恢复和全部固件组合尚未验证。系统省电、温度、遮挡、强行停止及固件策略变化均可能影响实际显示，不承诺永久后台运行。
+[背屏点阵开发实战](development.md)与[Step Studio提示词](studio-prompts.md)保留0.3.4固定版本案例；当前实现以0.3.8源码为准。原生后台方案使用Android APK；浏览器预览不能驱动真实背屏。
 
 ## 来源与许可
 
-实际复用 MIT 开源 [Tamagochi / Mori](https://github.com/Tech-aficionado/Tamagochi---Open-Source-Game) 的养成、3D 场景、小游戏与界面，适配中文、原生存档和背屏。背屏会话与构建工具基于 [backscreen-toolbox](https://github.com/stepx-advance/backscreen-toolbox)，脚本引擎为未修改的 Rhino。完整声明见项目 NOTICE；未使用商业拓麻歌子角色或 ROM。
+实际复用MIT开源 [Tamagochi / Mori](https://github.com/Tech-aficionado/Tamagochi---Open-Source-Game) 的养成、场景、小游戏和界面，适配中文、本地存档与Neo背屏。背屏会话与构建工具参考 [backscreen-toolbox](https://github.com/stepx-advance/backscreen-toolbox)，脚本引擎为未修改的Rhino。完整声明见项目NOTICE；未使用商业拓麻歌子角色或ROM。

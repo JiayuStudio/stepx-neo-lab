@@ -14,15 +14,14 @@
 
 ## 拓麻歌子 · Neo 背屏电子宠物
 
-照顾星跃或方跃，从蛋孵化、成长、换装，正面养成与背面点阵同步。包含接星星、记忆信号小游戏。
+八位原创点阵伙伴，包含照料、成长、性格、换装和两款小游戏。马克笔彩色界面，导航置顶，检查更新位于页面最后。
 
-- [玩法、安装与后台设置](../guides/neo-pet/README.md)
-- [下载 0.3.4 APK](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4)
-- [公开源码](https://github.com/JiayuStudio/stepx-neo-pet)
-- [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)（动画演示，Suno 配乐）
-- 想自己做：[开发实战](../guides/neo-pet/development.md) · [Studio 提示词](../guides/neo-pet/studio-prompts.md)
+- [玩法、安装与当前验证范围](../guides/neo-pet/README.md)
+- [下载0.3.8 APK与源码](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.8)
+- [背屏开发实战（0.3.4历史案例）](../guides/neo-pet/development.md)
 
-**验证情况：** 0.3.4 已覆盖安装，用户确认物理背屏及锁屏持续动画成功；该轮未独立计时。长期耗电、脱离充电深度待机、重启恢复和全部固件组合待测。
+0.3.8构建、浏览器布局和更新检测已验证；新版真实背屏、锁屏和长期耗电待实机复验。
+
 
 ## 象棋泡泡堂 · 开发案例
 

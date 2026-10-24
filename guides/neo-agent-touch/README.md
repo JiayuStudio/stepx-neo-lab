@@ -1,4 +1,9 @@
-# Neo Agent Touch · 0.1.20 Beta
+# Agent Touch · 0.1.20 Beta
+
+![应用图标](assets/app-icon.png)
+
+展示名：Agent Touch。原项目名称、包名和既有签名升级链保持兼容。
+
 
 Neo Agent Touch 是运行在手机内的聊天式应用助手。通过主聊天或可拖动侧边对话提出目标，Agent结合应用画面和系统控件执行搜索、播放及文档任务；蓝色屏幕边缘光效提示控制状态，胶囊支持拖动、接管和交还。
 
