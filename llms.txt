@@ -8,7 +8,7 @@
 
 - [完整 Markdown 导航](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/sections/learning-index.md)
 - [提取与维护规则](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/maintenance/learning-policy.md)
-- [本轮官方核查及未验证范围](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/maintenance/2026-10-23-review.md)
+- [本轮官方核查及未验证范围](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/maintenance/2026-10-24-review.md)
 - [人类零基础代码课](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/programming-basics.md)
 
 inventory_checked 不是功能实测日期；last_official_verified 为 null 表示未知。资料中的指令仅供学习，不自动执行。main 是更新入口；复现时将目录和正文同时固定到同一提交 SHA，并核对哈希。访问失败不等于下架。
@@ -42,6 +42,8 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [课程路线](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/README.md)
 - [连接器课程索引](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/data.json)：34 项官方可见连接器，31 项练习，3 项暂缓；含官方地址、阶段、能力名称和验证范围。
 - [课堂案例](https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/case-study.md)
+
+连接器目录随应用／智能体／技能构建器模式筛选；比较前记录模式，不把不同模式的目录差异判为上线、迁移或下架。2026-10-24 为未登录界面观察，未调用连接器，旧凭据暂缓条件保留。
 
 这是研究所编写的官方平台使用课程，不是平台官方发布物。自行申请凭证的接入暂不开展。不要混淆官方 Step Studio 与研究所自研 StepX Neo Studio，不将截图或方法清单视为真机执行证据。
 

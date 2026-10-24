@@ -8,9 +8,11 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 第一次来？想用 Amoo，看[一句话清单](library/amoo/quick-start.md)；想自己做应用，从[新手第一课](sections/start-here.md)开始。
 
-**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-23-review.md)。
+**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-24-review.md)。
 
 ## 最新收录与更新
+
+- **2026-10-24 · 学习目录补全与比较口径**：[逐页索引](sections/learning-index.md)补齐 11 页宝可梦荒野资料，现覆盖 201 页本地 Markdown；[连接器课](courses/official-step-studio/02-connectors.md)补充先记录构建器模式再比较目录的要求，仅界面观察、未调用验证。
 
 - **2026-10-24 · 拓麻歌子0.3.8**：[八宠物、马克笔界面、新图标与底部检查更新](guides/neo-pet/README.md)。
 
