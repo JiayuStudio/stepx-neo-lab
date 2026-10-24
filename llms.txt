@@ -109,3 +109,5 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [发行身份与验证边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/release.json)
 - [APK、60秒影片、源码附件与SHA256](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.16)
 - 非官方 PokeWilds 0.8.11 中文移植；前屏0.8.14实录、背屏资源动画，528项伙伴/形态不等于独立物种数。0.8.16新增检查更新，版本与安装包校验依赖本站目录，真机验证范围见发行元数据。
+
+造物集 31.0.0：community/zaowuji/README.md；作者木偶；30+ 作品、120+ 下载为维护者于2026-10-24提供。新版基础静态检查，未实机回归，签名与旧版一致，升级待验。
