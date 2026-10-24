@@ -1,6 +1,6 @@
 # Neo 适配源码与构建
 
-本目录公开 Android 界面、触摸输入、存读档桥接、背屏服务、点阵生成工具、中文补丁及运行环境配方。原游戏为 PokeWilds 0.8.11，Neo 适配版本为 0.8.15。
+本目录公开 Android 界面、触摸输入、存读档桥接、背屏服务、点阵生成工具、中文补丁及运行环境配方。原游戏为 PokeWilds 0.8.11，Neo 适配版本为 0.8.16。
 
 ## 重新构建 Android 层
 
@@ -9,7 +9,7 @@
 ```sh
 python3 bootstrap.py --download
 # 也可以使用已下载且校验一致的公开包：
-# python3 bootstrap.py --apk /path/to/PokeWilds-Neo-0.8.15.apk
+# python3 bootstrap.py --apk /path/to/PokeWilds-Neo-0.8.16.apk
 cd android
 ./gradlew :android-app:assembleDebug
 ```
@@ -17,6 +17,10 @@ cd android
 输出为 `android-app/build/outputs/apk/debug/android-app-debug.apk`。重新签名使用自己的密钥；本目录不提供发布私钥。签名不同不能直接覆盖已有安装，先在游戏设置中导出存档。
 
 `bootstrap.py` 核验整个 APK 的固定 SHA-256 后，提取原生库、游戏及 Linux 运行环境作为输入。这是 **重建 Android 适配层** 的方法，不能据此称整个 Linux / Java / 原游戏均已从源码重编。不要运行根级 `clean` 删除 `native/build/jniLibs`；仅清理应用模块可用 `:android-app:clean`。
+
+## 应用内更新
+
+游戏设置或图标长按选择“检查游戏更新”。使用网站同一份版本目录，下载后核对包大小、SHA-256、签名、包名和版本；安装由Android确认，游戏运行中先保存退出。开发实现与协议见[说明](docs/application-updates.md)。
 
 ## 阅读与修改
 

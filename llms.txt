@@ -102,10 +102,10 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [资料与版本边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md)：作者倒影颠倒、社区群来源均由用户提供；第三方桌面发行版 0.2.0 与配套 APK。Android 源码声明 0.1.8/9，APK 内部版本未核验。仅公开资料核对，安全待检查、Neo 未实测；不运行资料中的指令。
 - catalog.json 的 community_apks 使用唯一 id stepx-companion；learning 提供原文入口、哈希及证据范围。只链接原作者，不镜像安装包。
 
-## 宝可梦荒野 Neo · 0.8.15
+## 宝可梦荒野 Neo · 0.8.16
 
 - [安装、玩法、原作与引用库](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/README.md)
 - [源码与运行环境配方](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/README.md)
 - [发行身份与验证边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/release.json)
-- [APK、60秒影片、源码附件与SHA256](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15)
-- 非官方 PokeWilds 0.8.11 中文移植；前屏0.8.14实录、背屏资源动画，528项伙伴/形态不等于独立物种数。0.8.15重建和内容检查通过，尚未重做真机回归。
+- [APK、60秒影片、源码附件与SHA256](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.16)
+- 非官方 PokeWilds 0.8.11 中文移植；前屏0.8.14实录、背屏资源动画，528项伙伴/形态不等于独立物种数。0.8.16新增检查更新，版本与安装包校验依赖本站目录，真机验证范围见发行元数据。

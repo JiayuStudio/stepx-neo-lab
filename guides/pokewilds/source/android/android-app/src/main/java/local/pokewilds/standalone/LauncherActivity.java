@@ -21,6 +21,7 @@ import java.util.Map;
 
 public final class LauncherActivity extends Activity {
     public static final String MANAGE_SAVES_EXTRA = "local.pokewilds.standalone.MANAGE_SAVES";
+    public static final String CHECK_UPDATES_EXTRA = "local.pokewilds.standalone.CHECK_UPDATES";
     private static boolean autoDownloadAttempted;
     private final Handler handler = new Handler();
     private TextView statusView;
@@ -99,6 +100,8 @@ public final class LauncherActivity extends Activity {
         layout.setPadding(32, 48, 32, 32);
         TextView title = new TextView(this); title.setText("宝可梦荒野 · Neo"); title.setTextSize(30); layout.addView(title);
         Button neo = new Button(this); neo.setText("背屏伙伴 · 陪伴与互动"); neo.setOnClickListener(v -> startActivity(new Intent(this, NeoPetActivity.class))); layout.addView(neo);
+        Button updates = new Button(this); updates.setText("检查游戏更新 · " + BuildConfig.VERSION_NAME);
+        updates.setOnClickListener(v -> startActivity(new Intent(this, UpdateActivity.class))); layout.addView(updates);
         statusView = new TextView(this); statusView.setTextSize(18); statusView.setText(GameAcquisitionService.status); layout.addView(statusView);
         acquisitionPanel = new LinearLayout(this); acquisitionPanel.setOrientation(LinearLayout.VERTICAL);
         TextView acquisitionHelp = new TextView(this);
@@ -201,6 +204,7 @@ public final class LauncherActivity extends Activity {
             showAcquisitionPanel();
             maybeStartAutoDownload();
         }
+        if (state == null && updateIntent(getIntent())) startActivity(new Intent(this, UpdateActivity.class));
     }
     @Override protected void onActivityResult(int request, int result, Intent data) {
         super.onActivityResult(request, result, data);
@@ -618,12 +622,17 @@ public final class LauncherActivity extends Activity {
         else if (!GameInstaller.isInstalled(this)) {
             maybeStartAutoDownload();
         }
+        if (updateIntent(intent)) startActivity(new Intent(this, UpdateActivity.class));
     }
     @Override protected void onResume() { super.onResume(); handler.post(refresh); }
     @Override protected void onPause() { handler.removeCallbacks(refresh); super.onPause(); }
 
     private static boolean isManagementIntent(Intent intent) {
         return intent != null && (intent.getBooleanExtra(MANAGE_SAVES_EXTRA, false)
-            || "true".equalsIgnoreCase(intent.getStringExtra(MANAGE_SAVES_EXTRA)));
+            || "true".equalsIgnoreCase(intent.getStringExtra(MANAGE_SAVES_EXTRA)) || updateIntent(intent));
+    }
+    private static boolean updateIntent(Intent intent) {
+        return intent != null && (intent.getBooleanExtra(CHECK_UPDATES_EXTRA, false)
+            || "true".equalsIgnoreCase(intent.getStringExtra(CHECK_UPDATES_EXTRA)));
     }
 }

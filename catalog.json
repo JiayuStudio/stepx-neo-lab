@@ -332,8 +332,8 @@
       "title": "宝可梦荒野 · Neo 中文适配",
       "repository": "https://github.com/JiayuStudio/stepx-neo-lab",
       "guide": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/guides/pokewilds/README.md",
-      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15",
-      "version": "0.8.15",
+      "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.16",
+      "version": "0.8.16",
       "game_core": "PokeWilds 0.8.11",
       "category": "Neo 游戏与非官方适配",
       "section": "games",
@@ -352,10 +352,11 @@
         "Long deep standby, optical FPS and battery/thermal behavior",
         "Complete third-party runtime rebuilt from source"
       ],
-      "download_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15.apk",
-      "source_archive_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15-source.zip",
-      "checksums_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/SHA256SUMS.txt",
-      "promo_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4"
+      "download_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/current/pokewilds.apk",
+      "source_archive_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.16/PokeWilds-Neo-0.8.16-source.zip",
+      "checksums_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.16/SHA256SUMS.txt",
+      "promo_url": "https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4",
+      "update_check": "游戏设置或图标长按检查更新；VPS下载、校验与系统确认安装"
     }
   ],
   "sections": [

@@ -9,9 +9,16 @@
         <!-- Shortcut targets must be literal package names; resource IDs are not resolved here. -->
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="local.pokewilds.standalone"
+            android:targetPackage="studio.jiayu.pokewilds.neo"
             android:targetClass="local.pokewilds.standalone.LauncherActivity">
             <extra android:name="local.pokewilds.standalone.MANAGE_SAVES" android:value="true" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="check_updates" android:enabled="true" android:icon="@mipmap/ic_pokewilds"
+        android:shortcutShortLabel="@string/check_updates" android:shortcutLongLabel="@string/check_updates">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="studio.jiayu.pokewilds.neo"
+            android:targetClass="local.pokewilds.standalone.LauncherActivity">
+            <extra android:name="local.pokewilds.standalone.CHECK_UPDATES" android:value="true" />
         </intent>
     </shortcut>
 </shortcuts>

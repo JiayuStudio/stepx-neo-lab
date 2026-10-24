@@ -51,9 +51,9 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 正面探索、捕捉与建造，背面点阵伙伴陪伴。基于 PokeWilds 0.8.11 的非官方中文适配：竖屏 Game Boy、横屏 GBA、一键切换、自动保存，以及 17×23 原作风格背屏形象。
 
-[0.8.15 测试版 APK](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15.apk) · [60 秒宣传片](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [安装、玩法与验证范围](guides/pokewilds/README.md) · [源代码](guides/pokewilds/source/README.md)
+[0.8.16 测试版 APK](https://stepxneo.jiayustudio.dpdns.org/downloads/current/pokewilds.apk) · [60 秒宣传片](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [安装、玩法与验证范围](guides/pokewilds/README.md) · [源代码](guides/pokewilds/source/README.md)
 
-前屏为 0.8.14 真机实录，片中背屏按真实点阵资源渲染；快速展示 528 项伙伴与形态。0.8.15 是公开整理修订，重建通过，尚未重做本版真机回归。
+前屏为 0.8.14 真机实录，片中背屏按真实点阵资源渲染；快速展示 528 项伙伴与形态。0.8.16 加入应用内检查更新、VPS下载和系统确认安装，保留原有存档。
 
 ## 新增：从点阵到背屏宠物
 
@@ -79,7 +79,7 @@ Beta 内测版，部分应用页面仍需优化。
 
 | 项目 | 版本 | 说明与下载 |
 | --- | --- | --- |
-| 宝可梦荒野 · Neo 中文适配 | 0.8.15 | [说明与源码](guides/pokewilds/README.md) · [APK / 影片 / 校验](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15) |
+| 宝可梦荒野 · Neo 中文适配 | 0.8.16 | [说明与源码](guides/pokewilds/README.md) · [APK / 影片 / 校验](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.16) |
 | Neo Agent Touch | 0.1.20-beta.1 | [内测说明与安装](guides/neo-agent-touch/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/neo-agent-touch-v0.1.20-beta.1/Neo-Agent-Touch-0.1.20-beta.1.apk) |
 | 拓麻歌子 | 0.3.4 | [玩法和安装](guides/neo-pet/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-pet/releases/tag/v0.3.4) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4) |
 | StepX Neo Studio | 1.2.3 | [功能和安装](guides/neo-studio/README.md) · [APK](https://github.com/JiayuStudio/stepx-neo-studio/releases/tag/v1.2.3) |

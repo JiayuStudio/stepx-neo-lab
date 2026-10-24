@@ -425,8 +425,9 @@ public final class GameActivity extends com.termux.x11.MainActivity implements a
         if (touchControls != null) touchControls.releaseAll();
         releaseGamepadKeys();
         gameMenu = new android.app.AlertDialog.Builder(this).setTitle("荒野菜单")
-            .setItems(new String[]{"继续冒险", "输入文字", "设置与存档", "保存并退出", "背屏伙伴", "野外技能", "跟随系统旋转"}, (d, which) -> {
-                if(which==6) applyNeoOrientation(android.content.pm.ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+            .setItems(new String[]{"继续冒险", "输入文字", "设置与存档", "保存并退出", "背屏伙伴", "野外技能", "跟随系统旋转", "检查更新"}, (d, which) -> {
+                if(which==7) startActivity(new Intent(this, UpdateActivity.class));
+                else if(which==6) applyNeoOrientation(android.content.pm.ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
                 else if(which==5) sessionHandler.postDelayed(this::showFieldMoves,150);
                 else if (which == 4) startActivity(new Intent(this, NeoPetActivity.class));
                 else if (which == 1 && getLorieView() != null) getLorieView().post(this::toggleKeyboard);

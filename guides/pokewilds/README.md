@@ -1,12 +1,12 @@
 # 宝可梦荒野 · Neo 中文适配
 
-在手机正面探索荒野，把队伍伙伴带到背面的点阵屏。JIAYU STUDIO 基于 **PokeWilds 0.8.11** 和已有 Android 运行环境制作的非官方中文适配，当前公开测试版 **0.8.15**。
+在手机正面探索荒野，把队伍伙伴带到背面的点阵屏。JIAYU STUDIO 基于 **PokeWilds 0.8.11** 和已有 Android 运行环境制作的非官方中文适配，当前公开测试版 **0.8.16**。
 
-[下载 Android APK](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15.apk) · [观看 60 秒宣传片](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [本版发行与校验文件](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15) · [源代码与构建](source/README.md)
+[下载 Android APK](https://stepxneo.jiayustudio.dpdns.org/downloads/current/pokewilds.apk) · [观看 60 秒宣传片](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-60s-1080p.mp4) · [本版发行与校验文件](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.16) · [源代码与构建](source/README.md)
 
 ![游戏与背屏伙伴展示](images/promo.jpg)
 
-[本站适配源码包](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/PokeWilds-Neo-0.8.15-source.zip) · [SHA-256 校验文件](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.15/SHA256SUMS.txt) · [GitHub 原发行备用](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-0.8.15.apk)
+[本站适配源码包](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.16/PokeWilds-Neo-0.8.16-source.zip) · [SHA-256 校验文件](https://stepxneo.jiayustudio.dpdns.org/downloads/pokewilds/0.8.16/SHA256SUMS.txt) · [GitHub 原发行备用](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.16/PokeWilds-Neo-0.8.16.apk)
 
 ## 荒野里的日常
 
@@ -36,15 +36,19 @@
 
 APK 约 **306 MiB**，面向 ARM64 Android 8.0 及以上；已验证设备系列是 STEPX Neo，其他设备兼容性待验。首次按提示安装内置中文游戏和运行环境，需额外解压空间。Neo 背屏需要兼容固件接口；游戏不需要另装 Termux。
 
-更新前导出存档，卸载会删除应用私有数据。0.8.15 沿用本项目测试签名，可覆盖同签名旧版；本版仍是测试包。应用包名为 `studio.jiayu.pokewilds.neo`。SHA-256 见 [release.json](release.json) 及发行附件 `SHA256SUMS.txt`。
+更新前导出存档，卸载会删除应用私有数据。0.8.16 沿用本项目测试签名，可覆盖同签名旧版；本版仍是测试包。应用包名为 `studio.jiayu.pokewilds.neo`。SHA-256 见 [release.json](release.json) 及发行附件 `SHA256SUMS.txt`。
 
 ## 验证与当前边界
 
 0.8.14 已在 Neo 实机完成四向移动、A/B、Start / Select、存读档、技能和设置菜单、横竖屏切换、保存退出；宣传片录制时也实际用 L/R 切换过建造材料。用户观察到背屏形象持续动作，后续录制中的前台 / 后台播放另有运行记录。
 
-0.8.15 为公开整理修订：移除不用的 macOS 库、开发辅助记录和 X11 调试段，游戏 7326 个类文件与 0.8.14 一致，X11 已分配的代码和数据节一致。本轮完成重新构建、签名及包内容检查，**尚未重新安装 0.8.15 做真机回归**。多指组合、所有技能、长期深待机、物理光学帧率、耗电和温控仍待验，目标刷新率不作为这些项目的验收结果。
+0.8.16 新增应用内检查更新、VPS下载、完整性及应用签名核验、系统确认安装和长按快捷入口。94项源码测试中93项通过、1项原有跳过；游戏核心、运行环境、原生库和点阵资源与0.8.15逐字节一致。更新流程真机验收单独记录在 [release.json](release.json)。多指组合、所有技能、长期深待机、物理光学帧率、耗电和温控仍待验。
 
 原游戏、原 Android 运行层和本次 Neo 适配分别署名；这是爱好者适配项目，与宝可梦、任天堂及 StepX 官方无隶属关系。源码、声明和固定输入见下方链接。
+
+## 检查与安装更新
+
+在游戏下方点“设置”，选择“检查更新”；管理页和应用图标长按也有入口。发现新版后可查看说明、下载与取消，校验通过后再安装。安装前保存并退出游戏，Android会要求最终确认。更新保留存档；不要先卸载旧版。0.8.15及更早版本首次需手动覆盖安装0.8.16，之后可在游戏内检查后续版本。
 
 ## 引用的项目与库
 
@@ -69,6 +73,7 @@ APK 约 **306 MiB**，面向 ARM64 Android 8.0 及以上；已验证设备系列
 | **Ubuntu Base / Ubuntu Ports** | ARM64 客体系统；24.04.3 与锁定的 133 个包 | [Ubuntu Base](https://cdimage.ubuntu.com/ubuntu-base/releases/24.04.3/release/)；各软件包版权文件及清单分别适用 |
 | **Eclipse Temurin JRE** | 客体 Java；17.0.15+6 | [Adoptium](https://github.com/adoptium/temurin17-binaries/releases/tag/jdk-17.0.15%2B6)；JRE `legal/` 与 NOTICE 保留 |
 | **VirGL / ANGLE / PulseAudio 及 Termux 依赖** | 图形与音频；1.3.0-1 / 2.1.24923-f09a19ce-2 / 17.0-4 | [29 包精确锁定清单](source/runtime-recipes/packaging/host-packages.lock.json) · [Termux 构建配方](https://github.com/termux/termux-packages)；许可按组件分别适用 |
+| **Android apksig** | 安装包密码学签名验证；9.3.1 | [AOSP源码](https://android.googlesource.com/platform/tools/apksig/)；Apache-2.0，许可随包保留 |
 | **JUnit** | Android 源码测试依赖；4.13.2 | [原项目](https://github.com/junit-team/junit4)；EPL-1.0，不是游戏运行时引擎 |
 
 控制轮 / 缩放提案由项目已有补丁继续适配，来源和未明确的授权边界保留在 [PROVENANCE](source/runtime-recipes/control-patches/PROVENANCE.md)。本次另查阅 [Android Games Samples](https://github.com/android/games-samples)，仅作参考，没有从该查询新增复用代码。

@@ -13,8 +13,8 @@ android {
         // Neo firmware publishes display_ext to apps targeting current Android.
         // Runtime and rear display are validated together at target 36.
         targetSdk = Integer.parseInt(project.findProperty('runtimeTargetSdk') ?: '36')
-        versionCode 815
-        versionName '0.8.15'
+        versionCode 816
+        versionName '0.8.16'
         buildConfigField 'String', 'RUNTIME_GRAPHICS', '"' + runtimeGraphics + '"'
         ndk { abiFilters 'arm64-v8a' }
     }
@@ -42,12 +42,16 @@ android {
             }
         }
     }
-    buildTypes { release { minifyEnabled false; signingConfig signingConfigs.localRelease } }
+    buildTypes {
+        debug { debuggable false }
+        release { minifyEnabled false; signingConfig signingConfigs.localRelease }
+    }
 }
 dependencies {
     implementation project(':lorie')
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'org.apache.commons:commons-compress:1.27.1'
+    implementation 'com.android.tools.build:apksig:9.3.1'
     testImplementation 'junit:junit:4.13.2'
 }
 

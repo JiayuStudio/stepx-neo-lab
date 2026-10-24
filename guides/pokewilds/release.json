@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "version": "0.8.15",
-  "version_code": 815,
+  "version": "0.8.16",
+  "version_code": 816,
   "package": "studio.jiayu.pokewilds.neo",
-  "apk": "PokeWilds-Neo-0.8.15.apk",
-  "apk_sha256": "9dde4d17bf140ae38e7150809a9b80e08d947369119e7668f72e139b25f4e85a",
-  "apk_size": 320896789,
+  "apk": "PokeWilds-Neo-0.8.16.apk",
+  "apk_sha256": "200b2db2ee6c51ee67d85541b40875a4e0e95a07f4c87ec35010ba756b1ff8eb",
+  "apk_size": 319429784,
   "game_core": "0.8.11",
-  "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.15",
+  "release": "https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.16",
   "game_class_count_unchanged": 7326,
   "matrix_catalog_entries": 529,
   "promo_companion_entries_excluding_debug": 528,
@@ -15,5 +15,10 @@
   "matrix_width": 17,
   "matrix_height": 23,
   "tested_release": "0.8.14",
-  "new_public_build_device_retest": false
+  "new_public_build_device_retest": false,
+  "update_catalog": "https://stepxneo.jiayustudio.dpdns.org/apk-catalog.json",
+  "same_game_runtime_native_and_pet_assets_as": "0.8.15",
+  "source_tests_passed": 93,
+  "source_tests_skipped": 1,
+  "physical_update_flow": "pending"
 }

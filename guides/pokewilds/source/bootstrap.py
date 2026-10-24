@@ -4,14 +4,14 @@ from pathlib import Path
 import argparse, hashlib, shutil, urllib.request, zipfile
 
 ROOT=Path(__file__).resolve().parent
-SHA256='9dde4d17bf140ae38e7150809a9b80e08d947369119e7668f72e139b25f4e85a'
-URL='https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.15/PokeWilds-Neo-0.8.15.apk'
+SHA256='200b2db2ee6c51ee67d85541b40875a4e0e95a07f4c87ec35010ba756b1ff8eb'
+URL='https://github.com/JiayuStudio/stepx-neo-lab/releases/download/pokewilds-neo-v0.8.16/PokeWilds-Neo-0.8.16.apk'
 parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--apk',type=Path,help='Existing public 0.8.15 APK')
+parser.add_argument('--apk',type=Path,help='Existing public 0.8.16 APK')
 parser.add_argument('--download',action='store_true',help='Download the pinned 306 MiB public APK')
 args=parser.parse_args()
 if not args.apk and not args.download: parser.error('Choose --apk or --download')
-apk=args.apk or ROOT/'.cache/PokeWilds-Neo-0.8.15.apk'
+apk=args.apk or ROOT/'.cache/PokeWilds-Neo-0.8.16.apk'
 if not args.apk:
     apk.parent.mkdir(parents=True,exist_ok=True)
     if not apk.exists():

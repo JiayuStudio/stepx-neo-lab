@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 <uses-permission android:name="android.permission.WAKE_LOCK" />
 <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -14,6 +15,11 @@
         </activity>
         <activity android:name=".GameActivity" android:enableOnBackInvokedCallback="true" android:exported="false" android:configChanges="orientation|screenSize|keyboard|keyboardHidden|density" />
         <activity android:name=".GameSettingsActivity" android:exported="false" />
+        <activity android:name=".UpdateActivity" android:exported="false" android:configChanges="orientation|screenSize|keyboardHidden" />
+        <provider android:name=".UpdateFileProvider" android:authorities="${applicationId}.updates"
+            android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/update_paths" />
+        </provider>
         <activity android:name=".ModBrowserActivity" android:exported="false" />
         <activity android:name="com.termux.x11.MainActivity" tools:node="remove" />
         <activity android:name="com.termux.x11.LoriePreferences" tools:node="remove" />

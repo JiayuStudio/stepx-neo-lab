@@ -1,0 +1,4 @@
+Android apksig 9.3.1
+Copyright (C) The Android Open Source Project
+APK signature verification. Apache License 2.0.
+https://android.googlesource.com/platform/tools/apksig/
