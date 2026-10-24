@@ -18,7 +18,7 @@ ARCHIVE = 'courses/archive/official-step-studio-2026-10-20-early/'
 POLICY = 'maintenance/learning-policy.md'
 
 
-def build():
+def build(verification_record=None):
     catalog = json.loads((ROOT / 'catalog.json').read_text())
     previous = {e['id']: e for e in catalog.get('learning', {}).get('documents', [])}
     course = json.loads((ROOT / 'courses/official-step-studio/data.json').read_text())
@@ -39,6 +39,8 @@ def build():
         if replacement and not (ROOT / replacement).exists():
             replacement = 'courses/official-step-studio/README.md'
         identifier = 'doc:' + rel
+        assert identifier in previous or verification_record, (
+            f'{rel}: new document requires --verification-record maintenance/YYYY-MM-DD-review.md')
         source_urls = sorted(set(source_urls + previous.get(identifier, {}).get('official_sources', [])))
         entry = {
             'id': identifier, 'title': title.group(1) if title else path.stem,
@@ -55,7 +57,7 @@ def build():
             'official_sources': source_urls,
             'evidence_scope': 'inventory_only; preserve_verification_limits_in_source',
             'source_notes': '官方链接仅供核查；缺少链接不代表无来源，详见原文。',
-            'verification_record': 'maintenance/2026-10-23-review.md',
+            'verification_record': verification_record,
             'replacement_path': replacement,
             'retirement_reason': '早期课程已归档；不是平台功能下架。' if archived else None,
         }
@@ -135,8 +137,9 @@ def validate(catalog):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
+    parser.add_argument('--verification-record', help='Evidence record for newly indexed documents; existing records are preserved')
     args = parser.parse_args()
-    catalog, index = build()
+    catalog, index = build(args.verification_record)
     validate(catalog)
     outputs = {'catalog.json': json.dumps(catalog, ensure_ascii=False, indent=2) + '\n', 'sections/learning-index.md': index}
     for name, text in outputs.items():
