@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "version": "0.8.16",
+  "verified_on": "2026-10-24",
+  "target_family": "STEPX Neo",
+  "apk_sha256": "200b2db2ee6c51ee67d85541b40875a4e0e95a07f4c87ec35010ba756b1ff8eb",
+  "test_start": "Private lower-version fixture with the same update code; diagnostic logging was not shipped",
+  "checks": {
+    "new_version_detection": true,
+    "full_vps_apk_download": true,
+    "cancel_and_retry": true,
+    "download_continues_across_portrait_landscape_switches": true,
+    "sha256_package_version_and_cryptographic_signature_checks": true,
+    "verified_package_cache_reused_after_navigation": true,
+    "running_game_blocks_installation": true,
+    "android_system_installer_upgrade": true,
+    "installed_apk_equals_public_release": true,
+    "updated_app_reports_latest_version": true,
+    "original_saved_worlds_and_game_settings_content_unchanged": true,
+    "temporary_test_permission_and_rotation_mode_restored": true
+  },
+  "source_tests": {
+    "passed": 93,
+    "skipped_existing": 1,
+    "failed": 0
+  },
+  "production_rebuild_equals_public_apk": true,
+  "scope": "In-app updates and data retention; full gameplay, every field skill, multitouch and rear-display endurance were not revalidated in this revision."
+}

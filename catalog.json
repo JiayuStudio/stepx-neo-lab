@@ -342,13 +342,14 @@
       "source": "guides/pokewilds/source/README.md",
       "verification": "guides/pokewilds/release.json",
       "verified": [
-        "0.8.14 physical Neo controls, save/load and portrait/landscape session continuity",
-        "0.8.15 public APK build, signing and game bytecode / allocated native sections equivalence",
-        "Public Android wrapper source rebuild from pinned binary inputs"
+        "0.8.14 physical Neo controls and gameplay save/load reference",
+        "0.8.16 Neo update detection, full VPS download, integrity/signature checks and rotation continuity",
+        "0.8.16 running-game installation guard, Android system upgrade and exact installed/public APK match",
+        "Existing saved worlds and game settings content retained",
+        "Public Android wrapper rebuild from pinned inputs; production rebuild matches released APK"
       ],
       "not_verified": [
-        "0.8.15 fresh physical-device regression",
-        "All field skills and multitouch combinations",
+        "Complete 0.8.16 gameplay regression across every field skill and multitouch combination",
         "Long deep standby, optical FPS and battery/thermal behavior",
         "Complete third-party runtime rebuilt from source"
       ],

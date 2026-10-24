@@ -15,10 +15,13 @@
   "matrix_width": 17,
   "matrix_height": 23,
   "tested_release": "0.8.14",
-  "new_public_build_device_retest": false,
+  "new_public_build_device_retest": true,
   "update_catalog": "https://stepxneo.jiayustudio.dpdns.org/apk-catalog.json",
   "same_game_runtime_native_and_pet_assets_as": "0.8.15",
   "source_tests_passed": 93,
   "source_tests_skipped": 1,
-  "physical_update_flow": "pending"
+  "physical_update_flow": "passed",
+  "update_flow_tested_release": "0.8.16",
+  "device_retest_scope": "Update UI, download, rotation, signature checks, running-game guard, system install and saved-data parity",
+  "update_verification": "verification/0.8.16.json"
 }
