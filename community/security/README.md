@@ -7,7 +7,7 @@
 | 应用 | 版本 | 安全状态 | 详细报告 |
 | --- | --- | --- | --- |
 | 倒影颠倒 · StepX Companion 配套 APK | 桌面发行标签 0.2.0；APK 内部版本未核验 | 待检查；仅资料收录，无安全徽章 | [来源与版本边界](../stepx-companion/README.md) |
-| 木偶 · 造物集 | 4.0.0 | 🛡️ 未完全通过；可下载 | [基础实机与安全报告](../zaowuji/security-4.0.0.md) |
+| 木偶 · 造物集 | 31.0.0 | 🛡️ 未完全通过；可下载；新版未实机回归 | [新版基础静态报告](../zaowuji/security-31.0.0.md) · [4.0.0 历史实机记录](../zaowuji/security-4.0.0.md) |
 | 鸿渐原作 · 背屏达人（独立安全修订） | 4.0.1 | 🛡️ 未完全通过；可下载 | [修订与回归报告](../backscreenfun/security-4.0.1.md) · [补丁](../backscreenfun/security-patch-4.0.1/README.md) |
 | 鸿渐 · 背屏达人（原版历史） | 4.0 | ❗ 安全风险，暂停 APK 下载 | [4.0 安全与反编译代码报告](../backscreenfun/security-4.0.md) · [3.0 历史报告](../backscreenfun/security-3.0.md) |
 

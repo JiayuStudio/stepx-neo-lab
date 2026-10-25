@@ -1,6 +1,6 @@
 # StepX Neo 研究所
 
-**[🌐 研究所网站](https://stepxneo.jiayustudio.dpdns.org/)**：浏览自研作品介绍、宣传视频和 App 下载。详细开发资料与源码仍在 GitHub；社区内容目前不在网站展示。
+**[🌐 研究所网站](https://stepxneo.jiayustudio.dpdns.org/)**：浏览自研作品介绍、宣传视频和 App 下载。详细开发资料与源码仍在 GitHub；社区推荐单独展示造物集与 StepX Companion，署名与自研作品区分。
 
 JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这里将 **JIAYU STUDIO 自研与原创**、**社区应用、游戏与 3D 配件**、**官方群信息**分别归类，按用途找到安装方法、开发说明和验证记录。
 
@@ -8,17 +8,15 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 第一次来？想用 Amoo，看[一句话清单](library/amoo/quick-start.md)；想自己做应用，从[新手第一课](sections/start-here.md)开始。
 
-**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-24-review.md)。
+**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-25-review.md)。
 
 ## 最新收录与更新
 
-- **2026-10-24 · 学习目录补全与比较口径**：[逐页索引](sections/learning-index.md)补齐 11 页宝可梦荒野资料，现覆盖 201 页本地 Markdown；[连接器课](courses/official-step-studio/02-connectors.md)补充先记录构建器模式再比较目录的要求，仅界面观察、未调用验证。
-
-- **2026-10-24 · 拓麻歌子0.3.8**：[八宠物、马克笔界面、新图标与底部检查更新](guides/neo-pet/README.md)。
-
-- **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)——手机内对话执行、侧边对话、自选应用、搜索提交与 WPS 文档生成。
-- **2026-10-23 · 社区收录**：[StepX Companion 0.2.0](community/stepx-companion/README.md)——倒影颠倒的桌面伴侣与配套 Android APK，来源社区群（用户提供）；公开资料已核对，未安装或安全测试。收录在[社区 APK 与网页游戏](sections/community-apks.md)，不进入自研网站展示。
-- **2026-10-23 · 学习更新**：[双通道逐页索引](sections/learning-index.md)与[零基础编程课](courses/official-step-studio/programming-basics.md)，分别提供 Agent 原文提取和人类循序练习；索引覆盖不代表功能全部实测。
+- **2026-10-25 · 社区版本更新**：[StepX Companion 0.2.25](community/stepx-companion/README.md)——倒影颠倒的桌面伴侣与配套 APK；统一 Amoo 入口与文档/图片/应用创作按上游说明，未独立运行或安全测试。首次收录日仍为 10-23。
+- **2026-10-25 · 学习目录同步**：[逐页索引](sections/learning-index.md)覆盖 203 页，保留宝可梦荒野与造物集新增资料；[连接器课](courses/official-step-studio/02-connectors.md)说明先记录构建器模式再比较目录，不以模式差异判定上下架。
+- **2026-10-24 · 造物集 31.0.0**：[功能、下载与检查边界](community/zaowuji/README.md)，新版基础静态检查，实机待验。
+- **2026-10-24 · 拓麻歌子 0.3.8**：[八宠物、马克笔界面与检查更新](guides/neo-pet/README.md)。
+- **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)。
 
 更多历史见[更新记录](CHANGELOG.md)；日期表示研究所实际收录或有意义更新，不代替上游发布日期。
 
@@ -38,7 +36,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 | 分区 | 内容归属 | 去这里做什么 |
 | --- | --- | --- |
 | 📖 [资料库](sections/library.md) | **提供资料，研究所整理** | Amoo 一句话清单、提示词手册与实测结果；保留来源日期和验证范围 |
-| 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐原作的背屏达人 4.0.1 安全修订（🛡️ 可下载；含宣传片；安全接口与URL已复测）、造物集 4.0.0（基础实机验证完成；可下载）、九款经典小游戏「游戏厅」 |
+| 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐原作的背屏达人 4.0.1 安全修订（🛡️ 可下载；含宣传片；安全接口与URL已复测）、造物集 31.0.0（新版静态检查；实机待验；可下载）、九款经典小游戏「游戏厅」 |
 | 🔧 [社区工具与技术方案](sections/community-tools.md) | **社区分享，研究所分析** | 当当946分享的手机本地 Codex CLI + MCP：源码、教程、分享包和逆向分析；28 项隔离检查，未独立实机复现 |
 | 🧩 [3D 打印与配件](sections/3d-printing.md) | **社区模型，研究所整理与测量** | Neo 手机壳封闭版与蜂窝版：STL、渲染图、尺寸分析；尚未打印装机 |
 | 🚀 [新手课程](sections/start-here.md) | 研究所编写的入门课程 | 应用、智能体与技能三条路线，31 个连接器练习；另有 [DeepSeek API 选修](guides/deepseek-api/README.md) |

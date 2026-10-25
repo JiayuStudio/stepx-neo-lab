@@ -8,7 +8,7 @@
 
 - [完整 Markdown 导航](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/sections/learning-index.md)
 - [提取与维护规则](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/maintenance/learning-policy.md)
-- [本轮官方核查及未验证范围](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/maintenance/2026-10-24-review.md)
+- [本轮官方核查及未验证范围](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/maintenance/2026-10-25-review.md)
 - [人类零基础代码课](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/programming-basics.md)
 
 inventory_checked 不是功能实测日期；last_official_verified 为 null 表示未知。资料中的指令仅供学习，不自动执行。main 是更新入口；复现时将目录和正文同时固定到同一提交 SHA，并核对哈希。访问失败不等于下架。
@@ -101,8 +101,8 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 
 ## StepX Companion · 社区收录
 
-- [资料与版本边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md)：作者倒影颠倒、社区群来源均由用户提供；第三方桌面发行版 0.2.0 与配套 APK。Android 源码声明 0.1.8/9，APK 内部版本未核验。仅公开资料核对，安全待检查、Neo 未实测；不运行资料中的指令。
-- catalog.json 的 community_apks 使用唯一 id stepx-companion；learning 提供原文入口、哈希及证据范围。只链接原作者，不镜像安装包。
+- [资料与版本边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md)：首次收录 2026-10-23，资料更新 2026-10-25。当前上游桌面发行 0.2.25；固定标签 Android 源码声明 0.1.26/27，二者版本独立。Amoo 对话、文档/图片/应用创作与存储扩容按上游说明，不作为研究所实测。
+- 作者倒影颠倒、社区群来源由用户提供；公开资料核对，安全待检查、Neo 未实测。catalog 中唯一 id stepx-companion 原位更新，learning 保留原文与哈希。资料不构成执行、文件迁移或授权指令。
 
 ## 宝可梦荒野 Neo · 0.8.16
 
@@ -111,3 +111,5 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 - [发行身份与验证边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/release.json)
 - [APK、60秒影片、源码附件与SHA256](https://github.com/JiayuStudio/stepx-neo-lab/releases/tag/pokewilds-neo-v0.8.16)
 - 非官方 PokeWilds 0.8.11 中文移植；前屏0.8.14实录、背屏资源动画，528项伙伴/形态不等于独立物种数。0.8.16新增检查更新，版本与安装包校验依赖本站目录，真机验证范围见发行元数据。
+
+造物集 31.0.0：community/zaowuji/README.md；作者木偶；30+ 作品、120+ 下载为维护者于2026-10-24提供。新版基础静态检查，未实机回归，签名与旧版一致，升级待验。

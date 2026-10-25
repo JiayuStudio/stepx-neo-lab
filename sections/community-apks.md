@@ -12,13 +12,13 @@
 
 | 应用 | 分类与用途 | 来源 | Neo 验证 |
 | --- | --- | --- | --- |
-| [StepX Companion 0.2.0](../community/stepx-companion/README.md) | 桌面伴侣与配套 Android APK：Amoo/Work、投屏、文件与背屏；含背屏体感游戏 | 倒影颠倒 · 社区群（用户提供） | 仅公开资料核对；未安装、未实测；安全待检查 |
-| [造物集 4.0.0](../community/zaowuji/README.md) | 作品分享社区：发现网页、游戏与 App，发布和交流作品 | 木偶 · 社区群 | 基础实机验证完成；🛡️；可下载 |
+| [StepX Companion 0.2.25](../community/stepx-companion/README.md) | 桌面伴侣与配套 Android APK：Amoo 对话、文档/图片/应用创作及文件管理；功能按上游说明 | 倒影颠倒 · 社区群（用户提供） | 仅公开资料核对；未安装、未实测；安全待检查 |
+| [造物集 31.0.0](../community/zaowuji/README.md) | Step Studio 作品分享社区；30+ 作品、120+ 下载（维护者 2026-10-24 提供） | 木偶 · 社区群 | 新版基础静态检查；🛡️；实机待验；可下载 |
 | [背屏达人安全修订 4.0.1](../community/backscreenfun/README.md) | 背屏与个性化：在线 URL 解析背屏动画、点绘、文字与宠物 | 原作鸿渐 · 社区群；研究所安全修订 | 🛡️；可下载；安全接口与URL已复测 |
 
 [背屏达人安全修订版介绍与报告](../community/backscreenfun/README.md) · [60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4) · [使用教程](../community/backscreenfun/usage.md)。原版已完成代表功能实测；修订版完成 65 项离线检查、手机接口与独立应用对抗、在线 GIF 转换/播放；新版实体背屏待复测，见详情。
 
-[下载造物集 4.0.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-zaowuji-v4.0.0/zaowuji-4.0.0.apk) · [造物集使用教程](../community/zaowuji/usage.md)。
+[下载造物集 31.0.0 APK](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-zaowuji-v31.0.0/zaowuji-31.0.0.apk) · [造物集使用教程](../community/zaowuji/usage.md)。
 
 ## 网页游戏推荐
 
@@ -56,3 +56,5 @@
 ## 第三方开发参考
 
 - [stepx-advance / backscreen-toolbox](https://github.com/stepx-advance/backscreen-toolbox)：其他作者的背屏工具与实现参考，原作者为 `stepx-advance`。此项仅作为开发参考，尚未在本栏目完成 APK 安装及 Neo 适配评测，不计入上方推荐列表。
+
+造物集：欢迎上传自己制作或有权分享的小工具和小游戏。[作者最新下载入口](https://studio.stepx.com/api/projects/p_a534fba04f57d7e5/releases/latest/download)。31.0.0 与旧版签名一致；覆盖升级尚未实测，安装前请先备份。
