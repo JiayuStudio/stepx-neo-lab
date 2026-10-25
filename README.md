@@ -1,6 +1,6 @@
 # StepX Neo 研究所
 
-**[🌐 研究所网站](https://stepxneo.jiayustudio.dpdns.org/)**：浏览自研作品介绍、宣传视频和 App 下载。详细开发资料与源码仍在 GitHub；社区内容目前不在网站展示。
+**[🌐 研究所网站](https://stepxneo.jiayustudio.dpdns.org/)**：浏览自研作品介绍、宣传视频和 App 下载。详细开发资料与源码仍在 GitHub；社区推荐单独展示造物集与 StepX Companion，署名与自研作品区分。
 
 JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这里将 **JIAYU STUDIO 自研与原创**、**社区应用、游戏与 3D 配件**、**官方群信息**分别归类，按用途找到安装方法、开发说明和验证记录。
 
@@ -8,15 +8,15 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 第一次来？想用 Amoo，看[一句话清单](library/amoo/quick-start.md)；想自己做应用，从[新手第一课](sections/start-here.md)开始。
 
-**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-23-review.md)。
+**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-25-review.md)。
 
 ## 最新收录与更新
 
-- **2026-10-24 · 拓麻歌子0.3.8**：[八宠物、马克笔界面、新图标与底部检查更新](guides/neo-pet/README.md)。
-
-- **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)——手机内对话执行、侧边对话、自选应用、搜索提交与 WPS 文档生成。
-- **2026-10-23 · 社区收录**：[StepX Companion 0.2.0](community/stepx-companion/README.md)——倒影颠倒的桌面伴侣与配套 Android APK，来源社区群（用户提供）；公开资料已核对，未安装或安全测试。收录在[社区 APK 与网页游戏](sections/community-apks.md)，不进入自研网站展示。
-- **2026-10-23 · 学习更新**：[双通道逐页索引](sections/learning-index.md)与[零基础编程课](courses/official-step-studio/programming-basics.md)，分别提供 Agent 原文提取和人类循序练习；索引覆盖不代表功能全部实测。
+- **2026-10-25 · 社区版本更新**：[StepX Companion 0.2.25](community/stepx-companion/README.md)——倒影颠倒的桌面伴侣与配套 APK；统一 Amoo 入口与文档/图片/应用创作按上游说明，未独立运行或安全测试。首次收录日仍为 10-23。
+- **2026-10-25 · 学习目录同步**：[逐页索引](sections/learning-index.md)覆盖 203 页，保留宝可梦荒野与造物集新增资料；[连接器课](courses/official-step-studio/02-connectors.md)说明先记录构建器模式再比较目录，不以模式差异判定上下架。
+- **2026-10-24 · 造物集 31.0.0**：[功能、下载与检查边界](community/zaowuji/README.md)，新版基础静态检查，实机待验。
+- **2026-10-24 · 拓麻歌子 0.3.8**：[八宠物、马克笔界面与检查更新](guides/neo-pet/README.md)。
+- **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)。
 
 更多历史见[更新记录](CHANGELOG.md)；日期表示研究所实际收录或有意义更新，不代替上游发布日期。
 
