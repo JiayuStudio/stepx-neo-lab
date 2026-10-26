@@ -11,6 +11,8 @@
 
 ## 背屏开发
 
+- [Neo背屏原理与Step Studio实现](../guides/neo-matrix/README.md)：391个灰度值、官方连接器与原生路线，含可运行示例、排查表及90秒视频。
+
 - [从 17×23 点阵到拓麻歌子](../guides/neo-pet/development.md)：需要哪些文件、怎样调用、如何制作角色和保持锁屏动画。
 - [配套 Step Studio 提示词](../guides/neo-pet/studio-prompts.md)：按步骤复制，包含失败时的排查要求。
 - [游戏安装与后台设置](../guides/neo-pet/README.md)：只想使用游戏，从这里开始。

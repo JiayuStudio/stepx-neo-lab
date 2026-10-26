@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "checked": "2026-10-26",
+  "frame": {
+    "width": 17,
+    "height": 23,
+    "cells": 391,
+    "brightness": [
+      0,
+      255
+    ],
+    "order": "row-major"
+  },
+  "connector": {
+    "id": "ic_atomic_990001",
+    "page_capability_count": 17,
+    "frame_selected_version": 10012,
+    "frame_parameters": [
+      "frame"
+    ]
+  },
+  "player_tests": {
+    "total": 6,
+    "passed": 6
+  },
+  "browser_verified": [
+    "standalone file preview",
+    "continuous animation",
+    "stop and clear",
+    "missing-host error",
+    "390px layout without horizontal overflow"
+  ],
+  "video": {
+    "duration_seconds": 90,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "audio": "Suno v6 / Pixel Pathfinder / local A-B-A arrangement",
+    "front": "Neo 0.8.14 screen recordings",
+    "rear": "resource animation illustration",
+    "companion_and_form_entries": 528,
+    "full_decode": true,
+    "playback_and_seeking": true
+  },
+  "pending": [
+    "official MCP physical rear-screen acceptance for this new example",
+    "cross-firmware compatibility",
+    "long standby and battery testing",
+    "subjective music audition"
+  ]
+}

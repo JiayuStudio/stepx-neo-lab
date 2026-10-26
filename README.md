@@ -12,6 +12,8 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 ## 最新收录与更新
 
+- **2026-10-26 · Neo背屏开发教程1.0.0**：[调用原理与Step Studio实现](guides/neo-matrix/README.md)，附彩色马克笔示例、6项播放器检查和90秒Suno配乐视频。
+
 - **2026-10-24 · 拓麻歌子0.3.8**：[八宠物、马克笔界面、新图标与底部检查更新](guides/neo-pet/README.md)。
 
 - **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)——手机内对话执行、侧边对话、自选应用、搜索提交与 WPS 文档生成。

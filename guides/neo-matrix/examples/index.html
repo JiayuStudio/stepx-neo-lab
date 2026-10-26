@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neo 背屏 · 最小播放器</title>
+<!-- 在 Step Studio 中保留原有 capsule.js；把本页逻辑合并进平台生成的项目。 -->
+<style>
+:root{color-scheme:light;font-family:system-ui,sans-serif;color:#242321;background:#f7f2e5}*{box-sizing:border-box}body{margin:0;padding:36px 22px;background-image:radial-gradient(#cfc5b633 .7px,transparent .7px);background-size:7px 7px}main{max-width:1050px;margin:auto}.eyebrow{color:#5d6853;letter-spacing:3px;font-size:13px;font-weight:700}h1{font-size:clamp(28px,5vw,48px);margin:18px 0 32px;font-weight:850;text-decoration:underline;text-decoration-color:#f7d65e;text-decoration-thickness:.28em;text-underline-offset:-.08em;text-decoration-skip-ink:none}p{line-height:1.7;color:#514c44}.grid{display:grid;grid-template-columns:340px 1fr;gap:38px;align-items:center}.panel{background:#fffdf5;border:2px solid #242321;border-radius:22px 17px 27px 14px;padding:18px;box-shadow:6px 7px 0 #242321;transform:rotate(-.7deg)}canvas{display:block;max-width:100%;height:auto;margin:auto;border-radius:12px;border:2px solid #242321}section{background:#fffdf5;border:2px solid #242321;border-radius:15px 23px 16px 24px;padding:24px;box-shadow:5px 6px 0 #242321}button,select{font:inherit;font-weight:700;padding:13px 16px;margin:7px 7px 7px 0;border-radius:9px 13px 8px 12px;border:2px solid #242321;color:#242321;background:#79cce7;cursor:pointer;box-shadow:3px 4px 0 #242321}button:active{transform:translate(2px,3px);box-shadow:1px 1px 0 #242321}button:focus-visible,select:focus-visible{outline:3px solid #c04f66;outline-offset:4px}button:disabled{opacity:.45;cursor:wait}.accent{background:#f7d65e}#stop{background:#f3a2b1}select{background:#b6d59c}#status{min-height:80px;white-space:pre-wrap;background:#fff4c4;padding:12px;border-left:5px solid #f7d65e;border-radius:4px}label{display:block;margin:14px 0}footer{margin:38px 0 0;color:#686056;font-size:13px;border-top:2px dashed #c9beac;padding-top:18px}@media(max-width:750px){.grid{grid-template-columns:1fr;gap:26px}.panel{padding:14px;max-width:285px;margin:auto}section{padding:18px}canvas{max-height:320px;width:auto}body{padding:24px 16px}button{padding:12px 13px;margin-right:5px;font-size:14px}}
+</style>
+<main><div class="eyebrow">17 × 23 · 391 灰度值</div><h1>让小伙伴，亮在另一面。</h1>
+<div class="grid"><div class="panel"><canvas id="matrix" width="306" height="414" aria-label="17列23行点阵预览"></canvas></div>
+<section><p>前台最小示例。默认模拟；设备通道需要官方连接器和 Neo 宿主。不更改系统亮度、常亮或后台设置。</p>
+<label>运行通道 <select id="channel"><option value="preview">模拟预览</option><option value="device">Neo 设备 · 官方 MCP</option></select></label>
+<button id="connect">连接设备</button><button id="play" class="accent">播放</button><button id="stop">停止并清除</button>
+<p id="status" role="status" aria-live="polite">尚未播放。画布动画不代表已经调用物理背屏。</p>
+<p>串行发送 · 默认 4 次/秒调试 · 页面隐藏时停止<br>按钮返回成功后，还需观察手机背面的实际显示。</p></section></div>
+<footer>JIAYU STUDIO · StepX Neo 研究所<br>接入方法见随附教程；此处原创机器人用于最小示例。</footer></main>
+<script>
+(()=>{
+// BEGIN BUNDLED PLAYER
+/* Minimal foreground player. No display mode, brightness or background changes. */
+const WIDTH = 17, HEIGHT = 23, CELLS = WIDTH * HEIGHT;
+
+function validateFrame(frame) {
+  if (!Array.isArray(frame) || frame.length !== CELLS ||
+      frame.some(v => !Number.isInteger(v) || v < 0 || v > 255))
+    throw new Error('一帧必须是 391 个 0–255 整数');
+  return frame;
+}
+
+// Accept the SDK envelope or MCP text-JSON envelope, but never ignore explicit errors.
+function checkReply(reply) {
+  if (reply == null) throw new Error('设备没有返回结果');
+  const seen = new Set();
+  function visit(value, depth = 0) {
+    if (depth > 8 || value == null) return;
+    if (typeof value === 'string') {
+      let parsed;
+      try { parsed = JSON.parse(value); } catch { return; }
+      return visit(parsed, depth + 1);
+    }
+    if (typeof value !== 'object' || seen.has(value)) return;
+    seen.add(value);
+    if (value.success === false || value.isError === true || value.error)
+      throw new Error('背屏接口报告失败，请检查连接器、设备与授权');
+    for (const key of ['result', 'data', 'structuredContent', 'content', 'text'])
+      if (Object.hasOwn(value, key)) visit(value[key], depth + 1);
+    if (Array.isArray(value)) for (const item of value) visit(item, depth + 1);
+  }
+  visit(reply);
+  return reply;
+}
+
+async function connectMcp(mcp) {
+  if (!mcp || typeof mcp.connect !== 'function' || typeof mcp.callTool !== 'function')
+    throw new Error('未找到官方 MCP 宿主；请在 Neo 的 Step Studio 应用中运行');
+  const reply = await mcp.connect();
+  if (reply != null) checkReply(reply);
+  return mcp;
+}
+
+function makeBuddy(t = 0) {
+  // Original smiling robot, deliberately separate from the game's character assets.
+  const out = Array(CELLS).fill(0), dy = Math.round(Math.sin(t * 3) * .8);
+  const dot = (x, y, v = 230) => {
+    y += dy;
+    if (x >= 0 && x < WIDTH && y >= 0 && y < HEIGHT) out[y * WIDTH + x] = v;
+  };
+  for (let y = 6; y <= 16; y++) for (let x = 3; x <= 13; x++) {
+    if ((y === 6 || y === 16) && (x === 3 || x === 13)) continue;
+    dot(x, y, 200);
+  }
+  dot(8, 3); dot(8, 4); dot(8, 5);
+  const blink = t % 4.8 < .16;
+  for (const x of [6, 10]) {
+    dot(x, 9, 0); dot(x, 10, 0);
+    dot(x, 11, blink ? 0 : 245);
+  }
+  dot(7, 13, 0); dot(8, 14, 0); dot(9, 13, 0);
+  for (const x of [2, 14]) for (let y = 10; y <= 13; y++) dot(x, y, 160);
+  for (const x of [5, 11]) { dot(x, 17); dot(x, 18); }
+  return out;
+}
+
+class MatrixPlayer {
+  constructor({mcp = null, preview = () => {}, status = () => {}} = {}) {
+    this.mcp = mcp; this.preview = preview; this.status = status;
+    this.token = 0; this.job = Promise.resolve(); this.actions = Promise.resolve();
+    this.dirty = false; this.timer = null; this.wake = null;
+  }
+  cancelTimer() {
+    clearTimeout(this.timer); this.timer = null;
+    if (this.wake) { const wake = this.wake; this.wake = null; wake(); }
+  }
+  queue(fn) {
+    const action = this.actions.catch(() => {}).then(fn);
+    this.actions = action;
+    return action;
+  }
+  async drainAndClear() {
+    await this.job; // Never clear before a pending frame has returned.
+    if (this.dirty) {
+      checkReply(await this.mcp.callTool('clear_back_screen_frame', {}));
+      this.dirty = false;
+    }
+  }
+  start({device = false, fps = 4, frameAt = makeBuddy} = {}) {
+    if (!Number.isFinite(fps) || fps < 1 || fps > 10)
+      return Promise.reject(new Error('此调试播放器接受 1–10 次/秒，默认 4；不是硬件上限'));
+    const token = ++this.token;
+    this.cancelTimer();
+    return this.queue(async () => {
+      await this.drainAndClear();
+      if (token !== this.token) return;
+      if (device) await connectMcp(this.mcp);
+      if (token !== this.token) return;
+      const started = performance.now();
+      this.status(device ? '设备通道播放中（实际显示请观察背面）' : '模拟预览播放中');
+      this.job = (async () => {
+        try {
+          while (token === this.token) {
+            const frame = validateFrame(frameAt((performance.now() - started) / 1000));
+            if (device) {
+              this.dirty = true; // Failure can still have reached the device; cleanup remains required.
+              checkReply(await this.mcp.callTool('set_back_screen_frame', {frame}));
+            }
+            if (token !== this.token) break;
+            this.preview(frame);
+            await new Promise(resolve => {
+              this.wake = resolve;
+              this.timer = setTimeout(() => { this.wake = null; resolve(); }, 1000 / fps);
+            });
+          }
+        } catch (error) {
+          if (token === this.token) this.token++;
+          this.status('播放失败：' + error.message + '；请停止清除后重试');
+          // Do not pretend the hardware was cleared. stop() remains available.
+        }
+      })();
+    });
+  }
+  stop() {
+    ++this.token; this.cancelTimer();
+    return this.queue(async () => {
+      await this.drainAndClear();
+      this.preview(Array(CELLS).fill(0));
+      this.status('已停止；自定义帧已清除（模拟通道只清预览）');
+    });
+  }
+}
+
+// END BUNDLED PLAYER
+const canvas=document.querySelector('#matrix'),ctx=canvas.getContext('2d');
+const status=s=>document.querySelector('#status').textContent=s;
+function draw(frame){ctx.fillStyle='#0b161d';ctx.fillRect(0,0,306,414);frame.forEach((v,i)=>{ctx.beginPath();ctx.arc((i%17+.5)*18,(Math.floor(i/17)+.5)*18,6.5,0,Math.PI*2);ctx.fillStyle=v?`rgb(${v},${v},${v})`:'#263943';ctx.fill();});}
+draw(makeBuddy(1));
+const player=new MatrixPlayer({mcp:window.mcp,preview:draw,status});
+async function action(fn){try{await fn();}catch(e){status(e.message);}}
+document.querySelector('#connect').onclick=()=>action(async()=>{player.mcp=window.mcp;await connectMcp(player.mcp);status('宿主连接已返回；请播放后观察实际背面');});
+document.querySelector('#play').onclick=()=>action(()=>{player.mcp=window.mcp;return player.start({device:document.querySelector('#channel').value==='device'});});
+document.querySelector('#stop').onclick=()=>action(()=>player.stop());
+document.querySelector('#channel').onchange=()=>action(()=>player.stop());
+document.addEventListener('visibilitychange',()=>{if(document.hidden)action(()=>player.stop());});
+// pagehide 的异步调用只是尽力清理；不能保证浏览器结束前完成。
+window.addEventListener('pagehide',()=>{player.stop().catch(()=>{});});
+})();
+</script></html>

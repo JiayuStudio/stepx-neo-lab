@@ -4,7 +4,7 @@
 
 此页由 `python3 tools/learning_index.py` 生成。逐页来源、核验日期、状态、哈希及替代路径见 [catalog.json 的 learning 字段](../catalog.json)。
 
-本地 190 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
+本地 205 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
 
 | 页面 | 原始 Markdown | 内容状态 |
 | --- | --- | --- |
@@ -26,7 +26,9 @@
 | [重建 UI helper（可选）](../community/codex-phone/materials/src/BUILD.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/src/BUILD.md) | indexed |
 | [社区 APK 安全检查](../community/security/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/security/README.md) | indexed |
 | [StepX Companion · 社区桌面伴侣与配套 APK](../community/stepx-companion/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md) | indexed |
-| [造物集 4.0.0](../community/zaowuji/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README.md) | indexed |
+| [造物集 4.0.0](../community/zaowuji/README-4.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README-4.0.0.md) | indexed |
+| [造物集 31.0.0](../community/zaowuji/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README.md) | indexed |
+| [造物集 31.0.0 基础静态检查](../community/zaowuji/security-31.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/security-31.0.0.md) | indexed |
 | [造物集 4.0.0：基础实机与安全检查](../community/zaowuji/security-4.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/security-4.0.0.md) | indexed |
 | [造物集使用教程](../community/zaowuji/usage.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/usage.md) | indexed |
 | [00 · 先想清楚，再开始写](../courses/archive/official-step-studio-2026-10-20-early/00-start.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/archive/official-step-studio-2026-10-20-early/00-start.md) | archived |
@@ -147,7 +149,7 @@
 | [案例来源与版本演进](../guides/chess-bomber/sources.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/chess-bomber/sources.md) | indexed |
 | [DeepSeek API Key：申请、配置与第一次使用](../guides/deepseek-api/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/deepseek-api/README.md) | indexed |
 | [第一款应用：在 Neo 上制作口袋计数器](../guides/first-app/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/first-app/README.md) | indexed |
-| [Neo Agent Touch · 0.1.20 Beta](../guides/neo-agent-touch/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/README.md) | indexed |
+| [Agent Touch · 0.1.20 Beta](../guides/neo-agent-touch/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/README.md) | indexed |
 | [Agent读取入口：Neo Agent Touch 0.1.20](../guides/neo-agent-touch/ai.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/ai.md) | indexed |
 | [自选应用：从固定名单到通用视觉](../guides/neo-agent-touch/application-selection.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/application-selection.md) | indexed |
 | [Neo Agent Touch：从目标到可验证的手机操作](../guides/neo-agent-touch/development.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/development.md) | indexed |
@@ -172,10 +174,23 @@
 | [Offline Chinese voice input](../guides/neo-agent-touch/source/vendor/voice/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/vendor/voice/README.md) | indexed |
 | [开发日志](../guides/neo-agent-touch/source/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/source/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97.md) | indexed |
 | [0.1.16：共享比价目标与一键检查更新](../guides/neo-agent-touch/updates-v16.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-agent-touch/updates-v16.md) | indexed |
+| [Neo 背屏开发：原理、Step Studio 与点阵伙伴](../guides/neo-matrix/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-matrix/README.md) | indexed |
+| [把游戏伙伴带到背屏：Neo 点阵与 Step Studio 实现](../guides/neo-matrix/guide.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-matrix/guide.md) | indexed |
 | [拓麻歌子 · Neo 背屏电子宠物](../guides/neo-pet/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-pet/README.md) | indexed |
 | [从 17×23 点阵到背屏宠物](../guides/neo-pet/development.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-pet/development.md) | indexed |
 | [Step Studio 背屏宠物开发提示词](../guides/neo-pet/studio-prompts.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-pet/studio-prompts.md) | indexed |
-| [StepX Neo Studio](../guides/neo-studio/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-studio/README.md) | indexed |
+| [Step工作台（StepX Neo Studio）](../guides/neo-studio/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/neo-studio/README.md) | indexed |
+| [宝可梦荒野 · Neo 中文适配](../guides/pokewilds/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/README.md) | indexed |
+| [图像、中文字形与音乐来源](../guides/pokewilds/RESOURCE_SOURCES.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/RESOURCE_SOURCES.md) | indexed |
+| [Neo 适配源码与构建](../guides/pokewilds/source/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/README.md) | indexed |
+| [README](../guides/pokewilds/source/android/lorie/src/main/cpp/lorie/shm/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/android/lorie/src/main/cpp/lorie/shm/README.md) | indexed |
+| [应用内更新 0.8.16](../guides/pokewilds/source/docs/application-updates.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/docs/application-updates.md) | indexed |
+| [名称汉化依据](../guides/pokewilds/source/localization/data/name-sources.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/localization/data/name-sources.md) | indexed |
+| [v0.8.11 发布包硬编码文字审计](../guides/pokewilds/source/localization/data/%E7%A1%AC%E7%BC%96%E7%A0%81%E6%B1%89%E5%8C%96%E5%AE%A1%E8%AE%A1.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/localization/data/%E7%A1%AC%E7%BC%96%E7%A0%81%E6%B1%89%E5%8C%96%E5%AE%A1%E8%AE%A1.md) | indexed |
+| [Control patch provenance](../guides/pokewilds/source/runtime-recipes/control-patches/PROVENANCE.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/runtime-recipes/control-patches/PROVENANCE.md) | indexed |
+| [PokeWilds 0.8.11 bug fixes](../guides/pokewilds/source/runtime-recipes/game-patches/PROVENANCE.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/runtime-recipes/game-patches/PROVENANCE.md) | indexed |
+| [Android host runtime](../guides/pokewilds/source/runtime-recipes/native/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/runtime-recipes/native/README.md) | indexed |
+| [Standalone payload contract](../guides/pokewilds/source/runtime-recipes/runtime/PAYLOAD_CONTRACT.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/guides/pokewilds/source/runtime-recipes/runtime/PAYLOAD_CONTRACT.md) | indexed |
 | [Amoo 使用资料库](../library/amoo/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/library/amoo/README.md) | indexed |
 | [打开应用与应用管理](../library/amoo/manual/03-apps.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/library/amoo/manual/03-apps.md) | indexed |
 | [点外卖](../library/amoo/manual/04-food.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/library/amoo/manual/04-food.md) | indexed |
