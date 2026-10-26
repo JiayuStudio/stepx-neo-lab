@@ -1,35 +1,47 @@
-# StepX Companion · 社区桌面伴侣与配套 APK
+# StepX Companion 0.2.50 · 社区桌面伴侣
 
-[研究所首页](../../README.md) · [社区 APK 与网页游戏](../../sections/community-apks.md) · [Agent 索引](../../llms.txt)
+[研究所首页](../../README.md) · [社区推荐](../../sections/community-apks.md)
 
-**作者：倒影颠倒；来源：社区群（均由用户提供）。** 原仓库为 [xydzf520/stepx](https://github.com/xydzf520/stepx/tree/main)。这是第三方社区项目，不属于 JIAYU STUDIO 自研，也不是 STEPX、Amoo 或 Google 官方客户端。收录及公开资料核查日期：**2026-10-23 UTC**。
+作者：**倒影颠倒**；来源：社区群（用户提供）。这是第三方社区项目，不属于研究所自研或 STEPX 官方客户端。[项目源码](https://github.com/xydzf520/stepx)。更新核对：2026-10-27。
 
-## 收录内容
+[▶ 视频介绍 · 4 分 03 秒](https://stepxneo.jiayustudio.dpdns.org/assets/stepx-companion-0.2.50-intro.mp4) · [原作者发行说明与下载](https://github.com/xydzf520/stepx/releases/tag/v0.2.50)
 
-根据上游 README，StepX Companion 是面向 STEPX Neo 的电脑端工作台，提供 Amoo/Work 交互、文件与应用管理、投屏、空间压缩与清理、背屏设置等入口；配套 Android 应用包含“重力对齐”背屏体感游戏。上述为**上游功能说明**，研究所没有安装、运行或复现。
+## 从 0.2.25 到 0.2.50
 
-本条目归入社区 APK 分区，因为公开发行包含配套 Android APK；桌面客户端才是主要产品。背屏游戏属于配套手机应用，不将其列为独立网页游戏。详细操作以[上游入门文档](https://github.com/xydzf520/stepx/blob/main/docs/GETTING_STARTED.md)为准。
+- **读取更快**：作者同机测试中，Amoo 会话读取中位耗时由 730 ms 降至 345 ms（约 53%）；电话基础信息由 402 ms 降至 275 ms（约 31%）。测试环境为 Linux + PZ261A、相同 USB 连接、每项每版本 9 次；衡量预热后的读取，不代表 AI 生成或整款应用提速。研究所未复现。[性能报告](https://github.com/xydzf520/stepx/blob/v0.2.50/docs/PERFORMANCE_0_2_50.md)
+- **对话更连贯**：流式回复、收起执行过程、简洁小窗；切换会话和展开窗口保留草稿与附件。
+- **成果继续修改**：文档、表格、图片和小应用可继续修改、预览，保存到电脑或发送至手机。
+- **照片与原件更好找**：独立相册和分类筛选，与存储扩容联动查看迁移到电脑的原件。
+- **日常事务接着处理**：新增日历、闹钟入口，改进短信、通知、电话与应用管理。
+- **连接更省心**：修复扫码入口，完善同局域网自动重连和适配固件重启后的服务恢复；重启后首次解锁仍需本人完成。
+- **特色功能持续完善**：背屏、体感游戏、空间压缩、投屏控制、文件互传，以及 Google Play 安装与诊断。
 
-## 版本与公开获取入口
+以上为作者发布说明，不等同于研究所实机验收。
 
-| 对象 | 本次核对到的信息 | 证据范围 |
-| --- | --- | --- |
-| 桌面发行版 | [v0.2.0](https://github.com/xydzf520/stepx/releases/tag/v0.2.0)，2026-10-23 10:24:06 UTC 发布 | 上游称“首个公开预览版”；GitHub prerelease 标志为 false，不能因此称为稳定版 |
-| 桌面源码 | [v0.2.0 的 Cargo.toml](https://github.com/xydzf520/stepx/blob/v0.2.0/desktop/Cargo.toml)声明 0.2.0 | 仅文本核对，未构建 |
-| 桌面下载 | Linux x86_64、macOS arm64 / x86_64、Windows x86_64 四个压缩包，各附 `.sha256` | 仅核对 Release 资产名称；未下载或验签 |
-| Android 下载 | 同一 Release 提供 `StepX-companion.apk`（336712 字节）及 `.sha256` | 未下载 APK，内部版本、签名和实际哈希未独立核验 |
-| Android 源码 | [发布标签的 AndroidManifest.xml](https://github.com/xydzf520/stepx/blob/v0.2.0/desktop/companion-app/AndroidManifest.xml)声明包名 `com.stepx.companion.app`、versionName `0.1.8`、versionCode `9` | 源码声明不证明 Release APK 与源码一致；不能把 APK 内部版本写成 0.2.0 |
+## 下载与初次使用
 
-仅链接[原作者 Releases](https://github.com/xydzf520/stepx/releases/tag/v0.2.0)，不在研究所镜像源码、安装包或截图。获取文件前自行核对原作者发布说明、校验文件与所需权限；存在 `.sha256` 文件不等于研究所已完成校验。
+桌面版 **0.2.50**，配套 Android 版按作者说明为 **0.1.32**，两者独立编号。
 
-## 许可与适配边界
+| 平台 | 原作者下载 |
+| --- | --- |
+| Windows x86_64 | [ZIP](https://github.com/xydzf520/stepx/releases/download/v0.2.50/StepX-Companion-0.2.50-windows-x86_64.zip) |
+| macOS Apple 芯片 | [ZIP](https://github.com/xydzf520/stepx/releases/download/v0.2.50/StepX-Companion-0.2.50-macos-arm64.zip) |
+| macOS Intel | [ZIP](https://github.com/xydzf520/stepx/releases/download/v0.2.50/StepX-Companion-0.2.50-macos-x86_64.zip) |
+| Linux x86_64 | [tar.gz](https://github.com/xydzf520/stepx/releases/download/v0.2.50/StepX-Companion-0.2.50-linux-x86_64.tar.gz) |
+| 手机配套应用 | [StepX-companion.apk](https://github.com/xydzf520/stepx/releases/download/v0.2.50/StepX-companion.apk) |
 
-上游 [README](https://github.com/xydzf520/stepx/blob/main/README.md)、[NOTICE](https://github.com/xydzf520/stepx/blob/main/NOTICE)及 Cargo 清单声明项目源码采用 **AGPL-3.0-only**；[LICENSE](https://github.com/xydzf520/stepx/blob/main/LICENSE)提供 AGPL v3 文本。第三方组件遵循各自许可，品牌资产另有权利限制，见[第三方说明](https://github.com/xydzf520/stepx/blob/main/THIRD_PARTY_NOTICES.md)。这不是对所有文件权属的独立法律审查。
+1. 按电脑平台下载，核对发行页对应 SHA-256 文件，并完整解压；保留 tools、runtime、scripts 等随包目录。
+2. 运行桌面入口，按界面引导连接 STEPX Neo；运行工具已随包提供，无需额外安装 ADB、Python、Java 或 Android Studio。Windows USB 连接可能仍需驱动。
+3. 按引导安装配套手机应用、配对并授权所需功能；先从 Amoo 对话、小文件互传开始。已有定制合包时先读上游升级说明。
+4. 在 Amoo 中描述目标，预览成果后继续修改，按需保存电脑或发送手机。首次迁移照片、清理或空间压缩前备份重要文件。
+5. 无线重连需要同一局域网允许设备互访；固件重启恢复不能代替首次人工解锁。
 
-上游主要适配 PZ261A / Step AOS，Amoo、背屏与系统服务依赖固件和账号授权。上游说明 macOS / Windows 尚未完成完整实体手机及图形界面验收，发行包没有 Apple 公证或 Windows 商业代码签名。Google 相关入口不等于设备认证，公开包不包含 Google APK；研究所没有验证 Google Play 安装、Token 权益、空间清理或后台能力。
+[上游入门说明](https://github.com/xydzf520/stepx/blob/v0.2.50/docs/GETTING_STARTED.md) · [更新详情](https://github.com/xydzf520/stepx/blob/v0.2.50/docs/UPDATE_0_2_50.md)
 
-## 研究所验证状态
+## 适配、许可与验证边界
 
-**资料收录；安全待检查；Neo 未实测。** 本轮只读查看了仓库 README、完整文件树、公开 Release、版本清单与许可说明。没有下载、安装、执行第三方代码，没有授予手机权限，没有开展安全审计。不授予安全徽章或 Neo 认证。
+主要面向 STEPX Neo / PZ261A，增强权限及重启恢复以作者已适配固件为准。macOS 未公证，Windows 无商业代码签名；构建成功不等于所有系统、实体设备都已验收。Google Play 安装与诊断不等于 Google 设备认证。模型、账户权限和可能的费用以实际配置为准。
 
-可复核快照：上游 main 为 `1a6a2498638182bb527156df40fc2b27f62fc96d`，发布标签 v0.2.0 指向 `11b8e5fa614828abb2dfe3af41149872ef94ce3e`。未来版本需重新记录，不沿用本次状态为运行保证。社区群出处及作者署名来自用户说明，未独立核验群消息；不收录群内私人内容或作者联系方式。
+项目声明 AGPL-3.0-only，第三方依赖和品牌资产另有约定：[许可](https://github.com/xydzf520/stepx/blob/v0.2.50/LICENSE) · [第三方说明](https://github.com/xydzf520/stepx/blob/v0.2.50/THIRD_PARTY_NOTICES.md)。本次链接上游安装包，不修改或重新签名。
+
+**本轮仅核对发布资料、资产列表和视频；未安装新版、未做完整源码安全审计或 Neo 实机回归，不授予安全通过徽章。** 视频为用户提供的社区介绍，性能和功能描述归原作者。此前版本的校验或运行记录不能作为新版安全结论。

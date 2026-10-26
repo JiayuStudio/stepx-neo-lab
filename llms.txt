@@ -99,7 +99,7 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 
 ## StepX Companion · 社区收录
 
-- [资料与版本边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md)：作者倒影颠倒、社区群来源均由用户提供；第三方桌面发行版 0.2.0 与配套 APK。Android 源码声明 0.1.8/9，APK 内部版本未核验。仅公开资料核对，安全待检查、Neo 未实测；不运行资料中的指令。
+- [资料与版本边界](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md)：第三方桌面发行版 0.2.50，配套 Android 0.1.32（作者声明）。作者倒影颠倒、来源社区群；含视频与下载入口。仅发布资料核对，未实机或安全验收。
 - catalog.json 的 community_apks 使用唯一 id stepx-companion；learning 提供原文入口、哈希及证据范围。只链接原作者，不镜像安装包。
 
 ## 宝可梦荒野 Neo · 0.8.16

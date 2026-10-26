@@ -595,8 +595,8 @@
     {
       "id": "stepx-companion",
       "title": "StepX Companion",
-      "version": "0.2.0",
-      "version_scope": "desktop_release_tag; apk_binary_version_not_verified",
+      "version": "0.2.50",
+      "version_scope": "desktop_release_tag; phone_version_from_author",
       "section": "community-apks",
       "category": "桌面伴侣与配套 Android APK",
       "path": "community/stepx-companion/README.md",
@@ -606,22 +606,19 @@
       "author_display": "倒影颠倒",
       "author_attribution_basis": "user_provided",
       "repository": "https://github.com/xydzf520/stepx",
-      "release_url": "https://github.com/xydzf520/stepx/releases/tag/v0.2.0",
-      "public_download_url": "https://github.com/xydzf520/stepx/releases/tag/v0.2.0",
+      "release_url": "https://github.com/xydzf520/stepx/releases/tag/v0.2.50",
+      "public_download_url": "https://github.com/xydzf520/stepx/releases/tag/v0.2.50",
       "distribution": "仅链接上游发行页；不镜像源码或安装包",
       "license": "AGPL-3.0-only; separately licensed third-party components and reserved brand assets",
-      "date": "2026-10-23",
-      "release_published_at": "2026-10-23T10:24:06Z",
-      "upstream_main_sha": "1a6a2498638182bb527156df40fc2b27f62fc96d",
-      "release_tag_sha": "11b8e5fa614828abb2dfe3af41149872ef94ce3e",
-      "source_android_version_name": "0.1.8",
-      "source_android_version_code": 9,
+      "date": "2026-10-27",
+      "release_published_at": "2026-10-26T16:29:35Z",
+      "source_android_version_name": "0.1.32",
       "source_android_package": "com.stepx.companion.app",
       "apk_binary_version": null,
       "verification_status": "public_documentation_only",
       "device_tested": false,
       "installed_on_device": false,
-      "description_basis": "upstream README, file tree, release asset list, tagged manifests and license notices; not runtime evidence",
+      "description_basis": "upstream v0.2.50 release and asset list; user-provided introduction video; not runtime evidence",
       "security": {
         "status": "not_checked",
         "badge": null,
@@ -633,7 +630,8 @@
         "Desktop and Android installation or execution",
         "Neo capabilities and platform compatibility",
         "Security, account services and Google certification"
-      ]
+      ],
+      "video_url": "https://stepxneo.jiayustudio.dpdns.org/assets/stepx-companion-0.2.50-intro.mp4"
     }
   ],
   "official_updates": [

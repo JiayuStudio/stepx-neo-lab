@@ -17,7 +17,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 - **2026-10-24 · 拓麻歌子0.3.8**：[八宠物、马克笔界面、新图标与底部检查更新](guides/neo-pet/README.md)。
 
 - **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)——手机内对话执行、侧边对话、自选应用、搜索提交与 WPS 文档生成。
-- **2026-10-23 · 社区收录**：[StepX Companion 0.2.0](community/stepx-companion/README.md)——倒影颠倒的桌面伴侣与配套 Android APK，来源社区群（用户提供）；公开资料已核对，未安装或安全测试。收录在[社区 APK 与网页游戏](sections/community-apks.md)，不进入自研网站展示。
+- **2026-10-27 · 社区更新**：[StepX Companion 0.2.50](community/stepx-companion/README.md)——流式 Amoo、连续创作、相册与自动重连；附四平台下载和 4 分 03 秒视频介绍。作者：倒影颠倒；未做新版实机验收。
 - **2026-10-23 · 学习更新**：[双通道逐页索引](sections/learning-index.md)与[零基础编程课](courses/official-step-studio/programming-basics.md)，分别提供 Agent 原文提取和人类循序练习；索引覆盖不代表功能全部实测。
 
 更多历史见[更新记录](CHANGELOG.md)；日期表示研究所实际收录或有意义更新，不代替上游发布日期。
