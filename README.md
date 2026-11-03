@@ -98,7 +98,7 @@ Beta 内测版，部分应用页面仍需优化。
 - [背屏达人 4.0 · 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/community-backscreenfun-v4.0/backscreenfun-4.0-promo-60s.mp4)：在线 URL 解析背屏动画，完整 Suno 配乐；[功能与实测](community/backscreenfun/README.md)。
 
 - [拓麻歌子 · 60 秒宣传片](https://github.com/JiayuStudio/stepx-neo-pet/releases/download/v0.3.4/tamagochi-promo-60s.mp4)：角色动画演示，Suno 配乐。
-- [Step工作台 · 1 分 55 秒功能演示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4)：1.2 版界面，涵盖项目编辑、预览、APK 构建、协作与用量管理；部分配置及用量页面为功能示意。
+- [Step工作台 · 1 分 55 秒功能演示](https://github.com/JiayuStudio/stepx-neo-lab/releases/download/studio-demo-v1.0.0/StepXNeoStudio-feature-tour-public.mp4)：1.2 版界面，涵盖项目编辑、预览、APK 构建、协作与用量管理。
 
 ## 如何阅读验证结果
 
