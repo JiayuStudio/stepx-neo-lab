@@ -1,6 +1,6 @@
 # StepX Neo 研究所
 
-**[🌐 研究所网站](https://stepxneo.jiayustudio.dpdns.org/)**：浏览自研作品介绍、宣传视频和 App 下载。详细开发资料与源码仍在 GitHub；社区内容目前不在网站展示。
+**[🌐 研究所网站](https://stepxneo.jiayustudio.dpdns.org/)**：浏览自研作品介绍、宣传视频和 App 下载。详细开发资料与源码仍在 GitHub；展示站获准单独推荐的社区项目仅限造物集和倒影颠倒的 StepX；其他社区内容不自动同步。本轮仅维护 GitHub，不代表展示站已经更新。
 
 JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这里将 **JIAYU STUDIO 自研与原创**、**社区应用、游戏与 3D 配件**、**官方群信息**分别归类，按用途找到安装方法、开发说明和验证记录。
 
@@ -8,16 +8,17 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 第一次来？想用 Amoo，看[一句话清单](library/amoo/quick-start.md)；想自己做应用，从[新手第一课](sections/start-here.md)开始。
 
-**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-10-23-review.md)。
+**双通道学习：** 人类从[零基础代码课](courses/official-step-studio/programming-basics.md)开始；Agent 请从 [llms.txt](llms.txt) 提取，再按 [catalog.json](catalog.json) 的 `learning` 读取全部教程原文、核验状态与来源。[逐页索引](sections/learning-index.md) · [本轮核查](maintenance/2026-11-04-review.md)。
 
 ## 最新收录与更新
+
+- **2026-11-04 · 社区更新**：[StepX Companion 0.2.60](community/stepx-companion/README.md)——应用商店、局域网投屏与安装修复；作者倒影颠倒，社区群来源由用户提供。仅核对上游文档，未实机验收。
 
 - **2026-10-26 · Neo背屏开发教程1.0.0**：[调用原理与Step Studio实现](guides/neo-matrix/README.md)，附彩色马克笔示例、6项播放器检查和90秒Suno配乐视频。
 
 - **2026-10-24 · 拓麻歌子0.3.8**：[八宠物、马克笔界面、新图标与底部检查更新](guides/neo-pet/README.md)。
 
 - **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)——手机内对话执行、侧边对话、自选应用、搜索提交与 WPS 文档生成。
-- **2026-10-27 · 社区更新**：[StepX Companion 0.2.50](community/stepx-companion/README.md)——流式 Amoo、连续创作、相册与自动重连；附四平台下载和 4 分 03 秒视频介绍。作者：倒影颠倒；未做新版实机验收。
 - **2026-10-23 · 学习更新**：[双通道逐页索引](sections/learning-index.md)与[零基础编程课](courses/official-step-studio/programming-basics.md)，分别提供 Agent 原文提取和人类循序练习；索引覆盖不代表功能全部实测。
 
 更多历史见[更新记录](CHANGELOG.md)；日期表示研究所实际收录或有意义更新，不代替上游发布日期。

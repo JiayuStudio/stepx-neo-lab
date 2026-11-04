@@ -25,7 +25,7 @@
 | [可选：内置小跃 → 手机本地 Codex](../community/codex-phone/materials/docs/%E5%B0%8F%E8%B7%83%E5%A7%94%E6%89%98.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/docs/%E5%B0%8F%E8%B7%83%E5%A7%94%E6%89%98.md) | indexed |
 | [重建 UI helper（可选）](../community/codex-phone/materials/src/BUILD.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/src/BUILD.md) | indexed |
 | [社区 APK 安全检查](../community/security/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/security/README.md) | indexed |
-| [StepX Companion · 社区桌面伴侣与配套 APK](../community/stepx-companion/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md) | indexed |
+| [StepX Companion 0.2.60 · 社区桌面伴侣](../community/stepx-companion/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md) | indexed |
 | [造物集 4.0.0](../community/zaowuji/README-4.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README-4.0.0.md) | indexed |
 | [造物集 31.0.0](../community/zaowuji/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README.md) | indexed |
 | [造物集 31.0.0 基础静态检查](../community/zaowuji/security-31.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/security-31.0.0.md) | indexed |

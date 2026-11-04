@@ -1,10 +1,22 @@
-# StepX Companion 0.2.50 · 社区桌面伴侣
+# StepX Companion 0.2.60 · 社区桌面伴侣
 
 [研究所首页](../../README.md) · [社区推荐](../../sections/community-apks.md)
 
-作者：**倒影颠倒**；来源：社区群（用户提供）。这是第三方社区项目，不属于研究所自研或 STEPX 官方客户端。[项目源码](https://github.com/xydzf520/stepx)。更新核对：2026-10-27。
+作者：**倒影颠倒**；来源：社区群（用户提供）。这是第三方社区项目，不属于研究所自研或 STEPX 官方客户端。[项目源码](https://github.com/xydzf520/stepx)。更新核对：2026-11-04。
 
 [▶ 视频介绍 · 4 分 03 秒](https://stepxneo.jiayustudio.dpdns.org/assets/stepx-companion-0.2.50-intro.mp4) · [原作者发行说明与下载](https://github.com/xydzf520/stepx/releases/tag/v0.2.50)
+
+## 2026-11-04 增量核对：0.2.59 → 0.2.60
+
+- **0.2.59 应用商店**：分类搜索、来源选择、APK 下载、安装与更新检查；上游声明核对包名和签名、不静默卸载降级。
+- **0.2.59 局域网投屏**：手机连接电脑后，同网浏览器扫码观看；远端控制默认关闭。DLNA / 旧版 AirPlay 为实验性适配，Google Cast V2 会话未实现。
+- **0.2.60 安装修复**：修正 APK 校验参数顺序导致的安装失败，保留包名和签名校验；更新前列出待处理任务与草稿，不自动发送或清空草稿。
+
+当前下载以 [v0.2.60 发行页](https://github.com/xydzf520/stepx/releases/tag/v0.2.60)为准；发布时间为 2026-10-28 02:50:16 UTC，配套 Android 仍为 0.1.32（作者说明）。四平台包及 APK 的资产名称已核对，未下载或独立验证二进制哈希、签名。
+
+固定来源提交：`03e4f3bf4b71f04e406f4be74e14ae629af8b9cb`（发行页 target_commitish）。[上游验证范围](https://github.com/xydzf520/stepx/blob/03e4f3bf4b71f04e406f4be74e14ae629af8b9cb/docs/CROSS_PLATFORM_0_2_59.md)中的测试、Linux/PZ261A 实机结果均为作者报告；Windows/macOS CI 不等于实体电脑联调，本研究所未复现。当前教程不授予安全或 Neo 验收徽章。
+
+以下保留 0.2.50 历史介绍、视频与下载，不能作为新版验收或当前下载入口。
 
 ## 从 0.2.25 到 0.2.50
 
