@@ -1,0 +1,17 @@
+{
+  "width": 74.5,
+  "length": 155.6,
+  "height": 10.42,
+  "outer_corner_radius": 10.7,
+  "outer_edge_radius": 0.4,
+  "cavity_width": 71.5,
+  "cavity_length": 152.6,
+  "cavity_corner_radius": 9.7,
+  "back_seat_z": 1.0,
+  "front_seat_z": 8.9,
+  "front_lip_overlap": 0.8,
+  "back_rim_width": 3.0,
+  "button_tip_radius": 3.5,
+  "entry_bevel_height": 0.62,
+  "entry_flare_per_side": 0.4
+}

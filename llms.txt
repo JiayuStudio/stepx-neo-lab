@@ -74,6 +74,7 @@ Amoo 这组参考资料的原稿日期是 2026-10-20，claim_scope 为 source_re
 ## 社区 3D 打印与配件
 
 - [独立分区](sections/3d-printing.md)
+- [Neo 纯边框 v0.1.4](community/neo-slim-bumper/README.md)：一体无五金，STEP / STL / 3MF、参数化源码、R3.5 圆角和实体回读检查；7.9 mm 为试装限位间距，实机适配未验。
 - [Neo 手机壳](community/3d-cases/README.md)：封闭版与蜂窝版原始 STL、真实网格渲染和尺寸分析；作者暂不标记。
 - [测量数据](community/3d-cases/measurements.json)：community_3d_models 对应第三方 STL 集合。单位按毫米解释，壳体外形 154.60 × 73.50 × 10.42；参考内腔 152.60 × 71.50，不是裸机规格。未切片、未打印、未装机。
 

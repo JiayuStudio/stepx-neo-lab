@@ -4,7 +4,7 @@
 
 此页由 `python3 tools/learning_index.py` 生成。逐页来源、核验日期、状态、哈希及替代路径见 [catalog.json 的 learning 字段](../catalog.json)。
 
-本地 205 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
+本地 206 页，外部引用 3 页；归档 45 页。收录覆盖不等于功能已复验。
 
 | 页面 | 原始 Markdown | 内容状态 |
 | --- | --- | --- |
@@ -24,8 +24,9 @@
 | [手机安装 Codex CLI，并通过 MCP 控制手机](../community/codex-phone/materials/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/README.md) | indexed |
 | [可选：内置小跃 → 手机本地 Codex](../community/codex-phone/materials/docs/%E5%B0%8F%E8%B7%83%E5%A7%94%E6%89%98.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/docs/%E5%B0%8F%E8%B7%83%E5%A7%94%E6%89%98.md) | indexed |
 | [重建 UI helper（可选）](../community/codex-phone/materials/src/BUILD.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/codex-phone/materials/src/BUILD.md) | indexed |
+| [STEPX Neo 纯边框保护框 v0.1.4 · STEP 实体版](../community/neo-slim-bumper/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/neo-slim-bumper/README.md) | indexed |
 | [社区 APK 安全检查](../community/security/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/security/README.md) | indexed |
-| [StepX Companion · 社区桌面伴侣与配套 APK](../community/stepx-companion/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md) | indexed |
+| [StepX Companion 0.2.50 · 社区桌面伴侣](../community/stepx-companion/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/stepx-companion/README.md) | indexed |
 | [造物集 4.0.0](../community/zaowuji/README-4.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README-4.0.0.md) | indexed |
 | [造物集 31.0.0](../community/zaowuji/README.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/README.md) | indexed |
 | [造物集 31.0.0 基础静态检查](../community/zaowuji/security-31.0.0.md) | [Raw](https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/community/zaowuji/security-31.0.0.md) | indexed |

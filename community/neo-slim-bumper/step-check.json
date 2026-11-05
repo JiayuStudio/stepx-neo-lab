@@ -1,0 +1,40 @@
+{
+  "version": "0.1.4",
+  "basis": "analytic rebuild from v0.1.3 dimensions; not a faceted mesh STEP",
+  "parameters_mm": {
+    "width": 74.5,
+    "length": 155.6,
+    "height": 10.42,
+    "outer_corner_radius": 10.7,
+    "outer_edge_radius": 0.4,
+    "cavity_width": 71.5,
+    "cavity_length": 152.6,
+    "cavity_corner_radius": 9.7,
+    "back_seat_z": 1.0,
+    "front_seat_z": 8.9,
+    "front_lip_overlap": 0.8,
+    "back_rim_width": 3.0,
+    "button_tip_radius": 3.5,
+    "entry_bevel_height": 0.62,
+    "entry_flare_per_side": 0.4
+  },
+  "step_valid": true,
+  "solids": 1,
+  "shells": 1,
+  "faces": 104,
+  "surface_types": {
+    "PLANE": 40,
+    "CYLINDER": 35,
+    "TORUS": 8,
+    "BSPLINE": 17,
+    "CONE": 4
+  },
+  "dimensions_w_l_h_mm": [
+    74.5000002,
+    155.60000019999998,
+    10.4200001
+  ],
+  "volume_mm3": 6008.41665362745,
+  "export_import_volume_difference_mm3": 1.2757645890815184e-06,
+  "physical_fit": "not tested"
+}

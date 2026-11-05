@@ -12,13 +12,14 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 
 ## 最新收录与更新
 
+- **2026-11-06 · 纯边框 v0.1.4**：[模型下载与建模源码](community/neo-slim-bumper/README.md)——STEP 曲面实体、R3.5 开口圆角、7.9 mm 限位；附 STL / 3MF 与源码，本版仍待打印和实机试装。
+
 - **2026-10-26 · Neo背屏开发教程1.0.0**：[调用原理与Step Studio实现](guides/neo-matrix/README.md)，附彩色马克笔示例、6项播放器检查和90秒Suno配乐视频。
 
 - **2026-10-24 · 拓麻歌子0.3.8**：[八宠物、马克笔界面、新图标与底部检查更新](guides/neo-pet/README.md)。
 
 - **2026-10-24 · Agent Touch 0.1.20**：[功能、安装与源码](guides/neo-agent-touch/README.md)——手机内对话执行、侧边对话、自选应用、搜索提交与 WPS 文档生成。
 - **2026-10-27 · 社区更新**：[StepX Companion 0.2.50](community/stepx-companion/README.md)——流式 Amoo、连续创作、相册与自动重连；附四平台下载和 4 分 03 秒视频介绍。作者：倒影颠倒；未做新版实机验收。
-- **2026-10-23 · 学习更新**：[双通道逐页索引](sections/learning-index.md)与[零基础编程课](courses/official-step-studio/programming-basics.md)，分别提供 Agent 原文提取和人类循序练习；索引覆盖不代表功能全部实测。
 
 更多历史见[更新记录](CHANGELOG.md)；日期表示研究所实际收录或有意义更新，不代替上游发布日期。
 
@@ -40,7 +41,7 @@ JIAYU STUDIO 整理的 Neo 游戏、应用、开发工具与实用教程。这�
 | 📖 [资料库](sections/library.md) | **提供资料，研究所整理** | Amoo 一句话清单、提示词手册与实测结果；保留来源日期和验证范围 |
 | 🌟 [社区 APK 与网页游戏](sections/community-apks.md) | **其他作者的应用与游戏** | 鸿渐原作的背屏达人 4.0.1 安全修订（🛡️ 可下载；含宣传片；安全接口与URL已复测）、造物集 31.0.0（新版静态检查；实机待验；可下载）、九款经典小游戏「游戏厅」 |
 | 🔧 [社区工具与技术方案](sections/community-tools.md) | **社区分享，研究所分析** | 当当946分享的手机本地 Codex CLI + MCP：源码、教程、分享包和逆向分析；28 项隔离检查，未独立实机复现 |
-| 🧩 [3D 打印与配件](sections/3d-printing.md) | **社区模型，研究所整理与测量** | Neo 手机壳封闭版与蜂窝版：STL、渲染图、尺寸分析；尚未打印装机 |
+| 🧩 [3D 打印与配件](sections/3d-printing.md) | **社区模型与参考尺寸重建设计** | 纯边框 v0.1.4、封闭版与蜂窝版：模型、渲染与尺寸说明；区分几何验证与实机试装 |
 | 🚀 [新手课程](sections/start-here.md) | 研究所编写的入门课程 | 应用、智能体与技能三条路线，31 个连接器练习；另有 [DeepSeek API 选修](guides/deepseek-api/README.md) |
 | 📣 [官方群信息](sections/official-updates.md) | **官方发布，研究所整理** | 已收录 [Step Studio 官方知识库](official/step-studio-knowledge/README.md)：四章文字版，注明群来源与日期 |
 

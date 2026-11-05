@@ -1,0 +1,39 @@
+{
+  "step_valid": true,
+  "solids": 1,
+  "shells": 1,
+  "faces": 104,
+  "step_units": "millimeter",
+  "ray_z_intersections_mm": [
+    0.0,
+    1.0,
+    8.9,
+    10.42
+  ],
+  "capture_gap_mm": 7.9,
+  "passage_probe_volumes_mm3": {
+    "left_speaker": 0.0,
+    "right_speaker": 0.0,
+    "button_approach": 0.0
+  },
+  "old_to_step_mesh_sampled_distance": {
+    "sample_count": 6000,
+    "maximum_sampled_mm": 0.012355224149133655,
+    "p99_sampled_mm": 0.01172642217370914,
+    "median_sampled_mm": 0.0021148545695481857
+  },
+  "step_mesh_to_old_sampled_distance": {
+    "sample_count": 6000,
+    "maximum_sampled_mm": 0.012338457022978356,
+    "p99_sampled_mm": 0.01165243912492188,
+    "median_sampled_mm": 0.0020621244087919727
+  },
+  "reference_volume_mm3": 6006.316183845767,
+  "step_volume_mm3": 6008.41665362745,
+  "volume_change_percent": 0.03497101580052973,
+  "step_derived_stl_watertight": true,
+  "step_derived_stl_winding_consistent": true,
+  "step_derived_stl_components": 1,
+  "sampled_distance_is_strict_maximum": false,
+  "physical_fit": "not tested"
+}
