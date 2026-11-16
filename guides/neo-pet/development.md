@@ -21,7 +21,7 @@
 
 这里的 `pet-frames.json` 是本游戏的资源格式，不是 Neo 系统通用协议。其他工具的 `neo-matrix.json` 不能直接当它使用，需要适配。
 
-[Step Studio 网页](https://studio.stepx.com/)与[第三方 StepX Neo Studio 客户端](../neo-studio/README.md)是不同入口。网页平台桥接与原生 Android 系统调用也不同：先检查项目已有能力，不能在普通浏览器里直接运行下面的 Java。本文完整后台方案使用原生 APK；网页用于开发、界面与预览。平台是否能构建当前项目，需要实际构建确认。
+[Step Studio 网页](https://studio.stepx.com/)与第三方 StepX Neo Studio 客户端（已下架）是不同入口。网页平台桥接与原生 Android 系统调用也不同：先检查项目已有能力，不能在普通浏览器里直接运行下面的 Java。本文完整后台方案使用原生 APK；网页用于开发、界面与预览。平台是否能构建当前项目，需要实际构建确认。
 
 ## 1. 先点亮一个简单图案
 

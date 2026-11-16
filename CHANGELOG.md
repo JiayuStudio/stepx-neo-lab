@@ -2,7 +2,7 @@
 
 ## 2026-11-06 · STEPX Neo 纯边框 v0.1.4
 
-- 收录[纯边框 STEP 实体版](community/neo-slim-bumper/README.md)：STEP / BREP、STL / 3MF、参数化源码、预览和校验值。
+- 收录纯边框 STEP 实体版（已下架）：STEP / BREP、STL / 3MF、参数化源码、预览和校验值。
 - 保留 R3.5 开口端部圆角、0.8 mm 前卡边、7.9 mm 限位和双侧声孔，无额外五金。
 - STEP 回读为 1 个有效实体、104 个 CAD 面；对旧版最大双向抽样距离约 0.01236 mm。本版打印、实机试装及目标 CAD 软件交互仍待验收。
 
@@ -257,3 +257,9 @@ python3 tools/build_amoo_notion_guide.py
 ## 2026-10-18 · StepX Neo Studio 1.1.10
 
 更新项目、下载与技能入口至 JiayuStudio/stepx-neo-studio；正式APK已安装并核验哈希，应用内更新源同步调整。
+
+## 2026-11-17
+
+- 导航改为四大板块，项目采用多值标签。
+- 社区分享及 StepX Neo Studio 下架，原创纯边框移入 Neo 硬件研究。
+- 官方应用连接器目录更新为 43 项，新增 9 项、删除 0 项，提供 40 门练习及 3 项前置条件。

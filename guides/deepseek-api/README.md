@@ -1,10 +1,10 @@
 # DeepSeek API Key：申请、配置与第一次使用
 
-[研究所首页](../../README.md) · [新手课程](../../sections/start-here.md) · [自研 Studio 指南](../neo-studio/README.md)
+[研究所首页](../../README.md) · [新手课程](../../sections/start-here.md)
 
 本课由 JIAYU STUDIO 编写，适合第一次配置 AI 接口的读者。完成后，你应能申请自己的 DeepSeek API Key，在支持的工具中保存配置，并用一次短对话判断是否接通。
 
-**适用范围**：DeepSeek 官方 API、支持 Chat Completions 的客户端，以及研究所自研 **StepX Neo Studio 1.2.3**。官方 **Step Studio 网页**使用其自身提供的云端模型；这里的配置不会替换网页后端模型，也不是第一款官方 Studio 应用的必修前提。
+**适用范围**：DeepSeek 官方 API、支持 Chat Completions 的客户端。官方 **Step Studio 网页**使用其自身提供的云端模型；这里的配置不会替换网页后端模型，也不是第一款官方 Studio 应用的必修前提。
 
 核对日期：2026-10-20。官方模型与页面可能更新，文末保留查询入口。
 
@@ -46,26 +46,9 @@
 
 截至核对日，官方文档列出的模型包括 `deepseek-flash` 与 `deepseek-v4-pro`。本教程使用前者做最小连通练习，之后再按任务与价格选择。旧教程里的模型名不要直接照抄，先查[官方首次调用说明](https://api-docs.deepseek.com/zh-cn/)。
 
-## 4 · 在 StepX Neo Studio 中配置
+## 4 · 在支持的客户端验证
 
-以下字段与按钮按研究所自研 **StepX Neo Studio 1.2.3** 源码核对；不是官方 Step Studio 网页的操作步骤。
-
-1. 进入 **模型与 API**，点 **＋ 新配置**。
-2. 在 **快速填写服务商**选择 **DeepSeek**，自动填入官方地址、兼容协议与模型名；仍对照上一节检查。
-3. 将 **配置名称**设为 `DeepSeek 学习`，在 **API Key**输入自己的完整 Key。
-4. 初次连通时，**单次最大输出 token**可先设 `1024`，**推理模式**选 **关闭推理，直接输出**。这是练习配置，不是服务商的固定上限。
-5. 点 **保存配置**。需要查询可用模型时，点 **保存并检测模型**，选择返回的模型后再次保存。检测失败不一定代表对话接口不可用，可按官方当前模型 ID 手动填写后测试。
-6. 点 **保存并测试**。这会真的发起一次短 API 请求，可能计费；只按一次，等待结果。
-7. 返回 **AI 助手**，选中刚保存的配置，新建不关联项目的对话，发送下方练习。
-
-```text
-请用三句中文解释：什么是 API、什么是 API Key、什么是模型 ID。
-只作概念说明，不创建或修改项目。
-```
-
-成功标准：收到有内容的回答，并能在工具的用量记录或开放平台用量中检查此次调用。只有“保存成功”或“检出模型”还不能证明生成请求成功；平台用量显示也可能存在延迟。
-
-编辑已有配置时，1.2.3 的 Key 框留空会保留旧密钥；更换为新 Key 时粘贴完整新值并保存。这里支持 Chat Completions；不要把配置切成 Responses 协议。有关模型设置范围见[自研 Studio 指南](../neo-studio/README.md)。
+保存通用配置后发送一句简短提问，核对实际回复和服务用量。按客户端当前界面选择兼容协议、地址与模型，并记录失败信息。
 
 ## 5 · 想把 AI 放进自己开发的应用？
 
@@ -107,7 +90,6 @@
 - 能完成一次短回答，并找到对应的用量记录。
 - 知道如何更换或停用 Key，以及不再使用时关闭哪些客户端配置。
 
-下一步回到[新手课程](../../sections/start-here.md)，或阅读[自研 Studio 的项目开发说明](../neo-studio/README.md)。高德地图、百度网盘与支付宝接入课程仍暂缓；本课是独立新增的 DeepSeek 凭证入门。
 
 ## 来源与验证范围
 
@@ -115,6 +97,5 @@
 - [DeepSeek API keys](https://platform.deepseek.com/api_keys)：已查看登录后的列表说明与创建弹窗；未点击最终创建。
 - [DeepSeek 模型与价格](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/)：读者查询实时价格，本教程不固定报价或承诺赠送额度。
 - [DeepSeek 错误码](https://api-docs.deepseek.com/zh-cn/quick_start/error_codes/)：常见报错含义。
-- [StepX Neo Studio 源码](https://github.com/JiayuStudio/stepx-neo-studio)：1.2.3 的设置字段、请求地址拼接和测试行为。
 
 本次完成文档与设置源码核对，没有新建密钥、充值或运行付费 API 请求，也没有重新完成全新手机从注册到调用的实测。

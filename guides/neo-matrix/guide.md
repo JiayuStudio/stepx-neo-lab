@@ -185,7 +185,7 @@ Android 实现还需按目标系统版本声明适用的前台服务类型、权
 ## 8. 参考与资源边界
 
 - [官方背面点阵屏连接器](https://studio.stepx.com/connectors/ic_atomic_990001)：当前页面于 2026-10-26 读取。
-- [StepX Neo Studio 原生点阵实现](https://github.com/JiayuStudio/stepx-neo-studio/tree/main/shared-src/studio/jiayu/matrix)：可参考接口和生命周期；按该仓库实际许可证复用。
+- StepX Neo Studio 原生点阵实现（已下架）：可参考接口和生命周期；按该仓库实际许可证复用。
 - [研究所荒野项目](https://github.com/JiayuStudio/stepx-neo-lab/tree/main/guides/pokewilds)：游戏适配与引用说明。
 - [PokeWilds 上游](https://github.com/SheerSt/pokewilds)：游戏与素材来源需分别尊重其声明；本教程不为宝可梦角色素材授予额外商业使用权。
 - 随附最小播放器使用原生 JavaScript 与 Canvas，不增加第三方运行库。剪片工具为 Python、Pillow、NumPy、FFmpeg，属于制作工具，不打包进游戏。

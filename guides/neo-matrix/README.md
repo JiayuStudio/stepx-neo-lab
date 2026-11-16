@@ -54,7 +54,7 @@ node --test examples/matrix-player.test.mjs
 ## 引用的项目、库与服务
 
 - [官方背面点阵屏连接器](https://studio.stepx.com/connectors/ic_atomic_990001)：官方能力说明与Step Studio接入。
-- [研究所原生点阵实现](https://github.com/JiayuStudio/stepx-neo-studio/tree/main/shared-src/studio/jiayu/matrix)与[荒野适配源码](../pokewilds/source/README.md)：原生调用及游戏联动参考。
+- 研究所原生点阵实现（已下架）与[荒野适配源码](../pokewilds/source/README.md)：原生调用及游戏联动参考。
 - [PokeWilds](https://github.com/SheerSt/pokewilds)：视频游戏与点阵角色来源；形象及第三方素材权利归原权利方，本教程不另行授予其商业使用权。
 - 示例播放器使用浏览器原生 JavaScript 和 Canvas，没有第三方网页运行库；示例机器人由教程代码绘制。
 - 在线正文由 [Marked](https://github.com/markedjs/marked) 17.0.5（MIT）生成静态HTML，网页无需加载Markdown运行库。
