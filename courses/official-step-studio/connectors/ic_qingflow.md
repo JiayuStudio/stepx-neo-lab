@@ -26,7 +26,7 @@
 
 先用 workspace_list 列出工作区，选择已授权的测试工作区后通过 workspace_select 切换，再用 app_list 定位测试应用，调用 app_get 获取应用信息。然后用 record_browse_schema_get 读取浏览结构，按实际 field_id 组织 columns、where 和 order_by，最后用 record_list 查询一页记录。
 
-查询通过后再做单条测试录入；写入前展示目标应用、字段与值，写完重新查询。
+本课只查询测试记录。确认字段、筛选和翻页正确后，再单独学习数据写入。
 
 | 起步能力 | 用途 | 当前必填参数 |
 | --- | --- | --- |

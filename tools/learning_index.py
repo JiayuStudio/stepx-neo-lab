@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Rebuild additive learning metadata in the existing catalog and Markdown index."""
+"""[INPUT]: 课程目录、现有学习标注及公开 Markdown。
+[OUTPUT]: 重建 catalog.json 学习字段和逐页索引。
+[POS]: tools 的学习导航生成器，保留人工核验记录。
+[PROTOCOL]: Update this header on change, then check AGENTS.md
+"""
 import argparse
 import hashlib
 import json
@@ -13,7 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATE = datetime.now(timezone.utc).date().isoformat()
 REPO = 'https://github.com/JiayuStudio/stepx-neo-lab'
 RAW = 'https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/'
-ROOTS = ('courses', 'guides', 'official', 'library', 'community')
+ROOTS = ('courses', 'guides', 'official', 'library', 'research')
+EXCLUDED_FILENAMES = ('AGENTS.md',)
 ARCHIVE = 'courses/archive/official-step-studio-2026-10-20-early/'
 POLICY = 'maintenance/learning-policy.md'
 
@@ -23,11 +28,13 @@ def build():
     previous = {e['id']: e for e in catalog.get('learning', {}).get('documents', [])}
     course = json.loads((ROOT / 'courses/official-step-studio/data.json').read_text())
     official = {}
-    for item in course['entries'] + course['components']:
+    for item in course['entries'] + course.get('components', []):
         if item.get('path'):
             official['courses/official-step-studio/' + item['path']] = item['official_url']
     documents = []
     for path in sorted(p for root in ROOTS for p in (ROOT / root).rglob('*.md')):
+        if path.name in EXCLUDED_FILENAMES:
+            continue
         rel = path.relative_to(ROOT).as_posix()
         content = path.read_text()
         title = re.search(r'^#\s+(.+)', content, re.M)
@@ -68,11 +75,20 @@ def build():
             entry['last_official_verified'] = course['checked']
             entry['evidence_scope'] = 'historical_official_page_review; execution_not_verified_this_round'
         # Curated factual annotations survive regeneration. Hashes, titles and links do not.
-        for key in ('content_status', 'availability_status', 'inventory_checked', 'last_official_verified',
+        for key in ('kind', 'human_url', 'raw_url', 'content_status', 'availability_status', 'inventory_checked', 'last_official_verified',
                     'evidence_scope', 'source_notes', 'verification_record', 'replacement_path', 'retirement_reason'):
             if identifier in previous:
-                entry[key] = previous[identifier][key]
+                if key in previous[identifier]:
+                    entry[key] = previous[identifier][key]
+                else:
+                    entry.pop(key, None)
+        if identifier in previous:
+            entry = {**previous[identifier], **entry}
         documents.append(entry)
+    by_id = {entry['id']: entry for entry in documents}
+    ordered_ids = [key for key in previous if key in by_id]
+    ordered_ids.extend(entry['id'] for entry in documents if entry['id'] not in previous)
+    documents = [by_id[key] for key in ordered_ids]
     external = []
     for name in ('手机安装教程', '常见问题', '实测记录'):
         rel = 'docs/' + name + '.md'
@@ -96,22 +112,19 @@ def build():
         'human_start': 'sections/start-here.md', 'agent_start': 'llms.txt',
         'markdown_index': 'sections/learning-index.md',
         'scope': {'roots': list(ROOTS), 'pattern': '**/*.md', 'includes_archives_and_supporting_references': True,
-                  'external_scope': 'three GBox pages already linked by sections/guides.md; not entire external repository'},
+                  'external_scope': 'three GBox pages already linked by sections/guides.md; not entire external repository',
+                  'excluded_filenames': list(EXCLUDED_FILENAMES)},
         'counts': {'local_documents': len(documents), 'external_references': len(external),
-                   'by_root': dict(sorted(Counter(e['path'].split('/')[0] for e in documents).items())),
+                   'by_root': dict(Counter(e['path'].split('/')[0] for e in documents)),
                    'archived': sum(e['content_status'] == 'archived' for e in documents),
                    'supporting_references': sum(e['kind'] == 'supporting_reference' for e in documents)},
         'documents': documents, 'external_documents': external,
     }
-    lines = ['# 逐页学习索引', '', '[研究所首页](../README.md) · [人类入门](start-here.md) · [Agent 入口](../llms.txt) · [维护口径](../'+POLICY+')', '',
-             '此页由 `python3 tools/learning_index.py` 生成。逐页来源、核验日期、状态、哈希及替代路径见 [catalog.json 的 learning 字段](../catalog.json)。', '',
-             f'本地 {len(documents)} 页，外部引用 {len(external)} 页；归档 {catalog["learning"]["counts"]["archived"]} 页。收录覆盖不等于功能已复验。', '',
-             '| 页面 | 原始 Markdown | 内容状态 |', '| --- | --- | --- |']
+    lines = ['# 课程与资料索引', '', '[四大板块首页](../README.md) · [原创教程](tutorials.md)', '',
+             f'连接器目录核对于 {course["checked"]}。历史课程标记为历史，项目说明保留各自的验收日期。', '']
     for e in documents:
-        lines.append(f'| [{e["title"].replace("|", "／")}](../{quote(e["path"])}) | [Raw]({e["raw_url"]}) | {e["content_status"]} |')
-    lines += ['', '## 外部教程引用', '']
-    for e in external:
-        lines.append(f'- [{e["title"]}]({e["human_url"]}) · [Raw]({e["raw_url"]}) · 尚未复核外部正文')
+        status = '（历史）' if e['content_status'] == 'archived' else ''
+        lines.append(f'- [{e["title"]}](../{e["path"]}){status}')
     return catalog, '\n'.join(lines) + '\n'
 
 
@@ -120,16 +133,21 @@ def validate(catalog):
     docs = learning['documents']
     assert len({e['id'] for e in docs}) == len(docs), 'duplicate IDs'
     for e in docs:
-        assert e['availability_status'] in {'review_required', 'documented', 'access_failed', 'deprecated', 'retired'}
+        assert e['availability_status'] in {'review_required', 'documented', 'current', 'access_failed', 'deprecated', 'retired'}
         assert e['content_status'] in {'indexed', 'archived'}
-        if e['replacement_path']:
+        if e.get('replacement_path'):
             assert (ROOT / e['replacement_path']).is_file(), e['replacement_path']
         if e['availability_status'] in {'deprecated', 'retired'}:
             assert e['retirement_reason'] and e['verification_record'], e['id']
-        assert (ROOT / e['verification_record']).is_file(), e['id']
-        if e['last_official_verified']:
+        if e.get('verification_record'):
+            assert (ROOT / e['verification_record']).is_file(), e['id']
+        if e.get('last_official_verified'):
             assert e['official_sources'], e['id']
-    assert {e['path'] for e in docs} == {p.relative_to(ROOT).as_posix() for r in ROOTS for p in (ROOT/r).rglob('*.md')}
+    assert {e['path'] for e in docs} == {
+        p.relative_to(ROOT).as_posix()
+        for r in ROOTS for p in (ROOT/r).rglob('*.md')
+        if p.name not in EXCLUDED_FILENAMES
+    }
 
 
 def main():

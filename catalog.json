@@ -534,7 +534,7 @@
         "research": 1
       },
       "archived": 45,
-      "supporting_references": 27
+      "supporting_references": 24
     },
     "documents": [
       {
@@ -1895,12 +1895,14 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/README.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/README.md",
-        "sha256": "f526061eea219d1ffe97516c133280236039fd651c985b79083c791e68084113",
+        "sha256": "9c904fdb0ee236146c749525cce4b3967d392753415fb4950895543f181ff7e1",
         "content_status": "indexed",
         "availability_status": "current",
         "inventory_checked": "2026-11-23",
         "last_official_verified": "2026-11-17",
-        "official_sources": [],
+        "official_sources": [
+          "https://studio.stepx.com/connectors"
+        ],
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "source_notes": "官方链接仅供核查；缺少链接不代表无来源，详见原文。",
         "verification_record": "maintenance/2026-10-23-review.md",
@@ -2196,7 +2198,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/alipay_vibepay"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_amap_jsapi.md",
@@ -2214,7 +2219,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_amap_jsapi"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_atomic_439.md",
@@ -2983,6 +2991,7 @@
         "inventory_checked": "2026-11-23",
         "last_official_verified": "2026-11-23",
         "official_sources": [
+          "https://studio.stepx.com/connectors/ic_atomic_990004",
           "https://studio.stepx.com/connectors/ic_atomic_990016"
         ],
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
@@ -3007,7 +3016,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_baidu_netdisk"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_bazhuayu.md",
@@ -3025,7 +3037,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_bazhuayu"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_fastmoss.md",
@@ -3043,7 +3058,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_fastmoss"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_jinshuju.md",
@@ -3061,7 +3079,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_jinshuju"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_morningstar.md",
@@ -3079,7 +3100,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_morningstar"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_qingflow.md",
@@ -3090,14 +3114,17 @@
         "kind": "learning_document",
         "path": "courses/official-step-studio/connectors/ic_qingflow.md",
         "title": "轻流：只读记录看板",
-        "sha256": "7d1930a7ca9520af87bb7abefb4557c728c8c4045599ce21065c190962a586e7",
+        "sha256": "1ea12455823493163820ec58d8ff8f75e4bff9acf32b614fc70075e1a5a81d69",
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/connectors/ic_qingflow.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/connectors/ic_qingflow.md",
         "inventory_checked": "2026-11-23",
         "last_official_verified": "2026-11-23",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_qingflow"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_tencent_survey.md",
@@ -3115,7 +3142,10 @@
         "last_official_verified": "2026-11-23",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_tencent_survey"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_tyc.md",
@@ -3133,7 +3163,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_tyc"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_xmind.md",
@@ -3151,7 +3184,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_xmind"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_yuandian.md",
@@ -3169,7 +3205,10 @@
         "last_official_verified": "2026-11-17",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
-        "availability_status": "current"
+        "availability_status": "current",
+        "official_sources": [
+          "https://studio.stepx.com/connectors/ic_yuandian"
+        ]
       },
       {
         "id": "doc:courses/official-step-studio/programming-basics.md",
@@ -3628,7 +3667,8 @@
         "inventory_checked": "2026-11-17",
         "last_official_verified": null,
         "official_sources": [
-          "https://studio.stepx.com/"
+          "https://studio.stepx.com/",
+          "https://studio.stepx.com/，选择应用构建器。"
         ],
         "evidence_scope": "inventory_only; preserve_verification_limits_in_source",
         "source_notes": "官方链接仅供核查；缺少链接不代表无来源，详见原文。",

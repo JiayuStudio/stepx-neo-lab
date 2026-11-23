@@ -2,7 +2,7 @@
 
 [四大板块首页](../README.md) · [原创教程](tutorials.md)
 
-连接器目录核对于 2026-11-17。历史课程标记为历史，项目说明保留各自的验收日期。
+连接器目录核对于 2026-11-23。历史课程标记为历史，项目说明保留各自的验收日期。
 
 - [00 · 先想清楚，再开始写](../courses/archive/official-step-studio-2026-10-20-early/00-start.md)（历史）
 - [01 · 在官方网页创建课堂计算器](../courses/archive/official-step-studio-2026-10-20-early/01-create.md)（历史）
