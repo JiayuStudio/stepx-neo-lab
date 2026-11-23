@@ -1,7 +1,7 @@
 {
   "title": "StepX Neo 研究所",
   "maintainer": "JiayuStudio",
-  "updated": "2026-11-17",
+  "updated": "2026-11-23",
   "projects": [
     {
       "title": "免 ROOT 使用 Google Play：GBox 手机教程",
@@ -161,7 +161,7 @@
       ],
       "knowledge_integration": "Official group PDF adapted into lessons 00, 01, 03, 04, 07 and new lessons 08–10",
       "new_exercises_verified": false,
-      "updated": "2026-11-17",
+      "updated": "2026-11-23",
       "verification": "Official app connector catalog reviewed; runtime not tested",
       "tags": [
         "新手入门",
@@ -518,7 +518,10 @@
       ],
       "pattern": "**/*.md",
       "includes_archives_and_supporting_references": true,
-      "external_scope": "three GBox pages already linked by sections/guides.md; not entire external repository"
+      "external_scope": "three GBox pages already linked by sections/guides.md; not entire external repository",
+      "excluded_filenames": [
+        "AGENTS.md"
+      ]
     },
     "counts": {
       "local_documents": 194,
@@ -1892,10 +1895,10 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/README.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/README.md",
-        "sha256": "30dc7938eb50d6539019f2f482807f7657f18b544332be3b8c702cae89fdd799",
+        "sha256": "f526061eea219d1ffe97516c133280236039fd651c985b79083c791e68084113",
         "content_status": "indexed",
         "availability_status": "current",
-        "inventory_checked": "2026-11-17",
+        "inventory_checked": "2026-11-23",
         "last_official_verified": "2026-11-17",
         "official_sources": [],
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
@@ -2163,10 +2166,10 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/connector-index.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/connector-index.md",
-        "sha256": "152a591d1e63705579edb48b68a147a2fa9c2e9b354166f6180e9da001589726",
+        "sha256": "c4d92061b255363db4fd111da4b9ae5b84d942d82cd2c1255ec8513cee0f5430",
         "content_status": "indexed",
         "availability_status": "current",
-        "inventory_checked": "2026-11-17",
+        "inventory_checked": "2026-11-23",
         "last_official_verified": "2026-11-17",
         "official_sources": [
           "https://studio.stepx.com/connectors"
@@ -2965,7 +2968,7 @@
       },
       {
         "id": "doc:courses/official-step-studio/connectors/ic_atomic_990016.md",
-        "title": "TTS：朗读练习器",
+        "title": "TTS · 语音播报与停止",
         "path": "courses/official-step-studio/connectors/ic_atomic_990016.md",
         "kind": "learning_document",
         "audience": [
@@ -2974,11 +2977,11 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/connectors/ic_atomic_990016.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/connectors/ic_atomic_990016.md",
-        "sha256": "b0a483552c96813a10c6be88d23e057f3a1251bf5dd6a2c3e1caf2393c9afda7",
+        "sha256": "667cf4f15164d24517f2f098068a3181462dddbe2fecdeeee831e6fd74f08e4a",
         "content_status": "indexed",
         "availability_status": "current",
-        "inventory_checked": "2026-11-17",
-        "last_official_verified": "2026-11-17",
+        "inventory_checked": "2026-11-23",
+        "last_official_verified": "2026-11-23",
         "official_sources": [
           "https://studio.stepx.com/connectors/ic_atomic_990016"
         ],
@@ -3086,12 +3089,12 @@
         ],
         "kind": "learning_document",
         "path": "courses/official-step-studio/connectors/ic_qingflow.md",
-        "title": "轻流：只读待办与记录看板",
-        "sha256": "fda6b655cbabf7d091c6a82717d915a449cd6f6df741b38ba2fc6c3e22aa673d",
+        "title": "轻流：只读记录看板",
+        "sha256": "7d1930a7ca9520af87bb7abefb4557c728c8c4045599ce21065c190962a586e7",
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/connectors/ic_qingflow.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/connectors/ic_qingflow.md",
-        "inventory_checked": "2026-11-17",
-        "last_official_verified": "2026-11-17",
+        "inventory_checked": "2026-11-23",
+        "last_official_verified": "2026-11-23",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
         "availability_status": "current"
@@ -3105,11 +3108,11 @@
         "kind": "learning_document",
         "path": "courses/official-step-studio/connectors/ic_tencent_survey.md",
         "title": "腾讯问卷：三题满意度问卷",
-        "sha256": "5c94defba5d37c944316b48f26148e08c00eab89bafed5beb1e02610523223b7",
+        "sha256": "7c7df7e561be2976cf39eed2e28fb2869213004d434e4e8e299731269323a0ab",
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/connectors/ic_tencent_survey.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/connectors/ic_tencent_survey.md",
-        "inventory_checked": "2026-11-17",
-        "last_official_verified": "2026-11-17",
+        "inventory_checked": "2026-11-23",
+        "last_official_verified": "2026-11-23",
         "evidence_scope": "Official catalog/detail checked; exercise not executed",
         "content_status": "indexed",
         "availability_status": "current"
@@ -3202,10 +3205,10 @@
         ],
         "human_url": "https://github.com/JiayuStudio/stepx-neo-lab/blob/main/courses/official-step-studio/sources.md",
         "raw_url": "https://raw.githubusercontent.com/JiayuStudio/stepx-neo-lab/main/courses/official-step-studio/sources.md",
-        "sha256": "cff61e7add473b38030b52e8af0d05e8027917b7af9e409f49a2ed04df23b10b",
+        "sha256": "b9ac480c3c7978519f09055792ab8fa2d0a4306b6616466841b1513d1119b787",
         "content_status": "indexed",
         "availability_status": "review_required",
-        "inventory_checked": "2026-11-17",
+        "inventory_checked": "2026-11-23",
         "last_official_verified": null,
         "official_sources": [
           "https://studio.stepx.com/connectors",
@@ -5295,9 +5298,9 @@
         "连接器",
         "Step Studio 程序开发"
       ],
-      "summary": "40 门练习与 3 项前置条件，覆盖手机能力、办公协作与专业数据。",
+      "summary": "40 门练习与 3 项前置条件，本周修订语音播报、问卷建题和只读列表查询。",
       "path": "courses/official-step-studio/connector-index.md",
-      "checked": "2026-11-17"
+      "checked": "2026-11-23"
     },
     {
       "id": "first-app",

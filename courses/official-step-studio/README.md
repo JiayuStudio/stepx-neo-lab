@@ -2,7 +2,7 @@
 
 [研究所首页](../../README.md) · [新人分区](../../sections/start-here.md) · [教程归档区](../../sections/archive.md)
 
-**2026-11-17 连接器更新版。** 从最小界面开始，循序渐进接入官方应用构建器的 43 项连接器。本课程由 JIAYU STUDIO 编写，不是官方发布课程。
+**2026-11-23 增量维护版。** 从最小界面开始，循序渐进接入官方应用构建器的 43 项连接器。本课程由 JIAYU STUDIO 编写，不是官方发布课程。
 
 旧课程和旧截图已完整移入[早期版归档](../archive/official-step-studio-2026-10-20-early/README.md)。当前页面作为默认入口，旧记录不混入本版实测结论。
 
@@ -44,3 +44,9 @@
 ## 本轮新增
 
 XMind、腾讯问卷、轻流、金数据、FastMoss、八爪鱼、天眼查、华宇元典和晨星，按办公→数据查询逐步学习。详细变更见[连接器课程导航](connector-index.md)。
+
+## 本周课程修订
+
+[TTS 语音练习](connectors/ic_atomic_990016.md)改走音频输出与路由。[腾讯问卷](connectors/ic_tencent_survey.md)先带题目创建，再读回与追加。[轻流](connectors/ic_qingflow.md)按真实字段和浏览 schema 查询一页记录。
+
+本周官方目录仍为 43 项，8 个组件的名称与版本保持原记录。课堂调用与真机效果按各课验收。

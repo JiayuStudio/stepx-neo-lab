@@ -1,9 +1,9 @@
 {
-  "title": "Step Studio 新手课程 · 2026-11-17 连接器更新版",
+  "title": "Step Studio 新手课程 · 2026-11-23 增量维护",
   "maintainer": "JIAYU STUDIO",
   "official_course": false,
   "source": "https://studio.stepx.com/connectors",
-  "checked": "2026-11-17",
+  "checked": "2026-11-23",
   "builder_type": "app",
   "visible_connectors": 43,
   "active_lessons": 40,
@@ -340,7 +340,7 @@
         "update_question",
         "update_settings"
       ],
-      "verification": "official_catalog_and_detail_reviewed_2026-11-17; execution_not_tested",
+      "verification": "official_public_catalog_and_schema_reviewed_2026-11-23; execution_not_tested",
       "path": "connectors/ic_tencent_survey.md"
     },
     {
@@ -459,7 +459,7 @@
         "builder_portal_delete",
         "builder_app_publish_verify"
       ],
-      "verification": "official_catalog_and_detail_reviewed_2026-11-17; execution_not_tested",
+      "verification": "official_public_catalog_and_schema_reviewed_2026-11-23; execution_not_tested",
       "path": "connectors/ic_qingflow.md"
     },
     {
@@ -652,15 +652,18 @@
       "name": "TTS",
       "official_url": "https://studio.stepx.com/connectors/ic_atomic_990016",
       "category": "StepX 手机专属能力",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "status": "lesson_available",
       "phase": 2,
-      "official_methods": [
+      "official_methods": [],
+      "verification": "official_public_catalog_and_schema_reviewed_2026-11-23; execution_not_tested",
+      "path": "connectors/ic_atomic_990016.md",
+      "exercise_connector_id": "ic_atomic_990004",
+      "exercise_methods": [
         "speak_text",
         "stop_speak_text"
       ],
-      "verification": "official_catalog_and_detail_reviewed_2026-11-17; execution_not_tested",
-      "path": "connectors/ic_atomic_990016.md"
+      "catalog_capability_status": "empty_table_with_description_mismatch"
     },
     {
       "id": "ic_atomic_503",
@@ -1257,5 +1260,17 @@
     ],
     "removed": []
   },
-  "verification": "official_page_and_catalog; no account authorization or device runtime performed"
+  "verification": "official_page_and_catalog; no account authorization or device runtime performed",
+  "weekly_comparison": {
+    "since": "2026-11-17",
+    "checked": "2026-11-23",
+    "added": [],
+    "removed": [],
+    "updated": [
+      "ic_atomic_990016",
+      "ic_qingflow",
+      "ic_tencent_survey"
+    ],
+    "tts_exercise_route": "ic_atomic_990004"
+  }
 }
