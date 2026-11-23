@@ -2,6 +2,7 @@
 > L2 | Parent: ../AGENTS.md
 
 成员列表
+- AGENTS.md - 工具职责及学习索引的输入目录。
 - learning_index.py - 从当前课程树重建学习索引，保留人工核验记录。
 - check_learning_examples.mjs - 用模拟 DOM 执行公开编程示例。
 - draw_amoo_notion_figures.py - 生成 Amoo Notion 指南的矢量操作示意。

@@ -2,6 +2,7 @@
 > L2 | Parent: ../AGENTS.md
 
 成员列表
+- AGENTS.md - 课程目录地图与索引依赖。
 - official-step-studio/ - 当前官方平台课程。
 - archive/ - 历史课程及其当时的证据。
 
